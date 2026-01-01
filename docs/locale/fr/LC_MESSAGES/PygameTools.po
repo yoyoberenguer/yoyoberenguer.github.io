@@ -1,0 +1,1842 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yoann Berenguer
+# This file is distributed under the same license as the PygameShader
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PygameShader \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-10 13:20+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../PygameTools.rst:2
+msgid "PygameTools"
+msgstr "PygameTools"
+
+#: ../PygameTools.rst:4
+msgid ":mod:`PygameTools.pyx`"
+msgstr ":mod:`PygameTools.pyx`"
+
+#: ../PygameTools.rst:13
+msgid "1. Purpose of This Library"
+msgstr "1. Objectif de cette bibliothèque"
+
+#: ../PygameTools.rst:15
+msgid "This library is designed for **high-performance image processing** with a focus on **efficiency and low-level memory management**. It leverages **Cython and NumPy** to provide fast image operations, including **resizing, format conversions, pixel manipulations, and color channel analysis**. By using memory views and Cython optimizations, the library ensures minimal overhead when processing images in **RGB and RGBA formats**."
+msgstr "Cette bibliothèque est conçue pour le **traitement d'images haute performance**, en mettant l'accent sur **l'efficacité et la gestion de la mémoire au niveau bas**. Elle exploite **Cython et NumPy** pour fournir des opérations rapides sur les images, y compris **le redimensionnement, les conversions de format, les manipulations de pixels et l'analyse des canaux de couleur**. En utilisant des vues mémoire et des optimisations Cython, la bibliothèque garantit un minimum de surcharge lors du traitement des images au format **RGB et RGBA**."
+
+#: ../PygameTools.rst:20
+msgid "2. Key Features"
+msgstr "2. Fonctionnalités principales"
+
+#: ../PygameTools.rst:22
+msgid "**Efficient Image Manipulation**: Functions to resize, transform, and reformat images with minimal processing overhead."
+msgstr "**Manipulation d'images efficace** : Fonctions pour redimensionner, transformer et reformater les images avec une surcharge minimale."
+
+#: ../PygameTools.rst:23
+msgid "**Memory-Efficient Buffer Handling**: Converts images to and from compact buffer representations for efficient storage and processing."
+msgstr "**Gestion efficace des tampons mémoire** : Convertit les images en et depuis des représentations de tampons compactes pour un stockage et un traitement efficaces."
+
+#: ../PygameTools.rst:24
+msgid "**Pixel-Level Operations**: Supports pixel indexing, blending, and mapping/unmapping between color representations."
+msgstr "**Opérations au niveau des pixels** : Supporte l'indexation des pixels, le mélange et le mappage/démappage entre les représentations de couleurs."
+
+#: ../PygameTools.rst:25
+msgid "**Alpha Channel Handling**: Enables operations such as alpha removal, binary masking, and blending with transparency."
+msgstr "**Gestion du canal alpha** : Permet des opérations telles que la suppression de l'alpha, le masquage binaire et le mélange avec transparence."
+
+#: ../PygameTools.rst:26
+msgid "**Performance Optimizations**: Uses Cython’s `nogil` operations for multi-threading and fast execution."
+msgstr "**Optimisations des performances** : Utilise les opérations `nogil` de Cython pour le multi-threading et une exécution rapide."
+
+#: ../PygameTools.rst:27
+msgid "**Comparison and Analysis Tools**: Functions for comparing PNG images and analyzing color channels."
+msgstr "**Outils de comparaison et d'analyse** : Fonctions pour comparer les images PNG et analyser les canaux de couleur."
+
+#: ../PygameTools.rst:30
+msgid "3. Library Functional Overview"
+msgstr "3. Aperçu des fonctionnalités de la bibliothèque"
+
+#: ../PygameTools.rst:32
+msgid ""
+"This library provides several core functionalities for working with "
+"images:"
+msgstr ""
+"Cette bibliothèque offre plusieurs fonctionnalités essentielles pour "
+"travailler avec des images :"
+
+#: ../PygameTools.rst:34
+msgid "**Image Resizing & Buffer Manipulation**"
+msgstr ""
+"**Redimensionnement d'images et manipulation des buffers**"
+
+#: ../PygameTools.rst:36
+msgid "``resize_array()``: Resize an RGB image efficiently."
+msgstr ""
+"``resize_array()`` : Redimensionne une image RGB efficacement."
+
+#: ../PygameTools.rst:37
+msgid ""
+"``bufferize()`` / ``unbufferize()``: Convert images to and from compact "
+"buffer formats."
+msgstr ""
+"``bufferize()`` / ``unbufferize()`` : Convertit des images vers et depuis "
+"des formats de buffer compact."
+
+#: ../PygameTools.rst:38
+msgid ""
+"``flip_bgra_buffer()`` / ``bgr_buffer_transpose()``: Perform buffer-based"
+" transformations."
+msgstr ""
+"``flip_bgra_buffer()`` / ``bgr_buffer_transpose()`` : Effectue des "
+"transformations basées sur des buffers."
+
+#: ../PygameTools.rst:40
+msgid "**Pixel Mapping & Indexing**"
+msgstr ""
+"**Cartographie et indexation des pixels**"
+
+#: ../PygameTools.rst:42
+msgid ""
+"``mapping_array()`` / ``unmapping_array()``: Convert RGB images to "
+"indexed formats and vice versa."
+msgstr ""
+"``mapping_array()`` / ``unmapping_array()`` : Convertit des images RGB en "
+"formats indexés et inversement."
+
+#: ../PygameTools.rst:43
+msgid ""
+"``index3d_to_1d()`` / ``index1d_to_3d()``: Handle pixel coordinate "
+"transformations."
+msgstr ""
+"``index3d_to_1d()`` / ``index1d_to_3d()`` : Gère les transformations des "
+"coordonnées de pixels."
+
+#: ../PygameTools.rst:45
+msgid "**Alpha Channel Processing**"
+msgstr ""
+"**Traitement du canal alpha**"
+
+#: ../PygameTools.rst:47
+msgid "``RemoveAlpha()``: Strip the alpha channel from an RGBA image."
+msgstr ""
+"``RemoveAlpha()`` : Supprime le canal alpha d'une image RGBA."
+
+#: ../PygameTools.rst:48
+msgid "``make_rgba_array()``: Combine an RGB image with an alpha mask."
+msgstr ""
+"``make_rgba_array()`` : Combine une image RGB avec un masque alpha."
+
+#: ../PygameTools.rst:49
+msgid "``binary_mask()``: Generate binary masks from alpha values."
+msgstr ""
+"``binary_mask()`` : Génère des masques binaires à partir des valeurs alpha."
+
+#: ../PygameTools.rst:51
+msgid "**Image Blending & Comparison**"
+msgstr ""
+"**Fusion et comparaison d'images**"
+
+#: ../PygameTools.rst:53
+msgid "``blend_pixel_mapped_arrays()``: Blend images using mapped pixel values."
+msgstr ""
+"``blend_pixel_mapped_arrays()`` : Fusionne des images en utilisant des "
+"valeurs de pixels mappées."
+
+#: ../PygameTools.rst:54
+msgid ""
+"``compare_png24bit()`` / ``compare_png32bit()``: Compare images for "
+"similarity."
+msgstr ""
+"``compare_png24bit()`` / ``compare_png32bit()`` : Compare des images pour "
+"évaluer leur similarité."
+
+#: ../PygameTools.rst:56
+msgid "**Image Analysis**"
+msgstr ""
+"**Analyse d'images**"
+
+#: ../PygameTools.rst:58
+msgid "``get_rgb_channel_means()``: Compute average color values per channel."
+msgstr ""
+"``get_rgb_channel_means()`` : Calcule les valeurs moyennes des couleurs "
+"par canal."
+
+#: ../PygameTools.rst:59
+msgid "``analyze_image_channels()``: Extract statistical insights from an image."
+msgstr ""
+"``analyze_image_channels()`` : Extrait des informations statistiques "
+"d'une image."
+
+#: ../PygameTools.rst:62
+msgid "4. Target Applications"
+msgstr ""
+"4. Applications ciblées"
+
+#: ../PygameTools.rst:64
+msgid "**Game Development**: Handling and processing game textures efficiently."
+msgstr ""
+"**Développement de jeux** : Gestion et traitement efficace des textures "
+"de jeu."
+
+#: ../PygameTools.rst:65
+msgid "**Computer Vision**: Preprocessing images for machine learning models."
+msgstr ""
+"**Vision par ordinateur** : Prétraitement des images pour les modèles "
+"d'apprentissage automatique."
+
+#: ../PygameTools.rst:66
+msgid ""
+"**Graphics Software**: Performing transformations, blending, and format "
+"conversions."
+msgstr ""
+"**Logiciels graphiques** : Effectuer des transformations, des fusions et "
+"des conversions de format."
+
+#: ../PygameTools.rst:67
+msgid ""
+"**Embedded Systems**: Optimized image handling in memory-constrained "
+"environments."
+msgstr ""
+"**Systèmes embarqués** : Gestion optimisée des images dans des "
+"environnements à mémoire limitée."
+
+#: ../PygameTools.rst:68
+msgid ""
+"**Scientific Image Analysis**: Extracting statistics and performing "
+"pixel-level computations."
+msgstr ""
+"**Analyse scientifique d'images** : Extraction de statistiques et "
+"calculs au niveau des pixels."
+
+#: ../PygameTools.rst:71
+msgid "5. Summary"
+msgstr ""
+"5. Résumé"
+
+#: ../PygameTools.rst:73
+msgid ""
+"This **Cython-based image processing library** provides **high-"
+"performance image transformations, buffer manipulation, and alpha channel"
+" handling**. With optimized **resizing, mapping, blending, and analysis "
+"functions**, it is designed for applications needing **fast, memory-"
+"efficient image processing**. Its **low-level optimizations** make it "
+"particularly well-suited for **real-time graphics, computer vision, and "
+"game development**."
+msgstr ""
+"Cette **bibliothèque de traitement d'images basée sur Cython** offre des "
+"**transformations d'images haute performance, une manipulation efficace "
+"des buffers et une gestion du canal alpha**. Grâce à des fonctions "
+"optimisées de **redimensionnement, cartographie, fusion et analyse**, "
+"elle est conçue pour les applications nécessitant un **traitement rapide "
+"et économe en mémoire**. Ses **optimisations bas niveau** la rendent "
+"particulièrement adaptée aux **graphiques en temps réel, à la vision par "
+"ordinateur et au développement de jeux**."
+
+#: ../PygameTools.rst:78
+msgid "6. Cython list methods"
+msgstr ""
+"6. Liste des méthodes Cython"
+
+#: ../PygameTools.rst:86
+msgid "Convert an RGBA or BGRA array to RGB by removing the alpha channel."
+msgstr ""
+"Convertit un tableau RGBA ou BGRA en RGB en supprimant le canal alpha."
+
+#: ../PygameTools.rst:88
+msgid ""
+"This function is used to process images with an alpha transparency "
+"channel and convert them to a format with no alpha, reducing a 32-bit "
+"image to a 24-bit image."
+msgstr ""
+"Cette fonction est utilisée pour traiter des images avec un canal alpha "
+"de transparence et les convertir en un format sans alpha, réduisant une "
+"image 32 bits en une image 24 bits."
+
+#: ../PygameTools.rst:91
+msgid ""
+"The function accepts a 3D numpy array or memoryview containing RGBA/BGRA "
+"data, and outputs a new 3D array with the alpha channel removed (RGB)."
+msgstr ""
+"La fonction accepte un tableau numpy 3D ou une vue mémoire contenant des "
+"données RGBA/BGRA, et renvoie un nouveau tableau 3D sans le canal alpha (RGB)."
+
+#: ../PygameTools.rst:94 ../PygameTools.rst:133 ../PygameTools.rst:181
+#: ../PygameTools.rst:408
+msgid "**Example:**"
+msgstr ""
+"**Exemple :**"
+
+#: ../PygameTools.rst:101 ../PygameTools.rst:140 ../PygameTools.rst:188
+#: ../PygameTools.rst:241 ../PygameTools.rst:304 ../PygameTools.rst:358
+#: ../PygameTools.rst:383 ../PygameTools.rst:420 ../PygameTools.rst:495
+#: ../PygameTools.rst:576 ../PygameTools.rst:633 ../PygameTools.rst:690
+#: ../PygameTools.rst:735 ../PygameTools.rst:814 ../PygameTools.rst:864
+#: ../PygameTools.rst:925 ../PygameTools.rst:976 ../PygameTools.rst:1051
+msgid "**Parameters**"
+msgstr ""
+"**Paramètres**"
+
+#: ../PygameTools.rst:103
+msgid "rgba_array"
+msgstr ""
+"rgba_array"
+
+#: ../PygameTools.rst:-1 ../PygameTools.rst:154
+msgid "numpy.ndarray or memoryview"
+msgstr ""
+"numpy.ndarray ou memoryview"
+
+#: ../PygameTools.rst:104
+msgid ""
+"A numpy array or memoryviewslice with shape (w, h, 4) and dtype uint8. "
+"The array represents an image in RGBA or BGRA format (with alpha "
+"transparency)."
+msgstr ""
+"Un tableau numpy ou un segment de mémoire avec une forme (w, h, 4) et un "
+"type de données uint8. Le tableau représente une image au format RGBA ou "
+"BGRA (avec transparence alpha)."
+
+#: ../PygameTools.rst:107 ../PygameTools.rst:152 ../PygameTools.rst:200
+#: ../PygameTools.rst:255 ../PygameTools.rst:318 ../PygameTools.rst:365
+#: ../PygameTools.rst:389 ../PygameTools.rst:436 ../PygameTools.rst:512
+#: ../PygameTools.rst:593 ../PygameTools.rst:639 ../PygameTools.rst:701
+#: ../PygameTools.rst:757 ../PygameTools.rst:822 ../PygameTools.rst:872
+#: ../PygameTools.rst:938 ../PygameTools.rst:988 ../PygameTools.rst:1078
+msgid "**Returns**"
+msgstr ""
+"**Renvoie**"
+
+#: ../PygameTools.rst:-1 ../PygameTools.rst:109 ../PygameTools.rst:515
+#: ../PygameTools.rst:595
+msgid "numpy.ndarray"
+msgstr ""
+"numpy.ndarray"
+
+#: ../PygameTools.rst:110
+msgid ""
+"A new numpy array with shape (w, h, 3) and dtype uint8, containing the "
+"RGB values (with no alpha transparency)."
+msgstr ""
+"Un nouveau tableau numpy avec une forme (w, h, 3) et un type de données "
+"uint8, contenant les valeurs RGB (sans transparence alpha)."
+
+#: ../PygameTools.rst:113 ../PygameTools.rst:158 ../PygameTools.rst:206
+#: ../PygameTools.rst:262 ../PygameTools.rst:444 ../PygameTools.rst:519
+#: ../PygameTools.rst:599 ../PygameTools.rst:646 ../PygameTools.rst:762
+#: ../PygameTools.rst:828 ../PygameTools.rst:878 ../PygameTools.rst:946
+#: ../PygameTools.rst:995 ../PygameTools.rst:1084
+msgid "**Raises**"
+msgstr ""
+"**Exceptions**"
+
+#: ../PygameTools.rst:115 ../PygameTools.rst:160 ../PygameTools.rst:208
+#: ../PygameTools.rst:268 ../PygameTools.rst:447 ../PygameTools.rst:522
+#: ../PygameTools.rst:601 ../PygameTools.rst:651 ../PygameTools.rst:764
+#: ../PygameTools.rst:830 ../PygameTools.rst:880 ../PygameTools.rst:948
+#: ../PygameTools.rst:997 ../PygameTools.rst:1086
+msgid "ValueError"
+msgstr ""
+"ValueError"
+
+#: ../PygameTools.rst:116
+msgid "If the input array does not have the expected shape (w, h, 4)."
+msgstr ""
+"Si le tableau d'entrée n'a pas la forme attendue (w, h, 4)."
+#: ../PygameTools.rst:118 ../PygameTools.rst:163 ../PygameTools.rst:166
+#: ../PygameTools.rst:212 ../PygameTools.rst:264 ../PygameTools.rst:527
+#: ../PygameTools.rst:606 ../PygameTools.rst:648 ../PygameTools.rst:768
+#: ../PygameTools.rst:952 ../PygameTools.rst:1004 ../PygameTools.rst:1091
+msgid "TypeError"
+msgstr "TypeError"
+
+#: ../PygameTools.rst:119 ../PygameTools.rst:164
+msgid "If the input array is not of type uint8."
+msgstr "Si le tableau d'entrée n'est pas de type uint8."
+
+#: ../PygameTools.rst:127
+msgid "Rescale an array (returning a new array)."
+msgstr "Redimensionner un tableau (retourne un nouveau tableau)."
+
+#: ../PygameTools.rst:129
+msgid ""
+"This function rescales a 3D RGB or RGBA array (of type uint8) to a new "
+"width and height. The output will have the shape (w2, h2, 3|4), "
+"preserving the number of channels (3 for RGB or 4 for RGBA)."
+msgstr ""
+"Cette fonction redimensionne un tableau 3D RGB ou RGBA (de type uint8) à une nouvelle largeur et hauteur. "
+"La sortie aura la forme (w2, h2, 3|4), en conservant le nombre de canaux (3 pour RGB ou 4 pour RGBA)."
+
+#: ../PygameTools.rst:142 ../PygameTools.rst:190 ../PygameTools.rst:385
+msgid "rgb_array"
+msgstr "rgb_array"
+
+#: ../PygameTools.rst:143
+msgid ""
+"A numpy array or memoryviewslice of shape (w, h, 3|4). Contains pixels in"
+" RGB or RGBA format (uint8)."
+msgstr ""
+"Un tableau numpy ou une vue mémoire de forme (w, h, 3|4). Contient des pixels "
+"au format RGB ou RGBA (uint8)."
+
+#: ../PygameTools.rst:146 ../PygameTools.rst:194
+msgid "w2"
+msgstr "w2"
+
+#: ../PygameTools.rst:-1
+msgid "int"
+msgstr "int"
+
+#: ../PygameTools.rst:147
+msgid "The width of the output array."
+msgstr "La largeur du tableau de sortie."
+
+#: ../PygameTools.rst:149 ../PygameTools.rst:197
+msgid "h2"
+msgstr "h2"
+
+#: ../PygameTools.rst:150
+msgid "The height of the output array."
+msgstr "La hauteur du tableau de sortie."
+
+#: ../PygameTools.rst:155
+msgid ""
+"A new array with the shape (w2, h2, 3|4) and type uint8. The format of "
+"the pixel data (RGB or RGBA) is the same as the input."
+msgstr ""
+"Un nouveau tableau de forme (w2, h2, 3|4) et de type uint8. Le format des "
+"données de pixels (RGB ou RGBA) est le même que celui de l'entrée."
+
+#: ../PygameTools.rst:161
+msgid ""
+"If the input array does not have a valid shape (w, h, 3|4) or the "
+"`bit_size` is not supported."
+msgstr ""
+"Si le tableau d'entrée n'a pas une forme valide (w, h, 3|4) ou si la "
+"taille de bits (`bit_size`) n'est pas prise en charge."
+
+#: ../PygameTools.rst:167
+msgid ""
+"If the input is not a numpy array or memoryviewslice, or if the data type"
+" is not uint8."
+msgstr ""
+"Si l'entrée n'est pas un tableau numpy ou une vue mémoire, ou si le type "
+"de données n'est pas uint8."
+
+#: ../PygameTools.rst:175
+msgid "Array rescale (return a new array)"
+msgstr "Redimensionnement de tableau (retourne un nouveau tableau)"
+
+#: ../PygameTools.rst:177
+msgid ""
+"This function rescales an image array in RGB or RGBA format (uint8) to a "
+"specified width (`w2`) and height (`h2`). The resulting array maintains "
+"the pixel format of the input and has a shape of (w2, h2, 3|4)."
+msgstr ""
+"Cette fonction redimensionne un tableau d'image au format RGB ou RGBA (uint8) "
+"à une largeur (`w2`) et une hauteur (`h2`) spécifiées. Le tableau résultant conserve "
+"le format des pixels de l'entrée et a une forme de (w2, h2, 3|4)."
+
+#: ../PygameTools.rst:191
+msgid ""
+"A 3D array with a shape of (w, h, 3|4) representing the pixel data of the"
+" image. The array must be in RGB (3 channels) or RGBA (4 channels) format"
+" and have a dtype of uint8."
+msgstr ""
+"Un tableau 3D de forme (w, h, 3|4) représentant les données de pixels de l'image. "
+"Le tableau doit être au format RGB (3 canaux) ou RGBA (4 canaux) et avoir un dtype uint8."
+
+#: ../PygameTools.rst:195
+msgid "The width of the resized image. Must be a positive integer greater than 0."
+msgstr "La largeur de l'image redimensionnée. Doit être un entier positif supérieur à 0."
+
+#: ../PygameTools.rst:198
+msgid ""
+"The height of the resized image. Must be a positive integer greater than "
+"0."
+msgstr "La hauteur de l'image redimensionnée. Doit être un entier positif supérieur à 0."
+
+#: ../PygameTools.rst:-1 ../PygameTools.rst:202 ../PygameTools.rst:257
+#: ../PygameTools.rst:391 ../PygameTools.rst:439 ../PygameTools.rst:641
+msgid "memoryview"
+msgstr "vue mémoire"
+
+#: ../PygameTools.rst:203
+msgid ""
+"A resized image array with shape (w2, h2, 3|4), dtype uint8, and the same"
+" pixel format (RGB or RGBA) as the input."
+msgstr ""
+"Un tableau d'image redimensionné de forme (w2, h2, 3|4), de type uint8, et "
+"ayant le même format de pixels (RGB ou RGBA) que l'entrée."
+
+#: ../PygameTools.rst:209
+msgid ""
+"If `w2` or `h2` is not greater than 0, or if the shape of `rgb_array` is "
+"not understood (must be (w, h, 3|4))."
+msgstr ""
+"Si `w2` ou `h2` n'est pas supérieur à 0, ou si la forme de `rgb_array` "
+"n'est pas reconnue (doit être (w, h, 3|4))."
+
+#: ../PygameTools.rst:213
+msgid ""
+"If `rgb_array` is not a numpy.ndarray or memoryviewslice, or if its dtype"
+" is not uint8."
+msgstr ""
+"Si `rgb_array` n'est pas un numpy.ndarray ou une vue mémoire, ou si son dtype "
+"n'est pas uint8."
+
+#: ../PygameTools.rst:221
+msgid "Create RGBA array from RGB and Alpha arrays."
+msgstr "Créer un tableau RGBA à partir des tableaux RGB et Alpha."
+
+#: ../PygameTools.rst:223
+msgid ""
+"This function generates a new RGBA memoryview array by combining an RGB "
+"array (shape (w, h, 3)) and an Alpha array (shape (w, h)). The resulting "
+"RGBA array has a shape of (w, h, 4) or (h, w, 4) if `transpose_` is set "
+"to `True`. The function is useful for creating images with transparency, "
+"such as 32-bit PNG images."
+msgstr ""
+"Cette fonction génère une nouvelle vue mémoire RGBA en combinant un tableau "
+"RGB (forme (w, h, 3)) et un tableau Alpha (forme (w, h)). Le tableau RGBA "
+"résultant a une forme de (w, h, 4) ou (h, w, 4) si `transpose_` est défini "
+"sur `True`. Cette fonction est utile pour créer des images avec transparence, "
+"comme les images PNG 32 bits."
+
+#: ../PygameTools.rst:228 ../PygameTools.rst:291 ../PygameTools.rst:348
+msgid "**Example Usage:**"
+msgstr "**Exemple d'utilisation :**"
+
+#: ../PygameTools.rst:243 ../PygameTools.rst:307 ../PygameTools.rst:692
+msgid "**rgb_**"
+msgstr "**rgb_**"
+
+#: ../PygameTools.rst:244
+msgid ""
+"A 3D array with shape (w, h, 3) containing RGB pixel values (uint8). The "
+"dimensions must match the `alpha_` array."
+msgstr ""
+"Un tableau 3D de forme (w, h, 3) contenant des valeurs de pixels RGB (uint8). "
+"Les dimensions doivent correspondre à celles du tableau `alpha_`."
+
+#: ../PygameTools.rst:247 ../PygameTools.rst:310 ../PygameTools.rst:695
+msgid "**alpha_**"
+msgstr "**alpha_**"
+
+#: ../PygameTools.rst:248
+msgid ""
+"A 2D array with shape (w, h) containing alpha (transparency) values "
+"(uint8). The dimensions must match the `rgb_` array."
+msgstr ""
+"Un tableau 2D de forme (w, h) contenant les valeurs alpha (transparence) (uint8). "
+"Les dimensions doivent correspondre à celles du tableau `rgb_`."
+
+#: ../PygameTools.rst:251
+msgid "**transpose_**"
+msgstr "**transpose_**"
+
+#: ../PygameTools.rst:-1
+msgid "bool"
+msgstr "booléen"
+
+#: ../PygameTools.rst:252
+msgid ""
+"A flag to indicate if the output array should be transposed. If `True`, "
+"the shape of the output will be (h, w, 4) instead of (w, h, 4)."
+msgstr ""
+"Un indicateur pour spécifier si le tableau de sortie doit être transposé. "
+"Si `True`, la forme de la sortie sera (h, w, 4) au lieu de (w, h, 4)."
+
+#: ../PygameTools.rst:258
+msgid ""
+"A Cython memoryview with shape (w, h, 4) or (h, w, 4) containing RGBA "
+"pixel values (uint8). This array can be directly used for image "
+"processing or converted to a numpy.ndarray."
+msgstr ""
+"Une vue mémoire Cython de forme (w, h, 4) ou (h, w, 4) contenant des valeurs "
+"de pixels RGBA (uint8). Ce tableau peut être utilisé directement pour le traitement "
+"d'image ou converti en numpy.ndarray."
+
+#: ../PygameTools.rst:265
+msgid ""
+"If `rgb_` or `alpha_` is not a numpy.ndarray or memoryviewslice, or if "
+"the data type is not uint8."
+msgstr ""
+"Si `rgb_` ou `alpha_` n'est pas un numpy.ndarray ou une vue mémoire, ou si "
+"le type de données n'est pas uint8."
+
+#: ../PygameTools.rst:269
+msgid "If the dimensions of `rgb_` and `alpha_` do not match."
+msgstr ""
+"Si les dimensions de `rgb_` et `alpha_` ne correspondent pas."
+
+#: ../PygameTools.rst:271 ../PygameTools.rst:327 ../PygameTools.rst:532
+#: ../PygameTools.rst:610 ../PygameTools.rst:668 ../PygameTools.rst:713
+#: ../PygameTools.rst:786 ../PygameTools.rst:833 ../PygameTools.rst:883
+#: ../PygameTools.rst:955 ../PygameTools.rst:1008 ../PygameTools.rst:1095
+msgid "**Notes**"
+msgstr "**Remarques**"
+
+#: ../PygameTools.rst:273
+msgid "Both input arrays (`rgb_` and `alpha_`) must be of uint8 data type."
+msgstr ""
+"Les deux tableaux d'entrée (`rgb_` et `alpha_`) doivent être de type uint8."
+
+#: ../PygameTools.rst:274
+msgid ""
+"The function is designed for high-performance processing using "
+"memoryviewslice."
+msgstr ""
+"La fonction est conçue pour un traitement haute performance en utilisant "
+"des vues mémoire."
+
+#: ../PygameTools.rst:282
+msgid "Create a 32-bit image/surface from RGB and Alpha arrays."
+msgstr "Créer une image/surface 32 bits à partir des tableaux RGB et Alpha."
+
+#: ../PygameTools.rst:284
+msgid ""
+"This function generates a 32-bit image surface (with alpha transparency) "
+"by combining:"
+msgstr ""
+"Cette fonction génère une surface d'image 32 bits (avec transparence alpha) "
+"en combinant :"
+
+#: ../PygameTools.rst:285
+msgid "An RGB array with shape (w, h, 3) and dtype uint8."
+msgstr "Un tableau RGB de forme (w, h, 3) et de type uint8."
+
+#: ../PygameTools.rst:286
+msgid "An Alpha array with shape (w, h) and dtype uint8."
+msgstr "Un tableau Alpha de forme (w, h) et de type uint8."
+
+#: ../PygameTools.rst:288
+msgid ""
+"Both input arrays must have the same width and height (w, h), and must be"
+" of type uint8. Optionally, a pre-allocated temporary array can be passed"
+" to optimize performance."
+msgstr ""
+"Les deux tableaux d'entrée doivent avoir la même largeur et hauteur (w, h), "
+"et doivent être de type uint8. Optionnellement, un tableau temporaire "
+"pré-alloué peut être passé pour optimiser les performances."
+
+#: ../PygameTools.rst:308
+msgid "A 3D array with shape (w, h, 3) containing RGB pixel values (dtype=uint8)."
+msgstr ""
+"Un tableau 3D de forme (w, h, 3) contenant des valeurs de pixels RGB (dtype=uint8)."
+
+#: ../PygameTools.rst:311
+msgid ""
+"A 2D array with shape (w, h) containing alpha (transparency) values "
+"(dtype=uint8)."
+msgstr ""
+"Un tableau 2D de forme (w, h) contenant des valeurs alpha (transparence) "
+"(dtype=uint8)."
+
+#: ../PygameTools.rst:313 ../PygameTools.rst:931
+msgid "**tmp_array_**"
+msgstr "**tmp_array_**"
+
+#: ../PygameTools.rst:-1
+msgid "numpy.ndarray or memoryview, optional"
+msgstr "numpy.ndarray ou vue mémoire, optionnel"
+
+#: ../PygameTools.rst:314
+msgid ""
+"A 3D array with shape (w, h, 4) used as a temporary array for creating "
+"the RGBA surface. Passing this pre-allocated array can speed up the "
+"process by avoiding allocation overhead."
+msgstr ""
+"Un tableau 3D de forme (w, h, 4) utilisé comme tableau temporaire pour "
+"créer la surface RGBA. Passer ce tableau pré-alloué peut accélérer "
+"le processus en évitant les coûts d'allocation."
+
+#: ../PygameTools.rst:-1 ../PygameTools.rst:321 ../PygameTools.rst:368
+#: ../PygameTools.rst:759 ../PygameTools.rst:824 ../PygameTools.rst:874
+msgid "pygame.Surface"
+msgstr "pygame.Surface"
+
+#: ../PygameTools.rst:322
+msgid ""
+"A 32-bit pygame surface with RGBA values. Use `convert_alpha()` to "
+"enhance performance when rendering the surface. Note: `convert_alpha()` "
+"requires the video display to be initialized."
+msgstr ""
+"Une surface pygame 32 bits avec des valeurs RGBA. Utilisez `convert_alpha()` "
+"pour améliorer les performances lors du rendu de la surface. "
+"Remarque : `convert_alpha()` nécessite que l'affichage vidéo soit initialisé."
+#: ../PygameTools.rst:330
+msgid "The input arrays must have compatible shapes and types."
+msgstr "Les tableaux d'entrée doivent avoir des formes et types compatibles."
+
+#: ../PygameTools.rst:331
+msgid "For optimal performance:"
+msgstr "Pour des performances optimales :"
+
+#: ../PygameTools.rst:332
+msgid "Use pygame's `convert_alpha()` method."
+msgstr "Utilisez la méthode `convert_alpha()` de pygame."
+
+#: ../PygameTools.rst:333
+msgid "Ensure the video display is initialized before calling `convert_alpha()`."
+msgstr "Assurez-vous que l'affichage vidéo est initialisé avant d'appeler `convert_alpha()`."
+
+#: ../PygameTools.rst:342
+msgid ""
+"Convert a 2D alpha array (shape w x h, type uint8) into a 24-bit Pygame "
+"surface (RGB)."
+msgstr ""
+"Convertir un tableau alpha 2D (forme w x h, type uint8) en une surface "
+"Pygame 24 bits (RGB)."
+
+#: ../PygameTools.rst:344
+msgid ""
+"This function takes a 2D alpha array and creates a new 24-bit surface "
+"(RGB). Each pixel in the output surface has its R, G, and B channels set "
+"to the corresponding alpha value from the input array."
+msgstr ""
+"Cette fonction prend un tableau alpha 2D et crée une nouvelle surface "
+"24 bits (RGB). Chaque pixel de la surface de sortie a ses canaux R, G et B "
+"définis sur la valeur alpha correspondante du tableau d'entrée."
+
+#: ../PygameTools.rst:361
+msgid "array"
+msgstr "tableau"
+
+#: ../PygameTools.rst:362
+msgid "A 2D numpy array or memoryview with shape (w, h) and dtype uint8."
+msgstr "Un tableau numpy 2D ou une vue mémoire de forme (w, h) et de type uint8."
+
+#: ../PygameTools.rst:369
+msgid ""
+"A 24-bit Pygame surface (RGB). For better in-game performance, use "
+"`pygame.Surface.convert()` after creation."
+msgstr ""
+"Une surface Pygame 24 bits (RGB). Pour de meilleures performances en jeu, "
+"utilisez `pygame.Surface.convert()` après la création."
+
+#: ../PygameTools.rst:378
+msgid "Create a C-buffer from a 3D numpy array."
+msgstr "Créer un tampon C à partir d'un tableau numpy 3D."
+
+#: ../PygameTools.rst:380
+msgid ""
+"This function takes a 3D numpy array representing an RGB or RGBA image "
+"and converts it into a 1D C-style buffer. The numpy array should have a "
+"shape of (width, height, 3|4) with uint8 type."
+msgstr ""
+"Cette fonction prend un tableau numpy 3D représentant une image RGB ou RGBA "
+"et le convertit en un tampon 1D de style C. Le tableau numpy doit avoir "
+"une forme (largeur, hauteur, 3|4) avec un type uint8."
+
+#: ../PygameTools.rst:386
+msgid ""
+"A numpy array of shape (w, h, 3|4), representing an RGB or RGBA image. "
+"The last dimension (3 or 4) corresponds to the color channels (RGB or "
+"RGBA)."
+msgstr ""
+"Un tableau numpy de forme (w, h, 3|4), représentant une image RGB ou RGBA. "
+"La dernière dimension (3 ou 4) correspond aux canaux de couleur (RGB ou RGBA)."
+
+#: ../PygameTools.rst:392
+msgid ""
+"A memoryview slice (C buffer) containing the RGB or RGBA pixel values. "
+"This is a 1D array that can be accessed directly in C."
+msgstr ""
+"Une vue mémoire (tampon C) contenant les valeurs de pixels RGB ou RGBA. "
+"C'est un tableau 1D accessible directement en C."
+
+#: ../PygameTools.rst:402
+msgid ""
+"Convert a 1D array (buffer) of uint8 data type into a 3D numpy array "
+"(copy)."
+msgstr ""
+"Convertir un tableau 1D (tampon) de type uint8 en un tableau numpy 3D (copie)."
+
+#: ../PygameTools.rst:404
+msgid ""
+"This function takes a 1D buffer of image data (such as RGB or RGBA "
+"values) and reconstructs it into a 3D array (numpy array) of shape "
+"(width, height, bit_size), where bit_size can be 3 (RGB) or 4 (RGBA)."
+msgstr ""
+"Cette fonction prend un tampon 1D de données d'image (comme des valeurs "
+"RGB ou RGBA) et le reconstruit en un tableau 3D (numpy) de forme "
+"(largeur, hauteur, bit_size), où bit_size peut être 3 (RGB) ou 4 (RGBA)."
+
+#: ../PygameTools.rst:423
+msgid "c_buffer"
+msgstr "c_buffer"
+
+#: ../PygameTools.rst:424
+msgid ""
+"The input 1D buffer array (as a memoryview) containing pixel values in "
+"uint8 format."
+msgstr ""
+"Le tableau tampon 1D d'entrée (sous forme de vue mémoire) contenant les "
+"valeurs de pixels au format uint8."
+
+#: ../PygameTools.rst:426 ../PygameTools.rst:498 ../PygameTools.rst:578
+msgid "width"
+msgstr "largeur"
+
+#: ../PygameTools.rst:427
+msgid "The width of the resulting 3D array (image width in pixels)."
+msgstr "La largeur du tableau 3D résultant (largeur de l'image en pixels)."
+
+#: ../PygameTools.rst:429 ../PygameTools.rst:501 ../PygameTools.rst:581
+msgid "height"
+msgstr "hauteur"
+#: ../PygameTools.rst:430
+msgid "The height of the resulting 3D array (image height in pixels)."
+msgstr "La hauteur du tableau 3D résultant (hauteur de l'image en pixels)."
+
+#: ../PygameTools.rst:432
+msgid "bit_size"
+msgstr "taille_du_bit"
+
+#: ../PygameTools.rst:433
+msgid "The number of channels in the image. Typically 3 (RGB) or 4 (RGBA)."
+msgstr "Le nombre de canaux dans l'image. Typiquement 3 (RGB) ou 4 (RGBA)."
+
+#: ../PygameTools.rst:440
+msgid ""
+"A memoryview slice (3D array) of shape (width, height, bit_size), "
+"containing the RGB or RGBA pixel values."
+msgstr ""
+"Une tranche de mémoire (tableau 3D) de forme (largeur, hauteur, taille_du_bit), "
+"contenant les valeurs des pixels RGB ou RGBA."
+
+#: ../PygameTools.rst:448
+msgid "If `bit_size == 0`, as it's an invalid value for image data."
+msgstr "Si `taille_du_bit == 0`, car c'est une valeur invalide pour les données d'image."
+
+#: ../PygameTools.rst:457
+msgid "Transpose rows & columns of a BGR image buffer."
+msgstr "Transposez les lignes et les colonnes d'un tampon d'image BGR."
+
+#: ../PygameTools.rst:459
+msgid ""
+"This function transposes a BGR image by rearranging the pixel data from "
+"the input `buffer` into the `transposed_buffer`. It assumes the image is "
+"represented as a 1D array of BGR pixels in row-major order."
+msgstr ""
+"Cette fonction transpose une image BGR en réarrangeant les données des pixels du "
+"`tampon` d'entrée dans le `tampon_transposé`. Elle suppose que l'image est "
+"représentée sous forme de tableau 1D de pixels BGR dans l'ordre ligne-principal."
+
+#: ../PygameTools.rst:463
+msgid ""
+"This is equivalent to performing a transpose operation on the pixel data:"
+" transposing rows and columns of BGR blocks."
+msgstr ""
+"Cela revient à effectuer une opération de transposition sur les données des pixels :"
+" transposer les lignes et les colonnes des blocs BGR."
+
+#: ../PygameTools.rst:466 ../PygameTools.rst:554
+msgid "**Example Input/Output:**"
+msgstr "**Exemple d'entrée/sortie :**"
+
+#: ../PygameTools.rst:468
+msgid "BGR image's pixels represented as: .. code-block::"
+msgstr "Les pixels de l'image BGR représentés comme : .. code-block::"
+
+#: ../PygameTools.rst:475
+msgid "After transpose:"
+msgstr "Après la transposition :"
+
+#: ../PygameTools.rst:477
+msgid "output image's pixels represented as: .. code-block::"
+msgstr "Les pixels de l'image de sortie représentés comme : .. code-block::"
+
+#: ../PygameTools.rst:485 ../PygameTools.rst:804 ../PygameTools.rst:854
+#: ../PygameTools.rst:909 ../PygameTools.rst:1016 ../PygameTools.rst:1103
+msgid "**Example Usage**"
+msgstr "**Exemple d'utilisation**"
+
+#: ../PygameTools.rst:499
+msgid "The width of the video frame. Must be greater than 0."
+msgstr "La largeur de la trame vidéo. Doit être supérieure à 0."
+
+#: ../PygameTools.rst:502
+msgid "The height of the video frame. Must be greater than 0."
+msgstr "La hauteur de la trame vidéo. Doit être supérieure à 0."
+
+#: ../PygameTools.rst:504 ../PygameTools.rst:584
+msgid "buffer"
+msgstr "tampon"
+
+#: ../PygameTools.rst:505
+msgid "A 1D memoryview containing the pixel data (typically in BGR format)."
+msgstr "Une vue mémoire 1D contenant les données des pixels (généralement au format BGR)."
+
+#: ../PygameTools.rst:507
+msgid "transposed_buffer"
+msgstr "tampon_transposé"
+
+#: ../PygameTools.rst:-1
+msgid "memoryview, optional"
+msgstr "vue_mémoire, optionnelle"
+
+#: ../PygameTools.rst:508
+msgid ""
+"An optional 1D memoryview to store the transposed pixel data. If not "
+"provided, a new buffer will be created."
+msgstr ""
+"Une vue mémoire 1D optionnelle pour stocker les données des pixels transposées. "
+"Si elle n'est pas fournie, un nouveau tampon sera créé."
+
+#: ../PygameTools.rst:516
+msgid "A NumPy array containing the transposed pixel data."
+msgstr "Un tableau NumPy contenant les données des pixels transposées."
+
+#: ../PygameTools.rst:523
+msgid ""
+"If `width` or `height` is less than or equal to 0. If `buffer` is None or"
+" its size does not match `width * height * 3`. If `transposed_buffer` is "
+"provided but its size does not match `width * height * 3`."
+msgstr ""
+"Si `largeur` ou `hauteur` est inférieur ou égal à 0. Si `tampon` est None ou "
+"si sa taille ne correspond pas à `largeur * hauteur * 3`. Si `tampon_transposé` est "
+"fourni mais que sa taille ne correspond pas à `largeur * hauteur * 3`."
+
+#: ../PygameTools.rst:528
+msgid ""
+"If `buffer` or `transposed_buffer` is not a memoryview or NumPy array. If"
+" `buffer` is a NumPy array and not contiguous."
+msgstr ""
+"Si `tampon` ou `tampon_transposé` n'est pas une vue mémoire ou un tableau NumPy. "
+"Si `tampon` est un tableau NumPy et n'est pas contigu."
+
+#: ../PygameTools.rst:535
+msgid ""
+"This function assumes the buffer data is in BGR format and performs "
+"transpose."
+msgstr ""
+"Cette fonction suppose que les données du tampon sont au format BGR et effectue "
+"la transposition."
+
+#: ../PygameTools.rst:536
+msgid "The operation is done in-place if a `transposed_buffer` is provided."
+msgstr "L'opération est effectuée en place si un `tampon_transposé` est fourni."
+
+#: ../PygameTools.rst:545
+msgid "Perform flipping of a BGRA image buffer."
+msgstr "Effectuer un retournement d'un tampon d'image BGRA."
+
+#: ../PygameTools.rst:547
+msgid ""
+"This core function flips a BGRA image by rearranging the pixel data from "
+"the input `buffer` into the `flipped_buffer`. It assumes the image is "
+"represented as a 1D array of BGRA pixels in row-major order."
+msgstr ""
+"Cette fonction principale retourne une image BGRA en réarrangeant les données des pixels du "
+"`tampon` d'entrée dans le `tampon_retourné`. Elle suppose que l'image est "
+"représentée sous forme de tableau 1D de pixels BGRA dans l'ordre ligne-principal."
+
+#: ../PygameTools.rst:551
+msgid ""
+"This is equivalent to performing a transpose operation on the pixel data:"
+" flipping rows and columns of BGRA blocks."
+msgstr ""
+"Cela revient à effectuer une opération de transposition sur les données des pixels :"
+" retourner les lignes et les colonnes des blocs BGRA."
+
+#: ../PygameTools.rst:556
+msgid "Input buffer: .. code-block::"
+msgstr "Tampon d'entrée : .. code-block::"
+
+#: ../PygameTools.rst:565
+msgid "After flipping:"
+msgstr "Après retournement :"
+
+#: ../PygameTools.rst:567
+msgid "output buffer: .. code-block::"
+msgstr "Tampon de sortie : .. code-block::"
+
+#: ../PygameTools.rst:579
+msgid "The width of the image in pixels."
+msgstr "La largeur de l'image en pixels."
+
+#: ../PygameTools.rst:582
+msgid "The height of the image in pixels."
+msgstr "La hauteur de l'image en pixels."
+
+#: ../PygameTools.rst:585
+msgid ""
+"The input 1D buffer containing BGRA pixel data. The buffer size must be "
+"`width * height * 4` to accommodate all pixels in the image."
+msgstr ""
+"Le tampon d'entrée 1D contenant les données des pixels BGRA. La taille du tampon doit être "
+"`largeur * hauteur * 4` pour contenir tous les pixels de l'image."
+
+#: ../PygameTools.rst:588
+msgid "flipped_buffer"
+msgstr "tampon_retourné"
+
+#: ../PygameTools.rst:589
+msgid ""
+"The output 1D buffer to store the flipped BGRA data. The size must also "
+"be `width * height * 4`."
+msgstr ""
+"Le tampon de sortie 1D pour stocker les données BGRA retournées. La taille doit également "
+"être `largeur * hauteur * 4`."
+
+#: ../PygameTools.rst:596
+msgid ""
+"A 1D NumPy array containing the flipped BGRA pixel data, stored in row-"
+"major order."
+msgstr ""
+"Un tableau NumPy 1D contenant les données des pixels BGRA retournées, stockées dans l'ordre ligne-principal."
+
+#: ../PygameTools.rst:602
+msgid ""
+"If `width` or `height` is less than or equal to 0. If `buffer` is not 1D "
+"or its size does not match `width * height * 4`. If `flipped_buffer` is "
+"not 1D or its size does not match `width * height * 4`."
+msgstr ""
+"Si `largeur` ou `hauteur` est inférieur ou égal à 0. Si `tampon` n'est pas 1D "
+"ou si sa taille ne correspond pas à `largeur * hauteur * 4`. Si `tampon_retourné` n'est "
+"pas 1D ou si sa taille ne correspond pas à `largeur * hauteur * 4`."
+
+#: ../PygameTools.rst:607
+msgid "If `buffer` or `flipped_buffer` is not a memoryview or NumPy array."
+msgstr "Si `tampon` ou `tampon_retourné` n'est pas une vue mémoire ou un tableau NumPy."
+
+#: ../PygameTools.rst:612
+msgid ""
+"The flipping operation is performed in parallel using OpenMP's `prange` "
+"for better performance on multi-threaded systems."
+msgstr ""
+"L'opération de retournement est effectuée en parallèle en utilisant `prange` d'OpenMP "
+"pour de meilleures performances sur des systèmes multi-thread."
+
+#: ../PygameTools.rst:614
+msgid ""
+"If `flipped_buffer` is not provided, a new writable buffer is allocated "
+"and returned."
+msgstr ""
+"Si `tampon_retourné` n'est pas fourni, un nouveau tampon réécrivable est alloué "
+"et retourné."
+
+#: ../PygameTools.rst:616
+msgid "**ChatGPT Collaboration:**"
+msgstr "**Collaboration ChatGPT :**"
+
+#: ../PygameTools.rst:617
+msgid "This code was enhanced with the assistance of **ChatGPT**."
+msgstr "Ce code a été amélioré avec l'aide de **ChatGPT**."
+
+#: ../PygameTools.rst:626
+msgid ""
+"Convert a 2D memoryview or a numpy.array into a black-and-white mask "
+"alpha array."
+msgstr ""
+"Convertir une vue mémoire 2D ou un numpy.array en un tableau de masque "
+"alpha noir et blanc."
+
+#: ../PygameTools.rst:628
+msgid ""
+"This function processes a 2D memoryview of type `uint8` (values ranging "
+"from 0 to 255) and converts it into a binary black-and-white mask. Pixels"
+" with a value of `0` are converted to `0` (black), while pixels with a "
+"value greater than `0` are converted to `255` (white). The function "
+"returns a memoryview, not a NumPy array."
+msgstr ""
+"Cette fonction traite une vue mémoire 2D de type `uint8` (valeurs allant "
+"de 0 à 255) et la convertit en un masque binaire noir et blanc. Les pixels "
+"avec une valeur de `0` sont convertis en `0` (noir), tandis que les pixels "
+"avec une valeur supérieure à `0` sont convertis en `255` (blanc). La fonction "
+"retourne une vue mémoire, pas un tableau NumPy."
+
+#: ../PygameTools.rst:635 ../PygameTools.rst:698
+msgid "**mask_alpha_**"
+msgstr "**masque_alpha_**"
+
+#: ../PygameTools.rst:636
+msgid ""
+"A 2D memoryview of shape (W, H) and type `uint8`. Each element represents"
+" an alpha value ranging from 0 (fully transparent) to 255 (fully opaque)."
+msgstr ""
+"Une vue mémoire 2D de forme (L, H) et de type `uint8`. Chaque élément représente"
+" une valeur alpha allant de 0 (complètement transparent) à 255 (complètement opaque)."
+
+#: ../PygameTools.rst:642
+msgid ""
+"A 2D memoryview of shape (W, H) and type `uint8`, where each element is "
+"either: - `0` (black): Corresponds to pixels with an original value of "
+"`0`. - `255` (white): Corresponds to pixels with an original value "
+"greater than `0`."
+msgstr ""
+"Une vue mémoire 2D de forme (L, H) et de type `uint8`, où chaque élément est "
+"soit : - `0` (noir) : Correspond à des pixels ayant une valeur originale de "
+"`0`. - `255` (blanc) : Correspond à des pixels ayant une valeur originale "
+"supérieure à `0`."
+
+#: ../PygameTools.rst:649
+msgid "If the input `mask_alpha_` is not a `numpy.ndarray` or a memoryview slice."
+msgstr "Si l'entrée `masque_alpha_` n'est pas un `numpy.ndarray` ou une tranche de vue mémoire."
+#: ../PygameTools.rst:652
+msgid ""
+"If: - `mask_alpha_` is not of type `uint8`. - `mask_alpha_` does not have"
+" exactly 2 dimensions."
+msgstr ""
+"Si : - `masque_alpha_` n'est pas de type `uint8`. - `masque_alpha_` n'a pas "
+"exactement 2 dimensions."
+
+#: ../PygameTools.rst:656 ../PygameTools.rst:706 ../PygameTools.rst:771
+msgid "**Example**"
+msgstr "**Exemple**"
+
+#: ../PygameTools.rst:658
+msgid ""
+"**Loading and converting an image's alpha channel to a binary mask:** .. "
+"code-block::"
+msgstr ""
+"**Chargement et conversion du canal alpha d'une image en un masque binaire :** .. "
+"code-block::"
+
+#: ../PygameTools.rst:670
+msgid ""
+"This function modifies the input memoryview `mask_alpha_` in place for "
+"performance reasons."
+msgstr ""
+"Cette fonction modifie la vue mémoire d'entrée `masque_alpha_` sur place pour "
+"des raisons de performance."
+
+#: ../PygameTools.rst:671
+msgid ""
+"It operates on Cython memoryviews directly, which are more efficient than"
+" NumPy arrays for this type of low-level operation."
+msgstr ""
+"Elle fonctionne directement sur des vues mémoire Cython, qui sont plus efficaces que "
+"les tableaux NumPy pour ce type d'opération de bas niveau."
+
+#: ../PygameTools.rst:673
+msgid ""
+"The operation is performed in parallel using OpenMP's `prange` for "
+"improved performance."
+msgstr ""
+"L'opération est effectuée en parallèle en utilisant `prange` d'OpenMP pour "
+"améliorer les performances."
+
+#: ../PygameTools.rst:674
+msgid "Ensure that `mask_alpha_` is writable before calling this function."
+msgstr "Assurez-vous que `masque_alpha_` est réécrivable avant d'appeler cette fonction."
+
+#: ../PygameTools.rst:683
+msgid "Apply a mask to an image split into its respective RGB & alpha values."
+msgstr "Appliquez un masque à une image divisée en ses valeurs RGB et alpha respectives."
+
+#: ../PygameTools.rst:685
+msgid ""
+"This method creates a new alpha channel by combining the original alpha "
+"transparency with the mask alpha. It generates a 32-bit image with a new "
+"alpha channel for fast blitting. The new surface is already formatted for"
+" optimal performance, so there is no need to use the `convert_alpha` "
+"method from Pygame."
+msgstr ""
+"Cette méthode crée un nouveau canal alpha en combinant la transparence alpha "
+"originale avec le masque alpha. Elle génère une image 32 bits avec un nouveau "
+"canal alpha pour un blit rapide. La nouvelle surface est déjà formatée pour "
+"des performances optimales, il n'est donc pas nécessaire d'utiliser la méthode `convert_alpha` "
+"de Pygame."
+
+#: ../PygameTools.rst:693
+msgid ""
+"A 3D array with shape (w, h, 3) and type `uint8`, representing the RGB "
+"values of the image."
+msgstr ""
+"Un tableau 3D de forme (w, h, 3) et de type `uint8`, représentant les valeurs RGB "
+"de l'image."
+
+#: ../PygameTools.rst:696
+msgid ""
+"A 2D array with shape (w, h) and type `uint8`, representing the alpha "
+"(transparency) values of the image."
+msgstr ""
+"Un tableau 2D de forme (w, h) et de type `uint8`, représentant les valeurs alpha "
+"(transparence) de l'image."
+
+#: ../PygameTools.rst:699
+msgid ""
+"A 2D array with shape (w, h) and type `uint8`, representing the mask's "
+"alpha values to apply."
+msgstr ""
+"Un tableau 2D de forme (w, h) et de type `uint8`, représentant les valeurs alpha du masque à appliquer."
+
+#: ../PygameTools.rst:703
+msgid "object"
+msgstr "objet"
+
+#: ../PygameTools.rst:704
+msgid ""
+"A 32-bit Pygame surface with a new alpha channel combining the original "
+"transparency and the mask alpha."
+msgstr ""
+"Une surface Pygame 32 bits avec un nouveau canal alpha combinant la transparence "
+"originale et le masque alpha."
+
+#: ../PygameTools.rst:708
+msgid ""
+"**Applying a mask to an image and creating a new alpha channel:** .. "
+"code-block::"
+msgstr ""
+"**Application d'un masque à une image et création d'un nouveau canal alpha :** .. "
+"code-block::"
+
+#: ../PygameTools.rst:715
+msgid "The input arrays must have the same dimensions (w, h)."
+msgstr "Les tableaux d'entrée doivent avoir les mêmes dimensions (w, h)."
+
+#: ../PygameTools.rst:716
+msgid "The function assumes that all arrays are of type `uint8`."
+msgstr "La fonction suppose que tous les tableaux sont de type `uint8`."
+
+#: ../PygameTools.rst:717
+msgid ""
+"The resulting surface is already compatible for fast blitting and does "
+"not require further processing."
+msgstr ""
+"La surface résultante est déjà compatible pour un blit rapide et ne nécessite "
+"pas de traitement supplémentaire."
+
+#: ../PygameTools.rst:726
+msgid ""
+"Combine separate red, green, blue, and alpha channels into a single "
+"32-bit Pygame surface."
+msgstr ""
+"Combinez les canaux rouge, vert, bleu et alpha séparés en une seule "
+"surface Pygame 32 bits."
+
+#: ../PygameTools.rst:728
+msgid ""
+"This function takes four 2D arrays representing the red, green, blue, and"
+" alpha channels of an image, and combines them into a single 32-bit RGBA "
+"surface. The result is a surface that supports transparency and is ready "
+"for rendering in Pygame."
+msgstr ""
+"Cette fonction prend quatre tableaux 2D représentant les canaux rouge, vert, bleu et "
+"alpha d'une image, et les combine en une seule surface 32 bits RGBA. Le résultat est une "
+"surface qui prend en charge la transparence et est prête pour le rendu dans Pygame."
+
+#: ../PygameTools.rst:732
+msgid ""
+"To ensure optimal performance and proper alpha transparency handling, use"
+" `pygame.convert_alpha()` after creating the surface."
+msgstr ""
+"Pour garantir des performances optimales et une gestion correcte de la transparence alpha, utilisez "
+" `pygame.convert_alpha()` après avoir créé la surface."
+
+#: ../PygameTools.rst:737
+msgid "red_channel"
+msgstr "canal_rouge"
+
+#: ../PygameTools.rst:738
+msgid ""
+"A 2D array or memoryview with shape (w, h) and type `uint8`, representing"
+" the red channel values for each pixel. Values range from 0 to 255."
+msgstr ""
+"Un tableau 2D ou une vue mémoire avec la forme (w, h) et de type `uint8`, représentant "
+"les valeurs du canal rouge pour chaque pixel. Les valeurs varient de 0 à 255."
+
+#: ../PygameTools.rst:741
+msgid "green_channel"
+msgstr "canal_vert"
+
+#: ../PygameTools.rst:742
+msgid ""
+"A 2D array or memoryview with shape (w, h) and type `uint8`, representing"
+" the green channel values for each pixel. Values range from 0 to 255."
+msgstr ""
+"Un tableau 2D ou une vue mémoire avec la forme (w, h) et de type `uint8`, représentant "
+"les valeurs du canal vert pour chaque pixel. Les valeurs varient de 0 à 255."
+
+#: ../PygameTools.rst:745
+msgid "blue_channel"
+msgstr "canal_bleu"
+
+#: ../PygameTools.rst:746
+msgid ""
+"A 2D array or memoryview with shape (w, h) and type `uint8`, representing"
+" the blue channel values for each pixel. Values range from 0 to 255."
+msgstr ""
+"Un tableau 2D ou une vue mémoire avec la forme (w, h) et de type `uint8`, représentant "
+"les valeurs du canal bleu pour chaque pixel. Les valeurs varient de 0 à 255."
+
+#: ../PygameTools.rst:749
+msgid "alpha_channel"
+msgstr "canal_alpha"
+
+#: ../PygameTools.rst:750
+msgid ""
+"A 2D array or memoryview with shape (w, h) and type `uint8`, representing"
+" the alpha (transparency) channel values for each pixel. Values range "
+"from 0 to 255."
+msgstr ""
+"Un tableau 2D ou une vue mémoire avec la forme (w, h) et de type `uint8`, représentant "
+"les valeurs du canal alpha (transparence) pour chaque pixel. Les valeurs varient "
+"de 0 à 255."
+
+#: ../PygameTools.rst:753
+msgid "output_rgba_buffer"
+msgstr "tampon_rgba_sortie"
+
+#: ../PygameTools.rst:-1
+msgid "numpy.ndarray, optional"
+msgstr "numpy.ndarray, optionnel"
+
+#: ../PygameTools.rst:754
+msgid ""
+"A temporary 3D array or memoryview with shape (h, w, 4) and type `uint8` "
+"for storing intermediate RGBA data. If not provided, a new array will be "
+"allocated."
+msgstr ""
+"Un tableau 3D temporaire ou une vue mémoire avec la forme (h, w, 4) et de type `uint8` "
+"pour stocker les données intermédiaires RGBA. Si non fourni, un nouveau tableau sera "
+"alloué."
+
+#: ../PygameTools.rst:760
+msgid ""
+"A 32-bit Pygame surface in RGBA format, suitable for rendering and "
+"supporting alpha transparency."
+msgstr ""
+"Une surface Pygame 32 bits au format RGBA, adaptée pour le rendu et "
+"prenant en charge la transparence alpha."
+
+#: ../PygameTools.rst:765
+msgid "If the input channel arrays or memoryviews do not have the same shape."
+msgstr "Si les tableaux d'entrée ou les vues mémoire n'ont pas la même forme."
+
+#: ../PygameTools.rst:766
+msgid "If `output_rgba_buffer` has an incorrect shape."
+msgstr "Si `tampon_rgba_sortie` a une forme incorrecte."
+
+#: ../PygameTools.rst:769
+msgid ""
+"If any of the input arrays or memoryviews is not a 2D NumPy array of type"
+" `uint8`."
+msgstr ""
+"Si l'un des tableaux d'entrée ou des vues mémoire n'est pas un tableau 2D NumPy de type "
+" `uint8`."
+#: ../PygameTools.rst:773
+msgid "**Creating a surface from RGBA channels:** .. code-block::"
+msgstr "**Créer une surface à partir des canaux RGBA :** .. code-block::"
+
+#: ../PygameTools.rst:788
+msgid ""
+"This function works with both NumPy arrays and memoryviews, offering "
+"efficient data processing."
+msgstr ""
+"Cette fonction fonctionne à la fois avec des tableaux NumPy et des vues mémoire, offrant "
+"un traitement efficace des données."
+
+#: ../PygameTools.rst:789
+msgid ""
+"For proper transparency handling, use `pygame.Surface.convert_alpha()` on"
+" the returned surface."
+msgstr ""
+"Pour une gestion correcte de la transparence, utilisez `pygame.Surface.convert_alpha()` sur "
+"la surface retournée."
+
+#: ../PygameTools.rst:798
+msgid "Compute the pixel-wise difference between two 24-bit Pygame surfaces."
+msgstr "Calculer la différence pixel par pixel entre deux surfaces Pygame 24 bits."
+
+#: ../PygameTools.rst:800
+msgid ""
+"This function takes two Pygame surfaces in 24-bit format (PNG) and "
+"calculates the absolute difference between their RGB values. The output "
+"is a new 24-bit Pygame surface where each pixel represents the difference"
+" between the corresponding pixels in `surface1` and `surface2`."
+msgstr ""
+"Cette fonction prend deux surfaces Pygame au format 24 bits (PNG) et "
+"calcule la différence absolue entre leurs valeurs RGB. Le résultat "
+"est une nouvelle surface Pygame 24 bits où chaque pixel représente la différence"
+" entre les pixels correspondants de `surface1` et `surface2`."
+
+#: ../PygameTools.rst:816 ../PygameTools.rst:866
+msgid "surface1"
+msgstr "surface1"
+
+#: ../PygameTools.rst:817
+msgid "A 24-bit Pygame surface representing the first image."
+msgstr "Une surface Pygame 24 bits représentant la première image."
+
+#: ../PygameTools.rst:819 ../PygameTools.rst:869
+msgid "surface2"
+msgstr "surface2"
+
+#: ../PygameTools.rst:820
+msgid "A 24-bit Pygame surface representing the second image."
+msgstr "Une surface Pygame 24 bits représentant la deuxième image."
+
+#: ../PygameTools.rst:825
+msgid ""
+"A new 24-bit Pygame surface where pixel values indicate the absolute "
+"difference between `surface1` and `surface2`."
+msgstr ""
+"Une nouvelle surface Pygame 24 bits où les valeurs des pixels indiquent la différence absolue "
+"entre `surface1` et `surface2`."
+
+#: ../PygameTools.rst:831
+msgid ""
+"If the input surfaces do not have the same size or are not in 24-bit "
+"format."
+msgstr ""
+"Si les surfaces d'entrée n'ont pas la même taille ou ne sont pas au format 24 bits."
+
+#: ../PygameTools.rst:835 ../PygameTools.rst:885
+msgid ""
+"**Incompatible with JPEG images**, as JPEG compression alters pixel "
+"values due to its lossy nature."
+msgstr ""
+"**Incompatible avec les images JPEG**, car la compression JPEG modifie les valeurs des pixels "
+"en raison de sa nature avec perte."
+
+#: ../PygameTools.rst:837
+msgid ""
+"Both input surfaces **must** have identical dimensions and be in 24-bit "
+"mode."
+msgstr ""
+"Les deux surfaces d'entrée **doivent** avoir des dimensions identiques et être en mode 24 bits."
+
+#: ../PygameTools.rst:838
+msgid "The output surface does not include an alpha channel (transparency)."
+msgstr "La surface de sortie ne comprend pas de canal alpha (transparence)."
+
+#: ../PygameTools.rst:839
+msgid ""
+"For faster rendering, use `pygame.Surface.convert()` on the returned "
+"surface."
+msgstr ""
+"Pour un rendu plus rapide, utilisez `pygame.Surface.convert()` sur la surface retournée."
+
+#: ../PygameTools.rst:847
+msgid "Compute the pixel-wise difference between two 32-bit Pygame surfaces."
+msgstr "Calculer la différence pixel par pixel entre deux surfaces Pygame 32 bits."
+
+#: ../PygameTools.rst:849
+msgid ""
+"This function compares two Pygame surfaces in 32-bit format (PNG with an "
+"alpha channel) and calculates the absolute difference between their RGBA "
+"values. The output is a new 32-bit Pygame surface where each pixel "
+"represents the difference between the corresponding pixels in `surface1` "
+"and `surface2`."
+msgstr ""
+"Cette fonction compare deux surfaces Pygame au format 32 bits (PNG avec un "
+"canal alpha) et calcule la différence absolue entre leurs valeurs RGBA. "
+"Le résultat est une nouvelle surface Pygame 32 bits où chaque pixel "
+"représente la différence entre les pixels correspondants de `surface1` "
+"et `surface2`."
+
+#: ../PygameTools.rst:867
+msgid "A 32-bit Pygame surface (RGBA) representing the first image."
+msgstr "Une surface Pygame 32 bits (RGBA) représentant la première image."
+
+#: ../PygameTools.rst:870
+msgid "A 32-bit Pygame surface (RGBA) representing the second image."
+msgstr "Une surface Pygame 32 bits (RGBA) représentant la deuxième image."
+
+#: ../PygameTools.rst:875
+msgid ""
+"A new 32-bit Pygame surface where pixel values indicate the absolute "
+"difference between `surface1` and `surface2`, including differences in "
+"transparency."
+msgstr ""
+"Une nouvelle surface Pygame 32 bits où les valeurs des pixels indiquent la différence absolue "
+"entre `surface1` et `surface2`, y compris les différences de transparence."
+
+#: ../PygameTools.rst:881
+msgid ""
+"If the input surfaces do not have the same size or are not in 32-bit "
+"format."
+msgstr ""
+"Si les surfaces d'entrée n'ont pas la même taille ou ne sont pas au format 32 bits."
+
+#: ../PygameTools.rst:887
+msgid ""
+"Both input surfaces **must** have identical dimensions and be in 32-bit "
+"mode."
+msgstr ""
+"Les deux surfaces d'entrée **doivent** avoir des dimensions identiques et être en mode 32 bits."
+
+#: ../PygameTools.rst:888
+msgid ""
+"The output surface includes an alpha channel, preserving transparency "
+"differences."
+msgstr ""
+"La surface de sortie inclut un canal alpha, préservant les différences de transparence."
+
+#: ../PygameTools.rst:889
+msgid ""
+"For faster rendering, use `pygame.Surface.convert_alpha()` on the "
+"returned surface."
+msgstr ""
+"Pour un rendu plus rapide, utilisez `pygame.Surface.convert_alpha()` sur "
+"la surface retournée."
+
+#: ../PygameTools.rst:897
+msgid "Convert a 2D indexed array (int32) into a 3D RGB array (uint8)."
+msgstr ""
+"Convertir un tableau indexé 2D (int32) en un tableau RGB 3D (uint8)."
+
+#: ../PygameTools.rst:899
+msgid ""
+"This function transforms a 2D array where each element is a 32-bit "
+"integer representing an RGB pixel into a 3D NumPy array, where each "
+"pixel's red, green, and blue channels are stored separately as uint8 "
+"values."
+msgstr ""
+"Cette fonction transforme un tableau 2D où chaque élément est un entier 32 bits représentant "
+"un pixel RGB en un tableau NumPy 3D, où les canaux rouge, vert et bleu de chaque pixel sont "
+"stockés séparément sous forme de valeurs uint8."
+
+#: ../PygameTools.rst:903
+msgid "**Purpose**"
+msgstr "**Objectif**"
+
+#: ../PygameTools.rst:905
+msgid ""
+"This is the inverse of `pygame.surfarray.map_array()`, which converts a "
+"3D RGB array into a 2D int32 pixel map. It is useful for reconstructing "
+"RGB values from an indexed format."
+msgstr ""
+"C'est l'inverse de `pygame.surfarray.map_array()`, qui convertit un tableau RGB 3D en une "
+"carte de pixels int32 2D. Il est utile pour reconstruire les valeurs RGB à partir d'un format "
+"indexé."
+
+#: ../PygameTools.rst:927
+msgid "**indexed_array_**"
+msgstr "**indexed_array_**"
+
+#: ../PygameTools.rst:928
+msgid ""
+"A 2D array of shape (w, h) with int32 values, where each element "
+"represents an RGB pixel encoded as a single integer."
+msgstr ""
+"Un tableau 2D de forme (w, h) avec des valeurs int32, où chaque élément "
+"représente un pixel RGB codé sous la forme d'un seul entier."
+
+#: ../PygameTools.rst:932
+msgid ""
+"A preallocated 3D array of shape (w, h, 3) and type uint8 to store the "
+"decomposed RGB values. If provided, this array is modified in place."
+msgstr ""
+"Un tableau 3D préalloué de forme (w, h, 3) et de type uint8 pour stocker les "
+"valeurs RGB décomposées. Si fourni, ce tableau est modifié sur place."
+
+#: ../PygameTools.rst:935
+msgid "Shape: (w, h, 3)"
+msgstr "Forme : (w, h, 3)"
+
+#: ../PygameTools.rst:936
+msgid "Data type: uint8"
+msgstr "Type de données : uint8"
+
+#: ../PygameTools.rst:940
+msgid "numpy.ndarray[np.uint8_t, ndim=3]"
+msgstr "numpy.ndarray[np.uint8_t, ndim=3]"
+
+#: ../PygameTools.rst:941
+msgid ""
+"A 3D NumPy array of shape (w, h, 3), where: - `[..., 0]` contains the red"
+" (R) channel values. - `[..., 1]` contains the green (G) channel values. "
+"- `[..., 2]` contains the blue (B) channel values."
+msgstr ""
+"Un tableau NumPy 3D de forme (w, h, 3), où : - `[..., 0]` contient les valeurs du canal rouge "
+"(R). - `[..., 1]` contient les valeurs du canal vert (G). - `[..., 2]` contient les valeurs du canal bleu (B)."
+
+#: ../PygameTools.rst:949
+msgid ""
+"If `indexed_array_` is not of shape (w, h) or not of type int32. If "
+"`tmp_array_` is provided but has an incorrect shape or type."
+msgstr ""
+"Si `indexed_array_` n'a pas la forme (w, h) ou n'est pas de type int32. Si "
+"`tmp_array_` est fourni mais a une forme ou un type incorrect."
+
+#: ../PygameTools.rst:953
+msgid "If inputs are not valid NumPy arrays or memoryviews."
+msgstr ""
+"Si les entrées ne sont pas des tableaux NumPy valides ou des vues mémoire."
+
+#: ../PygameTools.rst:957
+msgid "If `tmp_array_` is not provided, a new array is allocated."
+msgstr ""
+"Si `tmp_array_` n'est pas fourni, un nouveau tableau est alloué."
+
+#: ../PygameTools.rst:958
+msgid ""
+"Supplying a preallocated array is recommended for large datasets to "
+"improve performance."
+msgstr ""
+"Il est recommandé de fournir un tableau préalloué pour les grands ensembles "
+"de données afin d'améliorer les performances."
+
+#: ../PygameTools.rst:960
+msgid ""
+"This function is optimized for speed and operates directly on memory "
+"views."
+msgstr ""
+"Cette fonction est optimisée pour la vitesse et fonctionne directement sur "
+"les vues mémoire."
+
+#: ../PygameTools.rst:969
+msgid "Convert a 3D RGB array (W, H, 3) into a 2D mapped integer array."
+msgstr ""
+"Convertir un tableau RGB 3D (W, H, 3) en un tableau entier 2D mappé."
+
+#: ../PygameTools.rst:971
+msgid ""
+"This function transforms a 3D array of RGB values (uint8) into a 2D array"
+" where each RGB triplet is represented as a single int32 value. It is "
+"optimized as an equivalent to `pygame.surfarray.map_array(Surface, "
+"array3d)`, allowing efficient processing of NumPy arrays with shape (W, "
+"H, 3)."
+msgstr ""
+"Cette fonction transforme un tableau 3D de valeurs RGB (uint8) en un tableau 2D "
+"où chaque triplet RGB est représenté par une seule valeur int32. Elle est optimisée comme "
+"équivalent de `pygame.surfarray.map_array(Surface, array3d)`, permettant un traitement efficace "
+"des tableaux NumPy de forme (W, H, 3)."
+
+#: ../PygameTools.rst:978
+msgid "**rgb_array** : memoryview (unsigned char[:, :, :])"
+msgstr "**rgb_array** : memoryview (unsigned char[:, :, :])"
+
+#: ../PygameTools.rst:980
+msgid ""
+"A 3D array or memoryview of shape (W, H, 3), containing pixel data in "
+"`uint8` format. Each pixel is represented by three values: red, green, "
+"and blue."
+msgstr ""
+"Un tableau 3D ou une vue mémoire de forme (W, H, 3), contenant des données de pixels au format "
+"`uint8`. Chaque pixel est représenté par trois valeurs : rouge, vert et bleu."
+
+#: ../PygameTools.rst:983
+msgid "**tmp_array_** : memoryview or numpy.ndarray, optional"
+msgstr "**tmp_array_** : memoryview ou numpy.ndarray, optionnel"
+
+#: ../PygameTools.rst:985
+msgid ""
+"A preallocated 2D array of shape (W, H) with data type `int32`. If "
+"provided, the function modifies this array in place, avoiding additional "
+"memory allocation."
+msgstr ""
+"Un tableau 2D préalloué de forme (W, H) avec le type de données `int32`. Si "
+"fourni, la fonction modifie ce tableau sur place, évitant ainsi une allocation "
+"de mémoire supplémentaire."
+
+#: ../PygameTools.rst:990
+msgid "memoryview (int32[:, :])"
+msgstr "memoryview (int32[:, :])"
+
+#: ../PygameTools.rst:992
+msgid ""
+"A 2D array of shape (W, H) with data type `int32`, where each element "
+"represents the mapped integer value of the corresponding RGB triplet."
+msgstr ""
+"Un tableau 2D de forme (W, H) avec le type de données `int32`, où chaque élément "
+"représente la valeur entière mappée du triplet RGB correspondant."
+
+#: ../PygameTools.rst:999
+msgid "If `rgb_array` is `None`."
+msgstr ""
+"Si `rgb_array` est `None`."
+
+#: ../PygameTools.rst:1000
+msgid "If `rgb_array` does not have the required shape `(W, H, 3)`."
+msgstr ""
+"Si `rgb_array` n'a pas la forme requise `(W, H, 3)`."
+
+#: ../PygameTools.rst:1001
+msgid "If `rgb_array` has an invalid data type (not `uint8`)."
+msgstr ""
+"Si `rgb_array` a un type de données invalide (pas `uint8`)."
+
+#: ../PygameTools.rst:1002
+msgid ""
+"If `tmp_array_` has an incorrect shape, data type, or other "
+"inconsistencies."
+msgstr ""
+"Si `tmp_array_` a une forme, un type de données ou d'autres "
+"incohérences incorrects."
+
+#: ../PygameTools.rst:1006
+msgid "If `rgb_array` or `tmp_array_` is not a NumPy array or memoryview slice."
+msgstr ""
+"Si `rgb_array` ou `tmp_array_` n'est pas un tableau NumPy ou une tranche de vue mémoire."
+
+#: ../PygameTools.rst:1010
+msgid "This function is optimized for processing large images efficiently."
+msgstr ""
+"Cette fonction est optimisée pour traiter efficacement les grandes images."
+
+#: ../PygameTools.rst:1011
+msgid ""
+"The input `rgb_array` must be compatible with `pygame.surfarray.array3d` "
+"output (an array of unsigned 8-bit integers)."
+msgstr ""
+"L'entrée `rgb_array` doit être compatible avec la sortie de "
+"`pygame.surfarray.array3d` (un tableau d'entiers non signés 8 bits)."
+
+#: ../PygameTools.rst:1013
+msgid "If `tmp_array_` is provided, it must be writable."
+msgstr ""
+"Si `tmp_array_` est fourni, il doit être modifiable."
+
+#: ../PygameTools.rst:1014
+msgid "If `tmp_array_` is not provided, a new 2D array is allocated internally."
+msgstr ""
+"Si `tmp_array_` n'est pas fourni, un nouveau tableau 2D est alloué en interne."
+
+#: ../PygameTools.rst:1046
+msgid "Blend two 2D mapped pixel arrays together with optional special effects."
+msgstr ""
+"Fusionner deux tableaux de pixels 2D mappés avec des effets spéciaux optionnels."
+
+#: ../PygameTools.rst:1048
+msgid ""
+"This function blends `target_pixels` and `blend_pixels` using the "
+"specified `special_flags`. The operation is performed **in-place**, "
+"directly modifying `target_pixels`."
+msgstr ""
+"Cette fonction fusionne `target_pixels` et `blend_pixels` en utilisant les "
+"`special_flags` spécifiés. L'opération est effectuée **sur place**, "
+"modifiant directement `target_pixels`."
+
+#: ../PygameTools.rst:1053
+msgid "**target_pixels** : memoryview (unsigned int[:, :])"
+msgstr "**target_pixels** : memoryview (unsigned int[:, :])"
+
+#: ../PygameTools.rst:1055
+msgid ""
+"A **2D Cython memoryview** (or a NumPy array converted via "
+"`numpy.asarray()`), where each element represents a pixel with mapped RGB"
+" values. The blend will be applied directly to this array (modifying it "
+"in-place)."
+msgstr ""
+"Une **vue mémoire Cython 2D** (ou un tableau NumPy converti via "
+"`numpy.asarray()`), où chaque élément représente un pixel avec des valeurs RGB "
+"mappées. La fusion sera appliquée directement à ce tableau (le modifiant "
+"sur place)."
+#: ../PygameTools.rst:1059
+msgid "**blend_pixels** : memoryview (unsigned int[:, :])"
+msgstr "**blend_pixels** : memoryview (unsigned int[:, :])"
+
+#: ../PygameTools.rst:1061
+msgid ""
+"A **2D Cython memoryview** (or a NumPy array converted via "
+"`numpy.asarray()`), containing the pixel data to blend into "
+"`target_pixels`. The shape must match `target_pixels`."
+msgstr ""
+"Une **vue mémoire Cython 2D** (ou un tableau NumPy converti via "
+"`numpy.asarray()`), contenant les données de pixels à fusionner dans "
+"`target_pixels`. La forme doit correspondre à `target_pixels`."
+
+#: ../PygameTools.rst:1065
+msgid "**special_flags** : unsigned char, optional (default=0)"
+msgstr "**special_flags** : unsigned char, optionnel (par défaut=0)"
+
+#: ../PygameTools.rst:1067
+msgid ""
+"A blending mode flag that determines how `target_pixels` and "
+"`blend_pixels` are combined. The following **Pygame-style BLEND modes** "
+"are supported:"
+msgstr ""
+"Un indicateur de mode de fusion qui détermine comment `target_pixels` et "
+"`blend_pixels` sont combinés. Les modes de fusion de style **Pygame** suivants "
+"sont pris en charge :"
+
+#: ../PygameTools.rst:1070
+msgid "**BLEND_RGB_ADD** (1) → Additive blending"
+msgstr "**BLEND_RGB_ADD** (1) → Fusion additive"
+
+#: ../PygameTools.rst:1071
+msgid "**BLEND_RGB_SUB** (2) → Subtractive blending"
+msgstr "**BLEND_RGB_SUB** (2) → Fusion soustractive"
+
+#: ../PygameTools.rst:1072
+msgid "**BLEND_RGB_MULT** (3) → Multiplicative blending"
+msgstr "**BLEND_RGB_MULT** (3) → Fusion multiplicative"
+
+#: ../PygameTools.rst:1073
+msgid "**BLEND_RGB_MIN** (4) → Minimum value blending"
+msgstr "**BLEND_RGB_MIN** (4) → Fusion de valeur minimale"
+
+#: ../PygameTools.rst:1074
+msgid "**BLEND_RGB_MAX** (5) → Maximum value blending"
+msgstr "**BLEND_RGB_MAX** (5) → Fusion de valeur maximale"
+
+#: ../PygameTools.rst:1076
+msgid "If `special_flags = 0`, no blending is applied (default behavior)."
+msgstr ""
+"Si `special_flags = 0`, aucune fusion n'est appliquée (comportement par défaut)."
+
+#: ../PygameTools.rst:1080
+msgid "void"
+msgstr "vide"
+
+#: ../PygameTools.rst:1082
+msgid ""
+"The function modifies `target_pixels` **in-place**, so it does not return"
+" a new array."
+msgstr ""
+"La fonction modifie `target_pixels` **sur place**, donc elle ne retourne "
+"pas un nouveau tableau."
+
+#: ../PygameTools.rst:1088
+msgid "If `target_pixels` and `blend_pixels` have different shapes."
+msgstr ""
+"Si `target_pixels` et `blend_pixels` ont des formes différentes."
+
+#: ../PygameTools.rst:1089
+msgid "If `special_flags` is not in the valid range `[0-5]`."
+msgstr ""
+"Si `special_flags` n'est pas dans la plage valide `[0-5]`."
+
+#: ../PygameTools.rst:1093
+msgid ""
+"If `target_pixels` or `blend_pixels` is not a **Cython memoryview** or "
+"**NumPy array**."
+msgstr ""
+"Si `target_pixels` ou `blend_pixels` n'est pas une **vue mémoire Cython** ou "
+"un **tableau NumPy**."
+
+#: ../PygameTools.rst:1097
+msgid ""
+"This function is optimized for performance using **Cython (`cpdef "
+"inline`)**."
+msgstr ""
+"Cette fonction est optimisée pour les performances en utilisant **Cython (`cpdef "
+"inline`)**."
+
+#: ../PygameTools.rst:1098
+msgid ""
+"The blending operation modifies `target_pixels` **directly**, so pass a "
+"copy if you need to retain the original data."
+msgstr ""
+"L'opération de fusion modifie `target_pixels` **directement**, donc passez "
+"une copie si vous devez conserver les données d'origine."
+
+#: ../PygameTools.rst:1100
+msgid "Compatible with **Pygame's surface blending operations**."
+msgstr ""
+"Compatible avec **les opérations de fusion de surfaces de Pygame**."
+
+#: ../PygameTools.rst:1101
+msgid ""
+"Ensure both input arrays are of the same shape before calling this "
+"function."
+msgstr ""
+"Assurez-vous que les deux tableaux d'entrée ont la même forme avant "
+"d'appeler cette fonction."

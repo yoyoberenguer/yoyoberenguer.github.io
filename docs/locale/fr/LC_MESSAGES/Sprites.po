@@ -1,0 +1,390 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yoann Berenguer
+# This file is distributed under the same license as the PygameShader
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PygameShader \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-10 13:20+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+#: ../Sprites.rst:2
+msgid "Sprites"
+msgstr "Sprites"
+
+#: ../Sprites.rst:4
+msgid ":mod:`Sprites.pyx`"
+msgstr ":mod:`Sprites.pyx`"
+
+#: ../Sprites.rst:14
+msgid "1. Sprite and Group Management"
+msgstr "1. Gestion des Sprites et des Groupes"
+
+#: ../Sprites.rst:16
+msgid ""
+"This library provides an efficient Cython implementation of **sprite "
+"management, collision detection, and rendering** similar to "
+"`pygame.sprite`, but optimized for performance. This functionality "
+"already exists in the **Pygame project**, but has been **Cythonized** to "
+"significantly improve performance by using C-level optimizations for "
+"common operations. It includes:"
+msgstr ""
+"Cette bibliothèque fournit une implémentation Cython efficace de la **gestion des sprites, de la détection de collisions et du rendu**, similaire à"
+"`pygame.sprite`, mais optimisée pour la performance. Cette fonctionnalité existe déjà dans le **projet Pygame**, mais a été **Cythonisée** pour "
+"améliorer considérablement les performances en utilisant des optimisations au niveau C pour "
+"les opérations courantes. Elle comprend :"
+
+#: ../Sprites.rst:21
+msgid "**Sprite Objects** (`Sprite` class)"
+msgstr "**Objets Sprite** (classe `Sprite`)"
+
+#: ../Sprites.rst:22
+msgid "**Group Handling** (`AbstractGroup`, `GroupSingle`, `LayeredUpdates`)"
+msgstr "**Gestion des Groupes** (`AbstractGroup`, `GroupSingle`, `LayeredUpdates`)"
+
+#: ../Sprites.rst:23
+msgid "**Collision Detection** (`collide_rect`, `collide_circle`, `collide_mask`)"
+msgstr "**Détection de Collisions** (`collide_rect`, `collide_circle`, `collide_mask`)"
+
+#: ../Sprites.rst:24
+msgid "**Layered Sprite Management** (`LayeredUpdates`, `LayeredUpdatesModified`)"
+msgstr "**Gestion des Sprites en Couches** (`LayeredUpdates`, `LayeredUpdatesModified`)"
+
+#: ../Sprites.rst:27
+msgid "2. Purpose"
+msgstr "2. Objectif"
+
+#: ../Sprites.rst:29
+msgid ""
+"This module enhances **Pygame's sprite system** by providing: - Faster "
+"**group operations** with optimized internal structures. - Efficient "
+"**collision detection** using various methods (rectangles, circles, "
+"masks). - Advanced **layer-based rendering** for handling depth ordering."
+" - Support for **single-object sprite groups** (e.g., `GroupSingle`). - "
+"**In-place updates** to minimize memory allocations."
+msgstr ""
+"Ce module améliore le **système de sprites de Pygame** en offrant : - Des "
+"**opérations sur les groupes plus rapides** grâce à des structures internes optimisées. - Une "
+"**détection de collisions efficace** utilisant diverses méthodes (rectangles, cercles, "
+"masques). - Un **rendu basé sur les couches avancé** pour gérer l'ordre de profondeur."
+" - Un support pour les **groupes de sprites à objet unique** (par exemple, `GroupSingle`). - "
+"**Mises à jour en place** pour minimiser les allocations mémoire."
+
+#: ../Sprites.rst:36
+msgid ""
+"The core functionality is inspired by the **Pygame sprite module** but is"
+" **Cythonized** for better performance. It takes advantage of Cython's "
+"ability to compile code into C to achieve faster execution and reduced "
+"memory usage, making it suitable for performance-critical games."
+msgstr ""
+"La fonctionnalité principale est inspirée du **module sprite de Pygame**, mais a été"
+" **Cythonisée** pour de meilleures performances. Elle profite de la capacité de Cython à "
+"compiler le code en C pour obtenir une exécution plus rapide et une réduction de l'"
+"utilisation mémoire, ce qui la rend adaptée aux jeux nécessitant des performances élevées."
+
+#: ../Sprites.rst:41
+msgid "3. Sprite Class"
+msgstr "3. Classe Sprite"
+
+#: ../Sprites.rst:43
+msgid ""
+"**`Sprite`** represents an individual game object that can belong to "
+"multiple groups."
+msgstr ""
+"**`Sprite`** représente un objet de jeu individuel qui peut appartenir à "
+"plusieurs groupes."
+
+#: ../Sprites.rst:51
+msgid ""
+"**Methods** - `add_internal(group)`: Adds the sprite to a group. - "
+"`remove_internal(group)`: Removes the sprite from a group. - "
+"`update(args=*)`: Updates the sprite state. - `kill()`: Removes the "
+"sprite from all groups. - `groups() -> list`: Returns all groups "
+"containing this sprite. - `alive() -> bool`: Checks if the sprite is "
+"still in any group."
+msgstr ""
+"**Méthodes** - `add_internal(group)`: Ajoute le sprite à un groupe. - "
+"`remove_internal(group)`: Retire le sprite d'un groupe. - "
+"`update(args=*)`: Met à jour l'état du sprite. - `kill()`: Retire le "
+"sprite de tous les groupes. - `groups() -> list`: Renvoie tous les groupes "
+"contenant ce sprite. - `alive() -> bool`: Vérifie si le sprite est "
+"toujours dans un groupe."
+
+#: ../Sprites.rst:60
+msgid "**AbstractGroup**"
+msgstr "**AbstractGroup**"
+
+#: ../Sprites.rst:62
+msgid "**`AbstractGroup`** is the base class for managing sprite groups."
+msgstr "**`AbstractGroup`** est la classe de base pour la gestion des groupes de sprites."
+
+#: ../Sprites.rst:64
+msgid ""
+"**Attributes** - `_spritegroup (bool)`: Indicates whether this is a "
+"sprite group. - `spritedict (dict)`: Stores sprites and their data. - "
+"`lostsprites (list)`: Tracks removed sprites."
+msgstr ""
+"**Attributs** - `_spritegroup (bool)`: Indique s'il s'agit d'un "
+"groupement de sprites. - `spritedict (dict)`: Stocke les sprites et leurs données. - "
+"`lostsprites (list)`: Suit les sprites supprimés."
+
+#: ../Sprites.rst:69
+msgid ""
+"**Methods** - `sprites() -> list`: Returns a list of all sprites in the "
+"group. - `add_internal(sprite)`: Adds a sprite to the group. - "
+"`remove_internal(sprite)`: Removes a sprite from the group. - "
+"`has_internal(sprite) -> bool`: Checks if a sprite is in the group. - "
+"`copy()`: Creates a copy of the group. - `update(args=*)`: Calls the "
+"`update()` method on all sprites. - `draw(surface)`: Draws all sprites "
+"onto the given surface. - `clear(surface, bgd)`: Clears the group from "
+"the screen. - `empty()`: Removes all sprites from the group."
+msgstr ""
+"**Méthodes** - `sprites() -> list`: Renvoie une liste de tous les sprites du "
+"groupement. - `add_internal(sprite)`: Ajoute un sprite au groupe. - "
+"`remove_internal(sprite)`: Retire un sprite du groupe. - "
+"`has_internal(sprite) -> bool`: Vérifie si un sprite est dans le groupe. - "
+"`copy()`: Crée une copie du groupe. - `update(args=*)`: Appelle la méthode "
+"`update()` pour tous les sprites. - `draw(surface)`: Dessine tous les sprites "
+"sur la surface donnée. - `clear(surface, bgd)`: Efface le groupe de "
+"l'écran. - `empty()`: Retire tous les sprites du groupe."
+
+#: ../Sprites.rst:81
+msgid "**GroupSingle**"
+msgstr "**GroupSingle**"
+
+#: ../Sprites.rst:83
+msgid ""
+"**`GroupSingle`** is a specialized group that holds only a **single "
+"sprite**."
+msgstr ""
+"**`GroupSingle`** est un groupe spécialisé qui contient uniquement un **seul "
+"sprite**."
+
+#: ../Sprites.rst:85
+msgid ""
+"**Methods** - `sprites() -> list`: Returns a list containing the single "
+"sprite. - `add_internal(sprite)`: Sets the sprite for this group. - "
+"`remove_internal(sprite)`: Removes the sprite. - `has_internal(sprite) ->"
+" bool`: Checks if a sprite exists in the group."
+msgstr ""
+"**Méthodes** - `sprites() -> list`: Renvoie une liste contenant le sprite unique."
+" - `add_internal(sprite)`: Définit le sprite pour ce groupe. - "
+"`remove_internal(sprite)`: Retire le sprite. - `has_internal(sprite) ->"
+" bool`: Vérifie si un sprite existe dans le groupe."
+
+#: ../Sprites.rst:93
+msgid "**Collision Detection**"
+msgstr "**Détection de Collisions**"
+
+#: ../Sprites.rst:95
+msgid ""
+"**Collision functions** allow efficient detection between sprites and "
+"groups."
+msgstr ""
+"Les **fonctions de collision** permettent une détection efficace entre les sprites et "
+"les groupes."
+
+#: ../Sprites.rst:97
+msgid "`collide_rect(left, right)`: Rectangular collision detection."
+msgstr "`collide_rect(left, right)`: Détection de collisions rectangulaires."
+
+#: ../Sprites.rst:98
+msgid "`collide_circle(left, right)`: Circular collision detection."
+msgstr "`collide_circle(left, right)`: Détection de collisions circulaires."
+
+#: ../Sprites.rst:99
+msgid "`collide_mask(left, right)`: Pixel-perfect collision detection."
+msgstr "`collide_mask(left, right)`: Détection de collisions au niveau des pixels."
+
+#: ../Sprites.rst:100
+msgid ""
+"`groupcollide(groupa, groupb, dokilla, dokillb, collided=*) -> dict`: - "
+"Checks collisions between two groups, optionally removing colliding "
+"sprites."
+msgstr ""
+"`groupcollide(groupa, groupb, dokilla, dokillb, collided=*) -> dict`: - "
+"Vérifie les collisions entre deux groupes, supprimant éventuellement les "
+"sprites en collision."
+
+#: ../Sprites.rst:102
+msgid ""
+"`spritecollideany(sprite, group, collided=*)`: - Checks if a sprite "
+"collides with any sprite in a group."
+msgstr ""
+"`spritecollideany(sprite, group, collided=*)`: - Vérifie si un sprite "
+"entre en collision avec un sprite dans un groupe."
+
+#: ../Sprites.rst:104
+msgid ""
+"`spritecollide(sprite, group, dokill, collided=*) -> list`: - Returns a "
+"list of sprites that collide with `sprite`."
+msgstr ""
+"`spritecollide(sprite, group, dokill, collided=*) -> list`: - Renvoie une "
+"liste des sprites qui entrent en collision avec `sprite`."
+
+#: ../Sprites.rst:109
+msgid "**Layered Sprite Management**"
+msgstr "**Gestion des Sprites en Couches**"
+
+#: ../Sprites.rst:111
+msgid ""
+"**`LayeredUpdates`** extends `AbstractGroup` to support **layer-based "
+"rendering**."
+msgstr ""
+"**`LayeredUpdates`** étend `AbstractGroup` pour prendre en charge le **rendu basé sur les couches**."
+
+#: ../Sprites.rst:113
+msgid "**Attributes**"
+msgstr "**Attributs**"
+
+#: ../Sprites.rst:115
+msgid "`_spritelayers (dict)`: Stores sprite-layer mappings."
+msgstr "`_spritelayers (dict)`: Stocke les correspondances entre les sprites et les couches."
+
+#: ../Sprites.rst:116
+msgid "`_spritelist (list)`: Ordered list of sprites."
+msgstr "`_spritelist (list)`: Liste ordonnée des sprites."
+
+#: ../Sprites.rst:117
+msgid "`_default_layer (int)`: Default layer for new sprites."
+msgstr "`_default_layer (int)`: Couche par défaut pour les nouveaux sprites."
+
+#: ../Sprites.rst:119
+msgid "**Methods**"
+msgstr "**Méthodes**"
+
+#: ../Sprites.rst:121
+msgid "`add_internal(sprite, layer=*)`: Adds a sprite to a specified layer."
+msgstr "`add_internal(sprite, layer=*)`: Ajoute un sprite à une couche spécifiée."
+
+#: ../Sprites.rst:122
+msgid "`remove_internal(sprite)`: Removes a sprite."
+msgstr "`remove_internal(sprite)`: Retire un sprite."
+
+#: ../Sprites.rst:123
+msgid "`sprites() -> list`: Returns all sprites."
+msgstr "`sprites() -> list`: Renvoie tous les sprites."
+
+#: ../Sprites.rst:124
+msgid "`get_sprites_at(pos)`: Retrieves sprites at a given position."
+msgstr "`get_sprites_at(pos)`: Récupère les sprites à une position donnée."
+
+#: ../Sprites.rst:125
+msgid "`get_sprite(idx)`: Returns a sprite by index."
+msgstr "`get_sprite(idx)`: Renvoie un sprite par index."
+
+#: ../Sprites.rst:126
+msgid ""
+"`remove_sprites_of_layer(layer)`: Removes all sprites from a specific "
+"layer."
+msgstr ""
+"`remove_sprites_of_layer(layer)`: Retire tous les sprites d'une couche spécifique."
+
+#: ../Sprites.rst:127
+msgid "`layers()`: Returns a list of all layers."
+msgstr "`layers()`: Renvoie une liste de toutes les couches."
+
+#: ../Sprites.rst:128
+msgid "`change_layer(sprite, new_layer)`: Moves a sprite to a new layer."
+msgstr "`change_layer(sprite, new_layer)`: Déplace un sprite vers une nouvelle couche."
+
+#: ../Sprites.rst:129
+msgid "`get_layer_of_sprite(sprite)`: Returns the layer of a given sprite."
+msgstr "`get_layer_of_sprite(sprite)`: Renvoie la couche d'un sprite donné."
+
+#: ../Sprites.rst:130
+msgid ""
+"`get_top_layer() / get_bottom_layer()`: Returns the highest or lowest "
+"layer."
+msgstr "`get_top_layer() / get_bottom_layer()`: Renvoie la couche la plus haute ou la plus basse."
+
+#: ../Sprites.rst:131
+msgid ""
+"`move_to_front(sprite) / move_to_back(sprite)`: Changes sprite depth "
+"ordering."
+msgstr "`move_to_front(sprite) / move_to_back(sprite)`: Modifie l'ordre de profondeur du sprite."
+
+#: ../Sprites.rst:132
+msgid "`get_top_sprite()`: Retrieves the topmost sprite."
+msgstr "`get_top_sprite()`: Récupère le sprite le plus haut."
+
+#: ../Sprites.rst:133
+msgid "`get_sprites_from_layer(layer)`: Returns all sprites in a given layer."
+msgstr "`get_sprites_from_layer(layer)`: Renvoie tous les sprites d'une couche donnée."
+
+#: ../Sprites.rst:134
+msgid "`switch_layer(layer1, layer2)`: Swaps two layers."
+msgstr "`switch_layer(layer1, layer2)`: Échange deux couches."
+
+#: ../Sprites.rst:136
+msgid "**LayeredUpdatesModified**"
+msgstr "**LayeredUpdatesModifié**"
+
+#: ../Sprites.rst:138
+msgid "Extends `LayeredUpdates` with additional drawing and update functionality."
+msgstr "Étend `LayeredUpdates` avec des fonctionnalités supplémentaires de dessin et de mise à jour."
+
+#: ../Sprites.rst:140
+msgid "`update(args=*)`: Updates all sprites."
+msgstr "`update(args=*)`: Met à jour tous les sprites."
+
+#: ../Sprites.rst:141
+msgid "`draw(surface)`: Draws sprites onto a surface."
+msgstr "`draw(surface)`: Dessine les sprites sur une surface."
+
+#: ../Sprites.rst:144
+msgid "**Helper Functions**"
+msgstr "**Fonctions d'Aide**"
+
+#: ../Sprites.rst:146
+msgid "`int_min(a, b) -> int`: Returns the smaller of two integers."
+msgstr "`int_min(a, b) -> int`: Renvoie le plus petit des deux entiers."
+
+#: ../Sprites.rst:147
+msgid "`truth(a) -> bool`: Converts a value to boolean."
+msgstr "`truth(a) -> bool`: Convertit une valeur en booléen."
+
+#: ../Sprites.rst:152
+msgid "4. Summary"
+msgstr "4. Résumé"
+
+#: ../Sprites.rst:154
+msgid ""
+"This library optimizes **sprite handling** in Pygame by: - **Enhancing "
+"performance** with Cython memoryviews. - **Supporting efficient collision"
+" detection** (rect, circle, mask). - **Managing layered rendering** with "
+"advanced depth ordering. - **Providing various group structures** "
+"(standard, single, layered)."
+msgstr ""
+"Cette bibliothèque optimise la **gestion des sprites** dans Pygame en : - **Améliorant "
+"les performances** avec les vues mémoire Cython. - **Supportant la détection de collisions "
+"efficace** (rect, cercle, masque). - **Gérant le rendu par couches** avec un "
+"ordre de profondeur avancé. - **Fournissant diverses structures de groupes** "
+"(standard, unique, en couches)."
+
+#: ../Sprites.rst:160
+msgid ""
+"Although this functionality is available in the **Pygame project**, this "
+"library has been **Cythonized** to provide **significant performance "
+"improvements**, making it ideal for **performance-critical games**."
+msgstr ""
+"Bien que cette fonctionnalité soit disponible dans le **projet Pygame**, cette "
+"bibliothèque a été **Cythonisée** pour offrir des **améliorations de performance "
+"significatives**, ce qui la rend idéale pour les **jeux nécessitant des performances élevées**."
+
+#: ../Sprites.rst:162
+msgid ""
+"**Ideal for Pygame developers needing fast and efficient sprite "
+"management.** 🚀"
+msgstr "**Idéale pour les développeurs Pygame ayant besoin d'une gestion rapide et efficace des sprites.** 🚀"

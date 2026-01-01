@@ -1,0 +1,359 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yoann Berenguer
+# This file is distributed under the same license as the PygameShader
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PygameShader \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-10 13:20+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+#: ../Palette.rst:2
+msgid "Palette"
+msgstr "Palette"
+
+#: ../Palette.rst:4
+msgid ":mod:`Palette.pyx`"
+msgstr ":mod:`Palette.pyx`"
+
+#: ../Palette.rst:13
+msgid "1. Library Overview"
+msgstr "1. Resumen de la Biblioteca"
+
+#: ../Palette.rst:15
+msgid ""
+"The functions in this library are designed for **image manipulation** and"
+" **palette management**, making it suitable for applications such as "
+"**graphical rendering**, **image processing**, and **creating custom "
+"color palettes**. The library is ideal for use in **graphics software** "
+"or **visual applications** where images need to be rendered with specific"
+" color palettes or where images must be dynamically modified based on "
+"palette data."
+msgstr ""
+"Las funciones de esta biblioteca están diseñadas para la **manipulación de imágenes** y la **gestión de paletas**, lo que la hace adecuada para aplicaciones como **renderizado gráfico**, **procesamiento de imágenes** y **creación de paletas de colores personalizadas**. La biblioteca es ideal para su uso en **software gráfico** o **aplicaciones visuales** donde las imágenes necesitan ser renderizadas con paletas de colores específicas o donde las imágenes deben modificarse dinámicamente en función de los datos de la paleta."
+
+#: ../Palette.rst:22
+msgid "2. Key Concepts"
+msgstr "2. Conceptos Clave"
+
+#: ../Palette.rst:24
+msgid ""
+"**Image Surface**: Represents an object corresponding to an image, where "
+"individual pixels can be accessed and manipulated. This object provides "
+"an abstraction for working with pixel data in various image processing "
+"tasks."
+msgstr ""
+"**Superficie de Imagen**: Representa un objeto correspondiente a una imagen, donde se pueden acceder y manipular píxeles individuales. Este objeto proporciona una abstracción para trabajar con datos de píxeles en diversas tareas de procesamiento de imágenes."
+
+#: ../Palette.rst:27
+msgid ""
+"**Palette**: A collection of colors that can be applied to an image. "
+"Palettes are commonly used in **visual design**, **digital art**, and "
+"**simulations** to ensure consistency in color usage throughout an image "
+"or graphic."
+msgstr ""
+"**Paleta**: Una colección de colores que se pueden aplicar a una imagen. Las paletas se utilizan comúnmente en **diseño visual**, **arte digital** y **simulaciones** para garantizar la consistencia en el uso del color en toda una imagen o gráfico."
+
+#: ../Palette.rst:30
+msgid ""
+"**Temporary Buffer**: A storage area used to hold intermediate results "
+"during computations. The temporary buffer helps reduce the need to "
+"perform expensive operations multiple times, improving performance when "
+"working with complex image manipulations."
+msgstr ""
+"**Búfer Temporal**: Un área de almacenamiento utilizada para guardar resultados intermedios durante los cálculos. El búfer temporal ayuda a reducir la necesidad de realizar operaciones costosas varias veces, mejorando el rendimiento al trabajar con manipulaciones de imágenes complejas."
+
+#: ../Palette.rst:34
+msgid "3. Purpose of the Library"
+msgstr "3. Propósito de la Biblioteca"
+
+#: ../Palette.rst:36
+msgid ""
+"The primary purpose of this library is to provide efficient tools for "
+"manipulating images at the **color level**. It allows users to modify or "
+"generate custom **color palettes**, providing greater flexibility in "
+"image rendering and processing tasks. By optimizing image handling, the "
+"library supports a variety of graphical applications, including dynamic "
+"image modifications based on color palettes."
+msgstr ""
+"El propósito principal de esta biblioteca es proporcionar herramientas eficientes para manipular imágenes a nivel de **color**. Permite a los usuarios modificar o generar **paletas de colores personalizadas**, ofreciendo una mayor flexibilidad en tareas de renderizado y procesamiento de imágenes. Al optimizar el manejo de imágenes, la biblioteca admite una variedad de aplicaciones gráficas, incluyendo modificaciones dinámicas de imágenes basadas en paletas de colores."
+
+#: ../Palette.rst:39
+msgid "4. Use Cases"
+msgstr "4. Casos de Uso"
+
+#: ../Palette.rst:41
+msgid ""
+"**Graphics Software**: The library can be used in applications that need "
+"to render images with specific palettes, such as image editors, animation"
+" tools, or graphic design applications."
+msgstr ""
+"**Software Gráfico**: La biblioteca puede usarse en aplicaciones que necesitan renderizar imágenes con paletas específicas, como editores de imágenes, herramientas de animación o aplicaciones de diseño gráfico."
+
+#: ../Palette.rst:44
+msgid ""
+"**Image Processing**: Modify or analyze images by dynamically adjusting "
+"their color palettes, which can be useful in tasks such as color "
+"correction or filtering."
+msgstr ""
+"**Procesamiento de Imágenes**: Modificar o analizar imágenes ajustando dinámicamente sus paletas de colores, lo que puede ser útil en tareas como corrección de color o filtrado."
+
+#: ../Palette.rst:47
+msgid ""
+"**Digital Art**: Artists can use the library to create and manipulate "
+"custom palettes, allowing for unique, controlled color schemes in their "
+"digital artwork."
+msgstr ""
+"**Arte Digital**: Los artistas pueden usar la biblioteca para crear y manipular paletas personalizadas, permitiendo esquemas de color únicos y controlados en sus obras de arte digital."
+
+#: ../Palette.rst:50
+msgid ""
+"**Simulations**: In simulations, this library can be used to generate or "
+"modify color palettes for visual effects or data visualization purposes, "
+"ensuring that simulated environments maintain consistent and visually "
+"appealing color schemes."
+msgstr ""
+"**Simulaciones**: En simulaciones, esta biblioteca puede usarse para generar o modificar paletas de colores para efectos visuales o visualización de datos, asegurando que los entornos simulados mantengan esquemas de color consistentes y visualmente atractivos."
+
+#: ../Palette.rst:54
+msgid "5. Conclusion"
+msgstr "5. Conclusión"
+
+#: ../Palette.rst:56
+msgid ""
+"This library offers powerful tools for managing and manipulating images "
+"at the color level, making it invaluable for anyone working with custom "
+"color palettes in graphical and image processing applications."
+msgstr ""
+"Esta biblioteca ofrece herramientas poderosas para gestionar y manipular imágenes a nivel de color, lo que la hace invaluable para cualquier persona que trabaje con paletas de colores personalizadas en aplicaciones gráficas y de procesamiento de imágenes."
+
+#: ../Palette.rst:62
+msgid "6. Cython list methods"
+msgstr "6. Métodos de listas en Cython"
+
+#: ../Palette.rst:70
+msgid ""
+"**Summary:** Applies a color palette transformation to an image in-place."
+" The function modifies the colors of the input image (a Pygame surface) "
+"using the specified color palette. The transformation is performed "
+"directly on the surface without creating a new image, optimizing memory "
+"usage."
+msgstr ""
+"**Resumen:** Aplica una transformación de paleta de colores a una imagen in situ. La función modifica los colores de la imagen de entrada (una superficie de Pygame) utilizando la paleta de colores especificada. La transformación se realiza directamente en la superficie sin crear una nueva imagen, optimizando el uso de memoria."
+
+#: ../Palette.rst:73 ../Palette.rst:136 ../Palette.rst:174
+msgid "**Example Usage:**"
+msgstr "**Ejemplo de Uso:**"
+
+#: ../Palette.rst:80 ../Palette.rst:149 ../Palette.rst:181
+msgid "**Parameters:**"
+msgstr "**Parámetros:**"
+
+#: ../Palette.rst:82
+msgid ""
+"**image_surface** (pygame.Surface): The Pygame surface representing the "
+"image to be modified. This is the input image on which the color palette "
+"will be applied."
+msgstr ""
+"**image_surface** (pygame.Surface): La superficie de Pygame que representa la imagen a modificar. Esta es la imagen de entrada en la que se aplicará la paleta de colores."
+
+#: ../Palette.rst:85
+msgid ""
+"**color_palette** (numpy.ndarray): A NumPy array containing the color "
+"palette to apply. The array should have a shape of (w, 3), where `w` is "
+"the number of colors, and the dtype must be `float32` with values in the "
+"range [0.0, 255.0]."
+msgstr ""
+"**color_palette** (numpy.ndarray): Un array de NumPy que contiene la paleta de colores a aplicar. El array debe tener una forma de (w, 3), donde `w` es el número de colores, y el dtype debe ser `float32` con valores en el rango [0.0, 255.0]."
+
+#: ../Palette.rst:88
+msgid "**Example:**"
+msgstr "**Ejemplo:**"
+
+#: ../Palette.rst:94
+msgid ""
+"**temp_buffer** (numpy.ndarray): A temporary NumPy array used for "
+"optimization. It should be a contiguous array (C_CONTIGUOUS) and have the"
+" shape `(image_surface.get_width() * image_surface.get_height(), "
+"len(color_palette))`. This array helps to avoid memory reallocation "
+"during the function call, improving performance."
+msgstr ""
+"**temp_buffer** (numpy.ndarray): Un array temporal de NumPy utilizado para optimización. Debe ser un array contiguo (C_CONTIGUOUS) y tener la forma `(image_surface.get_width() * image_surface.get_height(), len(color_palette))`. Este array ayuda a evitar la reasignación de memoria durante la llamada a la función, mejorando el rendimiento."
+
+#: ../Palette.rst:97
+msgid "Example of temporary buffer declaration:"
+msgstr "Ejemplo de declaración de búfer temporal:"
+
+#: ../Palette.rst:106 ../Palette.rst:157 ../Palette.rst:195
+msgid "**Returns:**"
+msgstr "**Devuelve:**"
+
+#: ../Palette.rst:108
+msgid ""
+"**None**: This function modifies the `image_surface` in-place without "
+"returning a new object."
+msgstr ""
+"**None**: Esta función modifica `image_surface` in situ sin devolver un nuevo objeto."
+
+#: ../Palette.rst:111 ../Palette.rst:200
+msgid "**Raises:**"
+msgstr "**Lanza:**"
+
+#: ../Palette.rst:113
+msgid ""
+"**ValueError**: If the input surface is not compatible or if an invalid "
+"palette is provided."
+msgstr ""
+"**ValueError**: Si la superficie de entrada no es compatible o si se proporciona una paleta no válida."
+
+#: ../Palette.rst:116
+msgid ""
+"**TypeError**: If any of the input arguments are of an incorrect type "
+"(e.g., the surface is not a `pygame.Surface`, the palette is not a "
+"`numpy.ndarray`, or the buffer is not a contiguous array)."
+msgstr ""
+"**TypeError**: Si alguno de los argumentos de entrada es de un tipo incorrecto (por ejemplo, la superficie no es un `pygame.Surface`, la paleta no es un `numpy.ndarray` o el búfer no es un array contiguo)."
+
+#: ../Palette.rst:119
+msgid ""
+"**ValueError**: If there is a mismatch in the dimensions of the "
+"`image_surface` and the `temp_buffer`."
+msgstr ""
+"**ValueError**: Si hay una discrepancia en las dimensiones de `image_surface` y `temp_buffer`."
+
+#: ../Palette.rst:122 ../Palette.rst:211
+msgid "**Notes:**"
+msgstr "**Notas:**"
+
+#: ../Palette.rst:124
+msgid ""
+"This function relies on the efficient handling of large arrays for color "
+"transformation. Make sure to pre-allocate the `temp_buffer` before "
+"calling the function to avoid unnecessary memory allocation during each "
+"frame."
+msgstr ""
+"Esta función depende del manejo eficiente de arrays grandes para la transformación de colores. Asegúrate de preasignar `temp_buffer` antes de llamar a la función para evitar asignaciones de memoria innecesarias durante cada fotograma."
+
+#: ../Palette.rst:132
+msgid ""
+"**Summary:** Generates a palette of RGB colors by mapping HSL values. The"
+" function scales hue, clips saturation, and adjusts lightness based on "
+"the given parameters, returning a NumPy array of RGB values."
+msgstr ""
+"**Resumen:** Genera una paleta de colores RGB mapeando valores HSL. La función escala el tono, recorta la saturación y ajusta la luminosidad en función de los parámetros dados, devolviendo un array de NumPy de valores RGB."
+
+#: ../Palette.rst:151
+msgid "**width** (*int*): The number of colors (palette size) to generate."
+msgstr "**width** (*int*): El número de colores (tamaño de la paleta) a generar."
+
+#: ../Palette.rst:152
+msgid "**fh** (*float*): A factor by which to scale the hue value for each color."
+msgstr "**fh** (*float*): Un factor por el cual escalar el valor de tono para cada color."
+
+#: ../Palette.rst:153
+msgid ""
+"**fs** (*float*): The saturation value, which must be in the range (0.0 "
+"... 255.0). This limits the saturation intensity."
+msgstr ""
+"**fs** (*float*): El valor de saturación, que debe estar en el rango (0.0 ... 255.0). Esto limita la intensidad de la saturación."
+
+#: ../Palette.rst:155
+msgid ""
+"**fl** (*float*): A factor by which to scale the lightness value for each"
+" color."
+msgstr "**fl** (*float*): Un factor por el cual escalar el valor de luminosidad para cada color."
+
+#: ../Palette.rst:159
+msgid ""
+"(*numpy.ndarray*): A 1D NumPy array of RGB color values corresponding to "
+"the generated palette."
+msgstr ""
+"(*numpy.ndarray*): Un array 1D de NumPy de valores de color RGB correspondientes a la paleta generada."
+
+#: ../Palette.rst:162
+msgid ""
+"The function relies on converting from HSL to RGB, applying the specified"
+" factors and clipping values. The output is a NumPy array, which can be "
+"directly used for visualization or further processing."
+msgstr ""
+"La función se basa en la conversión de HSL a RGB, aplicando los factores y valores de recorte especificados. La salida es un array de NumPy, que puede usarse directamente para visualización o procesamiento adicional."
+
+#: ../Palette.rst:171
+msgid ""
+"**Summary:** Converts a 1D array of RGB palette colors into a Pygame "
+"Surface (line). The function processes a 1D array of 32-bit unsigned "
+"integers (representing colors in ARGB format) and converts it into a "
+"Pygame `Surface` object. The result is a surface that can be used for "
+"rendering or visualization."
+msgstr ""
+"**Resumen:** Convierte un array 1D de colores de paleta RGB en una superficie de Pygame (línea). La función procesa un array 1D de enteros sin signo de 32 bits (que representan colores en formato ARGB) y lo convierte en un objeto `Surface` de Pygame. El resultado es una superficie que puede usarse para renderizado o visualización."
+
+#: ../Palette.rst:183
+msgid ""
+"**palette_c** (numpy.ndarray or memoryview): A 1D array (or memoryview) "
+"containing the palette of colors. Each color should be represented as a "
+"32-bit unsigned integer (in ARGB format). The array must have a "
+"`numpy.uint32` dtype and be contiguous in memory."
+msgstr ""
+"**palette_c** (numpy.ndarray o memoryview): Un array 1D (o memoryview) que contiene la paleta de colores. Cada color debe representarse como un entero sin signo de 32 bits (en formato ARGB). El array debe tener un dtype `numpy.uint32` y ser contiguo en memoria."
+
+#: ../Palette.rst:186
+msgid "Example:"
+msgstr "Ejemplo:"
+
+#: ../Palette.rst:197
+msgid "**object**: A Pygame `Surface` object created from the palette."
+msgstr "**object**: Un objeto `Surface` de Pygame creado a partir de la paleta."
+
+#: ../Palette.rst:202
+msgid ""
+"**TypeError**: If `palette_c` is not a `numpy.ndarray` or memoryview, or "
+"if it has an incorrect dtype."
+msgstr ""
+"**TypeError**: Si `palette_c` no es un `numpy.ndarray` o memoryview, o si tiene un dtype incorrecto."
+
+#: ../Palette.rst:205
+msgid ""
+"**ValueError**: If `palette_c` is empty, not contiguous, or has an "
+"invalid size."
+msgstr ""
+"**ValueError**: Si `palette_c` está vacío, no es contiguo o tiene un tamaño no válido."
+
+#: ../Palette.rst:208
+msgid ""
+"**RuntimeError**: If an error occurs during the creation of the Pygame "
+"surface."
+msgstr ""
+"**RuntimeError**: Si ocurre un error durante la creación de la superficie de Pygame."
+
+#: ../Palette.rst:213
+msgid ""
+"The input palette should contain RGB values packed into 32-bit integers "
+"(ARGB format)."
+msgstr ""
+"La paleta de entrada debe contener valores RGB empaquetados en enteros de 32 bits (formato ARGB)."
+
+#: ../Palette.rst:214
+msgid ""
+"The function processes the palette array in parallel for performance "
+"optimization."
+msgstr ""
+"La función procesa el array de la paleta en paralelo para optimizar el rendimiento."
+
+#: ../Palette.rst:215
+msgid ""
+"The output is a Pygame `Surface` object, which can be directly used for "
+"visualization or rendering."
+msgstr ""
+"La salida es un objeto `Surface` de Pygame, que puede usarse directamente para visualización o renderizado."

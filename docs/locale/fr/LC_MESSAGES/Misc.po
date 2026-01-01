@@ -1,0 +1,2136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yoann Berenguer
+# This file is distributed under the same license as the PygameShader
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PygameShader \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-10 13:20+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+#: ../Misc.rst:2
+msgid "Misc"
+msgstr "Misc"
+
+#: ../Misc.rst:4
+msgid ":mod:`Misc.pyx`"
+msgstr ":mod:`Misc.pyx`"
+
+#: ../Misc.rst:14
+msgid "1. Python Library Summary"
+msgstr "1. Résumé de la bibliothèque Python"
+
+#: ../Misc.rst:16
+msgid ""
+"This library is part of a Python module for image manipulation and "
+"processing, focusing on **gradient generation**, **image channel "
+"manipulation**, **color space calculations**, and **sorting algorithms**."
+" Below is a breakdown of the key functionality and purpose of the "
+"different functions and methods in the module:"
+msgstr ""
+"Cette bibliothèque fait partie d'un module Python pour la manipulation et "
+"le traitement d'images, axé sur la **génération de gradients**, la **manipulation des canaux d'images**, "
+"les **calculs de l'espace colorimétrique**, et les **algorithmes de tri**."
+" Voici un aperçu des principales fonctionnalités et objectifs des différentes fonctions et méthodes du module :"
+
+#: ../Misc.rst:21
+msgid "**Gradient Generation Functions**"
+msgstr "**Fonctions de génération de gradients**"
+
+#: ../Misc.rst:23
+msgid ""
+"These functions create various types of gradients, which are often used "
+"in graphical applications for creating smooth transitions between colors."
+msgstr ""
+"Ces fonctions créent divers types de gradients, souvent utilisés dans les applications graphiques "
+"pour créer des transitions douces entre les couleurs."
+
+#: ../Misc.rst:26
+msgid ""
+"**`create_line_gradient_rgb`**: Generates a linear gradient of RGB values"
+" between two specified colors (`start_rgb` and `end_rgb`)."
+msgstr ""
+"**`create_line_gradient_rgb`** : Génère un gradient linéaire de valeurs RGB entre deux couleurs spécifiées "
+"(`start_rgb` et `end_rgb`)."
+
+#: ../Misc.rst:27
+msgid ""
+"**`create_line_gradient_rgba`**: Similar to the above, but for RGBA "
+"colors (adds an alpha channel for transparency)."
+msgstr ""
+"**`create_line_gradient_rgba`** : Similaire à la précédente, mais pour les couleurs RGBA "
+"(ajoute un canal alpha pour la transparence)."
+
+#: ../Misc.rst:28
+msgid ""
+"**`horizontal_rgb_gradient`**: Creates a horizontal gradient in RGB color"
+" space."
+msgstr ""
+"**`horizontal_rgb_gradient`** : Crée un gradient horizontal dans l'espace colorimétrique RGB."
+
+#: ../Misc.rst:29
+msgid ""
+"**`horizontal_rgba_gradient`**: Creates a horizontal gradient in RGBA "
+"color space."
+msgstr ""
+"**`horizontal_rgba_gradient`** : Crée un gradient horizontal dans l'espace colorimétrique RGBA."
+
+#: ../Misc.rst:30
+msgid ""
+"**`create_radial_gradient`**: Creates a radial gradient that radiates "
+"outward from a point, with customizable start and end colors and offsets."
+" A precomputed gradient can be provided to optimize performance."
+msgstr ""
+"**`create_radial_gradient`** : Crée un gradient radial qui rayonne à partir d'un point, avec des couleurs de début et de fin "
+"personnalisables et des décalages. Un gradient pré-calculé peut être fourni pour optimiser les performances."
+
+#: ../Misc.rst:31
+msgid ""
+"**`create_radial_gradient_alpha`**: Similar to `create_radial_gradient`, "
+"but specifically for handling RGBA with transparency."
+msgstr ""
+"**`create_radial_gradient_alpha`** : Similaire à `create_radial_gradient`, mais spécifiquement pour gérer les RGBA avec transparence."
+
+#: ../Misc.rst:32
+msgid ""
+"**`create_quarter_radial_gradient`** and "
+"**`create_quarter_radial_gradient_alpha`**: These create gradients for a "
+"quarter of a circle (sector-based gradients), useful for specialized "
+"visual effects."
+msgstr ""
+"**`create_quarter_radial_gradient`** et **`create_quarter_radial_gradient_alpha`** : Ces fonctions créent des gradients pour un "
+"quart de cercle (gradients sectoriels), utiles pour des effets visuels spécialisés."
+
+#: ../Misc.rst:34
+msgid "**Color Space and Color Matching Functions**"
+msgstr "**Fonctions de manipulation d'espace colorimétrique et d'appariement de couleurs**"
+
+#: ../Misc.rst:36
+msgid ""
+"These functions are used to work with different color spaces (HSV, HSL, "
+"RGB) and find closest color matches, which is useful for color-based "
+"image processing or palette generation."
+msgstr ""
+"Ces fonctions sont utilisées pour travailler avec différents espaces colorimétriques (HSV, HSL, RGB) et trouver les couleurs les plus proches, "
+"ce qui est utile pour le traitement d'images basé sur les couleurs ou la génération de palettes."
+
+#: ../Misc.rst:38
+msgid ""
+"**`color_dist_hsv`**: Calculates the distance between two colors in the "
+"HSV color space."
+msgstr ""
+"**`color_dist_hsv`** : Calcule la distance entre deux couleurs dans l'espace colorimétrique HSV."
+
+#: ../Misc.rst:39
+msgid ""
+"**`color_dist_hsl`**: Calculates the distance between two colors in the "
+"HSL color space."
+msgstr ""
+"**`color_dist_hsl`** : Calcule la distance entre deux couleurs dans l'espace colorimétrique HSL."
+
+#: ../Misc.rst:40
+msgid ""
+"**`closest_hsv_color`** and **`closest_hsl_color`**: Find the closest "
+"color in a given palette to a target color, using the HSV or HSL color "
+"space respectively."
+msgstr ""
+"**`closest_hsv_color`** et **`closest_hsl_color`** : Trouve la couleur la plus proche dans une palette donnée par rapport à une couleur cible, "
+"en utilisant respectivement les espaces colorimétriques HSV ou HSL."
+
+#: ../Misc.rst:41
+msgid ""
+"**`close_color`**: Finds a color in a palette that is close to a given "
+"color (presumably using RGB space)."
+msgstr ""
+"**`close_color`** : Trouve une couleur dans une palette proche d'une couleur donnée (probablement en utilisant l'espace RGB)."
+
+#: ../Misc.rst:42
+msgid ""
+"**`use_palette`**: Similar to `close_color`, but selects colors from a "
+"palette based on a defined selection criterion."
+msgstr ""
+"**`use_palette`** : Similaire à `close_color`, mais sélectionne des couleurs dans une palette basée sur un critère de sélection défini."
+
+#: ../Misc.rst:44
+msgid "**Image Manipulation Functions**"
+msgstr "**Fonctions de manipulation d'image**"
+
+#: ../Misc.rst:46
+msgid ""
+"These functions focus on manipulating images or buffers, particularly for"
+" scrolling, blending, and combining channels."
+msgstr ""
+"Ces fonctions se concentrent sur la manipulation d'images ou de tampons, en particulier pour le défilement, le mélange et la combinaison des canaux."
+
+#: ../Misc.rst:48
+msgid ""
+"**`swap_image_channels`**: Swaps color channels (such as RGB) in an image"
+" surface, useful when working with different color formats or performing "
+"transformations."
+msgstr ""
+"**`swap_image_channels`** : Échange les canaux de couleur (comme RGB) sur une surface d'image, utile lorsqu'on travaille avec différents formats de couleur ou qu'on effectue des transformations."
+
+#: ../Misc.rst:49
+msgid ""
+"**`scroll_surface_24bit`**, **`scroll24_inplace`**, "
+"**`scroll_rgb_array_inplace`**, **`scroll_alpha_inplace`**: These "
+"functions allow for scrolling of an image or image channels in the x and "
+"y directions, which can be used for animations or visual effects. The `c`"
+" versions are likely optimized implementations written in C for "
+"performance."
+msgstr ""
+"**`scroll_surface_24bit`**, **`scroll24_inplace`**, "
+"**`scroll_rgb_array_inplace`**, **`scroll_alpha_inplace`** : Ces fonctions permettent de faire défiler une image ou des canaux d'image dans les directions x et y, "
+"ce qui peut être utilisé pour des animations ou des effets visuels. Les versions `c` sont probablement des implémentations optimisées écrites en C pour les performances."
+
+#: ../Misc.rst:50
+msgid ""
+"**`combine_rgba_buffers`**: Combines a BGR image buffer and an alpha "
+"channel into a single RGBA image buffer. This is useful for working with "
+"images that have separate color and alpha channels."
+msgstr ""
+"**`combine_rgba_buffers`** : Combine un tampon d'image BGR et un canal alpha en un seul tampon d'image RGBA. Cela est utile pour travailler avec des images ayant des canaux de couleur et alpha séparés."
+
+#: ../Misc.rst:51
+msgid ""
+"**`normalize_2d_array`**: Normalizes a 2D array, possibly for color or "
+"pixel intensity normalization."
+msgstr ""
+"**`normalize_2d_array`** : Normalise un tableau 2D, probablement pour la normalisation des couleurs ou de l'intensité des pixels."
+
+#: ../Misc.rst:53
+msgid "**Utility Functions**"
+msgstr "**Fonctions utilitaires**"
+
+#: ../Misc.rst:55
+msgid ""
+"These functions perform a variety of utility tasks, including sorting and"
+" random number generation."
+msgstr ""
+"Ces fonctions accomplissent diverses tâches utilitaires, y compris le tri et la génération de nombres aléatoires."
+
+#: ../Misc.rst:57
+msgid ""
+"**`rgb_to_int`** and **`int_to_rgb`**: Convert between RGB values and "
+"their integer representation (often used for packing/unpacking colors)."
+msgstr ""
+"**`rgb_to_int`** et **`int_to_rgb`** : Convertit entre les valeurs RGB et leur représentation entière (souvent utilisée pour l'emballage/déballage des couleurs)."
+
+#: ../Misc.rst:58
+msgid ""
+"**`_randf`**, **`_randi`**: Generate random float and integer values "
+"within a specified range, likely for random color or pixel generation."
+msgstr ""
+"**`_randf`**, **`_randi`** : Génère des valeurs aléatoires en float et en entier dans une plage spécifiée, probablement pour la génération aléatoire de couleurs ou de pixels."
+
+#: ../Misc.rst:59
+msgid ""
+"**`bubble_sort`**, **`insertion_sort`**, **`quick_sort`**, "
+"**`heap_sort`**: These are different sorting algorithms implemented for "
+"sorting arrays of pixel or image data. `heap_sort` and `quick_sort` are "
+"especially useful for sorting large datasets or pixel values efficiently."
+msgstr ""
+"**`bubble_sort`**, **`insertion_sort`**, **`quick_sort`**, "
+"**`heap_sort`** : Ce sont différents algorithmes de tri implémentés pour trier des tableaux de données de pixels ou d'images. "
+"`heap_sort` et `quick_sort` sont particulièrement utiles pour trier de grands ensembles de données ou des valeurs de pixels de manière efficace."
+
+#: ../Misc.rst:60
+msgid ""
+"**`partition_cython`**, **`_quick_sort`**, **`heapify`**: These are "
+"helper functions for sorting algorithms like Quick Sort and Heap Sort, "
+"optimized for performance in Cython."
+msgstr ""
+"**`partition_cython`**, **`_quick_sort`**, **`heapify`** : Ce sont des fonctions d'aide pour les algorithmes de tri comme QuickSort et HeapSort, optimisées pour les performances en Cython."
+
+#: ../Misc.rst:62
+msgid "**Image Format and Type Checking**"
+msgstr "**Vérification du format et du type d'image**"
+
+#: ../Misc.rst:64
+msgid "These functions help determine the type of image data or buffers."
+msgstr "Ces fonctions aident à déterminer le type de données ou de tampons d'image."
+
+#: ../Misc.rst:66
+msgid ""
+"**`get_image_format`**: Likely checks the format of an image (whether it "
+"is in RGBA, RGB, etc.)."
+msgstr ""
+"**`get_image_format`** : Vérifie probablement le format d'une image (si elle est en RGBA, RGB, etc.)."
+
+#: ../Misc.rst:67
+msgid ""
+"**`is_type_memoryview`**, **`is_uint8`**, **`is_float64`**, "
+"**`is_int32`**: These functions check the type and datatype of a given "
+"image array or buffer, useful for validating input and ensuring the "
+"correct data format."
+msgstr ""
+"**`is_type_memoryview`**, **`is_uint8`**, **`is_float64`**, "
+"**`is_int32`** : Ces fonctions vérifient le type et le format des données d'un tableau ou tampon d'image donné, "
+"utile pour valider l'entrée et garantir le bon format de données."
+
+#: ../Misc.rst:70
+msgid "2. Overall Purpose of the Library"
+msgstr "2. Objectif global de la bibliothèque"
+
+#: ../Misc.rst:72
+msgid ""
+"The library is designed for **image processing** and **graphical "
+"operations**, with a strong emphasis on **gradient creation**, **image "
+"channel manipulation**, **color transformations**, **sorting "
+"algorithms**, and **optimization**. It provides functions to create "
+"smooth color transitions (gradients), manipulate pixel data, check image "
+"formats, and optimize computationally expensive operations using "
+"algorithms like QuickSort and HeapSort. The functions are highly "
+"optimized with `cpdef` and `cdef` to allow seamless integration between "
+"Python and C for performance-critical tasks."
+msgstr ""
+"La bibliothèque est conçue pour le **traitement d'images** et les **opérations graphiques**, "
+"en mettant l'accent sur la **création de gradients**, la **manipulation des canaux d'image**, "
+"les **transformations de couleurs**, les **algorithmes de tri**, et **l'optimisation**. Elle fournit des fonctions pour créer "
+"des transitions de couleurs douces (gradients), manipuler les données de pixels, vérifier les formats d'images, et optimiser les opérations coûteuses "
+"en calcul en utilisant des algorithmes comme QuickSort et HeapSort. Les fonctions sont fortement optimisées avec `cpdef` et `cdef` "
+"pour permettre une intégration fluide entre Python et C pour les tâches critiques en termes de performance."
+#: ../Misc.rst:81
+msgid "3. Use Cases"
+msgstr "3. Cas d'utilisation"
+
+#: ../Misc.rst:83
+msgid ""
+"**Image Processing**: Manipulating and transforming images, handling "
+"RGBA/BGR channels, scrolling image pixels, and applying color "
+"transformations."
+msgstr ""
+"**Traitement d'image** : Manipulation et transformation des images, gestion des "
+"canaux RGBA/BGR, défilement des pixels d'image et application de transformations de "
+"couleur."
+
+#: ../Misc.rst:84
+msgid ""
+"**Graphics Rendering**: Generating gradients (linear, radial, quarter "
+"radial) for background effects or visual transitions."
+msgstr ""
+"**Rendu graphique** : Génération de gradients (linéaires, radiaux, quart de "
+"cercle) pour des effets de fond ou des transitions visuelles."
+
+#: ../Misc.rst:85
+msgid ""
+"**Color Matching**: Finding the closest matching colors in a given color "
+"palette based on various color spaces (HSV, HSL)."
+msgstr ""
+"**Correspondance des couleurs** : Trouver les couleurs les plus proches dans une "
+"palette donnée en fonction de différents espaces colorimétriques (HSV, HSL)."
+
+#: ../Misc.rst:86
+msgid ""
+"**Performance Optimization**: Utilizing sorting and color manipulation "
+"algorithms to efficiently process large images or datasets, with "
+"performance improvements using Cython (`cpdef`/`cdef`)."
+msgstr ""
+"**Optimisation des performances** : Utilisation d'algorithmes de tri et de manipulation des "
+"couleurs pour traiter efficacement de grandes images ou ensembles de données, avec des "
+"améliorations de performance grâce à Cython (`cpdef`/`cdef`)."
+
+#: ../Misc.rst:90
+msgid "4. Conclusion"
+msgstr "4. Conclusion"
+
+#: ../Misc.rst:91
+msgid ""
+"This library would be useful in applications like **image editors**, "
+"**graphic design tools**, **data visualization**, or **real-time "
+"graphical applications**."
+msgstr ""
+"Cette bibliothèque serait utile dans des applications telles que les **éditeurs d'images**, "
+"les **outils de conception graphique**, la **visualisation de données** ou les **applications "
+"graphiques en temps réel**."
+
+#: ../Misc.rst:97
+msgid "5. Cython list methods"
+msgstr "5. Méthodes de liste Cython"
+
+#: ../Misc.rst:105
+msgid ""
+"**Summary**: Swaps or nullifies the channels of an image based on the "
+"specified channel order string. The function allows you to swap the color"
+" channels (RGB) of an image represented as a pygame.Surface. You can "
+"specify the new channel order using a string where each letter represents"
+" a color channel (R, G, B) or '0' to nullify a channel (remove it)."
+msgstr ""
+"**Résumé** : Échange ou annule les canaux d'une image en fonction de la chaîne d'ordre "
+"des canaux spécifiée. La fonction permet d'échanger les canaux de couleur (RGB) d'une image "
+"représentée comme un pygame.Surface. Vous pouvez spécifier le nouvel ordre des canaux à "
+"l'aide d'une chaîne où chaque lettre représente un canal de couleur (R, G, B) ou '0' pour "
+"annuler un canal (le supprimer)."
+
+#: ../Misc.rst:108 ../Misc.rst:140 ../Misc.rst:182 ../Misc.rst:224
+#: ../Misc.rst:264 ../Misc.rst:307 ../Misc.rst:424 ../Misc.rst:487
+#: ../Misc.rst:548 ../Misc.rst:604 ../Misc.rst:651 ../Misc.rst:709
+#: ../Misc.rst:760 ../Misc.rst:810 ../Misc.rst:867 ../Misc.rst:906
+#: ../Misc.rst:949 ../Misc.rst:1014 ../Misc.rst:1056 ../Misc.rst:1096
+#: ../Misc.rst:1128 ../Misc.rst:1153
+msgid "**Example Usage**:"
+msgstr "**Exemple d'utilisation** :"
+
+#: ../Misc.rst:115 ../Misc.rst:147 ../Misc.rst:189 ../Misc.rst:231
+#: ../Misc.rst:271 ../Misc.rst:324 ../Misc.rst:386 ../Misc.rst:454
+#: ../Misc.rst:514 ../Misc.rst:579 ../Misc.rst:626 ../Misc.rst:673
+#: ../Misc.rst:731 ../Misc.rst:782 ../Misc.rst:828 ../Misc.rst:857
+#: ../Misc.rst:891 ../Misc.rst:930 ../Misc.rst:971 ../Misc.rst:1036
+#: ../Misc.rst:1080 ../Misc.rst:1115 ../Misc.rst:1160 ../Misc.rst:1189
+#: ../Misc.rst:1220 ../Misc.rst:1242 ../Misc.rst:1271
+msgid "**Parameters**:"
+msgstr "**Paramètres** :"
+
+#: ../Misc.rst:117
+msgid "**image_surface** (pygame.Surface):"
+msgstr "**image_surface** (pygame.Surface) :"
+
+#: ../Misc.rst:118
+msgid "The image (pygame Surface) whose channels are to be swapped."
+msgstr "L'image (pygame Surface) dont les canaux doivent être échangés."
+
+#: ../Misc.rst:120
+msgid "**channel_order** (str):"
+msgstr "**channel_order** (str) :"
+
+#: ../Misc.rst:121
+msgid ""
+"A string representing the desired channel order. It must contain exactly "
+"3 characters, where 'R', 'G', and 'B' represent the respective color "
+"channels, and '0' nullifies a channel. Example values: 'RGB', 'RBG', "
+"'GRB', 'BGR', 'BRG', 'R0B', etc."
+msgstr ""
+"Une chaîne représentant l'ordre souhaité des canaux. Elle doit contenir exactement "
+"3 caractères, où 'R', 'G', et 'B' représentent les canaux de couleur respectifs, "
+"et '0' annule un canal. Exemples de valeurs : 'RGB', 'RBG', 'GRB', 'BGR', 'BRG', "
+"'R0B', etc."
+
+#: ../Misc.rst:123
+msgid "**Returns**: A new 24-bit pygame surface with the swapped channels."
+msgstr "**Retourne** : Une nouvelle surface pygame 24 bits avec les canaux échangés."
+
+#: ../Misc.rst:126 ../Misc.rst:163 ../Misc.rst:205 ../Misc.rst:250
+#: ../Misc.rst:292 ../Misc.rst:358
+msgid "**Raises**: - **ValueError**:"
+msgstr "**Lève** : - **ValueError** :"
+
+#: ../Misc.rst:129
+msgid ""
+"If the channel order string is not valid or if the surface format is "
+"incompatible."
+msgstr ""
+"Si la chaîne d'ordre des canaux n'est pas valide ou si le format de la surface est "
+"incompatible."
+
+#: ../Misc.rst:137
+msgid ""
+"**Summary**: Generates a 2D horizontal gradient of RGB colors from a "
+"start color to an end color. The function creates an array of RGB values "
+"representing a smooth horizontal gradient transitioning from the "
+"specified `start_rgb` to the `end_rgb`. The gradient consists of "
+"`num_pixels` number of pixels, with the color gradually changing from the"
+" start color to the end color across the 1D array."
+msgstr ""
+"**Résumé** : Génère un gradient horizontal 2D de couleurs RGB allant d'une "
+"couleur de départ à une couleur de fin. La fonction crée un tableau de valeurs RGB "
+"représentant un gradient horizontal lisse transitionnant de `start_rgb` à `end_rgb`. "
+"Le gradient consiste en `num_pixels` pixels, avec la couleur changeant progressivement "
+"de la couleur de départ à la couleur de fin à travers le tableau 1D."
+
+#: ../Misc.rst:149 ../Misc.rst:191
+msgid "**num_pixels** (int):"
+msgstr "**num_pixels** (int) :"
+
+#: ../Misc.rst:150 ../Misc.rst:192
+msgid ""
+"The number of pixels in the gradient (must be > 0). Determines the length"
+" of the gradient in the horizontal direction."
+msgstr ""
+"Le nombre de pixels dans le gradient (doit être > 0). Détermine la longueur "
+"du gradient dans la direction horizontale."
+
+#: ../Misc.rst:152
+msgid "**start_rgb** (tuple, optional):"
+msgstr "**start_rgb** (tuple, optionnel) :"
+
+#: ../Misc.rst:153
+msgid ""
+"A tuple representing the RGB values of the starting color (default is "
+"red: (255, 0, 0))."
+msgstr ""
+"Un tuple représentant les valeurs RGB de la couleur de départ (par défaut, rouge : "
+"(255, 0, 0))."
+
+#: ../Misc.rst:155
+msgid "**end_rgb** (tuple, optional):"
+msgstr "**end_rgb** (tuple, optionnel) :"
+
+#: ../Misc.rst:156
+msgid ""
+"A tuple representing the RGB values of the ending color (default is "
+"green: (0, 255, 0))."
+msgstr ""
+"Un tuple représentant les valeurs RGB de la couleur de fin (par défaut, vert : "
+"(0, 255, 0))."
+
+#: ../Misc.rst:158 ../Misc.rst:200
+msgid "**Returns**: - **numpy.ndarray**:"
+msgstr "**Retourne** : - **numpy.ndarray** :"
+
+#: ../Misc.rst:161
+msgid ""
+"A 2D numpy array of shape (num_pixels, 3), where each row represents an "
+"RGB color. The array contains the pixel values of the gradient, with the "
+"color transitioning from the `start_rgb` to the `end_rgb`."
+msgstr ""
+"Un tableau numpy 2D de forme (num_pixels, 3), où chaque ligne représente une "
+"couleur RGB. Le tableau contient les valeurs des pixels du gradient, avec la "
+"couleur transitionnant de `start_rgb` à `end_rgb`."
+
+#: ../Misc.rst:166
+msgid ""
+"If the `num_pixels` is less than or equal to 0. If `start_rgb` or "
+"`end_rgb` are not valid RGB tuples of length 3, or if any of the color "
+"values are out of the valid RGB range [0, 255]. If `num_pixels` is not a "
+"positive integer."
+msgstr ""
+"Si `num_pixels` est inférieur ou égal à 0. Si `start_rgb` ou "
+"`end_rgb` ne sont pas des tuples RGB valides de longueur 3, ou si l'une des valeurs "
+"de couleur est en dehors de la plage RGB valide [0, 255]. Si `num_pixels` n'est pas un "
+"entier positif."
+
+#: ../Misc.rst:168 ../Misc.rst:210 ../Misc.rst:366
+msgid "**TypeError**:"
+msgstr "**TypeError** :"
+
+#: ../Misc.rst:170
+msgid ""
+"If `start_rgb` or `end_rgb` are not tuples, or if they contain non-"
+"integer values."
+msgstr ""
+"Si `start_rgb` ou `end_rgb` ne sont pas des tuples, ou s'ils contiennent des "
+"valeurs non entières."
+
+#: ../Misc.rst:179
+msgid ""
+"**Summary**: Generates a 2D horizontal gradient of RGB(A) colors from a "
+"start color to an end color. The function creates an array of RGBA values"
+" representing a smooth horizontal gradient transitioning from the "
+"specified `start_rgba` to the `end_rgba`. The gradient consists of "
+"`num_pixels` number of pixels, with the color gradually changing from the"
+" start color to the end color across the 1D array."
+msgstr ""
+"**Résumé** : Génère un gradient horizontal 2D de couleurs RGB(A) allant d'une "
+"couleur de départ à une couleur de fin. La fonction crée un tableau de valeurs RGBA "
+"représentant un gradient horizontal lisse transitionnant de `start_rgba` à `end_rgba`. "
+"Le gradient consiste en `num_pixels` pixels, avec la couleur changeant progressivement "
+"de la couleur de départ à la couleur de fin à travers le tableau 1D."
+
+#: ../Misc.rst:194
+msgid "**start_rgba** (tuple, optional):"
+msgstr "**start_rgba** (tuple, optionnel) :"
+
+#: ../Misc.rst:195
+msgid ""
+"A tuple representing the RGBA values of the starting color (default is "
+"red: (255, 0, 0, 255))."
+msgstr ""
+"Un tuple représentant les valeurs RGBA de la couleur de départ (par défaut, rouge : "
+"(255, 0, 0, 255))."
+
+#: ../Misc.rst:197
+msgid "**end_rgba** (tuple, optional):"
+msgstr "**end_rgba** (tuple, optionnel) :"
+
+#: ../Misc.rst:198
+msgid ""
+"A tuple representing the RGBA values of the ending color (default is "
+"green: (0, 255, 0, 0))."
+msgstr ""
+"Un tuple représentant les valeurs RGBA de la couleur de fin (par défaut, vert : "
+"(0, 255, 0, 0))."
+
+#: ../Misc.rst:203
+msgid ""
+"A 2D numpy array of shape (num_pixels, 4), where each row represents an "
+"RGBA color. The array contains the pixel values of the gradient, with the"
+" color transitioning from the `start_rgba` to the `end_rgba`."
+msgstr ""
+"Un tableau numpy 2D de forme (num_pixels, 4), où chaque ligne représente une "
+"couleur RGBA. Le tableau contient les valeurs des pixels du gradient, avec la "
+"couleur transitionnant de `start_rgba` à `end_rgba`."
+
+#: ../Misc.rst:208
+msgid ""
+"If the `num_pixels` is less than or equal to 0. If `start_rgba` or "
+"`end_rgba` are not valid RGBA tuples of length 4, or if any of the color "
+"values are out of the valid RGBA range [0, 255]. If `num_pixels` is not a"
+" positive integer."
+msgstr ""
+"Si `num_pixels` est inférieur ou égal à 0. Si `start_rgba` ou "
+"`end_rgba` ne sont pas des tuples RGBA valides de longueur 4, ou si l'une des valeurs "
+"de couleur est en dehors de la plage RGBA valide [0, 255]. Si `num_pixels` n'est pas un "
+"entier positif."
+
+#: ../Misc.rst:212
+msgid ""
+"If `start_rgba` or `end_rgba` are not tuples, or if they contain non-"
+"integer values."
+msgstr ""
+"Si `start_rgba` ou `end_rgba` ne sont pas des tuples, ou s'ils contiennent des "
+"valeurs non entières."
+
+#: ../Misc.rst:221
+msgid ""
+"**Summary**: Generates a 24-bit horizontal gradient between two RGB "
+"colors. The function creates a smooth transition from `color_start` to "
+"`color_end` across a surface of the specified dimensions."
+msgstr ""
+"**Résumé** : Génère un gradient horizontal 24 bits entre deux couleurs RGB. "
+"La fonction crée une transition douce de `color_start` à `color_end` à travers une "
+"surface de dimensions spécifiées."
+
+#: ../Misc.rst:233 ../Misc.rst:273 ../Misc.rst:326
+msgid "**w** (int):"
+msgstr "**w** (int) :"
+
+#: ../Misc.rst:234 ../Misc.rst:274
+msgid "The width of the gradient surface in pixels (must be > 1)."
+msgstr "La largeur de la surface du gradient en pixels (doit être > 1)."
+
+#: ../Misc.rst:236 ../Misc.rst:276 ../Misc.rst:329
+msgid "**h** (int):"
+msgstr "**h** (int) :"
+
+#: ../Misc.rst:237 ../Misc.rst:277
+msgid "The height of the gradient surface in pixels (must be > 0)."
+msgstr "La hauteur de la surface du gradient en pixels (doit être > 0)."
+
+#: ../Misc.rst:239 ../Misc.rst:279 ../Misc.rst:338
+msgid "**color_start** (tuple, optional):"
+msgstr "**color_start** (tuple, optionnel) :"
+
+#: ../Misc.rst:240
+msgid ""
+"The starting color as an (R, G, B) tuple, where each value is in the "
+"range [0, 255]. The default is (255, 0, 0), which represents red."
+msgstr ""
+"La couleur de départ sous forme de tuple (R, G, B), où chaque valeur est dans la "
+"plage [0, 255]. La valeur par défaut est (255, 0, 0), représentant le rouge."
+
+#: ../Misc.rst:243
+msgid ""
+"The ending color as an (R, G, B) tuple, where each value is in the range "
+"[0, 255]. The default is (0, 255, 0), which represents green."
+msgstr ""
+"La couleur finale sous forme de tuple (R, G, B), où chaque valeur est dans "
+"l'intervalle [0, 255]. La valeur par défaut est (0, 255, 0), ce qui représente le vert."
+
+#: ../Misc.rst:245 ../Misc.rst:287 ../Misc.rst:353 ../Misc.rst:481
+#: ../Misc.rst:541 ../Misc.rst:594 ../Misc.rst:1091
+msgid "**Returns**: - **pygame.Surface**:"
+msgstr "**Retour** : - **pygame.Surface** :"
+
+#: ../Misc.rst:248
+msgid ""
+"A 24-bit RGB pygame.Surface object of size (`w`, `h`) with the gradient "
+"applied."
+msgstr ""
+"Un objet pygame.Surface RGB 24 bits de taille (`w`, `h`) avec le dégradé "
+"appliqué."
+
+#: ../Misc.rst:253
+msgid ""
+"If `w` or `h` is not valid. If `color_start` or `color_end` is not a "
+"valid RGB tuple."
+msgstr ""
+"Si `w` ou `h` n'est pas valide. Si `color_start` ou `color_end` n'est pas un "
+"tuple RGB valide."
+
+#: ../Misc.rst:261
+msgid ""
+"**Summary**: Generates a 32-bit horizontal gradient with transparency "
+"between two RGBA colors. The function creates a smooth horizontal "
+"transition from `color_start` to `color_end` across the given width while"
+" maintaining the specified height."
+msgstr ""
+"**Résumé** : Génère un dégradé horizontal 32 bits avec transparence "
+"entre deux couleurs RGBA. La fonction crée une transition horizontale "
+"fluide de `color_start` à `color_end` à travers la largeur donnée tout en "
+"maintenant la hauteur spécifiée."
+
+#: ../Misc.rst:280
+msgid ""
+"The starting color in RGBA format, where each component (R, G, B, A) is "
+"in the range 0-255. Default: (255, 0, 0, 255) (opaque red)."
+msgstr ""
+"La couleur de départ au format RGBA, où chaque composant (R, G, B, A) est "
+"dans l'intervalle 0-255. Par défaut : (255, 0, 0, 255) (rouge opaque)."
+
+#: ../Misc.rst:284
+msgid ""
+"The ending color in RGBA format, where each component (R, G, B, A) is in "
+"the range 0-255. Default: (0, 255, 0, 0) (transparent green)."
+msgstr ""
+"La couleur de fin au format RGBA, où chaque composant (R, G, B, A) est dans "
+"l'intervalle 0-255. Par défaut : (0, 255, 0, 0) (vert transparent)."
+
+#: ../Misc.rst:290
+msgid ""
+"A 32-bit per pixel `pygame.Surface` with dimensions (w, h), containing "
+"the generated gradient with an alpha channel."
+msgstr ""
+"Un `pygame.Surface` 32 bits par pixel avec les dimensions (w, h), contenant "
+"le dégradé généré avec un canal alpha."
+
+#: ../Misc.rst:295
+msgid "If `w` or `h` is not a valid positive integer."
+msgstr "Si `w` ou `h` n'est pas un entier positif valide."
+
+#: ../Misc.rst:296
+msgid "If `color_start` or `color_end` is not a tuple of four integers (0-255)."
+msgstr "Si `color_start` ou `color_end` n'est pas un tuple de quatre entiers (0-255)."
+
+#: ../Misc.rst:304
+msgid ""
+"**Summary**: Generates a radial gradient (24-bit RGB) with a smooth "
+"transition between two colors, centered within a rectangular surface of "
+"given width and height. The gradient radiates from the center of the "
+"surface, and the transition between colors is based on the distance from "
+"the center, allowing for various gradient effects (such as circular or "
+"radial). Optionally, a precomputed gradient can be used, or one can be "
+"generated dynamically."
+msgstr ""
+"**Résumé** : Génère un dégradé radial (RGB 24 bits) avec une transition "
+"fluide entre deux couleurs, centré dans une surface rectangulaire de "
+"largeur et hauteur données. Le dégradé rayonne depuis le centre de la "
+"surface, et la transition entre les couleurs est basée sur la distance au "
+"centre, permettant divers effets de dégradé (tel que circulaire ou radial). "
+"Optionnellement, un dégradé pré-calculé peut être utilisé, ou un dégradé "
+"peut être généré dynamiquement."
+
+#: ../Misc.rst:327
+msgid "The width of the output gradient surface in pixels (must be > 0)."
+msgstr "La largeur de la surface du dégradé de sortie en pixels (doit être > 0)."
+
+#: ../Misc.rst:330
+msgid "The height of the output gradient surface in pixels (must be > 0)."
+msgstr "La hauteur de la surface du dégradé de sortie en pixels (doit être > 0)."
+
+#: ../Misc.rst:332
+msgid "**offset_x** (float, optional):"
+msgstr "**offset_x** (float, optionnel) :"
+
+#: ../Misc.rst:333
+msgid ""
+"The horizontal offset of the gradient center, where 0.5 represents the "
+"center of the surface (default is 0.5)."
+msgstr ""
+"Le décalage horizontal du centre du dégradé, où 0,5 représente le centre de "
+"la surface (par défaut 0,5)."
+
+#: ../Misc.rst:335
+msgid "**offset_y** (float, optional):"
+msgstr "**offset_y** (float, optionnel) :"
+
+#: ../Misc.rst:336
+msgid ""
+"The vertical offset of the gradient center, where 0.5 represents the "
+"center of the surface (default is 0.5)."
+msgstr ""
+"Le décalage vertical du centre du dégradé, où 0,5 représente le centre de "
+"la surface (par défaut 0,5)."
+
+#: ../Misc.rst:339
+msgid ""
+"The starting color of the gradient in RGB format (0-255). Default is "
+"(255, 0, 0), which corresponds to opaque red."
+msgstr ""
+"La couleur de départ du dégradé au format RGB (0-255). Par défaut, "
+"(255, 0, 0), ce qui correspond au rouge opaque."
+
+#: ../Misc.rst:342
+msgid ""
+"The ending color of the gradient in RGB format (0-255). Default is (0, 0,"
+" 0), which corresponds to black."
+msgstr ""
+"La couleur de fin du dégradé au format RGB (0-255). Par défaut : (0, 0, "
+"0), ce qui correspond au noir."
+
+#: ../Misc.rst:344
+msgid "**precomputed_gradient** (numpy.array, optional):"
+msgstr "**precomputed_gradient** (numpy.array, optionnel) :"
+
+#: ../Misc.rst:345
+msgid ""
+"A precomputed gradient 2D array (shape: (n, 3), containing RGB values). "
+"If not provided, a new gradient will be computed."
+msgstr ""
+"Un tableau 2D de dégradé pré-calculé (forme : (n, 3), contenant les valeurs RGB). "
+"Si non fourni, un nouveau dégradé sera calculé."
+
+#: ../Misc.rst:347
+msgid "**scale_factor** (float, optional):"
+msgstr "**scale_factor** (float, optionnel) :"
+
+#: ../Misc.rst:348
+msgid ""
+"A scaling factor that adjusts the radius of the gradient. A value greater"
+" than 1 will increase the size of the gradient, and values smaller than 1"
+" will reduce its radius. Default is 1.4. Must be > 0."
+msgstr ""
+"Un facteur de mise à l'échelle qui ajuste le rayon du dégradé. Une valeur "
+"supérieure à 1 augmentera la taille du dégradé, et des valeurs inférieures à 1 "
+"réduiront son rayon. Par défaut : 1,4. Doit être > 0."
+
+#: ../Misc.rst:350
+msgid "**threads** (int, optional):"
+msgstr "**threads** (int, optionnel) :"
+
+#: ../Misc.rst:351
+msgid ""
+"The number of concurrent threads to use for gradient computation. Default"
+" is 8."
+msgstr ""
+"Le nombre de threads simultanés à utiliser pour le calcul du dégradé. Par défaut "
+"8."
+
+#: ../Misc.rst:356
+msgid ""
+"A `pygame.Surface` object with the generated radial gradient, centered at"
+" (w/2, h/2), in 24-bit RGB format."
+msgstr ""
+"Un objet `pygame.Surface` avec le dégradé radial généré, centré à "
+"(w/2, h/2), au format RGB 24 bits."
+
+#: ../Misc.rst:361
+msgid "If `color_start` or `color_end` is not a tuple of 3 integers."
+msgstr "Si `color_start` ou `color_end` n'est pas un tuple de 3 entiers."
+
+#: ../Misc.rst:362
+msgid "If any RGB value in `color_start` or `color_end` is out of range (0-255)."
+msgstr "Si une valeur RGB dans `color_start` ou `color_end` est hors de portée (0-255)."
+
+#: ../Misc.rst:363
+msgid "If `scale_factor` is None or <= 0."
+msgstr "Si `scale_factor` est None ou <= 0."
+
+#: ../Misc.rst:364
+msgid "If `w` or `h` is <= 1."
+msgstr "Si `w` ou `h` est <= 1."
+
+#: ../Misc.rst:368
+msgid "If `precomputed_gradient` is not a contiguous array."
+msgstr "Si `precomputed_gradient` n'est pas un tableau contigu."
+
+#: ../Misc.rst:370 ../Misc.rst:1001
+msgid "**ValueError**:"
+msgstr "**ValueError** :"
+
+#: ../Misc.rst:372
+msgid ""
+"If `precomputed_gradient` is not a 2D array, not of type uint8, has "
+"length <= 1, or is not in RGB format."
+msgstr ""
+"Si `precomputed_gradient` n'est pas un tableau 2D, n'est pas de type uint8, "
+"a une longueur <= 1, ou n'est pas au format RGB."
+
+#: ../Misc.rst:374
+msgid "**Credits**: Function improved with collaboration from ChatGPT."
+msgstr "**Crédits** : Fonction améliorée avec la collaboration de ChatGPT."
+
+#: ../Misc.rst:383
+msgid ""
+"**Summary**: Creates a 32-bit radial gradient with transparency, blending"
+" smoothly between two RGBA colors (`color_start` and `color_end`), and "
+"supports optional precomputed gradient arrays for performance "
+"optimization."
+msgstr ""
+"**Résumé** : Crée un dégradé radial 32 bits avec transparence, fusionnant "
+"en douceur entre deux couleurs RGBA (`color_start` et `color_end`), et "
+"prend en charge les tableaux de dégradé pré-calculés pour l'optimisation des "
+"performances."
+
+#: ../Misc.rst:388
+msgid "**w** (int): The width of the surface in pixels (must be > 1)."
+msgstr "**w** (int) : La largeur de la surface en pixels (doit être > 1)."
+
+#: ../Misc.rst:391
+msgid "**h** (int): The height of the surface in pixels (must be > 1)."
+msgstr "**h** (int) : La hauteur de la surface en pixels (doit être > 1)."
+
+#: ../Misc.rst:394
+msgid ""
+"**offset_x** (float, optional): The X-coordinate of the gradient center "
+"as a fraction of the width (default is 0.5)."
+msgstr ""
+"**offset_x** (float, optionnel) : La coordonnée X du centre du dégradé "
+"en fraction de la largeur (par défaut 0.5)."
+
+#: ../Misc.rst:397
+msgid ""
+"**offset_y** (float, optional): The Y-coordinate of the gradient center "
+"as a fraction of the height (default is 0.5)."
+msgstr ""
+"**offset_y** (float, optionnel) : La coordonnée Y du centre du dégradé "
+"en fraction de la hauteur (par défaut 0.5)."
+
+#: ../Misc.rst:400
+msgid ""
+"**color_start** (tuple, optional): The starting RGBA color of the "
+"gradient (default is (255, 0, 0, 255))."
+msgstr ""
+"**color_start** (tuple, optionnel) : La couleur RGBA de départ du "
+"dégradé (par défaut (255, 0, 0, 255))."
+
+#: ../Misc.rst:403
+msgid ""
+"**color_end** (tuple, optional): The ending RGBA color of the gradient "
+"(default is (0, 0, 0, 0))."
+msgstr ""
+"**color_end** (tuple, optionnel) : La couleur RGBA de fin du dégradé "
+"(par défaut (0, 0, 0, 0))."
+
+#: ../Misc.rst:406
+msgid ""
+"**precomputed_gradient** (numpy.ndarray or None, optional): A precomputed"
+" gradient array of shape (w, 4) in uint8 format for optimization (default"
+" is None)."
+msgstr ""
+"**precomputed_gradient** (numpy.ndarray ou None, optionnel) : Un tableau "
+"de dégradé pré-calculé de forme (w, 4) au format uint8 pour l'optimisation (par défaut "
+"None)."
+
+#: ../Misc.rst:409
+msgid ""
+"**scale_factor** (float, optional): The scaling factor for the gradient "
+"(must be > 0, default is `r_max`)."
+msgstr ""
+"**scale_factor** (float, optionnel) : Le facteur de mise à l'échelle pour le dégradé "
+"(doit être > 0, la valeur par défaut est `r_max`)."
+
+#: ../Misc.rst:412
+msgid ""
+"**threads** (unsigned short int, optional): The number of threads to use "
+"for parallel computation (default is 8)."
+msgstr ""
+"**threads** (entier court non signé, optionnel) : Le nombre de threads à utiliser "
+"pour le calcul parallèle (la valeur par défaut est 8)."
+
+#: ../Misc.rst:415
+msgid ""
+"**Returns**: - **pygame.Surface**: A surface containing the generated "
+"radial gradient with per-pixel transparency."
+msgstr ""
+"**Retourne** : - **pygame.Surface** : Une surface contenant le dégradé radial généré "
+"avec une transparence par pixel."
+
+#: ../Misc.rst:418
+msgid ""
+"**Raises**: - **ValueError**: If `color_start` or `color_end` is not a "
+"tuple of four integers, if any RGBA value is out of range (0-255), or if "
+"`scale_factor` is None or <= 0. - **ValueError**: If `w` or `h` is <= 1. "
+"- **TypeError**: If `precomputed_gradient` is not a contiguous array. - "
+"**ValueError**: If `precomputed_gradient` is not a 2D array, not of type "
+"uint8, has length <= 1, or is not in RGBA format."
+msgstr ""
+"**Lève** : - **ValueError** : Si `color_start` ou `color_end` n'est pas un "
+"tuple de quatre entiers, si une valeur RGBA est hors de la plage (0-255), ou si "
+"`scale_factor` est None ou <= 0. - **ValueError** : Si `w` ou `h` est <= 1. "
+"- **TypeError** : Si `precomputed_gradient` n'est pas un tableau contigu. - "
+"**ValueError** : Si `precomputed_gradient` n'est pas un tableau 2D, n'est pas de type "
+"uint8, a une longueur <= 1, ou n'est pas en format RGBA."
+
+#: ../Misc.rst:446
+msgid ""
+"**Summary**: Generates a quarter radial gradient (24-bit opaque). This "
+"function creates a **radial gradient** by iterating over the **northwest "
+"(NW) quarter** of the surface (`width_/2`, `height_/2`) and mirroring the"
+" computed pixels to the remaining three quadrants (**northeast (NE), "
+"southeast (SE), and southwest (SW)**)."
+msgstr ""
+"**Résumé** : Génère un dégradé radial d'un quart (24 bits opaque). Cette "
+"fonction crée un **dégradé radial** en itérant sur le **quart nord-ouest "
+"(NW)** de la surface (`width_/2`, `height_/2`) et en miroir les pixels "
+"calculés dans les trois autres quadrants (**nord-est (NE), sud-est (SE) et "
+"sud-ouest (SW)**)."
+
+#: ../Misc.rst:452
+msgid ""
+"The gradient transitions from `start_color_` at the center to "
+"`end_color_` at the edges."
+msgstr ""
+"Le dégradé passe de `start_color_` au centre à `end_color_` sur les bords."
+
+#: ../Misc.rst:456 ../Misc.rst:516
+msgid "**width_** (int): The width of the surface in pixels (must be > 1)."
+msgstr ""
+"**width_** (int) : La largeur de la surface en pixels (doit être > 1)."
+
+#: ../Misc.rst:459 ../Misc.rst:519
+msgid "**height_** (int): The height of the surface in pixels (must be > 1)."
+msgstr ""
+"**height_** (int) : La hauteur de la surface en pixels (doit être > 1)."
+
+#: ../Misc.rst:462
+msgid ""
+"**start_color_** (tuple, optional): The starting RGB color at the center "
+"of the gradient. Default is **(255, 0, 0) [Red]**."
+msgstr ""
+"**start_color_** (tuple, optionnel) : La couleur RGB de départ au centre "
+"du dégradé. Par défaut, c'est **(255, 0, 0) [Rouge]**."
+
+#: ../Misc.rst:466
+msgid ""
+"**end_color_** (tuple, optional): The ending RGB color at the outer edge "
+"of the gradient. Default is **(0, 0, 0) [Black]**."
+msgstr ""
+"**end_color_** (tuple, optionnel) : La couleur RGB de fin sur le bord "
+"extérieur du dégradé. Par défaut, c'est **(0, 0, 0) [Noir]**."
+
+#: ../Misc.rst:470
+msgid ""
+"**gradient_array_** (numpy.ndarray or None, optional): A NumPy array of "
+"shape `(width_, 3)`, containing precomputed RGB color values (`uint8`). "
+"If `None`, the gradient is computed dynamically."
+msgstr ""
+"**gradient_array_** (numpy.ndarray ou None, optionnel) : Un tableau NumPy de "
+"forme `(width_, 3)`, contenant des valeurs de couleur RGB précalculées (`uint8`). "
+"Si `None`, le dégradé est calculé dynamiquement."
+
+#: ../Misc.rst:474 ../Misc.rst:534
+msgid ""
+"**factor_** (float, optional): Controls the intensity and spread of the "
+"gradient. **Must be > 0**. Default is **1.4**."
+msgstr ""
+"**factor_** (float, optionnel) : Contrôle l'intensité et l'étalement du "
+"dégradé. **Doit être > 0**. La valeur par défaut est **1.4**."
+
+#: ../Misc.rst:478 ../Misc.rst:538
+msgid ""
+"**threads_** (int, optional): Number of concurrent threads to use for "
+"computation. Default is **8**."
+msgstr ""
+"**threads_** (int, optionnel) : Le nombre de threads concurrents à utiliser pour "
+"le calcul. La valeur par défaut est **8**."
+
+#: ../Misc.rst:484
+msgid ""
+"A `pygame.Surface` object containing the radial gradient, **centered at "
+"(width_/2, height_/2)**."
+msgstr ""
+"Un objet `pygame.Surface` contenant le dégradé radial, **centré sur "
+"(width_/2, height_/2)**."
+
+#: ../Misc.rst:505
+msgid ""
+"**Summary**: Generates a quarter radial gradient with alpha transparency "
+"(32-bit). This function creates a **radial gradient with transparency** "
+"by iterating over the **northwest (NW) quarter** of the surface "
+"(`width_/2`, `height_/2`) and mirroring the computed pixels to the "
+"remaining three quadrants (**northeast (NE), southeast (SE), and "
+"southwest (SW)**)."
+msgstr ""
+"**Résumé** : Génère un dégradé radial d'un quart avec transparence alpha "
+"(32 bits). Cette fonction crée un **dégradé radial avec transparence** "
+"en itérant sur le **quart nord-ouest (NW)** de la surface "
+"(`width_/2`, `height_/2`) et en miroir les pixels calculés dans les "
+"trois autres quadrants (**nord-est (NE), sud-est (SE) et sud-ouest (SW)**)."
+
+#: ../Misc.rst:511
+msgid ""
+"The gradient smoothly transitions from `start_color_` at the center to "
+"`end_color_` at the edges, incorporating **alpha blending for "
+"transparency**."
+msgstr ""
+"Le dégradé passe en douceur de `start_color_` au centre à `end_color_` "
+"sur les bords, avec un **mélange alpha pour la transparence**."
+
+#: ../Misc.rst:522
+msgid ""
+"**start_color_** (tuple, optional): The color at the **center** of the "
+"gradient in **RGBA format**. Default is **(255, 0, 0, 255) [Opaque "
+"Red]**."
+msgstr ""
+"**start_color_** (tuple, optionnel) : La couleur au **centre** du "
+"dégradé en **format RGBA**. La valeur par défaut est **(255, 0, 0, 255) "
+"[Rouge opaque]**."
+
+#: ../Misc.rst:526
+msgid ""
+"**end_color_** (tuple, optional): The color at the **outer edge** of the "
+"gradient in **RGBA format**. Default is **(0, 0, 0, 0) [Fully Transparent"
+" Black]**."
+msgstr ""
+"**end_color_** (tuple, optionnel) : La couleur au **bord extérieur** du "
+"dégradé en **format RGBA**. La valeur par défaut est **(0, 0, 0, 0) "
+"[Noir entièrement transparent]**."
+
+#: ../Misc.rst:530
+msgid ""
+"**gradient_array_** (numpy.ndarray or None, optional): A NumPy array of "
+"shape `(width_, 4)`, containing precomputed RGBA color values (`uint8`). "
+"If `None`, the gradient is computed dynamically."
+msgstr ""
+"**gradient_array_** (numpy.ndarray ou None, optionnel) : Un tableau NumPy de "
+"forme `(width_, 4)`, contenant des valeurs de couleur RGBA précalculées (`uint8`). "
+"Si `None`, le dégradé est calculé dynamiquement."
+
+#: ../Misc.rst:544
+msgid ""
+"A `pygame.Surface` object containing the radial gradient, **centered at "
+"(width_/2, height_/2)**, with **alpha transparency for smooth blending**."
+msgstr ""
+"Un objet `pygame.Surface` contenant le dégradé radial, **centré sur "
+"(width_/2, height_/2)**, avec **transparence alpha pour un fondu en douceur**."
+
+#: ../Misc.rst:572
+msgid ""
+"**Summary**: Scrolls a **24-bit or 32-bit** Pygame surface **horizontally"
+" and/or vertically**."
+msgstr ""
+"**Résumé** : Fait défiler une surface Pygame **24 bits ou 32 bits** "
+"**horizontalement et/ou verticalement**."
+
+#: ../Misc.rst:575
+msgid ""
+"This function creates and returns a **new 24-bit surface** with the pixel"
+" data shifted according to the specified `dx` and `dy` values. Pixels "
+"that are shifted out of bounds will **wrap around** to the opposite side."
+msgstr ""
+"Cette fonction crée et retourne une **nouvelle surface 24 bits** avec les données "
+"de pixels décalées selon les valeurs spécifiées de `dx` et `dy`. Les pixels "
+"qui dépassent seront **déplacés** de l'autre côté."
+
+#: ../Misc.rst:581
+msgid ""
+"**surface** (pygame.Surface): A Pygame `Surface` object in **24-bit or "
+"32-bit** format."
+msgstr ""
+"**surface** (pygame.Surface) : Un objet `Surface` Pygame en format **24 bits ou "
+"32 bits**."
+
+#: ../Misc.rst:584
+msgid ""
+"**dx** (int): The number of pixels to scroll **horizontally**. - A "
+"**positive `dx`** shifts the surface to the **right**. - A **negative "
+"`dx`** shifts the surface to the **left**."
+msgstr ""
+"**dx** (int) : Le nombre de pixels à faire défiler **horizontalement**. - Un "
+"**`dx` positif** déplace la surface vers la **droite**. - Un **`dx` négatif** "
+"déplace la surface vers la **gauche**."
+
+#: ../Misc.rst:589
+msgid ""
+"**dy** (int): The number of pixels to scroll **vertically**. - A "
+"**positive `dy`** shifts the surface **downward**. - A **negative `dy`** "
+"shifts the surface **upward**."
+msgstr ""
+"**dy** (int) : Le nombre de pixels à faire défiler **verticalement**. - Un "
+"**`dy` positif** déplace la surface **vers le bas**. - Un **`dy` négatif** "
+"déplace la surface **vers le haut**."
+
+#: ../Misc.rst:597
+msgid "A **new** 24-bit `pygame.Surface` object with the applied scroll effect."
+msgstr ""
+"Un objet `pygame.Surface` 24 bits **nouveau** avec l'effet de défilement appliqué."
+
+#: ../Misc.rst:599 ../Misc.rst:646
+msgid "**Raises**: - **TypeError**:"
+msgstr ""
+"**Lève** : - **TypeError** :"
+
+#: ../Misc.rst:602 ../Misc.rst:649
+msgid "If `surface` is **not** a `pygame.Surface` object."
+msgstr ""
+"Si `surface` n'est **pas** un objet `pygame.Surface`."
+
+#: ../Misc.rst:610
+msgid ""
+"This shifts the surface **10 pixels to the right** and **5 pixels "
+"upward**."
+msgstr ""
+"Cela déplace la surface de **10 pixels vers la droite** et de **5 pixels vers le haut**."
+
+#: ../Misc.rst:618
+msgid ""
+"**center** (tuple, optional): The **(x, y)** coordinates of the **center** "
+"of the surface to scroll. Default is **(width_/2, height_/2)**."
+msgstr ""
+"**center** (tuple, optionnel) : Les coordonnées **(x, y)** du **centre** "
+"de la surface à faire défiler. La valeur par défaut est **(width_/2, height_/2)**."
+
+#: ../Misc.rst:621
+msgid ""
+"**Returns**: A **new** surface with the applied scroll effect."
+msgstr ""
+"**Retourne** : Une **nouvelle** surface avec l'effet de défilement appliqué."
+#: ../Misc.rst:628
+msgid "**surface** (pygame.Surface):"
+msgstr "**surface** (pygame.Surface) :"
+
+#: ../Misc.rst:630
+msgid ""
+"A `pygame.Surface` object in **24-bit or 32-bit** format (compatible with"
+" pixel access)."
+msgstr ""
+"Un objet `pygame.Surface` en format **24 bits ou 32 bits** (compatible avec "
+"l'accès aux pixels)."
+
+#: ../Misc.rst:632
+msgid ""
+"**dx** (int): Horizontal scroll amount. - **Positive values** move pixels"
+" **to the right**. - **Negative values** move pixels **to the left**."
+msgstr ""
+"**dx** (int) : Quantité de défilement horizontal. - **Les valeurs positives** déplacent les pixels "
+"**vers la droite**. - **Les valeurs négatives** déplacent les pixels **vers la gauche**."
+
+#: ../Misc.rst:637
+msgid ""
+"**dy** (int): Vertical scroll amount. - **Positive values** move pixels "
+"**downward**. - **Negative values** move pixels **upward**."
+msgstr ""
+"**dy** (int) : Quantité de défilement vertical. - **Les valeurs positives** déplacent les pixels "
+"**vers le bas**. - **Les valeurs négatives** déplacent les pixels **vers le haut**."
+
+#: ../Misc.rst:642 ../Misc.rst:839 ../Misc.rst:862 ../Misc.rst:938
+#: ../Misc.rst:1123 ../Misc.rst:1168 ../Misc.rst:1200
+msgid "**Returns**:"
+msgstr "**Retourne** :"
+
+#: ../Misc.rst:644
+msgid "**None** (modifies the surface **in place**)."
+msgstr "**None** (modifie la surface **sur place**)."
+
+#: ../Misc.rst:657
+msgid ""
+"This shifts the surface **1 pixel to the right** without creating a new "
+"surface."
+msgstr ""
+"Cela déplace la surface de **1 pixel vers la droite** sans créer une nouvelle "
+"surface."
+
+#: ../Misc.rst:665
+msgid ""
+"**Summary**: Scrolls a **3D RGB pixel array** horizontally and/or "
+"vertically **in place**."
+msgstr ""
+"**Résumé** : Fait défiler un **tableau de pixels RGB 3D** horizontalement et/ou "
+"verticalement **sur place**."
+
+#: ../Misc.rst:668
+msgid ""
+"This function **modifies** the given `rgb_array` **directly** by shifting"
+" pixel values based on the specified horizontal (`dx`) and vertical "
+"(`dy`) offsets. Scrolling **wraps around**, meaning pixels shifted beyond"
+" the array's boundaries reappear on the opposite side."
+msgstr ""
+"Cette fonction **modifie** directement le `rgb_array` donné en déplaçant"
+" les valeurs de pixels en fonction des décalages horizontaux (`dx`) et verticaux "
+"(`dy`). Le défilement **fait une boucle**, ce qui signifie que les pixels déplacés au-delà "
+"des limites du tableau réapparaissent de l'autre côté."
+
+#: ../Misc.rst:675
+msgid ""
+"**rgb_array** (numpy.ndarray): - A **3D NumPy array** containing **RGB "
+"pixel values**. - The array must reference **all pixels** to ensure "
+"modification in place. - Expected shape: **(height, width, 3)** (RGB "
+"format)."
+msgstr ""
+"**rgb_array** (numpy.ndarray) : - Un **tableau NumPy 3D** contenant des **valeurs de pixels RGB**. - "
+"Le tableau doit référencer **tous les pixels** pour garantir la modification sur place. - "
+"Forme attendue : **(hauteur, largeur, 3)** (format RGB)."
+
+#: ../Misc.rst:680 ../Misc.rst:738 ../Misc.rst:788
+msgid ""
+"**dx** (int, optional, default=0): - **Horizontal shift amount**. - "
+"**Negative values** move pixels **left**. - **Positive values** move "
+"pixels **right**."
+msgstr ""
+"**dx** (int, optionnel, défaut=0) : - **Quantité de décalage horizontal**. - "
+"**Les valeurs négatives** déplacent les pixels **à gauche**. - **Les valeurs positives** déplacent "
+"les pixels **à droite**."
+
+#: ../Misc.rst:685 ../Misc.rst:743 ../Misc.rst:793
+msgid ""
+"**dy** (int, optional, default=0): - **Vertical shift amount**. - "
+"**Negative values** move pixels **up**. - **Positive values** move pixels"
+" **down**."
+msgstr ""
+"**dy** (int, optionnel, défaut=0) : - **Quantité de décalage vertical**. - "
+"**Les valeurs négatives** déplacent les pixels **vers le haut**. - **Les valeurs positives** déplacent "
+"les pixels **vers le bas**."
+
+#: ../Misc.rst:690
+msgid "**Returns**: - **None** (modifies `rgb_array` **in place**)."
+msgstr "**Retourne** : - **None** (modifie `rgb_array` **sur place**)."
+
+#: ../Misc.rst:693 ../Misc.rst:999 ../Misc.rst:1046
+msgid "**Raises**:"
+msgstr "**Lève** :"
+
+#: ../Misc.rst:695
+msgid ""
+"**TypeError**: If `rgb_array` is **not** a `numpy.ndarray` or "
+"`memoryviewslice`."
+msgstr ""
+"**TypeError** : Si `rgb_array` n'est **pas** un `numpy.ndarray` ou "
+"`memoryviewslice`."
+
+#: ../Misc.rst:698
+msgid ""
+"**ValueError**: - If `rgb_array` is **not a 3D array** with shape "
+"`(height, width, 3)`. - If `rgb_array.dtype` is **not** `numpy.uint8` "
+"(expected **8-bit RGB format**). - If `rgb_array` is **empty** (`shape[0]"
+" == 0`)."
+msgstr ""
+"**ValueError** : - Si `rgb_array` n'est **pas un tableau 3D** avec la forme "
+"`(hauteur, largeur, 3)`. - Si `rgb_array.dtype` n'est **pas** `numpy.uint8` "
+"(format RGB **8 bits attendu**). - Si `rgb_array` est **vide** (`shape[0]"
+" == 0`)."
+
+#: ../Misc.rst:703 ../Misc.rst:751 ../Misc.rst:804 ../Misc.rst:1008
+msgid "**Notes**:"
+msgstr "**Notes** :"
+
+#: ../Misc.rst:705 ../Misc.rst:753 ../Misc.rst:806
+msgid "If both `dx` and `dy` are zero, the function performs **no operation**."
+msgstr ""
+"Si `dx` et `dy` sont tous deux à zéro, la fonction n'effectue **aucune opération**."
+
+#: ../Misc.rst:706 ../Misc.rst:754
+msgid ""
+"This function is optimized for **performance** and operates **without "
+"copying data**."
+msgstr ""
+"Cette fonction est optimisée pour la **performance** et fonctionne **sans "
+"copier de données**."
+
+#: ../Misc.rst:707 ../Misc.rst:755
+msgid ""
+"The array must be **contiguous** and properly referenced to avoid "
+"unexpected behavior."
+msgstr ""
+"Le tableau doit être **contigu** et correctement référencé pour éviter "
+"des comportements inattendus."
+
+#: ../Misc.rst:715
+msgid "This shifts the array **5 pixels to the right** and **2 pixels upward**."
+msgstr ""
+"Cela déplace le tableau de **5 pixels vers la droite** et de **2 pixels vers le haut**."
+
+#: ../Misc.rst:723
+msgid ""
+"**Summary**: Scrolls an **alpha channel array** (2D) **horizontally "
+"and/or vertically** **in place**."
+msgstr ""
+"**Résumé** : Fait défiler un **tableau de canal alpha** (2D) **horizontalement "
+"et/ou verticalement** **sur place**."
+
+#: ../Misc.rst:726
+msgid ""
+"This function **modifies** the given `alpha_array` **directly** by "
+"shifting alpha values based on the specified horizontal (`dx`) and "
+"vertical (`dy`) offsets. Scrolling **wraps around**, meaning pixels "
+"shifted beyond the array's boundaries reappear on the opposite side."
+msgstr ""
+"Cette fonction **modifie** directement le `alpha_array` donné en déplaçant "
+"les valeurs alpha en fonction des décalages horizontaux (`dx`) et verticaux "
+"(`dy`). Le défilement **fait une boucle**, ce qui signifie que les pixels "
+"déplacés au-delà des limites du tableau réapparaissent de l'autre côté."
+
+#: ../Misc.rst:733
+msgid ""
+"**alpha_array** (numpy.ndarray): - A **2D NumPy array** containing "
+"**alpha channel pixel values**. - The array must reference **all alpha "
+"pixel values** for in-place transformation. - Expected shape: **(height, "
+"width)** (grayscale alpha format)."
+msgstr ""
+"**alpha_array** (numpy.ndarray) : - Un **tableau NumPy 2D** contenant des "
+"**valeurs de pixels du canal alpha**. - Le tableau doit référencer **toutes les valeurs alpha "
+"des pixels** pour la transformation sur place. - Forme attendue : **(hauteur, "
+"largeur)** (format alpha en niveaux de gris)."
+
+#: ../Misc.rst:748
+msgid "**Returns**: - **None** (modifies `alpha_array` **in place**)."
+msgstr "**Retourne** : - **None** (modifie `alpha_array` **sur place**)."
+
+#: ../Misc.rst:756
+msgid ""
+"**Alpha channel values** typically represent pixel transparency, where: -"
+" `0` = **Fully Transparent** - `255` = **Fully Opaque**"
+msgstr ""
+"Les **valeurs du canal alpha** représentent généralement la transparence des pixels, où : -"
+" `0` = **Complètement transparent** - `255` = **Complètement opaque**"
+#: ../Misc.rst:766
+msgid ""
+"This shifts the alpha channel **3 pixels to the right** and **1 pixel "
+"upward**."
+msgstr ""
+"Cela déplace le canal alpha de **3 pixels vers la droite** et de **1 pixel vers le haut**."
+
+#: ../Misc.rst:774
+msgid ""
+"**Summary**: Scrolls a **32-bit Pygame surface** **horizontally and/or "
+"vertically** **in place**."
+msgstr ""
+"**Résumé** : Fait défiler une **surface Pygame 32 bits** **horizontalement et/ou "
+"verticalement** **sur place**."
+
+#: ../Misc.rst:777
+msgid ""
+"This function **modifies** the given `surface` **directly** by shifting "
+"pixel data based on the specified horizontal (`dx`) and vertical (`dy`) "
+"offsets. Scrolling **wraps around**, meaning pixels shifted beyond the "
+"surface boundaries reappear on the opposite side."
+msgstr ""
+"Cette fonction **modifie** directement la `surface` donnée en déplaçant "
+"les données des pixels en fonction des décalages horizontaux (`dx`) et verticaux (`dy`). "
+"Le défilement **fait une boucle**, ce qui signifie que les pixels déplacés au-delà des "
+"limites de la surface réapparaissent de l'autre côté."
+
+#: ../Misc.rst:784
+msgid ""
+"**surface** (pygame.Surface): - A `pygame.Surface` object with a **32-bit"
+" pixel format**. - The surface's pixel data will be **modified "
+"directly**."
+msgstr ""
+"**surface** (pygame.Surface) : - Un objet `pygame.Surface` avec un format de pixel **32 bits**. - "
+"Les données de pixels de la surface seront **modifiées directement**."
+
+#: ../Misc.rst:798
+msgid "**Returns**: - **None** (modifies `surface` **in place**)."
+msgstr "**Retourne** : - **None** (modifie `surface` **sur place**)."
+
+#: ../Misc.rst:801
+msgid ""
+"**Exceptions**: - **TypeError**: If `surface` is not a valid "
+"`pygame.Surface`."
+msgstr ""
+"**Exceptions** : - **TypeError** : Si `surface` n'est pas une `pygame.Surface` valide."
+
+#: ../Misc.rst:807
+msgid ""
+"This function ensures **efficient, in-place modification** without "
+"copying data."
+msgstr ""
+"Cette fonction garantit une **modification efficace sur place** sans "
+"copier de données."
+
+#: ../Misc.rst:808
+msgid ""
+"Scrolling is **cyclic (toroidal wrap-around)**, meaning pixels that exit "
+"one edge **reappear** on the opposite edge."
+msgstr ""
+"Le défilement est **cyclique (bouclage toroïdal)**, ce qui signifie que les pixels qui sortent "
+"par un bord **réapparaissent** sur le bord opposé."
+
+#: ../Misc.rst:823
+msgid ""
+"**Summary**: Convert RGB color values into a single 32-bit integer, "
+"similar to pygame's map_rgb() function."
+msgstr ""
+"**Résumé** : Convertit les valeurs de couleur RGB en un seul entier 32 bits, "
+"similaire à la fonction `pygame.map_rgb()`."
+
+#: ../Misc.rst:826
+msgid ""
+"This Cython `cpdef` function allows direct calls without requiring a "
+"Python hook function. It efficiently encodes red, green, and blue values "
+"into a packed integer representation."
+msgstr ""
+"Cette fonction `cpdef` Cython permet des appels directs sans nécessiter une "
+"fonction d'accroche Python. Elle encode efficacement les valeurs rouges, vertes et bleues "
+"en une représentation d'entier compactée."
+
+#: ../Misc.rst:830
+msgid "**red** (unsigned char): - Red color component (0-255)."
+msgstr "**rouge** (char non signé) : - Composant de couleur rouge (0-255)."
+
+#: ../Misc.rst:833
+msgid "**green** (unsigned char): - Green color component (0-255)."
+msgstr "**vert** (char non signé) : - Composant de couleur verte (0-255)."
+
+#: ../Misc.rst:836
+msgid "**blue** (unsigned char): - Blue color component (0-255)."
+msgstr "**bleu** (char non signé) : - Composant de couleur bleue (0-255)."
+
+#: ../Misc.rst:841
+msgid ""
+"**unsigned int**: - A 32-bit unsigned integer representing the combined "
+"RGB color."
+msgstr ""
+"**entier non signé** : - Un entier non signé de 32 bits représentant la couleur "
+"RGB combinée."
+
+#: ../Misc.rst:850
+msgid ""
+"**Summary**: Converts a **32-bit unsigned integer** into an **RGB color "
+"representation**."
+msgstr ""
+"**Résumé** : Convertit un **entier non signé de 32 bits** en une **représentation de couleur RGB**."
+
+#: ../Misc.rst:853
+msgid ""
+"This function extracts the **red, green, and blue** components from a "
+"**packed integer format** (similar to `pygame.Color.unmap_rgb()`) and "
+"returns them as a **tuple** containing **values in the range [0, 255]**."
+msgstr ""
+"Cette fonction extrait les composants **rouge, vert et bleu** d'un "
+"**format d'entier compacté** (similaire à `pygame.Color.unmap_rgb()`) et "
+"les renvoie sous la forme d'un **tuple** contenant des **valeurs dans la plage [0, 255]**."
+
+#: ../Misc.rst:859
+msgid ""
+"**n** (int): - A **32-bit unsigned integer** representing an **RGB "
+"color**."
+msgstr ""
+"**n** (int) : - Un **entier non signé de 32 bits** représentant une **couleur RGB**."
+
+#: ../Misc.rst:864
+msgid ""
+"**tuple (unsigned char, unsigned char, unsigned char)**: - A tuple "
+"containing the **extracted** `(red, green, blue)` **values**."
+msgstr ""
+"**tuple (char non signé, char non signé, char non signé)** : - Un tuple "
+"contenant les **valeurs extraites** `(rouge, vert, bleu)`."
+
+#: ../Misc.rst:879 ../Misc.rst:1109
+msgid "**Summary**:"
+msgstr "**Résumé** :"
+
+#: ../Misc.rst:881
+msgid ""
+"Generates a **random floating-point number** in the range **[lower, "
+"upper)**."
+msgstr ""
+"Génère un **nombre à virgule flottante aléatoire** dans la plage **[inférieur, "
+"supérieur)**."
+
+#: ../Misc.rst:883
+msgid ""
+"This function is an **optimized alternative** to `random.uniform(lower, "
+"upper)`, leveraging an **external C function** (`randRangeFloat`) for "
+"improved performance."
+msgstr ""
+"Cette fonction est une **alternative optimisée** à `random.uniform(lower, "
+"upper)`, utilisant une **fonction C externe** (`randRangeFloat`) pour "
+"améliorer les performances."
+
+#: ../Misc.rst:886
+msgid "**Note:**"
+msgstr "**Note** :"
+
+#: ../Misc.rst:888
+msgid ""
+"This function operates **without the Python GIL (`nogil`)**, making it "
+"**safe for parallel execution in Cython**."
+msgstr ""
+"Cette fonction fonctionne **sans le GIL Python (`nogil`)**, ce qui la rend "
+"**sûre pour une exécution parallèle en Cython**."
+
+#: ../Misc.rst:893
+msgid "**lower** (float):"
+msgstr "**inférieur** (float) :"
+
+#: ../Misc.rst:895
+msgid "The **lower bound** of the range (**inclusive**)."
+msgstr "La **borne inférieure** de la plage (**incluse**)."
+
+#: ../Misc.rst:897
+msgid "**upper** (float):"
+msgstr "**supérieur** (float) :"
+
+#: ../Misc.rst:899
+msgid "The **upper bound** of the range (**exclusive**)."
+msgstr "La **borne supérieure** de la plage (**exclusive**)."
+
+#: ../Misc.rst:901
+msgid "**Returns**: - **float**:"
+msgstr "**Retourne** : - **float** :"
+
+#: ../Misc.rst:904
+msgid "A **random float value** in the range **[lower, upper)**."
+msgstr "Une **valeur flottante aléatoire** dans la plage **[inférieur, supérieur)**."
+
+#: ../Misc.rst:918
+msgid ""
+"**Summary**: Generates a **random integer** in the range **[lower, "
+"upper]**."
+msgstr ""
+"**Résumé** : Génère un **entier aléatoire** dans la plage **[inférieur, "
+"supérieur]**."
+
+#: ../Misc.rst:921
+msgid ""
+"This function is an **optimized alternative** to `random.randint(lower, "
+"upper)`, leveraging an **external C function** (`randRange`) for improved"
+" performance."
+msgstr ""
+"Cette fonction est une **alternative optimisée** à `random.randint(lower, "
+"upper)`, utilisant une **fonction C externe** (`randRange`) pour améliorer "
+"les performances."
+
+#: ../Misc.rst:924
+msgid "**Performance Notes**:"
+msgstr "**Remarques de performance** :"
+
+#: ../Misc.rst:926
+msgid "Declared as **`inline`** for **faster execution**."
+msgstr "Déclarée comme **`inline`** pour **une exécution plus rapide**."
+
+#: ../Misc.rst:927
+msgid ""
+"Operates **without the Python Global Interpreter Lock (`nogil`)**, making"
+" it **safe for parallel execution in Cython**."
+msgstr ""
+"Fonctionne **sans le verrou global de l'interpréteur Python (`nogil`)**, "
+"ce qui la rend **sûre pour une exécution parallèle en Cython**."
+
+#: ../Misc.rst:932
+msgid "**lower** (int): - The **lower bound** of the range (**inclusive**)."
+msgstr "**inférieur** (int) : - La **borne inférieure** de la plage (**incluse**)."
+
+#: ../Misc.rst:935
+msgid "**upper** (int): - The **upper bound** of the range (**inclusive**)."
+msgstr "**supérieur** (int) : - La **borne supérieure** de la plage (**incluse**)."
+
+#: ../Misc.rst:940
+msgid "**int**: - A **random integer** in the range **[lower, upper]**."
+msgstr "**int** : - Un **entier aléatoire** dans la plage **[inférieur, supérieur]**."
+
+#: ../Misc.rst:943
+msgid "**Important Notes**:"
+msgstr "**Notes importantes** :"
+
+#: ../Misc.rst:945
+msgid ""
+"The function **does not check** whether `lower <= upper`. **Incorrect "
+"usage** may result in **undefined behavior**, depending on the "
+"`randRange` implementation."
+msgstr ""
+"La fonction **ne vérifie pas** si `inférieur <= supérieur`. "
+"**Une utilisation incorrecte** peut entraîner un **comportement indéfini**, "
+"selon l'implémentation de `randRange`."
+
+#: ../Misc.rst:961
+msgid ""
+"**Summary**: Combines separate **BGR** and **Alpha** memory buffers into "
+"a single **RGBA** buffer."
+msgstr ""
+"**Résumé** : Combine des tampons mémoire séparés **BGR** et **Alpha** en un "
+"seul tampon **RGBA**."
+
+#: ../Misc.rst:964
+msgid ""
+"This function takes **separate BGR** (Blue-Green-Red) and **Alpha** "
+"memory buffers, stacks them together into a single **RGBA buffer**, and "
+"optionally transposes the result. It is optimized using **Cython** and "
+"parallelized with **OpenMP** for improved performance."
+msgstr ""
+"Cette fonction prend des tampons mémoire **séparés BGR** (Bleu-Vert-Rouge) et **Alpha**, "
+"les empile dans un seul **tampon RGBA**, et transpose éventuellement le résultat. "
+"Elle est optimisée à l'aide de **Cython** et parallélisée avec **OpenMP** pour améliorer les performances."
+
+#: ../Misc.rst:968
+msgid ""
+"If `transpose_output` is **True**, the output memory view is flipped by "
+"swapping rows and columns."
+msgstr ""
+"Si `transpose_output` est **True**, la vue mémoire de sortie est inversée en "
+"échangeant les lignes et les colonnes."
+
+#: ../Misc.rst:973
+msgid "**w** (int): - The **width** of the texture."
+msgstr "**w** (int) : - La **largeur** de la texture."
+
+#: ../Misc.rst:976
+msgid "**h** (int): - The **height** of the texture."
+msgstr "**h** (int) : - La **hauteur** de la texture."
+
+#: ../Misc.rst:979
+msgid ""
+"**bgr_buffer** (memoryview [unsigned char [::1]]): - A **1D contiguous "
+"memory view** containing packed **BGR values** (uint8). - Expected size: "
+"`width * height * 3`."
+msgstr ""
+"**bgr_buffer** (memoryview [char non signé [::1]]): - Une **vue mémoire 1D continue** "
+"contenant les **valeurs BGR** packagées (uint8). - Taille attendue : "
+"`largeur * hauteur * 3`."
+
+#: ../Misc.rst:983
+msgid ""
+"**alpha_channel** (memoryview [unsigned char [::1]]): - A **1D contiguous"
+" memory view** containing **alpha values** (uint8). - Expected size: "
+"`width * height`."
+msgstr ""
+"**alpha_channel** (memoryview [char non signé [::1]]): - Une **vue mémoire 1D continue** "
+"contenant les **valeurs alpha** (uint8). - Taille attendue : "
+"`largeur * hauteur`."
+
+#: ../Misc.rst:987
+msgid ""
+"**output_rgba_buffer** (memoryview [unsigned char [::1]]): - A pre-"
+"allocated **1D memory view** to store the resulting **RGBA values** "
+"(uint8). - Expected size: `width * height * 4`."
+msgstr ""
+"**output_rgba_buffer** (memoryview [char non signé [::1]]): - Une **vue mémoire 1D préallouée** "
+"pour stocker les **valeurs RGBA** résultantes (uint8). - Taille attendue : "
+"`largeur * hauteur * 4`."
+
+#: ../Misc.rst:991
+msgid ""
+"**transpose_output** (bool, optional, default=False): - If **True**, the "
+"resulting **RGBA buffer** is transposed (flipped)."
+msgstr ""
+"**transpose_output** (booléen, optionnel, par défaut=False) : - Si **True**, le "
+"**tampon RGBA résultant** est transposé (retourné)."
+
+#: ../Misc.rst:994
+msgid "**Returns**: - **memoryview [unsigned char [::1]]**:"
+msgstr "**Retourne** : - **memoryview [char non signé [::1]]** :"
+
+#: ../Misc.rst:997
+msgid ""
+"A contiguous **memory view** containing the combined **RGBA pixel "
+"values** (uint8)."
+msgstr ""
+"Une **vue mémoire continue** contenant les **valeurs de pixels RGBA** combinées (uint8)."
+
+#: ../Misc.rst:1003
+msgid "If `w` or `h` is **non-positive**."
+msgstr "Si `w` ou `h` est **non positif**."
+
+#: ../Misc.rst:1004
+msgid "If `bgr_buffer` size does not match `width * height * 3`."
+msgstr "Si la taille de `bgr_buffer` ne correspond pas à `largeur * hauteur * 3`."
+
+#: ../Misc.rst:1005
+msgid "If `alpha_channel` size does not match `width * height`."
+msgstr "Si la taille de `alpha_channel` ne correspond pas à `largeur * hauteur`."
+
+#: ../Misc.rst:1006
+msgid "If `output_rgba_buffer` is not large enough to store `width * height * 4`."
+msgstr "Si `output_rgba_buffer` n'est pas suffisamment grand pour stocker `largeur * hauteur * 4`."
+
+#: ../Misc.rst:1010
+msgid "Uses **`memcpy`** for **efficient memory copying**."
+msgstr "Utilise **`memcpy`** pour **un copier de mémoire efficace**."
+
+#: ../Misc.rst:1011
+msgid "Supports optional **transposition** of the buffer."
+msgstr "Prend en charge la **transposition** optionnelle du tampon."
+
+#: ../Misc.rst:1012
+msgid "Designed for **performance-critical applications**."
+msgstr "Conçu pour des **applications nécessitant des performances critiques**."
+
+#: ../Misc.rst:1031
+msgid ""
+"**Summary**: Normalize a **2D array** of unsigned 8-bit integers "
+"(**uint8**) to floating-point values in the range **[0, 1]**."
+msgstr ""
+"**Résumé** : Normalise un **tableau 2D** d'entiers non signés de 8 bits "
+"(**uint8**) en valeurs flottantes dans la plage **[0, 1]**."
+
+#: ../Misc.rst:1034
+msgid ""
+"This function takes a **2D array** with shape `(width, height)` "
+"containing **uint8 values** (0-255) and converts it into a "
+"**MemoryViewSlice (2D array)** of floats, where each value is rescaled to"
+" the range **[0, 1]**."
+msgstr ""
+"Cette fonction prend un **tableau 2D** de forme `(largeur, hauteur)` "
+"contenant des **valeurs uint8** (0-255) et le convertit en un "
+"**MemoryViewSlice (tableau 2D)** de nombres à virgule flottante, où chaque "
+"valeur est mise à l'échelle dans la plage **[0, 1]**."
+
+#: ../Misc.rst:1038
+msgid ""
+"**array2d** (memoryview [unsigned char[:, :]]): - A **2D array** of shape"
+" `(width, height)` containing **uint8 values** representing pixel "
+"intensities."
+msgstr ""
+"**array2d** (memoryview [unsigned char[:, :]]): - Un **tableau 2D** de "
+"forme `(largeur, hauteur)` contenant des **valeurs uint8** représentant "
+"l'intensité des pixels."
+
+#: ../Misc.rst:1041
+msgid "**Returns**: - **memoryview [float[:, :]]**:"
+msgstr "**Retourne** : - **memoryview [float[:, :]]** :"
+
+#: ../Misc.rst:1044
+msgid ""
+"A **2D array** of shape `(width, height)` with **float values** "
+"normalized to the range [0, 1]."
+msgstr ""
+"Un **tableau 2D** de forme `(largeur, hauteur)` avec des **valeurs flottantes** "
+"normalisées dans la plage [0, 1]."
+
+#: ../Misc.rst:1048
+msgid ""
+"**ValueError**: - If the input array does not have **exactly two "
+"dimensions**."
+msgstr ""
+"**ValueError** : - Si le tableau d'entrée n'a pas **exactement deux "
+"dimensions**."
+
+#: ../Misc.rst:1051
+msgid ""
+"**Notes**: - Uses **`prange`** with **OpenMP** for **parallelized "
+"operations** to improve performance. - Performs element-wise "
+"normalization using the constant `ONE_255 = 1/255.0`. - Designed for "
+"**fast image processing** and **machine learning applications**."
+msgstr ""
+"**Notes** : - Utilise **`prange`** avec **OpenMP** pour des **opérations "
+"parallélisées** afin d'améliorer les performances. - Effectue une "
+"normalisation élément par élément en utilisant la constante `ONE_255 = 1/255.0`. - "
+"Conçu pour un **traitement d'image rapide** et des **applications d'apprentissage "
+"automatique**."
+
+#: ../Misc.rst:1068
+msgid ""
+"**Summary**: Create a **pygame surface** displaying the **light "
+"spectrum** ranging from **380-750 nm**."
+msgstr ""
+"**Résumé** : Crée une **surface pygame** affichant le **spectre lumineux** "
+"allant de **380 à 750 nm**."
+
+#: ../Misc.rst:1071
+msgid ""
+"The function visualizes the light spectrum by displaying colors "
+"corresponding to specific wavelengths. The spectrum includes the "
+"following color regions:"
+msgstr ""
+"La fonction visualise le spectre lumineux en affichant les couleurs "
+"correspondant à des longueurs d'onde spécifiques. Le spectre comprend les "
+"zones de couleur suivantes :"
+
+#: ../Misc.rst:1073
+msgid "**Red**: 620-750 nm, 484-400 THz"
+msgstr "**Rouge** : 620-750 nm, 484-400 THz"
+
+#: ../Misc.rst:1074
+msgid "**Orange**: 590-620 nm, 508-484 THz"
+msgstr "**Orange** : 590-620 nm, 508-484 THz"
+
+#: ../Misc.rst:1075
+msgid "**Yellow**: 570-590 nm, 526-508 THz"
+msgstr "**Jaune** : 570-590 nm, 526-508 THz"
+
+#: ../Misc.rst:1076
+msgid "**Green**: 495-570 nm, 606-526 THz"
+msgstr "**Vert** : 495-570 nm, 606-526 THz"
+
+#: ../Misc.rst:1077
+msgid "**Blue**: 450-495 nm, 668-606 THz"
+msgstr "**Bleu** : 450-495 nm, 668-606 THz"
+
+#: ../Misc.rst:1078
+msgid "**Violet**: 380-450 nm, 789-668 THz"
+msgstr "**Violet** : 380-450 nm, 789-668 THz"
+
+#: ../Misc.rst:1082
+msgid "**width** (int): - The width of the surface (image) in pixels."
+msgstr "**largeur** (int) : - La largeur de la surface (image) en pixels."
+
+#: ../Misc.rst:1085
+msgid "**height** (int): - The height of the surface (image) in pixels."
+msgstr "**hauteur** (int) : - La hauteur de la surface (image) en pixels."
+
+#: ../Misc.rst:1088
+msgid ""
+"**gamma** (float, optional, default=1.0): - The gamma value for color "
+"adjustment."
+msgstr ""
+"**gamma** (float, optionnel, par défaut=1.0) : - La valeur gamma pour "
+"ajuster la couleur."
+
+#: ../Misc.rst:1094
+msgid ""
+"A **24-bit pygame surface** with shape `(width, height)` containing the "
+"light spectrum. It is optimized for fast **blit** operations."
+msgstr ""
+"Une **surface pygame de 24 bits** de forme `(largeur, hauteur)` contenant "
+"le spectre lumineux. Elle est optimisée pour des opérations **blit** rapides."
+
+#: ../Misc.rst:1111
+msgid ""
+"Sorts an array of **unsigned chars** (e.g., bytes or pixel values) using "
+"the **bubble sort algorithm**."
+msgstr ""
+"Trie un tableau de **caractères non signés** (par exemple, octets ou valeurs "
+"de pixels) en utilisant l'**algorithme de tri à bulles**."
+
+#: ../Misc.rst:1113
+msgid ""
+"Bubble sort iteratively compares adjacent elements in the array and swaps"
+" them if they are in the wrong order. The process continues until the "
+"array is fully sorted. The algorithm stops when no swaps are made during "
+"a complete pass."
+msgstr ""
+"Le tri à bulles compare itérativement les éléments adjacents dans le tableau et les échange "
+"si nécessaire. Le processus continue jusqu'à ce que le tableau soit entièrement trié. "
+"L'algorithme s'arrête lorsqu'aucun échange n'est effectué pendant un passage complet."
+
+#: ../Misc.rst:1117
+msgid ""
+"**nums** (unsigned char [::1]): - A one-dimensional memoryview or array "
+"of unsigned char values to be sorted. Typically, this array represents "
+"byte values or pixel data (e.g., RGB values)."
+msgstr ""
+"**nums** (unsigned char [::1]) : - Une vue mémoire ou un tableau unidimensionnel de "
+"valeurs de caractères non signés à trier. Typiquement, ce tableau représente des "
+"valeurs d'octets ou des données de pixels (par exemple, valeurs RVB)."
+
+#: ../Misc.rst:1120
+msgid "**size** (int): - The number of elements in the `nums` array to sort."
+msgstr "**taille** (int) : - Le nombre d'éléments dans le tableau `nums` à trier."
+
+#: ../Misc.rst:1125 ../Misc.rst:1170
+msgid ""
+"**None**: - This function sorts the array **in place**. No value is "
+"returned; the input array is modified directly."
+msgstr ""
+"**None** : - Cette fonction trie le tableau **sur place**. Aucune valeur n'est "
+"retournée ; le tableau d'entrée est modifié directement."
+
+#: ../Misc.rst:1137
+msgid ""
+"**Notes**: - This is an **in-place sorting algorithm**, meaning it "
+"modifies the original array. - Bubble sort is not the most efficient "
+"sorting algorithm, but it is simple to implement. - The algorithm runs in"
+" **O(n^2)** time in the worst and average cases, which makes it less "
+"efficient for large datasets."
+msgstr ""
+"**Notes** : - Il s'agit d'un **algorithme de tri sur place**, ce qui signifie qu'il "
+"modifie le tableau d'origine. - Le tri à bulles n'est pas l'algorithme de tri le plus efficace, "
+"mais il est simple à implémenter. - L'algorithme fonctionne en **O(n^2)** dans les pires et "
+"moyennes situations, ce qui le rend moins efficace pour de grands ensembles de données."
+
+
+#: ../Misc.rst:1148
+msgid ""
+"**Summary**: Sorts an array of **unsigned char** elements using the "
+"**Insertion Sort algorithm**."
+msgstr ""
+"**Résumé** : Trie un tableau d'éléments de **caractères non signés** en utilisant l'"
+"**algorithme de tri par insertion**."
+
+#: ../Misc.rst:1151
+msgid ""
+"Insertion sort iterates through the array, picking each element one by "
+"one, and inserts it into the sorted portion of the array while shifting "
+"the other elements accordingly. This implementation uses **parallel "
+"processing** for improved performance."
+msgstr ""
+"Le tri par insertion parcourt le tableau, prend chaque élément un par un, et l'insère dans "
+"la portion triée du tableau en déplaçant les autres éléments en conséquence. "
+"Cette implémentation utilise le **traitement parallèle** pour améliorer les performances."
+
+#: ../Misc.rst:1162
+msgid ""
+"**nums** (unsigned char [::1]): - A 1D numpy array or memory view of "
+"unsigned char (uint8) elements, representing the array to be sorted."
+msgstr ""
+"**nums** (unsigned char [::1]) : - Un tableau numpy 1D ou une vue mémoire de "
+"caractères non signés (uint8), représentant le tableau à trier."
+
+#: ../Misc.rst:1165
+msgid ""
+"**size** (int): - The size of the array `nums`. It specifies the number "
+"of elements in the array."
+msgstr ""
+"**taille** (int) : - La taille du tableau `nums`. Elle spécifie le nombre "
+"d'éléments dans le tableau."
+
+#: ../Misc.rst:1173
+msgid ""
+"**Notes**: - The algorithm runs in **O(n^2)** time complexity in the "
+"worst and average cases, making it less efficient for large datasets. - "
+"Insertion sort is particularly efficient for small datasets or arrays "
+"that are already nearly sorted. - Parallel processing is utilized in this"
+" implementation to improve performance."
+msgstr ""
+"**Notes** : - L'algorithme fonctionne avec une complexité temporelle de **O(n^2)** dans les "
+"pires et moyennes situations, ce qui le rend moins efficace pour de grands ensembles de "
+"données. - Le tri par insertion est particulièrement efficace pour les petits ensembles de "
+"données ou les tableaux déjà presque triés. - Le traitement parallèle est utilisé dans cette "
+"implémentation pour améliorer les performances."
+
+#: ../Misc.rst:1184
+msgid "**Summary**: Partition function for the **quicksort algorithm**."
+msgstr "**Résumé** : Fonction de partition pour l'**algorithme de tri rapide**."
+
+#: ../Misc.rst:1187
+msgid ""
+"This function selects a pivot element and partitions the input array "
+"`nums` such that all elements less than the pivot are moved to its left, "
+"and all elements greater than the pivot are moved to its right. It "
+"returns the index of the partition point."
+msgstr ""
+"Cette fonction sélectionne un élément pivot et partitionne le tableau d'entrée "
+"`nums` de sorte que tous les éléments inférieurs au pivot sont déplacés vers la gauche, "
+"et tous les éléments supérieurs au pivot sont déplacés vers la droite. Elle "
+"retourne l'indice du point de partition."
+
+#: ../Misc.rst:1191
+msgid ""
+"**nums** (unsigned char [::1]): - A 1D memoryview of unsigned char "
+"values, representing the input array to be partitioned."
+msgstr ""
+"**nums** (unsigned char [::1]) : - Une vue mémoire 1D de valeurs de caractères non signés, "
+"représentant le tableau d'entrée à partitionner."
+
+#: ../Misc.rst:1194
+msgid "**low** (int): - The starting index of the subarray to be partitioned."
+msgstr "**low** (int) : - L'indice de début du sous-tableau à partitionner."
+
+#: ../Misc.rst:1197
+msgid "**high** (int): - The ending index of the subarray to be partitioned."
+msgstr "**high** (int) : - L'indice de fin du sous-tableau à partitionner."
+
+#: ../Misc.rst:1202
+msgid "**int**: - The index of the partition point in the array."
+msgstr "**int** : - L'indice du point de partition dans le tableau."
+
+#: ../Misc.rst:1205
+msgid ""
+"**Notes**: - This function is used as part of the quicksort algorithm. - "
+"It ensures that elements less than the pivot are on the left, and "
+"elements greater than the pivot are on the right."
+msgstr ""
+"**Notes** : - Cette fonction est utilisée dans le cadre de l'algorithme de tri rapide. - "
+"Elle garantit que les éléments inférieurs au pivot sont à gauche, et "
+"les éléments supérieurs au pivot sont à droite."
+
+#: ../Misc.rst:1215
+msgid ""
+"**Summary**: In-place quicksort implementation for an array of unsigned "
+"char values."
+msgstr ""
+"**Résumé** : Implémentation du tri rapide **sur place** pour un tableau de valeurs "
+"de caractères non signés."
+
+#: ../Misc.rst:1218
+msgid ""
+"This function recursively sorts the array `items` by selecting a pivot "
+"and partitioning the array such that elements smaller than the pivot move"
+" to the left and larger elements move to the right. It is optimized to "
+"reduce recursion depth by sorting the smaller partition first."
+msgstr ""
+"Cette fonction trie récursivement le tableau `items` en sélectionnant un pivot "
+"et partitionnant le tableau de sorte que les éléments plus petits que le pivot se déplacent "
+"vers la gauche et les éléments plus grands se déplacent vers la droite. Elle est optimisée "
+"pour réduire la profondeur de récursion en triant d'abord la plus petite partition."
+
+#: ../Misc.rst:1222
+msgid ""
+"**items** (unsigned char [::1]): - A 1D memoryview of unsigned char "
+"values, representing the input array to be sorted."
+msgstr ""
+"**items** (unsigned char [::1]) : - Une vue mémoire 1D de valeurs de caractères non signés, "
+"représentant le tableau d'entrée à trier."
+
+#: ../Misc.rst:1225
+msgid "**low** (unsigned int): - The starting index of the subarray to be sorted."
+msgstr "**low** (unsigned int) : - L'indice de début du sous-tableau à trier."
+
+#: ../Misc.rst:1228
+msgid "**high** (unsigned int): - The ending index of the subarray to be sorted."
+msgstr "**high** (unsigned int) : - L'indice de fin du sous-tableau à trier."
+
+#: ../Misc.rst:1237
+msgid ""
+"**Summary**: Ultra-optimized iterative heapify function for maintaining "
+"the max heap property."
+msgstr ""
+"**Résumé** : Fonction `heapify` itérative ultra-optimisée pour maintenir "
+"la propriété de tas maximal."
+
+#: ../Misc.rst:1240
+msgid ""
+"This function “sifts down” the value at the given root index so that the "
+"subtree rooted at that index becomes a valid max heap. It is assumed that"
+" the subtrees below are already valid heaps. For full heapsort, make sure"
+" to build the heap by calling this function on all non-leaf nodes in "
+"reverse order."
+msgstr ""
+"Cette fonction « filtre vers le bas » la valeur à l'indice de racine donné afin que "
+"le sous-arbre ancré à cet indice devienne un tas maximal valide. On suppose que "
+"les sous-arbres en dessous sont déjà des tas valides. Pour un tri par tas complet, assurez-vous "
+"de construire le tas en appelant cette fonction sur tous les nœuds non-feuilles dans "
+"l'ordre inverse."
+
+#: ../Misc.rst:1244
+msgid ""
+"**nums** (unsigned char [::1]): - A 1D memoryview of unsigned char "
+"values, representing the heap."
+msgstr ""
+"**nums** (unsigned char [::1]) : - Une vue mémoire 1D de valeurs de caractères non signés, "
+"représentant le tas."
+
+#: ../Misc.rst:1247
+msgid "**heap_size** (unsigned int): - The number of elements in the heap."
+msgstr "**heap_size** (unsigned int) : - Le nombre d'éléments dans le tas."
+
+#: ../Misc.rst:1250
+msgid ""
+"**root_index** (unsigned int): - The index of the root node of the "
+"subtree to heapify."
+msgstr ""
+"**root_index** (unsigned int) : - L'indice du nœud racine du sous-arbre à `heapifier`."
+
+#: ../Misc.rst:1259
+msgid ""
+"**Summary**: Performs in-place heap sort on an array of unsigned char "
+"values."
+msgstr ""
+"**Résumé** : Effectue un tri par tas sur place sur un tableau de valeurs de caractères non signés."
+
+#: ../Misc.rst:1262
+msgid ""
+"This function first builds a max heap from the input array, ensuring the "
+"largest element is at the root. Then, it repeatedly extracts the maximum "
+"element (swaps it with the last element) and re-heapifies the reduced "
+"heap to maintain heap properties until the entire array is sorted."
+msgstr ""
+"Cette fonction construit d'abord un tas maximal à partir du tableau d'entrée, garantissant que "
+"l'élément le plus grand se trouve à la racine. Ensuite, elle extrait de manière répétée "
+"l'élément maximum (en l'échangeant avec le dernier élément) et re-heapifie le tas réduit "
+"pour maintenir les propriétés du tas jusqu'à ce que le tableau entier soit trié."
+
+#: ../Misc.rst:1264
+msgid ""
+"**Time Complexity**: - Heap construction: O(n) - Extraction and re-"
+"heapification: O(n log n) - Overall: O(n log n)"
+msgstr ""
+"**Complexité temporelle** : - Construction du tas : O(n) - Extraction et re-"
+"heapification : O(n log n) - Globalement : O(n log n)"
+
+#: ../Misc.rst:1269
+msgid "**Space Complexity**: O(1) (in-place sorting)"
+msgstr "**Complexité spatiale** : O(1) (tri sur place)"
+
+#: ../Misc.rst:1273
+msgid ""
+"**nums** (unsigned char [::1]): - A 1D memoryview of unsigned char values"
+" to be sorted."
+msgstr ""
+"**nums** (unsigned char [::1]) : - Une vue mémoire 1D de valeurs de caractères non signés "
+"à trier."
+
+#: ../Misc.rst:1276
+msgid "**n** (unsigned int): - The number of elements in the array."
+msgstr "**n** (unsigned int) : - Le nombre d'éléments dans le tableau."

@@ -1,0 +1,348 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yoann Berenguer
+# This file is distributed under the same license as the PygameShader package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PygameShader \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-10 13:20+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../index.rst:4
+msgid "Welcome to PygameShader's documentation!"
+msgstr "Bienvenue dans la documentation de PygameShader !"
+
+#: ../index.rst:6
+msgid ":mod:`info.pyx`"
+msgstr ":mod:`info.pyx`"
+
+#: ../index.rst:11
+msgid "1. Pygame Shader Project"
+msgstr "1. Projet Pygame Shader"
+
+#: ../index.rst:13
+msgid "**PygameShader** is a **wrapper around the Pygame library**, written in **Python**, **Cython** and **C**, designed to add **advanced** **visual effects** to multimedia applications, including **2D Indie video games, arcade games, and real-time image processing** for video and camera feeds."
+msgstr "**PygameShader** est un **wrapper autour de la bibliothèque Pygame**, écrit en **Python**, **Cython** et **C**, conçu pour ajouter des **effets visuels avancés** aux applications multimédias, y compris les **jeux vidéo 2D indépendants, les jeux d’arcade et le traitement d’image en temps réel** pour les flux vidéo et caméra."
+
+#: ../index.rst:18
+msgid "This library extends **Pygame** by enabling developers to apply **shaders** or texture processor to **sprite textures**, **SDL surfaces, and the entire game display**, significantly enhancing the visual experience with minimal performance overhead."
+msgstr "Cette bibliothèque étend **Pygame** en permettant aux développeurs d’appliquer des **shaders** ou des processeurs de texture aux **textures des sprites**, aux **surfaces SDL** et à l’ensemble de l’affichage du jeu, améliorant considérablement l’expérience visuelle avec une surcharge minimale en performances."
+
+#: ../index.rst:21
+msgid "**Supported Surface/Image Formats**"
+msgstr "**Formats d’image/surface pris en charge**"
+
+#: ../index.rst:23
+msgid "PygameShader supports multiple image formats, including **BMP, GIF (non-animated), JPEG, and PNG**. However, Pygame may not always be built with support for all formats. At a minimum, **BMP** is always available."
+msgstr "PygameShader prend en charge plusieurs formats d’image, notamment **BMP, GIF (non animé), JPEG et PNG**. Cependant, Pygame peut ne pas toujours être compilé avec le support de tous ces formats. Au minimum, **BMP** est toujours disponible."
+
+#: ../index.rst:26
+msgid "To check if additional image formats are supported, run:"
+msgstr "Pour vérifier si des formats d’image supplémentaires sont pris en charge, exécutez :"
+
+#: ../index.rst:33
+msgid "If it returns ``True``, then **PNG, JPG, and GIF** formats are also supported."
+msgstr "Si la commande retourne ``True``, alors les formats **PNG, JPG et GIF** sont également pris en charge."
+
+#: ../index.rst:35
+msgid "**Performance & Optimization**"
+msgstr "**Performances et optimisation**"
+
+#: ../index.rst:37
+msgid "PygameShader is optimized for **real-time rendering at 60 FPS**, particularly for **medium resolutions (1024x768)**. However, performance depends on the complexity of the shader."
+msgstr "PygameShader est optimisé pour le **rendu en temps réel à 60 FPS**, en particulier pour les **résolutions moyennes (1024x768)**. Cependant, les performances dépendent de la complexité du shader."
+
+#: ../index.rst:40
+msgid "Some effects, like **median filtering, predator vision and cartoon effect**, require multiple shaders to create composite effects, making them computationally more demanding. Most shaders will maintain **smooth performance at medium resolutions**, but higher resolutions may affect frame rates."
+msgstr "Certains effets, comme le **filtrage médian, la vision de prédateur et l’effet cartoon**, nécessitent plusieurs shaders pour créer des effets composites, ce qui les rend plus exigeants en calcul. La plupart des shaders maintiendront des **performances fluides à des résolutions moyennes**, mais les résolutions plus élevées peuvent affecter les taux d’images."
+
+#: ../index.rst:44
+msgid "For **sprite texturing and special effects**, PygameShader remains **extremely fast**, thanks to **Cython-based optimizations**. To maintain a high frame rate, it's recommended to keep SDL sprite texture sizes within **200x200 pixels** to avoid unnecessary processing overhead."
+msgstr "Pour le **texturage des sprites et les effets spéciaux**, PygameShader reste **extrêmement rapide**, grâce aux **optimisations basées sur Cython**. Pour maintenir un taux d’images élevé, il est recommandé de conserver les tailles de texture des sprites SDL dans une limite de **200x200 pixels** afin d’éviter une surcharge inutile du traitement."
+
+#: ../index.rst:48
+msgid "**Features**"
+msgstr "**Caractéristiques**"
+
+#: ../index.rst:50
+msgid "**Shader Effects** – Enhance your game's visuals with advanced shading techniques."
+msgstr "**Effets de shaders** – Améliorez les visuels de votre jeu avec des techniques de shading avancées."
+
+#: ../index.rst:51
+msgid "**Real-time Rendering** – Apply effects to the entire game display at high frame rates."
+msgstr "**Rendu en temps réel** – Appliquez des effets à l’ensemble de l’affichage du jeu à des fréquences d’images élevées."
+
+#: ../index.rst:52
+msgid "**Optimized for Speed** – Efficient **Cython** implementation ensures smooth performance."
+msgstr "**Optimisé pour la vitesse** – Une implémentation efficace en **Cython** garantit des performances fluides."
+
+#: ../index.rst:53
+msgid "**Sprite & Surface Customization** – Modify textures and surfaces dynamically."
+msgstr "**Personnalisation des sprites et des surfaces** – Modifiez dynamiquement les textures et les surfaces."
+
+#: ../index.rst:55
+msgid "PygameShader provides powerful tools to **improve the visual appeal** of your game, whether by enhancing sprite textures or applying full-screen visual effects."
+msgstr "PygameShader propose des outils puissants pour **améliorer l’esthétique visuelle** de votre jeu, que ce soit en améliorant les textures des sprites ou en appliquant des effets visuels plein écran."
+
+#: ../index.rst:59
+msgid "2. GPU Shaders with CuPy & CUDA"
+msgstr "2. Shaders GPU avec CuPy et CUDA"
+
+#: ../index.rst:61
+msgid "Some scripts have been ported to the **GPU** using **CuPy** and **CUDA raw kernels**, allowing them to run on **NVIDIA graphics cards (Compute Capability 3.0 or higher)**."
+msgstr "Certains scripts ont été portés sur le **GPU** en utilisant **CuPy** et les **noyaux bruts CUDA**, leur permettant de fonctionner sur des **cartes graphiques NVIDIA (Compute Capability 3.0 ou supérieur)**."
+
+#: ../index.rst:65
+msgid "These shaders are compatible **only with NVIDIA chipsets**."
+msgstr "Ces shaders sont compatibles **uniquement avec les chipsets NVIDIA**."
+
+#: ../index.rst:67
+msgid "**Requirements**"
+msgstr "**Pré-requis**"
+
+#: ../index.rst:69
+msgid "To use GPU shaders, you must have:"
+msgstr "Pour utiliser les shaders GPU, vous devez avoir :"
+
+#: ../index.rst:71
+msgid "The **CuPy** library installed."
+msgstr "La bibliothèque **CuPy** installée."
+
+#: ../index.rst:72
+msgid "The **CUDA Toolkit** installed (supported versions: ``v10.2 - v11.6``)."
+msgstr "Le **CUDA Toolkit** installé (versions supportées : ``v10.2 - v11.6``)."
+
+#: ../index.rst:74
+msgid "For installation instructions, see the `CuPy installation guide <https://docs.cupy.dev/en/stable/install.html>`_."
+msgstr "Pour les instructions d’installation, consultez le `guide d’installation de CuPy <https://docs.cupy.dev/en/stable/install.html>`_."
+
+#: ../index.rst:76
+msgid "**Experimental Status & Performance Considerations**"
+msgstr "**Statut expérimental et considérations de performance**"
+
+#: ../index.rst:78
+msgid "The **GPU shaders are experimental** and may be **limited by PCI Express bandwidth**, especially for **real-time rendering**."
+msgstr "Les **shaders GPU sont expérimentaux** et peuvent être **limités par la bande passante PCI Express**, en particulier pour le **rendu en temps réel**."
+
+#: ../index.rst:81
+msgid "For an example of real-time GPU rendering of a ``pygame.Surface``, check out:"
+msgstr "Pour un exemple de rendu GPU en temps réel d’un ``pygame.Surface``, consultez :"
+
+#: ../index.rst:87
+msgid "**Comparison: GLSL vs. CUDA**"
+msgstr "**Comparaison : GLSL vs. CUDA**"
+
+#: ../index.rst:89
+msgid "While **GLSL** outperforms CuPy/CUDA in raw graphics performance, CUDA excels at **accelerating general-purpose parallel computations** originally designed for **CPU architectures** (Python & Cython)."
+msgstr "Bien que **GLSL** surpasse CuPy/CUDA en termes de performances graphiques brutes, CUDA excelle dans **l’accélération des calculs parallèles généraux**, initialement conçus pour les **architectures CPU** (Python & Cython)."
+
+#: ../index.rst:94
+msgid "Feature"
+msgstr "Caractéristique"
+
+#: ../index.rst:95
+msgid "GLSL (Shading Language)"
+msgstr "GLSL (Langage de shading)"
+#: ../index.rst:96
+msgid "CUDA"
+msgstr "CUDA"
+
+#: ../index.rst:97
+msgid "**Primary Use**"
+msgstr "**Utilisation principale**"
+
+#: ../index.rst:98
+msgid "Graphics Rendering"
+msgstr "Rendu graphique"
+
+#: ../index.rst:99
+msgid "Compute Shaders"
+msgstr "Shaders de calcul"
+
+#: ../index.rst:100
+msgid "**Compilation**"
+msgstr "**Compilation**"
+
+#: ../index.rst:101
+msgid "Shader Code"
+msgstr "Code shader"
+
+#: ../index.rst:102
+msgid "PTX (NVIDIA Assembly)"
+msgstr "PTX (Assemblage NVIDIA)"
+
+#: ../index.rst:103
+msgid "**Flexibility**"
+msgstr "**Flexibilité**"
+
+#: ../index.rst:104
+msgid "Requires Graphics API"
+msgstr "Nécessite une API graphique"
+
+#: ../index.rst:105
+msgid "Independent Execution"
+msgstr "Exécution indépendante"
+
+#: ../index.rst:107
+msgid "For further insights, check this `GPU programming guide <https://carpentries-incubator.github.io/lesson-gpu-programming/aio/index.html>`_."
+msgstr "Pour plus d’informations, consultez ce `guide de programmation GPU <https://carpentries-incubator.github.io/lesson-gpu-programming/aio/index.html>`_."
+
+#: ../index.rst:109
+msgid "**Usage in Python**"
+msgstr "**Utilisation en Python**"
+
+#: ../index.rst:111
+msgid "To import GPU shaders:"
+msgstr "Pour importer des shaders GPU :"
+
+#: ../index.rst:117
+msgid "**Demo**"
+msgstr "**Démo**"
+
+#: ../index.rst:119
+msgid "To run demos from the ``Demo`` directory (Press ``ESC`` to quit):"
+msgstr "Pour exécuter les démos depuis le répertoire ``Demo`` (Appuyez sur ``ESC`` pour quitter) :"
+
+#: ../index.rst:121
+msgid "**CPU Shader Demos**"
+msgstr "**Démos de shaders CPU**"
+
+#: ../index.rst:129
+msgid "**GPU Shader Demos (Requires CuPy & CUDA)**"
+msgstr "**Démos de shaders GPU (nécessite CuPy & CUDA)**"
+
+#: ../index.rst:137
+msgid "**Easy integration with various library such as Pillow, OpenCV, Scikit-image**"
+msgstr "**Intégration facile avec diverses bibliothèques telles que Pillow, OpenCV, Scikit-image**"
+
+#: ../index.rst:140
+msgid "**Pygame**"
+msgstr "**Pygame**"
+
+#: ../index.rst:152
+msgid "**Pillow**"
+msgstr "**Pillow**"
+
+#: ../index.rst:176
+msgid "**OpenCV**"
+msgstr "**OpenCV**"
+
+#: ../index.rst:195
+msgid "**Scikit-image**"
+msgstr "**Scikit-image**"
+
+#: ../index.rst:221
+msgid "3. Installation"
+msgstr "3. Installation"
+
+#: ../index.rst:223
+msgid "**Install via pip**"
+msgstr "**Installation via pip**"
+
+#: ../index.rst:225
+msgid "Check the latest version: `PygameShader on PyPI <https://pypi.org/project/PygameShader/>`_"
+msgstr "Vérifiez la dernière version : `PygameShader sur PyPI <https://pypi.org/project/PygameShader/>`_"
+
+#: ../index.rst:231
+msgid "**Supported Python Versions:** ``3.6 - 3.11`` **Platforms:** Windows & Linux (``x86``, ``x86_64``)"
+msgstr "**Versions Python prises en charge :** ``3.6 - 3.11`` **Plateformes :** Windows & Linux (``x86``, ``x86_64``)"
+
+#: ../index.rst:234
+msgid "Check installed version:"
+msgstr "Vérifiez la version installée :"
+
+#: ../index.rst:241
+msgid "**Install from Source**"
+msgstr "**Installer à partir du code source**"
+
+#: ../index.rst:244
+msgid "Linux"
+msgstr "Linux"
+
+#: ../index.rst:255
+msgid "Windows"
+msgstr "Windows"
+
+#: ../index.rst:263
+msgid "**Building Cython & C Code**"
+msgstr "**Compilation du code Cython & C**"
+
+#: ../index.rst:265
+msgid "**When Should You Compile Cython Code?**"
+msgstr "**Quand devez-vous compiler le code Cython ?**"
+
+#: ../index.rst:267
+msgid "If you modify any ``.pyx`` or ``.pxd`` files (e.g., ``shader.pyx``, ``shader.pxd``, ``__init__.pxd``), recompile using:"
+msgstr "Si vous modifiez des fichiers ``.pyx`` ou ``.pxd`` (par exemple, ``shader.pyx``, ``shader.pxd``, ``__init__.pxd``), recompilez en utilisant :"
+
+#: ../index.rst:274
+msgid "For a specific Python version, use:"
+msgstr "Pour une version spécifique de Python, utilisez :"
+
+#: ../index.rst:280
+msgid "If compilation fails, ensure:"
+msgstr "Si la compilation échoue, assurez-vous que :"
+
+#: ../index.rst:282
+msgid "**Cython & a C-compiler** (MSVC, MinGW, GCC) are installed."
+msgstr "**Cython & un compilateur C** (MSVC, MinGW, GCC) sont installés."
+
+#: ../index.rst:283
+msgid "**Python development headers** are available."
+msgstr "**Les en-têtes de développement Python** sont disponibles."
+
+#: ../index.rst:285
+msgid "For Windows users, refer to this guide: `VC++ Compiler Setup <https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/>`_."
+msgstr "Pour les utilisateurs de Windows, consultez ce guide : `Configuration du compilateur VC++ <https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/>`_."
+
+#: ../index.rst:289
+msgid "4. OpenMP for Multi-threaded Processing"
+msgstr "4. OpenMP pour le traitement multi-thread"
+
+#: ../index.rst:291
+msgid "By default, PygameShader is built with **multi-processing support (OpenMP)**."
+msgstr "Par défaut, PygameShader est compilé avec **le support du traitement parallèle (OpenMP)**."
+
+#: ../index.rst:293
+msgid "To **disable OpenMP**, update ``config.py``:"
+msgstr "Pour **désactiver OpenMP**, mettez à jour ``config.py`` :"
+
+#: ../index.rst:301
+msgid "Then rebuild:"
+msgstr "Puis reconstruisez :"
+
+#: ../index.rst:310
+msgid "5. Credits"
+msgstr "5. Crédits"
+
+#: ../index.rst:312
+msgid "**Author:** Yoann Berenguer"
+msgstr "**Auteur :** Yoann Berenguer"
+
+#: ../index.rst:315
+msgid "6. Dependencies"
+msgstr "6. Dépendances"
+
+#: ../index.rst:326
+msgid "7. License"
+msgstr "7. Licence"
+
+#: ../index.rst:328
+msgid "**GNU General Public License Version 3 (GPLv3)**"
+msgstr "**Licence publique générale GNU version 3 (GPLv3)**"
+
+#: ../index.rst:338
+msgid "8. Running Tests"
+msgstr "8. Exécution des tests"
+
+#: ../index.rst:349
+msgid "9. Libraries"
+msgstr "9. Bibliothèques"

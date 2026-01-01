@@ -1,0 +1,4264 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yoann Berenguer
+# This file is distributed under the same license as the PygameShader
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PygameShader \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-10 13:20+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+#: ../Shader_gpu.rst:2
+msgid "Shader_gpu"
+msgstr "Shader_gpu"
+
+#: ../Shader_gpu.rst:5
+msgid ":mod:`Shader_gpu.pyx`"
+msgstr ":mod:`Shader_gpu.pyx`"
+
+#: ../Shader_gpu.rst:12
+msgid "1. GPU-Accelerated Image Processing Library"
+msgstr "1. Bibliothèque de traitement d'images accélérée par GPU"
+
+#: ../Shader_gpu.rst:14
+msgid ""
+"This library provides GPU-accelerated image processing functionality "
+"leveraging **CUDA** (via **CuPy**) to efficiently perform various image "
+"transformations and filters on **NVIDIA GPUs**. Its main purpose is to "
+"speed up computationally expensive image processing operations that would"
+" otherwise be slow on a CPU."
+msgstr ""
+"Cette bibliothèque offre des fonctionnalités de traitement d'images accélérées par GPU "
+"en exploitant **CUDA** (via **CuPy**) pour exécuter efficacement diverses transformations "
+"et filtres d'images sur les **GPU NVIDIA**. Son objectif principal est d'accélérer les opérations "
+"de traitement d'images coûteuses en calcul, qui seraient autrement lentes sur un CPU."
+
+#: ../Shader_gpu.rst:21
+msgid "2. Key Features & Use Cases"
+msgstr "2. Principales fonctionnalités et cas d'utilisation"
+
+#: ../Shader_gpu.rst:23
+msgid ""
+"**GPU Memory & Hardware Information** Retrieve details about the "
+"available GPU memory, PCI bus ID, and compute capability. **Use Case**: "
+"Useful for dynamically managing memory allocation and optimizing parallel"
+" processing tasks."
+msgstr ""
+"**Mémoire GPU et informations matérielles** Récupérer des détails sur la "
+"mémoire GPU disponible, l'identifiant du bus PCI et la capacité de calcul. "
+"**Cas d'utilisation** : Utile pour gérer dynamiquement l'allocation de mémoire et optimiser "
+"les tâches de traitement parallèle."
+
+#: ../Shader_gpu.rst:27
+msgid "**Image Processing & Filters**"
+msgstr "**Traitement d'images et filtres**"
+
+#: ../Shader_gpu.rst:28
+msgid "Perform common image filters efficiently on the GPU, including:"
+msgstr "Exécuter efficacement des filtres d'image courants sur le GPU, notamment :"
+
+#: ../Shader_gpu.rst:30
+msgid "**Inversion**: :func:`invert_gpu`"
+msgstr "**Inversion** : :func:`invert_gpu`"
+
+#: ../Shader_gpu.rst:31
+msgid "**Grayscale & Sepia**: :func:`grayscale_gpu`, :func:`sepia_gpu`"
+msgstr "**Niveaux de gris et sépia** : :func:`grayscale_gpu`, :func:`sepia_gpu`"
+
+#: ../Shader_gpu.rst:32
+msgid "**Edge Detection**: Sobel, Prewitt, Canny"
+msgstr "**Détection des contours** : Sobel, Prewitt, Canny"
+
+#: ../Shader_gpu.rst:33
+msgid "**Blur & Smoothing Filters**: Gaussian, Median, Bilateral"
+msgstr "**Filtres de flou et de lissage** : Gaussien, Médian, Bilatéral"
+
+#: ../Shader_gpu.rst:34
+msgid "**Embossing & Sharpening**"
+msgstr "**Relief et netteté**"
+
+#: ../Shader_gpu.rst:37
+msgid "3. Use Case"
+msgstr "3. Cas d'utilisation"
+
+#: ../Shader_gpu.rst:39
+msgid ""
+"Optimized for real-time video and image processing by executing these "
+"operations in parallel on the GPU."
+msgstr ""
+"Optimisé pour le traitement en temps réel de vidéos et d'images en exécutant "
+"ces opérations en parallèle sur le GPU."
+
+#: ../Shader_gpu.rst:41
+msgid ""
+"**Color Manipulation & Enhancements** Adjust image properties such as "
+"brightness, contrast, saturation, and HSL/HSV values."
+msgstr ""
+"**Manipulation et amélioration des couleurs** Ajuster les propriétés de l'image "
+"telles que la luminosité, le contraste, la saturation et les valeurs HSL/HSV."
+
+#: ../Shader_gpu.rst:44
+msgid ""
+"**Use Case**: Ideal for image enhancement, augmented reality (AR) "
+"applications, and photo editing software."
+msgstr ""
+"**Cas d'utilisation** : Idéal pour l'amélioration des images, les applications de "
+"réalité augmentée (AR) et les logiciels de retouche photo."
+
+#: ../Shader_gpu.rst:46
+msgid ""
+"**Special Effects & Transformations** Apply artistic transformations and "
+"effects, including:"
+msgstr ""
+"**Effets spéciaux et transformations** Appliquer des transformations et effets artistiques, notamment :"
+
+#: ../Shader_gpu.rst:49
+msgid "**Swirl, Fisheye, Wave, Ripple Effects**"
+msgstr "**Effets tourbillon, fisheye, onde, ondulation**"
+
+#: ../Shader_gpu.rst:50
+msgid "**Chromatic Aberration & RGB Splitting**"
+msgstr "**Aberration chromatique et séparation des canaux RGB**"
+
+#: ../Shader_gpu.rst:51
+msgid "**Cartoon Effect & Bloom Filters**"
+msgstr "**Effet bande dessinée et filtres d'éclat (bloom)**"
+#: ../Shader_gpu.rst:52
+msgid "**Dithering & Heatmap Effects**"
+msgstr "**Effets de tramage et de carte thermique**"
+
+#: ../Shader_gpu.rst:54
+msgid ""
+"**Use Case**: Useful for game development, VFX, and computer graphics "
+"applications."
+msgstr ""
+"**Cas d'utilisation** : Utile pour le développement de jeux, les effets visuels (VFX) et "
+"les applications en infographie."
+
+#: ../Shader_gpu.rst:56
+msgid ""
+"**Geometric Transformations** Support for geometric transformations such "
+"as:"
+msgstr ""
+"**Transformations géométriques** Prise en charge des transformations géométriques telles que :"
+
+#: ../Shader_gpu.rst:59
+msgid "**Mirroring**"
+msgstr "**Miroir**"
+
+#: ../Shader_gpu.rst:60
+msgid "**Zooming**"
+msgstr "**Zoom**"
+
+#: ../Shader_gpu.rst:61
+msgid "**Downscaling**"
+msgstr "**Réduction d’échelle**"
+
+#: ../Shader_gpu.rst:62
+msgid "**Blending**"
+msgstr "**Fusion**"
+
+#: ../Shader_gpu.rst:64
+msgid ""
+"**Use Case**: Can be used for image compression, texture mapping, and "
+"real-time rendering."
+msgstr ""
+"**Cas d'utilisation** : Peut être utilisé pour la compression d'images, le mappage de textures "
+"et le rendu en temps réel."
+
+#: ../Shader_gpu.rst:66
+msgid ""
+"**Real-Time Video Processing** Real-time video effects are supported by "
+"functions such as :func:`ripple_effect_gpu()`, :func:`predator_gpu()`, "
+"and :func:`heatmap_gpu()`."
+msgstr ""
+"**Traitement vidéo en temps réel** Les effets vidéo en temps réel sont pris en charge par "
+"des fonctions telles que :func:`ripple_effect_gpu()`, :func:`predator_gpu()`, "
+"et :func:`heatmap_gpu()`."
+
+#: ../Shader_gpu.rst:70
+msgid ""
+"**Use Case**: Ideal for integration into streaming software, video "
+"filters, or surveillance systems."
+msgstr ""
+"**Cas d'utilisation** : Idéal pour une intégration dans des logiciels de streaming, "
+"des filtres vidéo ou des systèmes de surveillance."
+
+#: ../Shader_gpu.rst:74
+msgid "4. Potential Applications"
+msgstr "4. Applications potentielles"
+
+#: ../Shader_gpu.rst:76
+msgid "**Real-time Image & Video Processing**: Enhance camera feeds in real-time."
+msgstr "**Traitement d'images et de vidéos en temps réel** : Améliorer les flux vidéo en temps réel."
+
+#: ../Shader_gpu.rst:77
+msgid ""
+"**Computer Vision & AI Preprocessing**: Apply fast filters before passing"
+" images to ML models."
+msgstr ""
+"**Vision par ordinateur et prétraitement pour l'IA** : Appliquer des filtres rapides "
+"avant de transmettre les images aux modèles d'apprentissage automatique."
+
+#: ../Shader_gpu.rst:78
+msgid ""
+"**Game Development & Graphics**: Add special effects for gaming & "
+"simulation environments."
+msgstr ""
+"**Développement de jeux et graphismes** : Ajouter des effets spéciaux pour les jeux et "
+"les environnements de simulation."
+
+#: ../Shader_gpu.rst:79
+msgid ""
+"**Augmented & Virtual Reality (AR/VR)**: Optimize visuals for immersive "
+"experiences."
+msgstr ""
+"**Réalité augmentée et virtuelle (AR/VR)** : Optimiser les visuels pour des expériences immersives."
+
+#: ../Shader_gpu.rst:80
+msgid ""
+"**High-performance Photography Tools**: Edit large images efficiently "
+"using the GPU."
+msgstr ""
+"**Outils de photographie haute performance** : Modifier de grandes images efficacement "
+"grâce au GPU."
+
+#: ../Shader_gpu.rst:84
+msgid "5. Summary"
+msgstr "5. Résumé"
+
+#: ../Shader_gpu.rst:86
+msgid ""
+"This library offloads complex image processing tasks from the CPU to the "
+"GPU, making operations significantly faster and more efficient. It is "
+"ideal for applications that require real-time performance, such as games,"
+" AR/VR, video streaming, and AI-based image processing."
+msgstr ""
+"Cette bibliothèque décharge les tâches complexes de traitement d'images du CPU vers le GPU, "
+"rendant les opérations beaucoup plus rapides et efficaces. Elle est idéale pour les applications "
+"nécessitant des performances en temps réel, telles que les jeux, l'AR/VR, le streaming vidéo "
+"et le traitement d'images basé sur l'IA."
+
+#: ../Shader_gpu.rst:92
+msgid "6. Cython list methods"
+msgstr "6. Méthodes de liste en Cython"
+
+#: ../Shader_gpu.rst:102
+msgid "Retrieve the available free memory on the GPU."
+msgstr "Récupérer la mémoire libre disponible sur le GPU."
+
+#: ../Shader_gpu.rst:104
+msgid ""
+"This function queries the GPU device for its current free memory and "
+"returns the amount in bytes. It is useful for monitoring memory usage "
+"when working with GPU-accelerated computations, ensuring that operations "
+"do not exceed available memory."
+msgstr ""
+"Cette fonction interroge le GPU pour connaître la mémoire actuellement disponible "
+"et retourne la quantité en octets. Elle est utile pour surveiller l'utilisation de la mémoire "
+"lors de calculs accélérés par GPU, garantissant que les opérations ne dépassent pas "
+"la mémoire disponible."
+
+#: ../Shader_gpu.rst:109 ../Shader_gpu.rst:129 ../Shader_gpu.rst:150
+#: ../Shader_gpu.rst:172 ../Shader_gpu.rst:194 ../Shader_gpu.rst:228
+#: ../Shader_gpu.rst:270 ../Shader_gpu.rst:317 ../Shader_gpu.rst:349
+#: ../Shader_gpu.rst:386 ../Shader_gpu.rst:550 ../Shader_gpu.rst:592
+#: ../Shader_gpu.rst:650 ../Shader_gpu.rst:706 ../Shader_gpu.rst:757
+#: ../Shader_gpu.rst:816 ../Shader_gpu.rst:868 ../Shader_gpu.rst:915
+#: ../Shader_gpu.rst:968 ../Shader_gpu.rst:1015 ../Shader_gpu.rst:1061
+#: ../Shader_gpu.rst:1109 ../Shader_gpu.rst:1159 ../Shader_gpu.rst:1209
+#: ../Shader_gpu.rst:1258 ../Shader_gpu.rst:1306 ../Shader_gpu.rst:1364
+#: ../Shader_gpu.rst:1417 ../Shader_gpu.rst:1465 ../Shader_gpu.rst:1517
+#: ../Shader_gpu.rst:1571 ../Shader_gpu.rst:1626 ../Shader_gpu.rst:1672
+#: ../Shader_gpu.rst:1715 ../Shader_gpu.rst:1773 ../Shader_gpu.rst:1819
+#: ../Shader_gpu.rst:1874 ../Shader_gpu.rst:1912 ../Shader_gpu.rst:1947
+#: ../Shader_gpu.rst:1981 ../Shader_gpu.rst:2029 ../Shader_gpu.rst:2076
+#: ../Shader_gpu.rst:2116 ../Shader_gpu.rst:2150 ../Shader_gpu.rst:2192
+#: ../Shader_gpu.rst:2237 ../Shader_gpu.rst:2280 ../Shader_gpu.rst:2331
+#: ../Shader_gpu.rst:2379 ../Shader_gpu.rst:2426 ../Shader_gpu.rst:2474
+#: ../Shader_gpu.rst:2516 ../Shader_gpu.rst:2558 ../Shader_gpu.rst:2610
+#: ../Shader_gpu.rst:2655
+msgid "**Returns:**"
+msgstr "**Retourne :**"
+
+#: ../Shader_gpu.rst:111
+msgid "**int**: The amount of free GPU memory in bytes."
+msgstr "**int** : La quantité de mémoire libre du GPU en octets."
+
+#: ../Shader_gpu.rst:113 ../Shader_gpu.rst:133 ../Shader_gpu.rst:155
+#: ../Shader_gpu.rst:177 ../Shader_gpu.rst:198
+msgid "**Example Usage:**"
+msgstr "**Exemple d'utilisation :**"
+
+#: ../Shader_gpu.rst:124
+msgid "Retrieve the total memory capacity of the GPU."
+msgstr "Récupérer la capacité mémoire totale du GPU."
+
+#: ../Shader_gpu.rst:126
+msgid ""
+"This function queries the GPU device to determine its total available "
+"memory, representing the total VRAM capacity of the GPU."
+msgstr ""
+"Cette fonction interroge le GPU pour déterminer sa mémoire totale disponible, "
+"ce qui représente la capacité totale de la VRAM du GPU."
+
+#: ../Shader_gpu.rst:131
+msgid "**int**: The total GPU memory in bytes."
+msgstr "**int** : La mémoire totale du GPU en octets."
+
+#: ../Shader_gpu.rst:144
+msgid "Retrieve the PCI Bus ID of the GPU."
+msgstr "Récupérer l'identifiant du bus PCI du GPU."
+
+#: ../Shader_gpu.rst:146
+msgid ""
+"This function queries the GPU device and returns its PCI Bus ID, which "
+"uniquely identifies the GPU within the system. The PCI Bus ID is useful "
+"for multi-GPU setups, debugging, and device management."
+msgstr ""
+"Cette fonction interroge le GPU et retourne son identifiant de bus PCI, "
+"qui permet d’identifier de manière unique le GPU dans le système. "
+"L’identifiant PCI est utile pour les configurations multi-GPU, le débogage "
+"et la gestion des périphériques."
+
+#: ../Shader_gpu.rst:152
+msgid ""
+"**str**: The PCI Bus ID of the GPU in the format "
+"\"Domain:Bus:Device.Function\" (e.g., \"0000:01:00.0\")."
+msgstr ""
+"**str** : L'identifiant du bus PCI du GPU au format "
+"\"Domaine:Bus:Périphérique.Fonction\" (ex. : \"0000:01:00.0\")."
+
+#: ../Shader_gpu.rst:166
+msgid "Retrieve the compute capability of the GPU."
+msgstr "Récupérer la capacité de calcul du GPU."
+
+#: ../Shader_gpu.rst:168
+msgid ""
+"Compute capability represents the GPU architecture version and determines"
+" its compatibility with various CUDA features. Higher compute capability "
+"values indicate support for more advanced features and optimizations."
+msgstr ""
+"La capacité de calcul représente la version de l’architecture du GPU et "
+"détermine sa compatibilité avec différentes fonctionnalités CUDA. "
+"Des valeurs plus élevées indiquent la prise en charge de fonctionnalités "
+"et d’optimisations plus avancées."
+
+#: ../Shader_gpu.rst:174
+msgid ""
+"**str**: The compute capability of the GPU as a string in the format "
+"\"major.minor\" (e.g., \"7.5\" for NVIDIA Turing GPUs)."
+msgstr ""
+"**str** : La capacité de calcul du GPU sous forme de chaîne de caractères "
+"au format \"majeur.mineur\" (ex. : \"7.5\" pour les GPU NVIDIA Turing)."
+
+#: ../Shader_gpu.rst:188
+msgid "Retrieve the maximum number of grid blocks per multiprocessor."
+msgstr "Récupérer le nombre maximal de blocs de grille par multiprocesseur."
+
+#: ../Shader_gpu.rst:190
+msgid ""
+"This function returns the maximum number of grid blocks that can be "
+"active per multiprocessor on the GPU. This value is essential for "
+"optimizing parallel workloads and ensuring efficient resource "
+"utilization."
+msgstr ""
+"Cette fonction retourne le nombre maximal de blocs de grille pouvant être "
+"actifs par multiprocesseur sur le GPU. Cette valeur est essentielle pour "
+"optimiser les charges de travail parallèles et garantir une utilisation "
+"efficace des ressources."
+
+#: ../Shader_gpu.rst:196
+msgid "**unsigned int**: The maximum number of grid blocks per multiprocessor."
+msgstr "**unsigned int** : Le nombre maximal de blocs de grille par multiprocesseur."
+
+#: ../Shader_gpu.rst:205 ../Shader_gpu.rst:240 ../Shader_gpu.rst:274
+#: ../Shader_gpu.rst:330 ../Shader_gpu.rst:366 ../Shader_gpu.rst:395
+#: ../Shader_gpu.rst:431 ../Shader_gpu.rst:467 ../Shader_gpu.rst:554
+#: ../Shader_gpu.rst:596 ../Shader_gpu.rst:660 ../Shader_gpu.rst:715
+#: ../Shader_gpu.rst:766 ../Shader_gpu.rst:825 ../Shader_gpu.rst:877
+#: ../Shader_gpu.rst:924 ../Shader_gpu.rst:977 ../Shader_gpu.rst:1024
+#: ../Shader_gpu.rst:1070 ../Shader_gpu.rst:1118 ../Shader_gpu.rst:1168
+#: ../Shader_gpu.rst:1218 ../Shader_gpu.rst:1267 ../Shader_gpu.rst:1315
+#: ../Shader_gpu.rst:1373 ../Shader_gpu.rst:1422 ../Shader_gpu.rst:1469
+#: ../Shader_gpu.rst:1525 ../Shader_gpu.rst:1575 ../Shader_gpu.rst:1630
+#: ../Shader_gpu.rst:1676 ../Shader_gpu.rst:1723 ../Shader_gpu.rst:1799
+#: ../Shader_gpu.rst:1823 ../Shader_gpu.rst:1884 ../Shader_gpu.rst:1922
+#: ../Shader_gpu.rst:1956 ../Shader_gpu.rst:1990 ../Shader_gpu.rst:2040
+#: ../Shader_gpu.rst:2086 ../Shader_gpu.rst:2121 ../Shader_gpu.rst:2160
+#: ../Shader_gpu.rst:2202 ../Shader_gpu.rst:2247 ../Shader_gpu.rst:2286
+#: ../Shader_gpu.rst:2343 ../Shader_gpu.rst:2389 ../Shader_gpu.rst:2440
+#: ../Shader_gpu.rst:2484 ../Shader_gpu.rst:2526 ../Shader_gpu.rst:2568
+#: ../Shader_gpu.rst:2620 ../Shader_gpu.rst:2665
+msgid "**Notes:**"
+msgstr "**Remarques :**"
+
+#: ../Shader_gpu.rst:207
+msgid "The returned value depends on the GPU's compute capability."
+msgstr "La valeur retournée dépend de la capacité de calcul du GPU."
+#: ../Shader_gpu.rst:52
+msgid "**Dithering & Heatmap Effects**"
+msgstr "**Effets de tramage et de carte thermique**"
+
+#: ../Shader_gpu.rst:54
+msgid ""
+"**Use Case**: Useful for game development, VFX, and computer graphics "
+"applications."
+msgstr ""
+"**Cas d'utilisation** : Utile pour le développement de jeux, les effets "
+"visuels (VFX) et les applications de graphisme informatique."
+
+#: ../Shader_gpu.rst:56
+msgid ""
+"**Geometric Transformations** Support for geometric transformations such "
+"as:"
+msgstr ""
+"**Transformations géométriques** : Prise en charge des transformations "
+"géométriques telles que :"
+
+#: ../Shader_gpu.rst:59
+msgid "**Mirroring**"
+msgstr "**Miroir**"
+
+#: ../Shader_gpu.rst:60
+msgid "**Zooming**"
+msgstr "**Zoom**"
+
+#: ../Shader_gpu.rst:61
+msgid "**Downscaling**"
+msgstr "**Réduction d'échelle**"
+
+#: ../Shader_gpu.rst:62
+msgid "**Blending**"
+msgstr "**Fusion**"
+
+#: ../Shader_gpu.rst:64
+msgid ""
+"**Use Case**: Can be used for image compression, texture mapping, and "
+"real-time rendering."
+msgstr ""
+"**Cas d'utilisation** : Peut être utilisé pour la compression d'images, "
+"le mappage de textures et le rendu en temps réel."
+
+#: ../Shader_gpu.rst:66
+msgid ""
+"**Real-Time Video Processing** Real-time video effects are supported by "
+"functions such as :func:`ripple_effect_gpu()`, :func:`predator_gpu()`, "
+"and :func:`heatmap_gpu()`."
+msgstr ""
+"**Traitement vidéo en temps réel** : Les effets vidéo en temps réel sont "
+"pris en charge par des fonctions telles que :func:`ripple_effect_gpu()`, "
+":func:`predator_gpu()`, et :func:`heatmap_gpu()`."
+
+#: ../Shader_gpu.rst:70
+msgid ""
+"**Use Case**: Ideal for integration into streaming software, video "
+"filters, or surveillance systems."
+msgstr ""
+"**Cas d'utilisation** : Idéal pour une intégration dans des logiciels de "
+"streaming, des filtres vidéo ou des systèmes de surveillance."
+
+#: ../Shader_gpu.rst:74
+msgid "4. Potential Applications"
+msgstr "4. Applications potentielles"
+
+#: ../Shader_gpu.rst:76
+msgid "**Real-time Image & Video Processing**: Enhance camera feeds in real-time."
+msgstr "**Traitement d'images et de vidéos en temps réel** : Améliore les flux vidéo en temps réel."
+
+#: ../Shader_gpu.rst:77
+msgid ""
+"**Computer Vision & AI Preprocessing**: Apply fast filters before passing"
+" images to ML models."
+msgstr ""
+"**Vision par ordinateur et prétraitement pour l'IA** : Applique des filtres "
+"rapides avant de transmettre les images aux modèles d'apprentissage automatique."
+
+#: ../Shader_gpu.rst:78
+msgid ""
+"**Game Development & Graphics**: Add special effects for gaming & "
+"simulation environments."
+msgstr ""
+"**Développement de jeux et graphisme** : Ajoute des effets spéciaux pour "
+"les jeux et les environnements de simulation."
+
+#: ../Shader_gpu.rst:79
+msgid ""
+"**Augmented & Virtual Reality (AR/VR)**: Optimize visuals for immersive "
+"experiences."
+msgstr ""
+"**Réalité augmentée et réalité virtuelle (AR/VR)** : Optimise les "
+"visuels pour des expériences immersives."
+
+#: ../Shader_gpu.rst:80
+msgid ""
+"**High-performance Photography Tools**: Edit large images efficiently "
+"using the GPU."
+msgstr ""
+"**Outils de photographie haute performance** : Modifie de grandes images "
+"efficacement en utilisant le GPU."
+
+#: ../Shader_gpu.rst:84
+msgid "5. Summary"
+msgstr "5. Résumé"
+
+#: ../Shader_gpu.rst:86
+msgid ""
+"This library offloads complex image processing tasks from the CPU to the "
+"GPU, making operations significantly faster and more efficient. It is "
+"ideal for applications that require real-time performance, such as games,"
+" AR/VR, video streaming, and AI-based image processing."
+msgstr ""
+"Cette bibliothèque décharge les tâches complexes de traitement d'image du CPU "
+"vers le GPU, rendant les opérations beaucoup plus rapides et efficaces. Elle "
+"est idéale pour les applications nécessitant des performances en temps réel, "
+"telles que les jeux, l'AR/VR, le streaming vidéo et le traitement d'images basé sur l'IA."
+
+#: ../Shader_gpu.rst:248 ../Shader_gpu.rst:285 ../Shader_gpu.rst:321
+#: ../Shader_gpu.rst:401 ../Shader_gpu.rst:437 ../Shader_gpu.rst:473
+#: ../Shader_gpu.rst:518 ../Shader_gpu.rst:560 ../Shader_gpu.rst:602
+#: ../Shader_gpu.rst:666 ../Shader_gpu.rst:721 ../Shader_gpu.rst:772
+#: ../Shader_gpu.rst:831 ../Shader_gpu.rst:883 ../Shader_gpu.rst:930
+#: ../Shader_gpu.rst:982 ../Shader_gpu.rst:1029 ../Shader_gpu.rst:1076
+#: ../Shader_gpu.rst:1123 ../Shader_gpu.rst:1173 ../Shader_gpu.rst:1223
+#: ../Shader_gpu.rst:1272 ../Shader_gpu.rst:1321 ../Shader_gpu.rst:1379
+#: ../Shader_gpu.rst:1429 ../Shader_gpu.rst:1477 ../Shader_gpu.rst:1531
+#: ../Shader_gpu.rst:1581 ../Shader_gpu.rst:1636 ../Shader_gpu.rst:1682
+#: ../Shader_gpu.rst:1729 ../Shader_gpu.rst:1777 ../Shader_gpu.rst:1829
+msgid "**Example:**"
+msgstr "**Exemple :**"
+
+#: ../Shader_gpu.rst:259
+msgid ""
+"Convert a value to a human-readable format, scaling it by powers of 1024 "
+"(e.g., KB, MB, GB)."
+msgstr ""
+"Convertit une valeur en un format lisible par l'homme, en la mettant à "
+"l'échelle par puissances de 1024 (par exemple, KB, MB, GB)."
+
+#: ../Shader_gpu.rst:262
+msgid ""
+"This function divides the input value `v` by 1024 repeatedly until it is "
+"less than or equal to 1024. It then returns the value with its "
+"appropriate unit (e.g., KB, MB, GB) based on the number of divisions "
+"performed."
+msgstr ""
+"Cette fonction divise la valeur d'entrée `v` par 1024 de manière répétée "
+"jusqu'à ce qu'elle soit inférieure ou égale à 1024. Elle retourne ensuite "
+"la valeur avec l'unité appropriée (par exemple, KB, MB, GB) en fonction "
+"du nombre de divisions effectuées."
+
+#: ../Shader_gpu.rst:268
+msgid ""
+"**v** (*float* or *int*): The value to be converted (typically "
+"representing bytes or data size)."
+msgstr ""
+"**v** (*float* ou *int*) : La valeur à convertir (représentant "
+"généralement des octets ou une taille de données)."
+
+#: ../Shader_gpu.rst:272
+msgid ""
+"**str**: A human-readable string representing the value with an "
+"appropriate unit, rounded to 3 decimal places."
+msgstr ""
+"**str** : Une chaîne de caractères lisible par l'homme représentant la "
+"valeur avec une unité appropriée, arrondie à 3 décimales."
+
+#: ../Shader_gpu.rst:276
+msgid ""
+"The function uses the following units: - 1024 bytes = 1 KB - 1024 KB = 1 "
+"MB - 1024 MB = 1 GB - and so on..."
+msgstr ""
+"La fonction utilise les unités suivantes : - 1024 octets = 1 KB - 1024 KB "
+"= 1 MB - 1024 MB = 1 GB - et ainsi de suite..."
+
+#: ../Shader_gpu.rst:282
+msgid ""
+"If the input value `v` is smaller than 1024, it will be returned as is "
+"with the first unit."
+msgstr ""
+"Si la valeur d'entrée `v` est inférieure à 1024, elle sera retournée "
+"telle quelle avec la première unité."
+
+#: ../Shader_gpu.rst:283
+msgid ""
+"The function ensures that the appropriate unit is selected based on the "
+"scale of `v`."
+msgstr ""
+"La fonction garantit que l'unité appropriée est sélectionnée en fonction "
+"de l'échelle de `v`."
+
+#: ../Shader_gpu.rst:296
+msgid ""
+"Calculate and display the appropriate GPU block and grid dimensions for a"
+" given image size."
+msgstr ""
+"Calcule et affiche les dimensions optimales des blocs et de la grille GPU "
+"pour une taille d'image donnée."
+
+#: ../Shader_gpu.rst:298
+msgid ""
+"This function computes the grid and block sizes required for optimal GPU "
+"parallelization. It utilizes the `block_grid` function to determine the "
+"best block and grid sizes based on the provided width (`w`) and height "
+"(`h`) of the image or display."
+msgstr ""
+"Cette fonction détermine les tailles de grille et de bloc requises pour "
+"une parallélisation optimale sur le GPU. Elle utilise la fonction "
+"`block_grid` pour obtenir les meilleures tailles de bloc et de grille en "
+"fonction de la largeur (`w`) et de la hauteur (`h`) de l'image ou de "
+"l'affichage fournis."
+
+#: ../Shader_gpu.rst:302
+msgid ""
+"The block and grid sizes are then validated to ensure they can correctly "
+"cover the entire area. If the validation fails, assertions are raised. "
+"Afterward, the function prints the resulting grid and block sizes."
+msgstr ""
+"Les tailles de bloc et de grille sont ensuite validées pour s'assurer "
+"qu'elles couvrent correctement toute la surface. Si la validation échoue, "
+"des assertions sont levées. Ensuite, la fonction affiche les tailles de "
+"grille et de bloc résultantes."
+
+#: ../Shader_gpu.rst:308
+msgid "**w** (*int*): The width of the image or display (must be greater than 0)."
+msgstr "**w** (*int*) : La largeur de l'image ou de l'affichage (doit être supérieure à 0)."
+
+#: ../Shader_gpu.rst:309
+msgid ""
+"**h** (*int*): The height of the image or display (must be greater than "
+"0)."
+msgstr ""
+"**h** (*int*) : La hauteur de l'image ou de l'affichage (doit être "
+"supérieure à 0)."
+
+#: ../Shader_gpu.rst:313
+msgid ""
+"**AssertionError**: - If either `w` or `h` is non-positive. - If the "
+"calculated grid and block sizes do not properly cover the image."
+msgstr ""
+"**AssertionError** : - Si `w` ou `h` est négatif ou nul. - Si les tailles "
+"calculées de grille et de bloc ne couvrent pas correctement l'image."
+
+#: ../Shader_gpu.rst:319
+msgid ""
+"**None**: This function only prints the GPU grid and block information. "
+"It does not return any values."
+msgstr ""
+"**None** : Cette fonction affiche uniquement les informations relatives à "
+"la grille et aux blocs GPU. Elle ne retourne aucune valeur."
+
+#: ../Shader_gpu.rst:332
+msgid ""
+"The grid is determined by the number of blocks required to cover the "
+"image's height and width."
+msgstr ""
+"La grille est déterminée par le nombre de blocs nécessaires pour couvrir "
+"la hauteur et la largeur de l'image."
+
+#: ../Shader_gpu.rst:333
+msgid ""
+"The block size refers to the size of each individual block of threads in "
+"the GPU."
+msgstr ""
+"La taille du bloc fait référence à la taille de chaque bloc individuel de "
+"threads dans le GPU."
+
+#: ../Shader_gpu.rst:334
+msgid ""
+"This function assumes the GPU processing will be optimized for the "
+"calculated grid and block sizes."
+msgstr ""
+"Cette fonction suppose que le traitement GPU sera optimisé pour les "
+"tailles de grille et de bloc calculées."
+
+#: ../Shader_gpu.rst:340
+msgid ""
+"Display detailed GPU information, including memory, compute capability, "
+"and PCI bus ID."
+msgstr ""
+"Affiche des informations détaillées sur le GPU, y compris la mémoire, la "
+"capacité de calcul et l'identifiant du bus PCI."
+
+#: ../Shader_gpu.rst:342
+msgid ""
+"This function retrieves and prints various details about the GPU, "
+"including: - The installed CuPy version. - The maximum grid size per "
+"block supported by the GPU. - The available and total GPU memory, both in"
+" bytes and human-readable formats. - The PCI Bus ID of the GPU. - The "
+"compute capability of the GPU."
+msgstr ""
+"Cette fonction récupère et affiche divers détails sur le GPU, notamment : "
+"- La version de CuPy installée. - La taille maximale de grille par bloc "
+"prise en charge par le GPU. - La mémoire GPU disponible et totale, en "
+"octets et en formats lisibles par l'homme. - L'identifiant du bus PCI du "
+"GPU. - La capacité de calcul du GPU."
+
+#: ../Shader_gpu.rst:351
+msgid "**None**: This function prints GPU-related information to the console."
+msgstr "**None** : Cette fonction affiche les informations relatives au GPU dans la console."
+#: ../Shader_gpu.rst:353
+msgid "**Example output:**"
+msgstr "**Exemple de sortie :**"
+
+#: ../Shader_gpu.rst:368
+msgid "The function relies on CuPy for GPU memory information."
+msgstr "La fonction repose sur CuPy pour obtenir des informations sur la mémoire GPU."
+
+#: ../Shader_gpu.rst:369
+msgid ""
+"The `conv` function is used to convert raw memory values into a more "
+"readable format (e.g., GB)."
+msgstr ""
+"La fonction `conv` est utilisée pour convertir les valeurs brutes de mémoire "
+"en un format plus lisible (par exemple, GB)."
+
+#: ../Shader_gpu.rst:370
+msgid ""
+"This function is useful for debugging and verifying GPU resource "
+"availability before launching CUDA-based operations."
+msgstr ""
+"Cette fonction est utile pour le débogage et la vérification de la disponibilité "
+"des ressources GPU avant de lancer des opérations basées sur CUDA."
+
+#: ../Shader_gpu.rst:376
+msgid ""
+"Perform GPU-accelerated color inversion on a Pygame surface (returns a "
+"copy)."
+msgstr ""
+"Effectue une inversion des couleurs accélérée par GPU sur une surface Pygame "
+"(retourne une copie)."
+
+#: ../Shader_gpu.rst:378
+msgid ""
+"This function transfers the image data from a `pygame.Surface` to the "
+"GPU, inverts the color values using CuPy, and then reconstructs a new "
+"surface with the modified pixel data."
+msgstr ""
+"Cette fonction transfère les données d'image d'un `pygame.Surface` vers le GPU, "
+"inverse les valeurs de couleur à l'aide de CuPy, puis reconstruit une nouvelle "
+"surface avec les pixels modifiés."
+
+#: ../Shader_gpu.rst:384
+msgid ""
+"**surface_** (*pygame.Surface*): A Pygame surface object (24-bit or "
+"32-bit) containing the image to be inverted."
+msgstr ""
+"**surface_** (*pygame.Surface*) : Un objet Pygame Surface (24 bits ou 32 bits) "
+"contenant l'image à inverser."
+
+#: ../Shader_gpu.rst:388
+msgid ""
+"**pygame.Surface**: A new Pygame surface with inverted colors, preserving"
+" the original format (BGR or BGRA)."
+msgstr ""
+"**pygame.Surface** : Une nouvelle surface Pygame avec les couleurs inversées, "
+"conservant le format original (BGR ou BGRA)."
+
+#: ../Shader_gpu.rst:392
+msgid ""
+"**ValueError**: If the surface cannot be referenced as a 1D buffer or has"
+" zero length."
+msgstr ""
+"**ValueError** : Si la surface ne peut pas être référencée comme un tampon 1D "
+"ou a une longueur nulle."
+
+#: ../Shader_gpu.rst:393 ../Shader_gpu.rst:428 ../Shader_gpu.rst:1880
+#: ../Shader_gpu.rst:1918
+msgid "**TypeError**: If `surface_` is not a `pygame.Surface` object."
+msgstr "**TypeError** : Si `surface_` n'est pas un objet `pygame.Surface`."
+
+#: ../Shader_gpu.rst:397
+msgid ""
+"Uses CuPy to perform the inversion directly on the GPU for optimal "
+"performance."
+msgstr ""
+"Utilise CuPy pour effectuer l'inversion directement sur le GPU afin d'optimiser "
+"les performances."
+
+#: ../Shader_gpu.rst:398
+msgid ""
+"Automatically detects whether the surface is 24-bit (BGR) or 32-bit "
+"(BGRA)."
+msgstr ""
+"Détecte automatiquement si la surface est en 24 bits (BGR) ou 32 bits (BGRA)."
+
+#: ../Shader_gpu.rst:399
+msgid ""
+"Synchronizes the GPU to ensure completion before returning the processed "
+"image."
+msgstr ""
+"Synchronise le GPU pour garantir la fin du traitement avant de retourner "
+"l'image modifiée."
+
+#: ../Shader_gpu.rst:414
+msgid "Perform in-place GPU-accelerated color inversion on a Pygame surface."
+msgstr "Effectuer une inversion des couleurs en place accélérée par GPU sur une surface Pygame."
+
+#: ../Shader_gpu.rst:416
+msgid ""
+"This function directly modifies the pixel data of the given "
+"`pygame.Surface` by inverting its color values using GPU processing via "
+"CuPy. The inversion is performed in-place, meaning the original surface "
+"is altered without creating a new one."
+msgstr ""
+"Cette fonction modifie directement les données des pixels de la `pygame.Surface` donnée "
+"en inversant ses valeurs de couleur via un traitement GPU avec CuPy. L'inversion est effectuée en place, "
+"ce qui signifie que la surface d'origine est modifiée sans en créer une nouvelle."
+
+#: ../Shader_gpu.rst:423
+msgid ""
+"**surface_** (*pygame.Surface*): The Pygame surface whose pixel colors "
+"will be inverted. Must be a valid 24-bit (BGR) or 32-bit (BGRA) surface."
+msgstr ""
+"**surface_** (*pygame.Surface*) : La surface Pygame dont les couleurs des pixels "
+"seront inversées. Doit être une surface valide en 24 bits (BGR) ou en 32 bits (BGRA)."
+
+#: ../Shader_gpu.rst:429
+msgid ""
+"**ValueError**: If the surface buffer cannot be accessed or has zero "
+"length."
+msgstr ""
+"**ValueError** : Si le tampon de la surface ne peut pas être accédé ou a une "
+"longueur nulle."
+
+#: ../Shader_gpu.rst:433
+msgid ""
+"The function transfers the pixel data to the GPU, performs the inversion,"
+" and copies the modified pixels back to the original surface."
+msgstr ""
+"La fonction transfère les données des pixels vers le GPU, effectue l'inversion,"
+" puis copie les pixels modifiés dans la surface d'origine."
+
+#: ../Shader_gpu.rst:435
+msgid "Uses CuPy for efficient GPU computation."
+msgstr "Utilise CuPy pour un calcul efficace sur GPU."
+
+#: ../Shader_gpu.rst:452
+msgid "Perform in-place inversion of a BGR pixel buffer using the GPU."
+msgstr "Effectuer une inversion en place d'un tampon de pixels BGR à l'aide du GPU."
+
+#: ../Shader_gpu.rst:454
+msgid ""
+"This function takes a contiguous 1D BGR buffer (as a NumPy array or "
+"memoryview), transfers it to the GPU, inverts the pixel values (255 - "
+"pixel value), and writes the result back into the original buffer."
+msgstr ""
+"Cette fonction prend un tampon BGR contigu 1D (sous forme de tableau NumPy "
+"ou de memoryview), le transfère vers le GPU, inverse les valeurs des pixels (255 - "
+"valeur du pixel), puis réécrit le résultat dans le tampon d'origine."
+
+#: ../Shader_gpu.rst:460
+msgid ""
+"**bgr_array** (*numpy.ndarray* or *memoryview*): A contiguous 1D array "
+"representing the BGR pixel buffer. The buffer must be mutable and non-"
+"empty."
+msgstr ""
+"**bgr_array** (*numpy.ndarray* ou *memoryview*) : Un tableau 1D contigu représentant "
+"le tampon de pixels BGR. Le tampon doit être modifiable et non vide."
+
+#: ../Shader_gpu.rst:464
+msgid "**TypeError**: If `bgr_array` is not a NumPy array or a memoryview."
+msgstr "**TypeError** : Si `bgr_array` n'est pas un tableau NumPy ou un memoryview."
+
+#: ../Shader_gpu.rst:465
+msgid "**ValueError**: If `bgr_array` is empty (has zero length)."
+msgstr "**ValueError** : Si `bgr_array` est vide (longueur nulle)."
+
+#: ../Shader_gpu.rst:469
+msgid "This function modifies `bgr_array` in place."
+msgstr "Cette fonction modifie `bgr_array` en place."
+
+#: ../Shader_gpu.rst:470
+msgid "Uses CUDA-enabled CuPy for GPU acceleration."
+msgstr "Utilise CuPy avec prise en charge CUDA pour l'accélération GPU."
+
+#: ../Shader_gpu.rst:471
+msgid ""
+"Suitable for high-performance image processing where in-place "
+"modification is necessary."
+msgstr ""
+"Convient au traitement d'images haute performance nécessitant une modification en place."
+
+#: ../Shader_gpu.rst:497
+msgid ""
+"Inverts the RGB values of an image (3D numpy array or memoryview) in "
+"place using GPU."
+msgstr ""
+"Inverse les valeurs RGB d'une image (tableau NumPy 3D ou memoryview) en place "
+"à l'aide du GPU."
+
+#: ../Shader_gpu.rst:499
+msgid ""
+"This function performs an in-place inversion of the RGB channels in the "
+"input array. It operates on the assumption that the input `rgb_array` is "
+"a 3D numpy array or memoryview with shape (height, width, 3), where the "
+"last dimension represents the RGB color channels."
+msgstr ""
+"Cette fonction effectue une inversion en place des canaux RGB dans le tableau d'entrée. "
+"Elle suppose que `rgb_array` est un tableau NumPy 3D ou un memoryview avec la forme "
+"(hauteur, largeur, 3), où la dernière dimension représente les canaux de couleur RGB."
+
+#: ../Shader_gpu.rst:503
+msgid ""
+"**Note**: This operation is performed using GPU to speed up the "
+"computation."
+msgstr "**Remarque** : Cette opération est effectuée sur GPU pour accélérer le calcul."
+
+#: ../Shader_gpu.rst:507
+msgid ""
+"**rgb_array** (*numpy.ndarray* or *memoryview*): A 3D array or memoryview"
+" of shape (height, width, 3) containing the RGB values of the image. The "
+"dtype must be *numpy.uint8*. If `rgb_array` is a memoryview, it should be"
+" of a compatible type."
+msgstr ""
+"**rgb_array** (*numpy.ndarray* ou *memoryview*) : Un tableau 3D ou un memoryview "
+"de forme (hauteur, largeur, 3) contenant les valeurs RGB de l'image. Le dtype "
+"doit être *numpy.uint8*. Si `rgb_array` est un memoryview, il doit être "
+"d'un type compatible."
+
+#: ../Shader_gpu.rst:511
+msgid "**TypeError**: If `rgb_array` is not a *numpy.ndarray* or *memoryview*."
+msgstr "**TypeError** : Si `rgb_array` n'est pas un *numpy.ndarray* ou *memoryview*."
+
+#: ../Shader_gpu.rst:512
+msgid ""
+"**ValueError**: If the `rgb_array` is not of dtype *numpy.uint8* or does "
+"not have 3 dimensions. If the width or height of the array is zero."
+msgstr ""
+"**ValueError** : Si `rgb_array` n'est pas du dtype *numpy.uint8* ou n'a pas 3 "
+"dimensions. Si la largeur ou la hauteur du tableau est nulle."
+
+#: ../Shader_gpu.rst:514
+msgid "**Description:**"
+msgstr "**Description :**"
+
+#: ../Shader_gpu.rst:516
+msgid ""
+"This function directly modifies the input `rgb_array` by inverting the "
+"RGB channels using GPU-accelerated operations. The inversion is done in "
+"place, meaning the original array will be updated. The GPU is used to "
+"perform the inversion efficiently."
+msgstr ""
+"Cette fonction modifie directement le tableau d'entrée `rgb_array` en inversant "
+"les canaux RGB à l'aide d'opérations accélérées par GPU. L'inversion se fait en place, "
+"ce qui signifie que le tableau d'origine sera mis à jour. Le GPU est utilisé pour "
+"effectuer l'inversion de manière efficace."
+#: ../Shader_gpu.rst:537
+msgid ""
+"Apply a Sepia shader to a Pygame surface and return a new surface with "
+"the Sepia effect applied."
+msgstr ""
+"Applique un shader Sepia à une surface Pygame et retourne une nouvelle surface avec "
+"l'effet Sepia appliqué."
+
+#: ../Shader_gpu.rst:539
+msgid ""
+"This function works with Pygame surfaces of both 32-bit and 24-bit color "
+"depth. It uses GPU-based computations to transform the pixel colors by "
+"applying a Sepia filter."
+msgstr ""
+"Cette fonction fonctionne avec des surfaces Pygame de profondeur de couleur 32 bits et 24 bits. "
+"Elle utilise des calculs basés sur le GPU pour transformer les couleurs des pixels en appliquant "
+"un filtre Sepia."
+
+#: ../Shader_gpu.rst:542
+msgid ""
+"The function first checks the type of the provided surface to ensure it's"
+" a valid Pygame Surface. Then it extracts the pixel data from the "
+"surface, applies the Sepia filter using a GPU-based kernel, and returns a"
+" new Pygame surface with the transformed image."
+msgstr ""
+"La fonction vérifie d'abord le type de la surface fournie pour s'assurer qu'il s'agit d'une "
+"surface Pygame valide. Ensuite, elle extrait les données des pixels de la surface, applique le "
+"filtre Sepia en utilisant un noyau basé sur le GPU, puis retourne une nouvelle surface Pygame avec "
+"l'image transformée."
+
+#: ../Shader_gpu.rst:548
+msgid ""
+"**surface_** (*pygame.Surface*): A Pygame Surface object containing the "
+"image to which the Sepia filter will be applied. The surface is expected "
+"to be in 32-bit or 24-bit format."
+msgstr ""
+"**surface_** (*pygame.Surface*) : Un objet Surface Pygame contenant "
+"l'image à laquelle le filtre Sepia sera appliqué. La surface doit être "
+"en format 32 bits ou 24 bits."
+
+#: ../Shader_gpu.rst:552
+msgid ""
+"**pygame.Surface**: A new Pygame Surface object with the same dimensions "
+"and the Sepia filter applied, in the \"RGB\" format."
+msgstr ""
+"**pygame.Surface** : Un nouvel objet Surface Pygame avec les mêmes dimensions "
+"et le filtre Sepia appliqué, au format \"RGB\"."
+
+#: ../Shader_gpu.rst:556 ../Shader_gpu.rst:598 ../Shader_gpu.rst:662
+msgid ""
+"The function utilizes GPU acceleration to apply the Sepia effect "
+"efficiently."
+msgstr ""
+"La fonction utilise l'accélération GPU pour appliquer l'effet Sepia "
+"de manière efficace."
+
+#: ../Shader_gpu.rst:557
+msgid ""
+"The input surface is not modified; a new surface with the Sepia effect is"
+" returned."
+msgstr ""
+"La surface d'entrée n'est pas modifiée ; une nouvelle surface avec "
+"l'effet Sepia est retournée."
+
+#: ../Shader_gpu.rst:558 ../Shader_gpu.rst:719 ../Shader_gpu.rst:770
+#: ../Shader_gpu.rst:881 ../Shader_gpu.rst:928
+msgid ""
+"Ensure that the Pygame surface is in a compatible format (24-bit or "
+"32-bit) before applying the filter."
+msgstr ""
+"Assurez-vous que la surface Pygame soit dans un format compatible (24 bits ou "
+"32 bits) avant d'appliquer le filtre."
+
+#: ../Shader_gpu.rst:582
+msgid ""
+"Apply a Sepia filter in-place to an RGB image array using GPU "
+"acceleration."
+msgstr ""
+"Applique un filtre Sepia en place à un tableau d'image RGB en utilisant "
+"l'accélération GPU."
+
+#: ../Shader_gpu.rst:584
+msgid ""
+"This function processes a 32-bit or 24-bit image in-place by modifying "
+"the provided `numpy.ndarray` of shape (w, h, 3) containing uint8 RGB "
+"values. The Sepia effect is applied directly to the input array without "
+"creating a new array."
+msgstr ""
+"Cette fonction traite une image 32 bits ou 24 bits en place en modifiant "
+"le `numpy.ndarray` fourni de forme (w, h, 3) contenant les valeurs RGB en uint8. "
+"L'effet Sepia est appliqué directement au tableau d'entrée sans créer un nouveau tableau."
+
+#: ../Shader_gpu.rst:590
+msgid ""
+"**rgb_array** (*numpy.ndarray*): A 3D numpy array with shape (w, h, 3), "
+"representing an image with RGB pixel values in the uint8 data type. The "
+"shape should represent the width (w), height (h), and three channels "
+"(Red, Green, Blue)."
+msgstr ""
+"**rgb_array** (*numpy.ndarray*) : Un tableau 3D numpy de forme (w, h, 3), "
+"représentant une image avec des valeurs de pixels RGB en type de données uint8. La "
+"forme doit représenter la largeur (w), la hauteur (h), et les trois canaux "
+"(Rouge, Vert, Bleu)."
+
+#: ../Shader_gpu.rst:594
+msgid ""
+"**None**: This function modifies the input `rgb_array` in-place and "
+"returns nothing."
+msgstr ""
+"**None** : Cette fonction modifie `rgb_array` en place et "
+"ne retourne rien."
+
+#: ../Shader_gpu.rst:599 ../Shader_gpu.rst:663 ../Shader_gpu.rst:828
+msgid "The input array is modified directly; no new array is created."
+msgstr ""
+"Le tableau d'entrée est modifié directement ; aucun nouveau tableau n'est créé."
+
+#: ../Shader_gpu.rst:600
+msgid ""
+"Ensure that the input array is of dtype `numpy.uint8` and has three "
+"dimensions representing the RGB channels."
+msgstr ""
+"Assurez-vous que le tableau d'entrée soit du dtype `numpy.uint8` et ait trois "
+"dimensions représentant les canaux RGB."
+
+#: ../Shader_gpu.rst:625
+msgid "Apply a Sepia filter to a BGR or BGRA image buffer on the GPU (in-place)."
+msgstr ""
+"Applique un filtre Sepia à un tampon d'image BGR ou BGRA sur le GPU (en place)."
+
+#: ../Shader_gpu.rst:627
+msgid ""
+"This function uses a GPU kernel to apply a Sepia effect to an image "
+"stored in either a BGR or BGRA format. The operation is performed on the "
+"input image buffer (`bgr_array`), which is a 1D array or memoryview "
+"representing the pixel data in either BGR or BGRA format."
+msgstr ""
+"Cette fonction utilise un noyau GPU pour appliquer un effet Sepia à une image "
+"stockée soit au format BGR, soit BGRA. L'opération est effectuée sur le "
+"tampon d'image d'entrée (`bgr_array`), qui est un tableau 1D ou un memoryview "
+"représentant les données des pixels au format BGR ou BGRA."
+
+#: ../Shader_gpu.rst:631
+msgid ""
+"The function assumes the buffer is laid out as a 1D array, where each "
+"pixel consists of 3 or 4 bytes (depending on whether it is in BGR or BGRA"
+" format). The Sepia effect is applied in parallel on the GPU using a CUDA"
+" kernel, and the result is stored directly in the input buffer."
+msgstr ""
+"La fonction suppose que le tampon est disposé sous forme de tableau 1D, où chaque "
+"pixel consiste en 3 ou 4 octets (selon qu'il soit en format BGR ou BGRA). "
+"L'effet Sepia est appliqué en parallèle sur le GPU à l'aide d'un noyau CUDA, "
+"et le résultat est stocké directement dans le tampon d'entrée."
+
+#: ../Shader_gpu.rst:638
+msgid ""
+"**grid_** (*tuple*): The block grid dimensions to be used for the kernel "
+"launch, typically obtained from a helper function such as `block_grid()`."
+msgstr ""
+"**grid_** (*tuple*) : Les dimensions de la grille de blocs à utiliser pour le lancement du noyau, "
+"généralement obtenues à partir d'une fonction d'assistance telle que `block_grid()`."
+
+#: ../Shader_gpu.rst:640
+msgid ""
+"**block_** (*tuple*): The block dimensions to be used for the kernel "
+"launch, typically obtained from a helper function such as `block_grid()`."
+msgstr ""
+"**block_** (*tuple*) : Les dimensions du bloc à utiliser pour le lancement du noyau, "
+"généralement obtenues à partir d'une fonction d'assistance telle que `block_grid()`."
+
+#: ../Shader_gpu.rst:642
+msgid ""
+"**w** (*Py_ssize_t*): The width of the image, in pixels. Must be greater "
+"than 0."
+msgstr ""
+"**w** (*Py_ssize_t*) : La largeur de l'image, en pixels. Doit être supérieure "
+"à 0."
+
+#: ../Shader_gpu.rst:643
+msgid ""
+"**h** (*Py_ssize_t*): The height of the image, in pixels. Must be greater"
+" than 0."
+msgstr ""
+"**h** (*Py_ssize_t*) : La hauteur de l'image, en pixels. Doit être supérieure "
+"à 0."
+
+#: ../Shader_gpu.rst:644
+msgid ""
+"**bgr_array** (*unsigned char [::1]*): A 1D array or memoryview "
+"containing the image pixel data. This array represents the image in "
+"either BGR (3 channels) or BGRA (4 channels) format, with each pixel "
+"occupying 3 or 4 consecutive bytes."
+msgstr ""
+"**bgr_array** (*unsigned char [::1]*) : Un tableau 1D ou un memoryview "
+"contenant les données des pixels de l'image. Ce tableau représente l'image en "
+"format BGR (3 canaux) ou BGRA (4 canaux), chaque pixel occupant 3 ou 4 octets "
+"consécutifs."
+
+#: ../Shader_gpu.rst:647
+msgid ""
+"**format_32** (*bint*, optional): A boolean flag indicating whether the "
+"input array is in BGRA format (True) or BGR format (False). Default is "
+"False (BGR format)."
+msgstr ""
+"**format_32** (*bint*, optionnel) : Un indicateur booléen indiquant si le "
+"tableau d'entrée est au format BGRA (True) ou BGR (False). Par défaut, c'est "
+"False (format BGR)."
+
+#: ../Shader_gpu.rst:652
+msgid ""
+"**None**: This function modifies the input `bgr_array` in-place and "
+"returns nothing."
+msgstr ""
+"**None** : Cette fonction modifie le `bgr_array` en place et "
+"ne retourne rien."
+
+#: ../Shader_gpu.rst:656
+msgid "**TypeError**: If `bgr_array` is not a valid numpy.ndarray or memoryview."
+msgstr ""
+"**TypeError** : Si `bgr_array` n'est pas un numpy.ndarray ou memoryview valide."
+
+#: ../Shader_gpu.rst:657
+msgid ""
+"**ValueError**: If the dimensions of the input image or the buffer length"
+" do not match the expected values based on the width, height, and pixel "
+"format."
+msgstr ""
+"**ValueError** : Si les dimensions de l'image d'entrée ou la longueur du tampon "
+"ne correspondent pas aux valeurs attendues en fonction de la largeur, de la hauteur et du format "
+"des pixels."
+
+#: ../Shader_gpu.rst:664 ../Shader_gpu.rst:829
+msgid ""
+"Ensure that the input array is of dtype `numpy.uint8` and has three or "
+"four dimensions representing the RGB or RGBA channels."
+msgstr ""
+"Assurez-vous que le tableau d'entrée soit de type `numpy.uint8` et ait trois ou "
+"quatre dimensions représentant les canaux RGB ou RGBA."
+
+#: ../Shader_gpu.rst:693
+msgid ""
+"Apply a Bright Pass Filter (BPF) effect to a Pygame surface using GPU "
+"acceleration."
+msgstr ""
+"Applique un filtre Bright Pass (BPF) à une surface Pygame en utilisant l'accélération GPU."
+
+#: ../Shader_gpu.rst:695
+msgid ""
+"This function applies a Bright Pass Filter to an image represented by a "
+"Pygame.Surface. The filter retains pixels with brightness values above a "
+"specified threshold and sets others to black. The operation is performed "
+"on the GPU to enhance performance."
+msgstr ""
+"Cette fonction applique un filtre Bright Pass à une image représentée par une "
+"pygame.Surface. Le filtre conserve les pixels dont les valeurs de luminosité sont supérieures à "
+"un seuil spécifié et met les autres à noir. L'opération est effectuée "
+"sur le GPU pour améliorer les performances."
+
+#: ../Shader_gpu.rst:701
+msgid ""
+"**surface_** (*pygame.Surface*): The input surface (image) on which the "
+"Bright Pass Filter effect will be applied."
+msgstr ""
+"**surface_** (*pygame.Surface*) : La surface d'entrée (image) sur laquelle l'effet "
+"Bright Pass Filter sera appliqué."
+
+#: ../Shader_gpu.rst:702
+msgid ""
+"**threshold_** (*int*, optional): The brightness threshold in the range "
+"[0, 255]. Pixels with a brightness value greater than or equal to the "
+"threshold will retain their color, while those below will be set to "
+"black. Default is 128."
+msgstr ""
+"**threshold_** (*int*, optionnel) : Le seuil de luminosité dans la plage "
+"[0, 255]. Les pixels dont la valeur de luminosité est supérieure ou égale au "
+"seuil conserveront leur couleur, tandis que ceux en dessous seront mis à "
+"noir. Par défaut, il est de 128."
+
+#: ../Shader_gpu.rst:708
+msgid ""
+"**pygame.Surface**: A new Pygame.Surface with the Bright Pass Filter "
+"effect applied, in RGB format, with the same width and height as the "
+"input surface."
+msgstr ""
+"**pygame.Surface** : Une nouvelle Pygame.Surface avec l'effet Bright Pass Filter "
+"appliqué, au format RGB, avec la même largeur et hauteur que la surface d'entrée."
+
+#: ../Shader_gpu.rst:712 ../Shader_gpu.rst:763
+msgid "**TypeError**: If `surface_` is not a `pygame.Surface` type."
+msgstr ""
+"**TypeError** : Si `surface_` n'est pas de type `pygame.Surface`."
+
+#: ../Shader_gpu.rst:713 ../Shader_gpu.rst:764
+msgid ""
+"**ValueError**: If there is an issue referencing the surface pixels into "
+"a 3D array, or if the surface dimensions are invalid."
+msgstr ""
+"**ValueError** : S'il y a un problème pour référencer les pixels de la surface dans "
+"un tableau 3D, ou si les dimensions de la surface sont invalides."
+
+#: ../Shader_gpu.rst:717 ../Shader_gpu.rst:768
+msgid ""
+"The function utilizes GPU acceleration to apply the Bright Pass Filter "
+"efficiently."
+msgstr ""
+"La fonction utilise l'accélération GPU pour appliquer efficacement l'effet Bright Pass Filter."
+#: ../Shader_gpu.rst:718
+msgid ""
+"The input surface is not modified; a new surface with the Bright Pass "
+"Filter effect is returned."
+msgstr ""
+"La surface d'entrée n'est pas modifiée ; une nouvelle surface avec l'effet "
+"Bright Pass Filter est retournée."
+
+#: ../Shader_gpu.rst:744
+msgid ""
+"Apply a Bright Pass Filter (BPF) to a Pygame surface in-place using GPU "
+"acceleration."
+msgstr ""
+"Applique un filtre Bright Pass (BPF) à une surface Pygame en place en utilisant "
+"l'accélération GPU."
+
+#: ../Shader_gpu.rst:746
+msgid ""
+"This function applies a Bright Pass Filter effect to an image on the GPU."
+" The filter retains pixels with brightness values greater than or equal "
+"to a specified threshold, setting others to black. The operation is done "
+"in-place, modifying the input surface directly."
+msgstr ""
+"Cette fonction applique un effet Bright Pass Filter à une image sur le GPU. "
+"Le filtre conserve les pixels dont la luminosité est supérieure ou égale à un seuil "
+"spécifié et met les autres à noir. L'opération est effectuée en place, "
+"modifiant directement la surface d'entrée."
+
+#: ../Shader_gpu.rst:752
+msgid ""
+"**surface_** (*pygame.Surface*): The input surface (image) on which the "
+"Bright Pass Filter effect will be applied. The surface should be in RGB "
+"format."
+msgstr ""
+"**surface_** (*pygame.Surface*) : La surface d'entrée (image) sur laquelle l'effet "
+"Bright Pass Filter sera appliqué. La surface doit être au format RGB."
+
+#: ../Shader_gpu.rst:753
+msgid ""
+"**grid_** (*tuple*): Specifies the grid configuration for the GPU kernel."
+" This determines how the work is divided across multiple threads in the "
+"GPU. Grid dimensions should match the texture and array sizes."
+msgstr ""
+"**grid_** (*tuple*) : Spécifie la configuration de la grille pour le noyau GPU. "
+"Cela détermine la répartition du travail entre plusieurs threads sur le GPU. "
+"Les dimensions de la grille doivent correspondre aux tailles de la texture et du tableau."
+
+#: ../Shader_gpu.rst:754
+msgid ""
+"**block_** (*tuple*): Specifies the block configuration for the GPU "
+"kernel. This defines the number of threads within a block. The maximum "
+"number of threads per block is 1024. Block size should be chosen to "
+"optimize performance on the hardware."
+msgstr ""
+"**block_** (*tuple*) : Spécifie la configuration des blocs pour le noyau GPU. "
+"Cela définit le nombre de threads par bloc. Le nombre maximal de threads "
+"par bloc est de 1024. La taille des blocs doit être choisie pour optimiser "
+"les performances du matériel."
+
+#: ../Shader_gpu.rst:755
+msgid ""
+"**threshold_** (*int*, optional): The brightness threshold (in the range "
+"[0, 255]) that determines which pixels are kept. Pixels with a brightness"
+" value greater than or equal to the threshold remain unchanged, while "
+"pixels below the threshold are set to black. Default is 128."
+msgstr ""
+"**threshold_** (*int*, optionnel) : Le seuil de luminosité (dans la plage [0, 255]) "
+"qui détermine quels pixels sont conservés. Les pixels dont la valeur de luminosité "
+"est supérieure ou égale au seuil restent inchangés, tandis que ceux en dessous "
+"sont mis à noir. Par défaut, il est de 128."
+
+#: ../Shader_gpu.rst:759
+msgid ""
+"**None**: The function modifies the input `surface_` in-place and returns"
+" nothing."
+msgstr ""
+"**None** : La fonction modifie `surface_` en place et ne retourne rien."
+
+#: ../Shader_gpu.rst:769
+msgid "The input surface is modified directly; no new surface is created."
+msgstr ""
+"La surface d'entrée est modifiée directement ; aucune nouvelle surface n'est créée."
+
+#: ../Shader_gpu.rst:800
+msgid "Apply a band-pass filter (BPF) to an image buffer using GPU acceleration."
+msgstr ""
+"Applique un filtre passe-bande (BPF) à un tampon d'image en utilisant l'accélération GPU."
+
+#: ../Shader_gpu.rst:802
+msgid ""
+"This function processes an image buffer represented by a 1D array or "
+"memoryview in either BGR or BGRA format. The BPF retains pixels with "
+"brightness values within a specified range and sets others to black. The "
+"operation is performed on the GPU to enhance performance."
+msgstr ""
+"Cette fonction traite un tampon d'image représenté par un tableau 1D ou un memoryview "
+"au format BGR ou BGRA. Le filtre BPF conserve les pixels dont la luminosité est "
+"comprise dans une plage spécifiée et met les autres à noir. L'opération est effectuée "
+"sur le GPU pour améliorer les performances."
+
+#: ../Shader_gpu.rst:808
+msgid "**grid** (*tuple*): Grid size for GPU kernel execution (blocks per grid)."
+msgstr ""
+"**grid** (*tuple*) : Taille de la grille pour l'exécution du noyau GPU (blocs par grille)."
+
+#: ../Shader_gpu.rst:809
+msgid ""
+"**block** (*tuple*): Block size for GPU kernel execution (threads per "
+"block)."
+msgstr ""
+"**block** (*tuple*) : Taille des blocs pour l'exécution du noyau GPU (threads par bloc)."
+
+#: ../Shader_gpu.rst:810
+msgid "**w** (*int*): Width of the image in pixels."
+msgstr ""
+"**w** (*int*) : Largeur de l'image en pixels."
+
+#: ../Shader_gpu.rst:811
+msgid "**h** (*int*): Height of the image in pixels."
+msgstr ""
+"**h** (*int*) : Hauteur de l'image en pixels."
+
+#: ../Shader_gpu.rst:812
+msgid ""
+"**bgr_array** (*numpy.ndarray* or *memoryview*): Input image buffer in "
+"BGR or BGRA format."
+msgstr ""
+"**bgr_array** (*numpy.ndarray* ou *memoryview*) : Tampon d'image d'entrée au format "
+"BGR ou BGRA."
+
+#: ../Shader_gpu.rst:813
+msgid ""
+"**threshold_** (*int*, optional): Threshold value used for filtering "
+"(default: 128)."
+msgstr ""
+"**threshold_** (*int*, optionnel) : Valeur seuil utilisée pour le filtrage "
+"(par défaut : 128)."
+
+#: ../Shader_gpu.rst:814
+msgid ""
+"**format_32** (*bool*, optional): If True, treats the input buffer as "
+"BGRA (4 bytes per pixel). If False, treats it as BGR (3 bytes per pixel)."
+msgstr ""
+"**format_32** (*bool*, optionnel) : Si True, considère le tampon d'entrée comme "
+"BGRA (4 octets par pixel). Si False, le considère comme BGR (3 octets par pixel)."
+
+#: ../Shader_gpu.rst:818
+msgid ""
+"**None**: The function modifies `bgr_array` in-place with the filtered "
+"image."
+msgstr ""
+"**None** : La fonction modifie `bgr_array` en place avec l'image filtrée."
+
+#: ../Shader_gpu.rst:822
+msgid "**TypeError**: If `bgr_array` is not a numpy.ndarray or memoryview."
+msgstr ""
+"**TypeError** : Si `bgr_array` n'est pas un numpy.ndarray ou un memoryview."
+
+#: ../Shader_gpu.rst:823
+msgid ""
+"**ValueError**: If `bgr_array` is empty or does not match the expected "
+"size."
+msgstr ""
+"**ValueError** : Si `bgr_array` est vide ou ne correspond pas à la taille attendue."
+
+#: ../Shader_gpu.rst:827
+msgid "The function utilizes GPU acceleration to apply the BPF efficiently."
+msgstr ""
+"La fonction utilise l'accélération GPU pour appliquer efficacement le filtre BPF."
+
+#: ../Shader_gpu.rst:859
+msgid "Converts a Pygame surface to grayscale using GPU acceleration."
+msgstr ""
+"Convertit une surface Pygame en niveaux de gris en utilisant l'accélération GPU."
+
+#: ../Shader_gpu.rst:861
+msgid ""
+"This function takes a Pygame surface in 24-bit or 32-bit format, "
+"processes it on the GPU to convert it to grayscale, and returns a new "
+"24-bit grayscale surface."
+msgstr ""
+"Cette fonction prend une surface Pygame au format 24 bits ou 32 bits, "
+"la traite sur le GPU pour la convertir en niveaux de gris, et retourne une "
+"nouvelle surface 24 bits en niveaux de gris."
+
+#: ../Shader_gpu.rst:866 ../Shader_gpu.rst:913
+msgid ""
+"**surface_** (*pygame.Surface*): A Pygame surface with a 24-bit or 32-bit"
+" color format."
+msgstr ""
+"**surface_** (*pygame.Surface*) : Une surface Pygame avec un format de couleur "
+"24 bits ou 32 bits."
+
+#: ../Shader_gpu.rst:870 ../Shader_gpu.rst:917
+msgid "**pygame.Surface**: A new 24-bit grayscale Pygame surface."
+msgstr ""
+"**pygame.Surface** : Une nouvelle surface Pygame en niveaux de gris 24 bits."
+#: ../Shader_gpu.rst:642
+msgid ""
+"**w** (*Py_ssize_t*): The width of the image, in pixels. Must be greater "
+"than 0."
+msgstr ""
+"**w** (*Py_ssize_t*): La largeur de l'image, en pixels. Doit être "
+"supérieure à 0."
+
+#: ../Shader_gpu.rst:643
+msgid ""
+"**h** (*Py_ssize_t*): The height of the image, in pixels. Must be greater"
+" than 0."
+msgstr ""
+"**h** (*Py_ssize_t*): La hauteur de l'image, en pixels. Doit être "
+"supérieure à 0."
+
+#: ../Shader_gpu.rst:644
+msgid ""
+"**bgr_array** (*unsigned char [::1]*): A 1D array or memoryview "
+"containing the image pixel data. This array represents the image in "
+"either BGR (3 channels) or BGRA (4 channels) format, with each pixel "
+"occupying 3 or 4 consecutive bytes."
+msgstr ""
+"**bgr_array** (*unsigned char [::1]*): Un tableau 1D ou une vue mémoire "
+"contenant les données des pixels de l'image. Ce tableau représente l'image "
+"au format BGR (3 canaux) ou BGRA (4 canaux), chaque pixel occupant 3 ou 4 "
+"octets consécutifs."
+
+#: ../Shader_gpu.rst:647
+msgid ""
+"**format_32** (*bint*, optional): A boolean flag indicating whether the "
+"input array is in BGRA format (True) or BGR format (False). Default is "
+"False (BGR format)."
+msgstr ""
+"**format_32** (*bint*, optionnel): Un indicateur booléen indiquant si le "
+"tableau d'entrée est au format BGRA (True) ou BGR (False). La valeur par "
+"défaut est False (format BGR)."
+
+#: ../Shader_gpu.rst:652
+msgid ""
+"**None**: This function modifies the input `bgr_array` in-place and "
+"returns nothing."
+msgstr ""
+"**None** : Cette fonction modifie `bgr_array` en place et ne retourne rien."
+
+#: ../Shader_gpu.rst:656
+msgid "**TypeError**: If `bgr_array` is not a valid numpy.ndarray or memoryview."
+msgstr ""
+"**TypeError** : Si `bgr_array` n'est pas un `numpy.ndarray` ou une vue mémoire valide."
+
+#: ../Shader_gpu.rst:657
+msgid ""
+"**ValueError**: If the dimensions of the input image or the buffer length"
+" do not match the expected values based on the width, height, and pixel "
+"format."
+msgstr ""
+"**ValueError** : Si les dimensions de l'image d'entrée ou la longueur du "
+"tampon ne correspondent pas aux valeurs attendues en fonction de la "
+"largeur, de la hauteur et du format des pixels."
+
+#: ../Shader_gpu.rst:664 ../Shader_gpu.rst:829
+msgid ""
+"Ensure that the input array is of dtype `numpy.uint8` and has three or "
+"four dimensions representing the RGB or RGBA channels."
+msgstr ""
+"Assurez-vous que le tableau d'entrée est de type `numpy.uint8` et possède "
+"trois ou quatre dimensions représentant les canaux RGB ou RGBA."
+
+#: ../Shader_gpu.rst:693
+msgid ""
+"Apply a Bright Pass Filter (BPF) effect to a Pygame surface using GPU "
+"acceleration."
+msgstr ""
+"Applique un filtre Bright Pass (BPF) à une surface Pygame en utilisant "
+"l'accélération GPU."
+
+#: ../Shader_gpu.rst:695
+msgid ""
+"This function applies a Bright Pass Filter to an image represented by a "
+"Pygame.Surface. The filter retains pixels with brightness values above a "
+"specified threshold and sets others to black. The operation is performed "
+"on the GPU to enhance performance."
+msgstr ""
+"Cette fonction applique un filtre Bright Pass à une image représentée par "
+"une `pygame.Surface`. Le filtre conserve les pixels dont la luminosité est "
+"supérieure à un seuil spécifié et met les autres en noir. L'opération est "
+"effectuée sur le GPU pour améliorer les performances."
+
+#: ../Shader_gpu.rst:701
+msgid ""
+"**surface_** (*pygame.Surface*): The input surface (image) on which the "
+"Bright Pass Filter effect will be applied."
+msgstr ""
+"**surface_** (*pygame.Surface*): La surface d'entrée (image) sur laquelle "
+"l'effet Bright Pass Filter sera appliqué."
+
+#: ../Shader_gpu.rst:702
+msgid ""
+"**threshold_** (*int*, optional): The brightness threshold in the range "
+"[0, 255]. Pixels with a brightness value greater than or equal to the "
+"threshold will retain their color, while those below will be set to "
+"black. Default is 128."
+msgstr ""
+"**threshold_** (*int*, optionnel) : Le seuil de luminosité dans la plage "
+"[0, 255]. Les pixels dont la valeur de luminosité est supérieure ou égale "
+"au seuil conservent leur couleur, tandis que les autres sont mis en noir. "
+"La valeur par défaut est 128."
+
+#: ../Shader_gpu.rst:708
+msgid ""
+"**pygame.Surface**: A new Pygame.Surface with the Bright Pass Filter "
+"effect applied, in RGB format, with the same width and height as the "
+"input surface."
+msgstr ""
+"**pygame.Surface** : Une nouvelle `pygame.Surface` avec l'effet Bright Pass "
+"Filter appliqué, au format RGB, avec la même largeur et hauteur que la "
+"surface d'entrée."
+
+#: ../Shader_gpu.rst:712 ../Shader_gpu.rst:763
+msgid "**TypeError**: If `surface_` is not a `pygame.Surface` type."
+msgstr ""
+"**TypeError** : Si `surface_` n'est pas du type `pygame.Surface`."
+
+#: ../Shader_gpu.rst:713 ../Shader_gpu.rst:764
+msgid ""
+"**ValueError**: If there is an issue referencing the surface pixels into "
+"a 3D array, or if the surface dimensions are invalid."
+msgstr ""
+"**ValueError** : Si un problème survient lors de la référence des pixels "
+"de la surface dans un tableau 3D, ou si les dimensions de la surface "
+"sont invalides."
+
+#: ../Shader_gpu.rst:717 ../Shader_gpu.rst:768
+msgid ""
+"The function utilizes GPU acceleration to apply the Bright Pass Filter "
+"efficiently."
+msgstr ""
+"La fonction utilise l'accélération GPU pour appliquer le filtre Bright "
+"Pass de manière efficace."
+
+#: ../Shader_gpu.rst:718
+msgid ""
+"The input surface is not modified; a new surface with the Bright Pass "
+"Filter effect is returned."
+msgstr ""
+"La surface d'entrée n'est pas modifiée ; une nouvelle surface avec l'effet "
+"Bright Pass Filter est retournée."
+
+#: ../Shader_gpu.rst:1052
+msgid "Apply a 5x5 Gaussian blur to an image using GPU-accelerated processing."
+msgstr "Applique un flou gaussien 5x5 à une image en utilisant le traitement accéléré par GPU."
+
+#: ../Shader_gpu.rst:1054
+msgid ""
+"This function convolves each RGB channel of the given surface with a 5x5 "
+"Gaussian blur kernel to create a smoothing effect while preserving edges."
+msgstr ""
+"Cette fonction applique une convolution sur chaque canal RGB de la surface "
+"donnée avec un noyau de flou gaussien 5x5 pour créer un effet de lissage "
+"tout en préservant les contours."
+
+#: ../Shader_gpu.rst:1059
+msgid ""
+"**surface_** (*pygame.Surface*): A 24-bit or 32-bit Pygame surface to be "
+"blurred."
+msgstr ""
+"**surface_** (*pygame.Surface*): Une surface Pygame 24 bits ou 32 bits à flouter."
+
+#: ../Shader_gpu.rst:1063
+msgid ""
+"**pygame.Surface**: A new Pygame surface with the applied Gaussian blur "
+"in 24-bit format."
+msgstr ""
+"**pygame.Surface** : Une nouvelle surface Pygame avec le flou gaussien appliqué "
+"au format 24 bits."
+
+#: ../Shader_gpu.rst:1067
+msgid "**TypeError**: If `surface_` is not a valid Pygame surface."
+msgstr "**TypeError** : Si `surface_` n'est pas une surface Pygame valide."
+
+#: ../Shader_gpu.rst:1068
+msgid ""
+"**ValueError**: If the surface dimensions are invalid or pixel data "
+"cannot be accessed."
+msgstr ""
+"**ValueError** : Si les dimensions de la surface sont invalides ou si les "
+"données des pixels ne peuvent pas être accessibles."
+
+#: ../Shader_gpu.rst:1072
+msgid "The function uses `pixels3d(surface_)` to extract the pixel array."
+msgstr "La fonction utilise `pixels3d(surface_)` pour extraire le tableau de pixels."
+
+#: ../Shader_gpu.rst:1073
+msgid "The computation is performed on the GPU for efficiency."
+msgstr "Le calcul est effectué sur le GPU pour optimiser les performances."
+
+#: ../Shader_gpu.rst:1074
+msgid "`gaussian_5x5_cupy` is called to apply the blur effect."
+msgstr "`gaussian_5x5_cupy` est appelé pour appliquer l'effet de flou."
+
+#: ../Shader_gpu.rst:1099
+msgid "Apply a 3x3 Gaussian blur to a Pygame surface using GPU acceleration."
+msgstr "Applique un flou gaussien 3x3 à une surface Pygame en utilisant l'accélération GPU."
+
+#: ../Shader_gpu.rst:1101
+msgid ""
+"This function converts a given `pygame.Surface` to a GPU-compatible "
+"array, applies a 3x3 Gaussian blur filter to each color channel (R, G, "
+"B), and returns a new blurred `pygame.Surface`."
+msgstr ""
+"Cette fonction convertit une `pygame.Surface` donnée en un tableau "
+"compatible avec le GPU, applique un filtre de flou gaussien 3x3 à chaque "
+"canal de couleur (R, G, B) et retourne une nouvelle `pygame.Surface` floutée."
+
+#: ../Shader_gpu.rst:1107 ../Shader_gpu.rst:1157 ../Shader_gpu.rst:1207
+#: ../Shader_gpu.rst:1256
+msgid ""
+"**surface_** (*pygame.Surface*): A 24-bit or 32-bit `pygame.Surface` "
+"representing the input image."
+msgstr ""
+"**surface_** (*pygame.Surface*): Une `pygame.Surface` 24 bits ou 32 bits "
+"représentant l'image d'entrée."
+
+#: ../Shader_gpu.rst:1111
+msgid ""
+"**pygame.Surface**: A new `pygame.Surface` with the Gaussian blur effect "
+"applied."
+msgstr ""
+"**pygame.Surface** : Une nouvelle `pygame.Surface` avec l'effet de flou "
+"gaussien appliqué."
+
+#: ../Shader_gpu.rst:1115 ../Shader_gpu.rst:1165 ../Shader_gpu.rst:1215
+#: ../Shader_gpu.rst:1264 ../Shader_gpu.rst:2386 ../Shader_gpu.rst:2433
+#: ../Shader_gpu.rst:2481 ../Shader_gpu.rst:2523 ../Shader_gpu.rst:2565
+#: ../Shader_gpu.rst:2617 ../Shader_gpu.rst:2662
+msgid "**TypeError**: If `surface_` is not a `pygame.Surface`."
+msgstr "**TypeError** : Si `surface_` n'est pas une `pygame.Surface`."
+
+#: ../Shader_gpu.rst:1116 ../Shader_gpu.rst:1166 ../Shader_gpu.rst:1216
+#: ../Shader_gpu.rst:1265
+msgid ""
+"**ValueError**: If the surface has invalid dimensions or cannot be "
+"converted into an array."
+msgstr ""
+"**ValueError** : Si la surface a des dimensions invalides ou ne peut pas "
+"être convertie en tableau."
+
+#: ../Shader_gpu.rst:1120
+msgid "The function assumes that `gaussian_kernel_3x3` is predefined."
+msgstr "La fonction suppose que `gaussian_kernel_3x3` est prédéfini."
+
+#: ../Shader_gpu.rst:1121
+msgid ""
+"`cp.cuda.Stream.null.synchronize()` ensures the GPU operations complete "
+"before returning."
+msgstr ""
+"`cp.cuda.Stream.null.synchronize()` garantit que les opérations GPU sont "
+"terminées avant de retourner le résultat."
+
+#: ../Shader_gpu.rst:1146
+msgid ""
+"Apply the Sobel edge detection filter to a grayscale image using GPU "
+"acceleration."
+msgstr ""
+"Applique le filtre de détection de contours de Sobel à une image en niveaux "
+"de gris en utilisant l'accélération GPU."
+
+#: ../Shader_gpu.rst:1148
+msgid ""
+"This function assumes the input image is grayscale, meaning the same "
+"intensity is present in all three RGB channels. It applies the Sobel "
+"filter using only the red channel (`R`), though the green (`G`) or blue "
+"(`B`) channels could also be used."
+msgstr ""
+"Cette fonction suppose que l'image d'entrée est en niveaux de gris, ce qui "
+"signifie que la même intensité est présente dans les trois canaux RGB. "
+"Elle applique le filtre de Sobel en utilisant uniquement le canal rouge (`R`), "
+"bien que les canaux vert (`G`) ou bleu (`B`) puissent également être utilisés."
+
+#: ../Shader_gpu.rst:1152
+msgid ""
+"If the input image is not truly grayscale, the Sobel effect may vary "
+"slightly because the RGB channels might have different intensities."
+msgstr ""
+"Si l'image d'entrée n'est pas réellement en niveaux de gris, l'effet de Sobel "
+"peut légèrement varier car les canaux RGB peuvent avoir des intensités différentes."
+
+#: ../Shader_gpu.rst:1161
+msgid ""
+"**pygame.Surface**: A new `pygame.Surface` with the Sobel edge detection "
+"effect applied in 24-bit format."
+msgstr ""
+"**pygame.Surface** : Une nouvelle `pygame.Surface` avec l'effet de détection "
+"de contours de Sobel appliqué en format 24 bits."
+
+#: ../Shader_gpu.rst:1170
+msgid ""
+"The function assumes that `sobel_cupy()` is implemented to process the "
+"GPU array."
+msgstr ""
+"La fonction suppose que `sobel_cupy()` est implémentée pour traiter le "
+"tableau GPU."
+
+#: ../Shader_gpu.rst:1171 ../Shader_gpu.rst:1221 ../Shader_gpu.rst:1270
+msgid ""
+"The final image retains the `RGB` format, but only the red channel is "
+"modified."
+msgstr ""
+"L'image finale conserve le format `RGB`, mais seul le canal rouge est modifié."
+
+#: ../Shader_gpu.rst:1196
+msgid ""
+"Apply the Prewitt edge detection algorithm to a grayscale image using GPU"
+" acceleration."
+msgstr ""
+"Applique l'algorithme de détection de contours de Prewitt à une image en "
+"niveaux de gris en utilisant l'accélération GPU."
+
+#: ../Shader_gpu.rst:1198
+msgid ""
+"This function assumes the input image is grayscale, meaning the same "
+"intensity is present in all three RGB channels. It applies the Prewitt "
+"filter using only the red channel (`R`), though the green (`G`) or blue "
+"(`B`) channels could also be used."
+msgstr ""
+"Cette fonction suppose que l'image d'entrée est en niveaux de gris, ce qui "
+"signifie que la même intensité est présente dans les trois canaux RGB. "
+"Elle applique le filtre de Prewitt en utilisant uniquement le canal rouge (`R`), "
+"bien que les canaux vert (`G`) ou bleu (`B`) puissent également être utilisés."
+
+#: ../Shader_gpu.rst:1202
+msgid ""
+"If the input image is not truly grayscale, the Prewitt effect may vary "
+"slightly because the RGB channels might have different intensities."
+msgstr ""
+"Si l'image d'entrée n'est pas réellement en niveaux de gris, l'effet de Prewitt "
+"peut légèrement varier car les canaux RGB peuvent avoir des intensités différentes."
+
+#: ../Shader_gpu.rst:1211
+msgid ""
+"**pygame.Surface**: A new `pygame.Surface` with the Prewitt edge "
+"detection effect applied in 24-bit format."
+msgstr ""
+"**pygame.Surface** : Une nouvelle `pygame.Surface` avec l'effet de détection "
+"de contours de Prewitt appliqué en format 24 bits."
+
+#: ../Shader_gpu.rst:1220
+msgid ""
+"The function assumes that `prewitt_cupy()` is implemented to process the "
+"GPU array."
+msgstr ""
+"La fonction suppose que `prewitt_cupy()` est implémentée pour traiter le "
+"tableau GPU."
+
+#: ../Shader_gpu.rst:1246
+msgid ""
+"Apply the Canny edge detection algorithm to a grayscale image using GPU "
+"acceleration."
+msgstr ""
+"Applique l'algorithme de détection de contours de Canny à une image en "
+"niveaux de gris en utilisant l'accélération GPU."
+
+#: ../Shader_gpu.rst:1248
+msgid ""
+"This function assumes the input image is grayscale, meaning the same "
+"intensity is present in all three RGB channels. It applies the Canny edge"
+" detection algorithm using only the red channel (`R`), though the green "
+"(`G`) or blue (`B`) channels could also be used. If the input image is "
+"not truly grayscale, the Canny effect may vary slightly because the RGB "
+"channels might have different intensities."
+msgstr ""
+"Cette fonction suppose que l'image d'entrée est en niveaux de gris, ce qui "
+"signifie que la même intensité est présente dans les trois canaux RGB. "
+"Elle applique l'algorithme de détection de contours de Canny en utilisant "
+"uniquement le canal rouge (`R`), bien que les canaux vert (`G`) ou bleu (`B`) "
+"puissent également être utilisés. Si l'image d'entrée n'est pas réellement "
+"en niveaux de gris, l'effet de Canny peut légèrement varier car les canaux "
+"RGB peuvent avoir des intensités différentes."
+
+#: ../Shader_gpu.rst:1260
+msgid ""
+"**pygame.Surface**: A new `pygame.Surface` with the Canny edge detection "
+"effect applied in 24-bit format."
+msgstr ""
+"**pygame.Surface** : Une nouvelle `pygame.Surface` avec l'effet de détection "
+"de contours de Canny appliqué en format 24 bits."
+
+#: ../Shader_gpu.rst:1269
+msgid ""
+"The function assumes that `canny_cupy()` is implemented to process the "
+"GPU array."
+msgstr ""
+"La fonction suppose que `canny_cupy()` est implémentée pour traiter le "
+"tableau GPU."
+
+#: ../Shader_gpu.rst:1295
+msgid "Apply a color reduction effect to an image using GPU acceleration."
+msgstr ""
+"Applique un effet de réduction des couleurs à une image en utilisant "
+"l'accélération GPU."
+
+#: ../Shader_gpu.rst:1297
+msgid ""
+"This function reduces the number of unique colors in the image by "
+"quantizing each RGB channel. For example, if `color_number=8`, each "
+"channel will have 8 distinct levels (0, 32, 64, ..., 255), resulting in a"
+" total of 8^3 possible colors."
+msgstr ""
+"Cette fonction réduit le nombre de couleurs uniques dans l'image en "
+"quantifiant chaque canal RGB. Par exemple, si `color_number=8`, chaque "
+"canal aura 8 niveaux distincts (0, 32, 64, ..., 255), ce qui donne un "
+"total de 8^3 couleurs possibles."
+
+#: ../Shader_gpu.rst:1303
+msgid ""
+"**surface_** (*pygame.Surface*): The input surface (image) to which the "
+"color reduction will be applied."
+msgstr ""
+"**surface_** (*pygame.Surface*): La surface d'entrée (image) sur laquelle "
+"l'effet de réduction des couleurs sera appliqué."
+
+#: ../Shader_gpu.rst:1304
+msgid ""
+"**color_number** (*int*, optional): The number of colors (levels) to "
+"reduce each RGB channel to. The default value is 8. The number of colors "
+"in the palette will be `color_number^3`."
+msgstr ""
+"**color_number** (*int*, optionnel) : Le nombre de niveaux de couleur "
+"auxquels chaque canal RGB sera réduit. La valeur par défaut est 8. "
+"Le nombre total de couleurs dans la palette sera `color_number^3`."
+
+#: ../Shader_gpu.rst:1308
+msgid ""
+"**pygame.Surface**: A new surface with the color reduction effect "
+"applied, in 24-bit format."
+msgstr ""
+"**pygame.Surface** : Une nouvelle surface avec l'effet de réduction des "
+"couleurs appliqué, au format 24 bits."
+
+#: ../Shader_gpu.rst:1312
+msgid ""
+"**TypeError**: If the `surface_` argument is not a valid `pygame.Surface`"
+" instance."
+msgstr ""
+"**TypeError** : Si l'argument `surface_` n'est pas une instance valide de "
+"`pygame.Surface`."
+
+#: ../Shader_gpu.rst:1313
+msgid ""
+"**ValueError**: If the `color_number` is less than or equal to 0 or if "
+"the surface has invalid dimensions."
+msgstr ""
+"**ValueError** : Si `color_number` est inférieur ou égal à 0 ou si la "
+"surface a des dimensions invalides."
+
+#: ../Shader_gpu.rst:1317 ../Shader_gpu.rst:1527 ../Shader_gpu.rst:1577
+#: ../Shader_gpu.rst:1632 ../Shader_gpu.rst:1725 ../Shader_gpu.rst:1825
+msgid "The function utilizes GPU acceleration for efficient processing."
+msgstr ""
+"La fonction utilise l'accélération GPU pour un traitement efficace."
+
+#: ../Shader_gpu.rst:1318
+msgid "The color reduction is achieved by quantizing each RGB color channel."
+msgstr ""
+"La réduction des couleurs est obtenue par quantification de chaque canal RGB."
+
+#: ../Shader_gpu.rst:1319
+msgid "The function works with 32-bit and 24-bit images (Pygame Surface format)."
+msgstr ""
+"La fonction fonctionne avec des images 32 bits et 24 bits (format Pygame Surface)."
+
+#: ../Shader_gpu.rst:1344
+msgid "Apply a hue rotation effect to an image using GPU acceleration."
+msgstr ""
+"Applique un effet de rotation de la teinte à une image en utilisant "
+"l'accélération GPU."
+
+#: ../Shader_gpu.rst:1346
+msgid ""
+"This function modifies the hue of each pixel in the image while "
+"preserving its saturation and brightness, effectively shifting colors "
+"while maintaining overall image structure."
+msgstr ""
+"Cette fonction modifie la teinte de chaque pixel de l'image tout en "
+"préservant sa saturation et sa luminosité, décalant ainsi les couleurs "
+"tout en conservant la structure globale de l'image."
+
+#: ../Shader_gpu.rst:1352
+msgid ""
+"**surface_** (*pygame.Surface*): The input surface (image) on which the "
+"hue rotation effect will be applied."
+msgstr ""
+"**surface_** (*pygame.Surface*): La surface d'entrée (image) sur laquelle "
+"l'effet de rotation de la teinte sera appliqué."
+
+#: ../Shader_gpu.rst:1353
+msgid ""
+"**val_** (*float*): The hue shift value, which must be within the range "
+"[0.0, 1.0]. - `0.0` corresponds to a -180° shift (full backward "
+"rotation). - `0.5` represents 0° shift (no change). - `1.0` corresponds "
+"to a +180° shift (full forward rotation)."
+msgstr ""
+"**val_** (*float*): La valeur de décalage de la teinte, qui doit être "
+"comprise dans l'intervalle [0.0, 1.0]. - `0.0` correspond à un décalage "
+"de -180° (rotation complète vers l'arrière). - `0.5` représente un "
+"décalage de 0° (aucun changement). - `1.0` correspond à un décalage de "
+"+180° (rotation complète vers l'avant)."
+
+#: ../Shader_gpu.rst:1357
+msgid ""
+"**grid_** (*tuple*): Specifies the CUDA grid dimensions for kernel "
+"execution. - Example: `(grid_y, grid_x)`, e.g., `(25, 25)`. - The grid "
+"size should be tuned according to the texture and array sizes."
+msgstr ""
+"**grid_** (*tuple*): Spécifie les dimensions de la grille CUDA pour "
+"l'exécution du noyau. - Exemple : `(grid_y, grid_x)`, e.g., `(25, 25)`. "
+"- La taille de la grille doit être ajustée en fonction de la texture et "
+"des dimensions du tableau."
+
+#: ../Shader_gpu.rst:1370
+msgid "**TypeError**: If `surface_` is not a valid `pygame.Surface` instance."
+msgstr ""
+"**TypeError** : Si `surface_` n'est pas une instance valide de `pygame.Surface`."
+
+#: ../Shader_gpu.rst:1371
+msgid ""
+"**ValueError**: If the input surface has zero width or height, if `val_` "
+"is out of the valid range [0.0, 1.0], or if the surface pixels cannot be "
+"referenced as a 3D array."
+msgstr ""
+"**ValueError** : Si la surface d'entrée a une largeur ou une hauteur nulle, si `val_` "
+"est en dehors de l'intervalle valide [0.0, 1.0], ou si les pixels de la surface ne peuvent pas être "
+"référencés sous forme de tableau 3D."
+
+#: ../Shader_gpu.rst:1375
+msgid "The input image must be in RGB format before applying this transformation."
+msgstr "L'image d'entrée doit être au format RGB avant d'appliquer cette transformation."
+
+#: ../Shader_gpu.rst:1376
+msgid ""
+"The function performs hue rotation using GPU acceleration with CuPy for "
+"optimized performance."
+msgstr ""
+"La fonction effectue une rotation de teinte en utilisant l'accélération GPU avec CuPy "
+"pour des performances optimisées."
+
+#: ../Shader_gpu.rst:1377
+msgid ""
+"The transformation works by converting RGB to HSV, modifying the H (hue) "
+"channel, and then converting it back to RGB."
+msgstr ""
+"La transformation fonctionne en convertissant le RGB en HSV, en modifiant le canal H (teinte), "
+"puis en le reconvertissant en RGB."
+
+#: ../Shader_gpu.rst:1406
+msgid "Perform bloom downscaling by progressively reducing image resolution."
+msgstr "Effectuer un downscaling de l'effet bloom en réduisant progressivement la résolution de l'image."
+
+#: ../Shader_gpu.rst:1408
+msgid ""
+"This function downscales an input GPU-based image into four progressively"
+" smaller sub-arrays with resolutions reduced by factors of 2, 4, 8, and "
+"16. It is compatible with 24-bit and 32-bit images (RGB format, uint8)."
+msgstr ""
+"Cette fonction réduit l'échelle d'une image basée sur le GPU en quatre sous-tableaux "
+"progressivement plus petits avec des résolutions réduites par des facteurs de 2, 4, 8 et 16. "
+"Elle est compatible avec les images 24 bits et 32 bits (format RGB, uint8)."
+
+#: ../Shader_gpu.rst:1414
+msgid ""
+"**gpu_array** (*cupy.ndarray*): A 3D CuPy array with shape (height, "
+"width, 3) and dtype uint8, representing an RGB image stored on the GPU."
+msgstr ""
+"**gpu_array** (*cupy.ndarray*) : Un tableau 3D CuPy de forme (hauteur, "
+"largeur, 3) et de type uint8, représentant une image RGB stockée sur le GPU."
+
+#: ../Shader_gpu.rst:1419
+msgid ""
+"**tuple of cupy.ndarray**: A tuple containing four downscaled versions of"
+" the input image with shapes (H/2, W/2, 3), (H/4, W/4, 3), (H/8, W/8, 3),"
+" and (H/16, W/16, 3)."
+msgstr ""
+"**tuple de cupy.ndarray** : Un tuple contenant quatre versions réduites de l'image d'entrée "
+"avec des formes (H/2, W/2, 3), (H/4, W/4, 3), (H/8, W/8, 3) et (H/16, W/16, 3)."
+
+#: ../Shader_gpu.rst:1424
+msgid ""
+"The function performs downscaling using `cupyx.scipy.ndimage.zoom`, "
+"applying nearest-neighbor interpolation (`order=0`) to preserve hard "
+"edges."
+msgstr ""
+"La fonction effectue le downscaling en utilisant `cupyx.scipy.ndimage.zoom`, "
+"en appliquant une interpolation du plus proche voisin (`order=0`) pour préserver les contours nets."
+
+#: ../Shader_gpu.rst:1426
+msgid ""
+"Pixels outside the boundaries are filled with zero (`mode='constant', "
+"cval=0.0`)."
+msgstr ""
+"Les pixels en dehors des limites sont remplis avec zéro (`mode='constant', "
+"cval=0.0`)."
+
+#: ../Shader_gpu.rst:1427
+msgid ""
+"GPU synchronization is performed to ensure all CUDA operations complete "
+"before returning."
+msgstr ""
+"La synchronisation du GPU est effectuée pour s'assurer que toutes les opérations CUDA "
+"se terminent avant le retour."
+
+#: ../Shader_gpu.rst:1448
+msgid "Upscale an image on the GPU using interpolation."
+msgstr "Agrandir une image sur le GPU en utilisant l'interpolation."
+
+#: ../Shader_gpu.rst:1450
+msgid ""
+"This function resizes a GPU-based image to the specified `new_width` and "
+"`new_height` using the specified interpolation order. The resizing is "
+"performed using `cupyx.scipy.ndimage.zoom`, which supports different "
+"interpolation methods."
+msgstr ""
+"Cette fonction redimensionne une image basée sur le GPU aux dimensions spécifiées "
+"`new_width` et `new_height` en utilisant l'ordre d'interpolation indiqué. "
+"Le redimensionnement est réalisé avec `cupyx.scipy.ndimage.zoom`, qui prend en charge "
+"différentes méthodes d'interpolation."
+
+#: ../Shader_gpu.rst:1456
+msgid ""
+"**gpu_array_** (*cupy.ndarray*): A 3D GPU array (height x width x 3) "
+"representing an RGB image in `uint8` format."
+msgstr ""
+"**gpu_array_** (*cupy.ndarray*) : Un tableau GPU 3D (hauteur x largeur x 3) "
+"représentant une image RGB au format `uint8`."
+
+#: ../Shader_gpu.rst:1457
+msgid "**new_width** (*int*): The desired width of the upscaled image."
+msgstr "**new_width** (*int*) : La largeur souhaitée de l'image agrandie."
+
+#: ../Shader_gpu.rst:1458
+msgid "**new_height** (*int*): The desired height of the upscaled image."
+msgstr "**new_height** (*int*) : La hauteur souhaitée de l'image agrandie."
+
+#: ../Shader_gpu.rst:1459
+msgid ""
+"**order_** (*int*, optional, default=0): The interpolation order for "
+"resizing: - `0`: Nearest-neighbor interpolation. - `1`: Bilinear "
+"interpolation. - `3`: Bicubic interpolation. Higher orders provide "
+"smoother results but increase computation time."
+msgstr ""
+"**order_** (*int*, optionnel, valeur par défaut = 0) : L'ordre d'interpolation pour "
+"le redimensionnement : - `0` : Interpolation du plus proche voisin. - `1` : Interpolation bilinéaire. "
+"- `3` : Interpolation bicubique. Les ordres supérieurs offrent des résultats plus lisses mais "
+"augmentent le temps de calcul."
+
+#: ../Shader_gpu.rst:1467
+msgid ""
+"**cupy.ndarray**: The upscaled image as a GPU-based array with shape "
+"(`new_height`, `new_width`, 3)."
+msgstr ""
+"**cupy.ndarray** : L'image agrandie sous forme de tableau basé sur le GPU avec une forme "
+"(`new_height`, `new_width`, 3)."
+
+#: ../Shader_gpu.rst:1471
+msgid ""
+"The function ensures that the input array is of type `uint8` before "
+"processing."
+msgstr ""
+"La fonction garantit que le tableau d'entrée est de type `uint8` avant "
+"le traitement."
+
+#: ../Shader_gpu.rst:1472
+msgid ""
+"The `mode='constant', cval=0.0` ensures that pixels outside the "
+"boundaries are treated as zero during interpolation."
+msgstr ""
+"Le paramètre `mode='constant', cval=0.0` garantit que les pixels en dehors "
+"des limites sont traités comme des zéros lors de l'interpolation."
+
+#: ../Shader_gpu.rst:1474
+msgid ""
+"GPU synchronization (`cp.cuda.Stream.null.synchronize()`) is performed to"
+" ensure all operations complete before returning the result."
+msgstr ""
+"La synchronisation du GPU (`cp.cuda.Stream.null.synchronize()`) est effectuée "
+"pour s'assurer que toutes les opérations sont terminées avant de retourner le résultat."
+
+#: ../Shader_gpu.rst:1490
+msgid "Apply a Bloom Effect to a Pygame Surface using GPU Acceleration."
+msgstr ""
+"Appliquer un effet Bloom à une surface Pygame en utilisant l'accélération GPU."
+
+#: ../Shader_gpu.rst:1492
+msgid ""
+"This function enhances bright regions of an image to create a glowing "
+"effect (bloom) using a multi-step process that involves: - Downscaling "
+"the image into progressively smaller sub-surfaces. - Applying a bright-"
+"pass filter to isolate bright areas. - Blurring the bright regions using "
+"a Gaussian filter. - Upscaling and blending the processed layers back "
+"into the original surface."
+msgstr ""
+"Cette fonction améliore les régions lumineuses d'une image pour créer un effet de "
+"halo (bloom) en utilisant un processus en plusieurs étapes, comprenant : "
+"- Une réduction progressive de l'image en sous-surfaces plus petites. "
+"- L'application d'un filtre de luminance pour isoler les zones lumineuses. "
+"- Un flou appliqué aux régions lumineuses à l'aide d'un filtre gaussien. "
+"- Une mise à l'échelle et un mélange des couches traitées avec la surface originale."
+
+#: ../Shader_gpu.rst:1501
+msgid ""
+"**surface_** (*pygame.Surface*): The input surface to apply the bloom "
+"effect on."
+msgstr ""
+"**surface_** (*pygame.Surface*) : La surface d'entrée sur laquelle appliquer l'effet bloom."
+
+#: ../Shader_gpu.rst:1502
+msgid ""
+"**threshold_** (*int*, optional, default=128): The brightness threshold "
+"for the bright-pass filter. Pixels with intensity above this value "
+"contribute to the bloom effect. Must be in range [0, 255]."
+msgstr ""
+"**threshold_** (*int*, optionnel, valeur par défaut = 128) : Le seuil de "
+"luminance pour le filtre de luminance. Les pixels ayant une intensité supérieure "
+"à cette valeur contribuent à l'effet bloom. Doit être compris dans l'intervalle [0, 255]."
+
+#: ../Shader_gpu.rst:1504
+msgid ""
+"**fast_** (*bool*, optional, default=True): When `True`, only the lowest-"
+"resolution downsample (x16) is used for bloom. When `False`, multiple "
+"downsampled layers (x2, x4, x8, x16) are processed and blended for a more"
+" detailed effect."
+msgstr ""
+"**fast_** (*bool*, optionnel, valeur par défaut = True) : Lorsque `True`, seule "
+"la réduction d'échelle la plus faible (x16) est utilisée pour l'effet bloom. "
+"Lorsque `False`, plusieurs niveaux de réduction d'échelle (x2, x4, x8, x16) "
+"sont traités et mélangés pour un effet plus détaillé."
+
+#: ../Shader_gpu.rst:1506
+msgid ""
+"**flag_** (*int*, optional, default=pygame.BLEND_RGB_ADD): The blending "
+"mode used when merging the bloom effect back onto the original surface. "
+"Common flags include: - `pygame.BLEND_RGB_ADD` (default) - "
+"`pygame.BLEND_RGB_MULT`, etc."
+msgstr ""
+"**flag_** (*int*, optionnel, valeur par défaut = pygame.BLEND_RGB_ADD) : "
+"Le mode de fusion utilisé lors de l'ajout de l'effet bloom à la surface originale. "
+"Modes courants : - `pygame.BLEND_RGB_ADD` (par défaut) - `pygame.BLEND_RGB_MULT`, etc."
+
+#: ../Shader_gpu.rst:1510
+msgid ""
+"**factor_** (*int*, optional, default=2): Determines how much the texture"
+" is downscaled. Must be in the range [0, 4], corresponding to downscaling"
+" by: - 1 (no reduction) - 2 (half-size) - 4 (quarter-size) - 8 (eighth-"
+"size)"
+msgstr ""
+"**factor_** (*int*, optionnel, valeur par défaut = 2) : Détermine le niveau de "
+"réduction de la texture. Doit être compris dans l'intervalle [0, 4], correspondant à : "
+"- 1 (pas de réduction) - 2 (moitié de la taille) - 4 (quart de la taille) - 8 (huitième de la taille)"
+
+#: ../Shader_gpu.rst:1519
+msgid "**pygame.Surface**: The input surface blended with the bloom effect."
+msgstr "**pygame.Surface** : La surface d'entrée fusionnée avec l'effet bloom."
+
+#: ../Shader_gpu.rst:1523
+msgid "**ValueError**: If the input image is too small to be processed."
+msgstr "**ValueError** : Si l'image d'entrée est trop petite pour être traitée."
+
+#: ../Shader_gpu.rst:1528 ../Shader_gpu.rst:1578
+msgid ""
+"The bloom effect is achieved through a series of downscaling, filtering, "
+"and blending operations."
+msgstr ""
+"L'effet bloom est obtenu grâce à une série d'opérations de réduction d'échelle, "
+"de filtrage et de fusion."
+
+#: ../Shader_gpu.rst:1529 ../Shader_gpu.rst:1579
+msgid ""
+"The `pygame.BLEND_RGB_ADD` flag is used to add the bloom effect to the "
+"original surface."
+msgstr ""
+"Le drapeau `pygame.BLEND_RGB_ADD` est utilisé pour ajouter l'effet bloom "
+"à la surface originale."
+
+#: ../Shader_gpu.rst:1554
+msgid "Apply a Bloom Effect to an Image Represented as a GPU Array."
+msgstr ""
+"Appliquer un effet Bloom à une image représentée sous forme de tableau GPU."
+
+#: ../Shader_gpu.rst:1556
+msgid ""
+"This function performs a bloom effect on a given `gpu_array_`, which "
+"represents an image on the GPU. The process involves: - Downscaling the "
+"image into progressively smaller versions (x2, x4, x8, x16). - Applying a"
+" bright-pass filter to isolate high-intensity pixels. - Blurring the "
+"bright regions to create a glow effect. - Upscaling and blending the "
+"processed images to achieve the final bloom effect."
+msgstr ""
+"Cette fonction applique un effet bloom sur un `gpu_array_`, qui représente une "
+"image sur le GPU. Le processus comprend : "
+"- Une réduction progressive de l'image en versions plus petites (x2, x4, x8, x16). "
+"- L'application d'un filtre de luminance pour isoler les pixels à forte intensité. "
+"- Un flou appliqué aux régions lumineuses pour créer un effet de halo. "
+"- Une mise à l'échelle et un mélange des images traitées pour obtenir l'effet bloom final."
+
+#: ../Shader_gpu.rst:1565
+msgid ""
+"**gpu_array_** (*cupy.ndarray*): A 3D array representing the image in GPU"
+" memory. Must have dtype `cupy.uint8`."
+msgstr ""
+"**gpu_array_** (*cupy.ndarray*) : Un tableau 3D représentant l'image en mémoire GPU. "
+"Doit être de type `cupy.uint8`."
+
+#: ../Shader_gpu.rst:1566
+msgid ""
+"**threshold_** (*int*, optional, default=128): The brightness threshold "
+"for the bright-pass filter. Pixels above this value contribute to bloom. "
+"Must be within [0, 255]."
+msgstr ""
+"**threshold_** (*int*, optionnel, valeur par défaut = 128) : Le seuil de "
+"luminance pour le filtre de luminance. Les pixels ayant une intensité supérieure "
+"à cette valeur contribuent à l'effet bloom. Doit être compris dans l'intervalle [0, 255]."
+
+#: ../Shader_gpu.rst:1567
+msgid ""
+"**fast_** (*bool*, optional, default=True): When `True`, only the lowest-"
+"resolution downsample (x16) is used, reducing processing time. When "
+"`False`, multiple levels (x2, x4, x8, x16) are blended for a richer bloom"
+" effect."
+msgstr ""
+"**fast_** (*bool*, optionnel, valeur par défaut = True) : Lorsque `True`, "
+"seule la réduction d'échelle la plus faible (x16) est utilisée, réduisant ainsi le temps de traitement. "
+"Lorsque `False`, plusieurs niveaux (x2, x4, x8, x16) sont mélangés pour un effet bloom plus riche."
+
+#: ../Shader_gpu.rst:1568
+msgid ""
+"**flag_** (*int*, optional, default=pygame.BLEND_RGB_ADD): The blending "
+"mode used when merging the bloom effect layers."
+msgstr ""
+"**flag_** (*int*, optionnel, valeur par défaut = pygame.BLEND_RGB_ADD) : "
+"Le mode de fusion utilisé lors de la fusion des couches de l'effet bloom."
+
+#: ../Shader_gpu.rst:1569
+msgid ""
+"**mask_** (*optional*, default=None): Unused parameter, reserved for "
+"future implementations."
+msgstr ""
+"**mask_** (*optionnel*, valeur par défaut = None) : Paramètre inutilisé, réservé pour "
+"les futures implémentations."
+
+#: ../Shader_gpu.rst:1573
+msgid ""
+"**tuple of pygame.Surface**: The processed bloom effect surfaces at "
+"different downscaling levels (s2, s4, s8, s16). If `fast_` is enabled, "
+"only `s16` is used."
+msgstr ""
+"**tuple de pygame.Surface** : Les surfaces traitées de l'effet bloom à "
+"différents niveaux de réduction d'échelle (s2, s4, s8, s16). Si `fast_` est activé, "
+"seul `s16` est utilisé."
+
+#: ../Shader_gpu.rst:1611
+msgid "Apply a cartoon effect to a given surface using GPU acceleration."
+msgstr ""
+"Appliquer un effet cartoon à une surface donnée en utilisant l'accélération GPU."
+
+#: ../Shader_gpu.rst:1613
+msgid ""
+"This function processes an image to generate a cartoon-like effect by "
+"applying edge detection, median filtering, and color quantization. The "
+"effect can also include contour outlining if enabled."
+msgstr ""
+"Cette fonction traite une image pour générer un effet de type cartoon en "
+"appliquant une détection de contours, un filtrage médian et une quantification des couleurs. "
+"L'effet peut également inclure un contour des bords si activé."
+
+#: ../Shader_gpu.rst:1619 ../Shader_gpu.rst:2102
+msgid "**surface_** (*pygame.Surface*): The input image surface to be processed."
+msgstr ""
+"**surface_** (*pygame.Surface*) : La surface d'image d'entrée à traiter."
+
+#: ../Shader_gpu.rst:1620
+msgid ""
+"**sobel_threshold_** (*int*, optional, default=128): The threshold value "
+"for the Sobel edge detection filter."
+msgstr ""
+"**sobel_threshold_** (*int*, optionnel, valeur par défaut = 128) : La valeur de seuil "
+"pour le filtre de détection des contours Sobel."
+
+#: ../Shader_gpu.rst:1621
+msgid ""
+"**median_kernel_** (*int*, optional, default=2): Kernel size for median "
+"filtering (used to reduce noise while preserving edges)."
+msgstr ""
+"**median_kernel_** (*int*, optionnel, valeur par défaut = 2) : Taille du noyau pour "
+"le filtrage médian (utilisé pour réduire le bruit tout en préservant les contours)."
+
+#: ../Shader_gpu.rst:1622
+msgid ""
+"**color_** (*int*, optional, default=8): Number of maximum colors to be "
+"used in the cartoon effect (color reduction)."
+msgstr ""
+"**color_** (*int*, optionnel, valeur par défaut = 8) : Nombre maximum de couleurs à "
+"utiliser dans l'effet cartoon (réduction des couleurs)."
+
+#: ../Shader_gpu.rst:1623
+msgid ""
+"**contour_** (*bool*, optional, default=False): Whether to draw contours "
+"on the edges detected in the image."
+msgstr ""
+"**contour_** (*bool*, optionnel, valeur par défaut = False) : Indique s'il faut dessiner des "
+"contours sur les bords détectés dans l'image."
+
+#: ../Shader_gpu.rst:1624
+msgid ""
+"**flag_** (*int*, optional, default=BLEND_RGB_ADD): Blending mode used to"
+" combine the effect with the original image."
+msgstr ""
+"**flag_** (*int*, optionnel, valeur par défaut = BLEND_RGB_ADD) : Mode de fusion utilisé pour "
+"combiner l'effet avec l'image originale."
+
+#: ../Shader_gpu.rst:1628
+msgid ""
+"**pygame.Surface**: The transformed surface with the cartoon effect "
+"applied."
+msgstr ""
+"**pygame.Surface** : La surface transformée avec l'effet cartoon appliqué."
+
+#: ../Shader_gpu.rst:1633
+msgid ""
+"The cartoon effect is achieved through a series of edge detection, "
+"filtering, and blending operations."
+msgstr ""
+"L'effet cartoon est obtenu grâce à une série d'opérations de détection de contours, "
+"de filtrage et de fusion."
+
+#: ../Shader_gpu.rst:1634
+msgid ""
+"The `BLEND_RGB_ADD` flag is used to add the cartoon effect to the "
+"original surface."
+msgstr ""
+"Le drapeau `BLEND_RGB_ADD` est utilisé pour ajouter l'effet cartoon à la "
+"surface originale."
+
+#: ../Shader_gpu.rst:1659
+msgid "Blend a source texture toward a destination texture (transition effect)."
+msgstr ""
+"Fusionner une texture source avec une texture de destination (effet de transition)."
+
+#: ../Shader_gpu.rst:1661
+msgid ""
+"This function blends a source Pygame surface onto a destination surface, "
+"creating a transition effect based on the specified percentage. The "
+"blending is performed using the following calculations: - **Alpha**: "
+"`outA = SrcA + DstA * (1 - SrcA)` - **RGB**: `outRGB = SrcRGB + DstRGB * "
+"(1 - SrcA)`"
+msgstr ""
+"Cette fonction fusionne une surface source Pygame avec une surface de destination, "
+"créant un effet de transition basé sur le pourcentage spécifié. La fusion est réalisée "
+"en utilisant les calculs suivants : - **Alpha** : `outA = SrcA + DstA * (1 - SrcA)` "
+"- **RGB** : `outRGB = SrcRGB + DstRGB * (1 - SrcA)`"
+
+#: ../Shader_gpu.rst:1668
+msgid "**source_** (*pygame.Surface*): The source surface to be blended."
+msgstr ""
+"**source_** (*pygame.Surface*) : La surface source à fusionner."
+
+#: ../Shader_gpu.rst:1669
+msgid ""
+"**destination_** (*pygame.Surface*): The destination surface onto which "
+"the source will be blended."
+msgstr ""
+"**destination_** (*pygame.Surface*) : La surface de destination sur laquelle "
+"la source sera fusionnée."
+
+#: ../Shader_gpu.rst:1670
+msgid ""
+"**percentage_** (*float*): The blending percentage, a value between 0.0 "
+"and 100.0, representing the proportion of the source to blend with the "
+"destination."
+msgstr ""
+"**percentage_** (*float*) : Le pourcentage de fusion, une valeur entre 0,0 "
+"et 100,0, représentant la proportion de la source à fusionner avec la "
+"destination."
+
+#: ../Shader_gpu.rst:1674
+msgid "**pygame.Surface**: A new 24-bit Pygame surface with the blended result."
+msgstr ""
+"**pygame.Surface** : Une nouvelle surface Pygame 24 bits avec le résultat fusionné."
+
+#: ../Shader_gpu.rst:1678
+msgid ""
+"The function assumes that the source and destination surfaces are of the "
+"same size."
+msgstr ""
+"La fonction suppose que les surfaces source et destination sont de la même taille."
+
+#: ../Shader_gpu.rst:1679 ../Shader_gpu.rst:1727 ../Shader_gpu.rst:1827
+msgid ""
+"The output surface is converted for fast blitting using the `convert()` "
+"method."
+msgstr ""
+"La surface de sortie est convertie pour un rendu rapide à l'aide de la méthode `convert()`."
+
+#: ../Shader_gpu.rst:1680
+msgid ""
+"The blending mode used is `BLEND_RGB_ADD`, which adds the source color to"
+" the destination color. This mode can be adjusted by changing the `flag_`"
+" parameter."
+msgstr ""
+"Le mode de fusion utilisé est `BLEND_RGB_ADD`, qui ajoute la couleur source à "
+"la couleur de destination. Ce mode peut être ajusté en modifiant le paramètre `flag_`."
+
+#: ../Shader_gpu.rst:1705
+msgid ""
+"Apply a sharpening filter to the given pygame.Surface image using a "
+"generic filter kernel."
+msgstr ""
+"Appliquer un filtre de netteté à l'image pygame.Surface donnée à l'aide d'un "
+"noyau de filtre générique."
+
+#: ../Shader_gpu.rst:1707
+msgid ""
+"The function sharpens the input image by applying a sharpening kernel to "
+"each RGB channel (red, green, blue) independently. The sharpened image is"
+" returned as a 24-bit pygame.Surface format."
+msgstr ""
+"La fonction aiguise l'image d'entrée en appliquant un noyau de netteté à "
+"chaque canal RGB (rouge, vert, bleu) indépendamment. L'image aiguisée est "
+"retournée au format pygame.Surface 24 bits."
+
+#: ../Shader_gpu.rst:1713
+msgid ""
+"**surface_** (*pygame.Surface*): A pygame surface object that represents "
+"the input image to be sharpened."
+msgstr ""
+"**surface_** (*pygame.Surface*) : Un objet surface Pygame représentant "
+"l'image d'entrée à aiguiser."
+
+#: ../Shader_gpu.rst:1717
+msgid ""
+"**pygame.Surface**: A new pygame surface with the sharpened image in "
+"24-bit format (RGB)."
+msgstr ""
+"**pygame.Surface** : Une nouvelle surface Pygame avec l'image aiguisée au "
+"format 24 bits (RGB)."
+#: ../Shader_gpu.rst:1721
+msgid ""
+"**ValueError**: If the input surface is not a valid pygame.Surface or has"
+" zero dimensions."
+msgstr ""
+"**ValueError** : Si la surface d'entrée n'est pas une pygame.Surface valide ou a"
+" des dimensions nulles."
+
+#: ../Shader_gpu.rst:1726 ../Shader_gpu.rst:1826
+msgid ""
+"The sharpening effect is achieved through convolution with a sharpening "
+"kernel."
+msgstr ""
+"L'effet de netteté est obtenu par convolution avec un noyau de netteté."
+
+#: ../Shader_gpu.rst:1752
+msgid "Apply a water drop (ripple) effect to a texture using GPU acceleration."
+msgstr ""
+"Appliquez un effet de goutte d'eau (vague) à une texture en utilisant l'accélération GPU."
+
+#: ../Shader_gpu.rst:1754
+msgid ""
+"This function uses a CUDA kernel (`ripple_kernel`) to compute the ripple "
+"effect on the texture. It works by manipulating the `previous` and "
+"`current` state of the ripple effect and applying it to the texture. The "
+"effect is computed in parallel on the GPU, making it efficient for "
+"handling large textures or simulations."
+msgstr ""
+"Cette fonction utilise un noyau CUDA (`ripple_kernel`) pour calculer l'effet de vague "
+"sur la texture. Elle fonctionne en manipulant l'état `précédent` et `actuel` de l'effet de vague et en "
+"l'appliquant à la texture. L'effet est calculé en parallèle sur le GPU, ce qui le rend efficace pour "
+"le traitement de grandes textures ou simulations."
+
+#: ../Shader_gpu.rst:1761
+msgid ""
+"**grid** (*tuple*): Tuple defining the grid size for CUDA kernel "
+"execution, e.g., (25, 25). The grid size should match the texture size "
+"for efficient parallel processing."
+msgstr ""
+"**grid** (*tuple*): Tuple définissant la taille de la grille pour l'exécution du noyau CUDA, "
+"par exemple, (25, 25). La taille de la grille doit correspondre à la taille de la texture pour "
+"un traitement parallèle efficace."
+
+#: ../Shader_gpu.rst:1763
+msgid ""
+"**block** (*tuple*): Tuple defining the block size for CUDA kernel "
+"execution, e.g., (32, 32). The maximum number of threads is 1024 (block_x"
+" * block_y)."
+msgstr ""
+"**block** (*tuple*): Tuple définissant la taille du bloc pour l'exécution du noyau CUDA, "
+"par exemple, (32, 32). Le nombre maximal de threads est 1024 (block_x * block_y)."
+
+#: ../Shader_gpu.rst:1765
+msgid "**w** (*int*): The width of the texture and arrays."
+msgstr ""
+"**w** (*int*): La largeur de la texture et des tableaux."
+
+#: ../Shader_gpu.rst:1766
+msgid "**h** (*int*): The height of the texture and arrays."
+msgstr ""
+"**h** (*int*): La hauteur de la texture et des tableaux."
+
+#: ../Shader_gpu.rst:1767
+msgid ""
+"**previous** (*cupy.ndarray*): A CuPy array of shape (w, h), containing "
+"the previous state of the ripple effect (float32)."
+msgstr ""
+"**previous** (*cupy.ndarray*): Un tableau CuPy de forme (w, h), contenant "
+"l'état précédent de l'effet de vague (float32)."
+
+#: ../Shader_gpu.rst:1768
+msgid ""
+"**current** (*cupy.ndarray*): A CuPy array of shape (w, h), containing "
+"the current state of the ripple effect (float32)."
+msgstr ""
+"**current** (*cupy.ndarray*): Un tableau CuPy de forme (w, h), contenant "
+"l'état actuel de l'effet de vague (float32)."
+
+#: ../Shader_gpu.rst:1769
+msgid ""
+"**texture_array** (*cupy.ndarray*): A CuPy array of shape (w, h, 3), "
+"containing the source texture in RGB (uint8)."
+msgstr ""
+"**texture_array** (*cupy.ndarray*): Un tableau CuPy de forme (w, h, 3), "
+"contenant la texture source en RGB (uint8)."
+
+#: ../Shader_gpu.rst:1770
+msgid ""
+"**background_array** (*cupy.ndarray*): A CuPy array of shape (w, h, 3), "
+"representing the background texture to apply the effect to (uint8)."
+msgstr ""
+"**background_array** (*cupy.ndarray*): Un tableau CuPy de forme (w, h, 3), "
+"représentant la texture de fond à laquelle appliquer l'effet (uint8)."
+
+#: ../Shader_gpu.rst:1775
+msgid ""
+"**tuple**: A tuple containing two CuPy arrays, the updated `previous` and"
+" `current` states of the ripple effect."
+msgstr ""
+"**tuple** : Un tuple contenant deux tableaux CuPy, les états mis à jour de `previous` et"
+" `current` de l'effet de vague."
+
+#: ../Shader_gpu.rst:1801
+msgid ""
+"The grid and block sizes must be chosen appropriately based on the "
+"texture size and available GPU resources."
+msgstr ""
+"La taille de la grille et du bloc doit être choisie de manière appropriée en fonction de la "
+"taille de la texture et des ressources GPU disponibles."
+
+#: ../Shader_gpu.rst:1802
+msgid "The kernel computation is done on the GPU using CuPy for faster execution."
+msgstr ""
+"Le calcul du noyau est effectué sur le GPU à l'aide de CuPy pour une exécution plus rapide."
+
+#: ../Shader_gpu.rst:1808
+msgid "Sharpen an image using a raw kernel."
+msgstr ""
+"Aiguisez une image en utilisant un noyau brut."
+
+#: ../Shader_gpu.rst:1810
+msgid ""
+"This function sharpens the input image by applying a sharpening kernel to"
+" each RGB channel (red, green, blue) independently. The borders are not "
+"computed with the kernel (value = 0)."
+msgstr ""
+"Cette fonction aiguise l'image d'entrée en appliquant un noyau de netteté à"
+" chaque canal RGB (rouge, vert, bleu) indépendamment. Les bords ne sont pas "
+"calculés avec le noyau (valeur = 0)."
+
+#: ../Shader_gpu.rst:1815
+msgid "**surface_** (*pygame.Surface*): The input image surface to be sharpened."
+msgstr ""
+"**surface_** (*pygame.Surface*): La surface de l'image d'entrée à aiguiser."
+
+#: ../Shader_gpu.rst:1816
+msgid ""
+"**grid_** (*tuple*): Grid dimensions for CUDA kernel execution, e.g., "
+"(25, 25). The grid values and block values must match the texture and "
+"array sizes."
+msgstr ""
+"**grid_** (*tuple*): Dimensions de la grille pour l'exécution du noyau CUDA, par exemple, "
+"(25, 25). Les valeurs de la grille et du bloc doivent correspondre aux tailles de la texture et "
+"des tableaux."
+
+#: ../Shader_gpu.rst:1817
+msgid ""
+"**block_** (*tuple*): Block dimensions for CUDA kernel execution, e.g., "
+"(32, 32). Maximum threads are 1024. Max threads = block_x * block_y."
+msgstr ""
+"**block_** (*tuple*): Dimensions du bloc pour l'exécution du noyau CUDA, par exemple, "
+"(32, 32). Le nombre maximal de threads est 1024. Threads max = block_x * block_y."
+
+#: ../Shader_gpu.rst:1821
+msgid ""
+"**pygame.Surface**: A new Pygame surface with the sharpened image in "
+"24-bit format (RGB)."
+msgstr ""
+"**pygame.Surface** : Une nouvelle surface Pygame avec l'image affinée en "
+"format 24 bits (RGB)."
+
+#: ../Shader_gpu.rst:1856
+msgid "Apply a mirror effect to an image using GPU acceleration."
+msgstr ""
+"Appliquez un effet miroir à une image en utilisant l'accélération GPU."
+
+#: ../Shader_gpu.rst:1858
+msgid ""
+"This function creates a mirrored version of an image represented as a "
+"`pygame.Surface`. It supports 32-bit and 24-bit image formats and outputs"
+" a 24-bit format image. The mirror orientation (horizontal or vertical) "
+"is controlled using the `format_` parameter."
+msgstr ""
+"Cette fonction crée une version miroir d'une image représentée sous la forme d'une "
+"`pygame.Surface`. Elle prend en charge les formats d'image 32 bits et 24 bits et génère"
+" une image au format 24 bits. L'orientation du miroir (horizontale ou verticale) "
+"est contrôlée à l'aide du paramètre `format_`."
+
+#: ../Shader_gpu.rst:1864 ../Shader_gpu.rst:1901 ../Shader_gpu.rst:1944
+#: ../Shader_gpu.rst:1979
+msgid ""
+"**surface_** (*pygame.Surface*): The input image as a `pygame.Surface` "
+"object."
+msgstr ""
+"**surface_** (*pygame.Surface*): L'image d'entrée sous forme d'un objet `pygame.Surface`."
+
+#: ../Shader_gpu.rst:1865 ../Shader_gpu.rst:1902
+msgid ""
+"**grid_** (*tuple*): Defines the grid dimensions as `(grid_y, grid_x)`, "
+"e.g., `(25, 25)`. The grid and block dimensions must match the texture "
+"and array sizes."
+msgstr ""
+"**grid_** (*tuple*): Définit les dimensions de la grille sous la forme `(grid_y, grid_x)`, "
+"par exemple, `(25, 25)`. Les dimensions de la grille et du bloc doivent correspondre aux tailles "
+"de la texture et des tableaux."
+
+#: ../Shader_gpu.rst:1867 ../Shader_gpu.rst:1904
+msgid ""
+"**block_** (*tuple*): Specifies the block dimensions as `(block_y, "
+"block_x)`, e.g., `(32, 32)`. The maximum number of threads per block is "
+"1024, following the condition: `Max threads = block_x * block_y`."
+msgstr ""
+"**block_** (*tuple*): Spécifie les dimensions du bloc sous la forme `(block_y, "
+"block_x)`, par exemple, `(32, 32)`. Le nombre maximal de threads par bloc est "
+"1024, suivant la condition : `Threads max = block_x * block_y`."
+
+#: ../Shader_gpu.rst:1870
+msgid ""
+"**format_** (*bool*, optional, default=`False`): Determines the mirror "
+"orientation: - `False` (0) → Horizontal mirroring (default). - `True` (1)"
+" → Vertical mirroring."
+msgstr ""
+"**format_** (*bool*, optionnel, défaut=`False`): Détermine l'orientation du miroir : "
+"- `False` (0) → Miroir horizontal (par défaut). - `True` (1) → Miroir vertical."
+
+#: ../Shader_gpu.rst:1876
+msgid ""
+"**pygame.Surface**: A 24-bit `pygame.Surface` with the applied mirror "
+"effect."
+msgstr ""
+"**pygame.Surface** : Une `pygame.Surface` 24 bits avec l'effet miroir appliqué."
+
+#: ../Shader_gpu.rst:1881 ../Shader_gpu.rst:1919
+msgid ""
+"**ValueError**: If `surface_` has an invalid format or dimensions (`w` or"
+" `h` is 0)."
+msgstr ""
+"**ValueError** : Si `surface_` a un format ou des dimensions invalides (si `w` ou"
+" `h` est 0)."
+
+#: ../Shader_gpu.rst:1882
+msgid "**ValueError**: If `surface_` cannot be referenced as a 3D array."
+msgstr ""
+"**ValueError** : Si `surface_` ne peut pas être référencé comme un tableau 3D."
+
+#: ../Shader_gpu.rst:1886 ../Shader_gpu.rst:1924 ../Shader_gpu.rst:1958
+#: ../Shader_gpu.rst:1992
+msgid ""
+"The function extracts pixel data from `surface_` and converts it into a "
+"3D array."
+msgstr ""
+"La fonction extrait les données des pixels de `surface_` et les convertit en un "
+"tableau 3D."
+
+#: ../Shader_gpu.rst:1887
+msgid ""
+"The `mirroring_cupy` function performs GPU-accelerated mirroring and "
+"returns the processed image."
+msgstr ""
+"La fonction `mirroring_cupy` effectue un mirroring accéléré par GPU et "
+"renvoie l'image traitée."
+
+#: ../Shader_gpu.rst:1893
+msgid "Adjusts the saturation level of a given image using GPU acceleration."
+msgstr ""
+"Ajuste le niveau de saturation d'une image donnée en utilisant l'accélération GPU."
+
+#: ../Shader_gpu.rst:1895
+msgid ""
+"This function modifies the saturation of an image represented as a "
+"`pygame.Surface`. It supports 32-bit and 24-bit image formats, producing "
+"an output in 24-bit format. The saturation adjustment value must be "
+"within the range [-1.0, 1.0]."
+msgstr ""
+"Cette fonction modifie la saturation d'une image représentée sous la forme d'une "
+"`pygame.Surface`. Elle prend en charge les formats d'image 32 bits et 24 bits, produisant "
+"une sortie au format 24 bits. La valeur d'ajustement de la saturation doit être "
+"comprise dans la plage [-1.0, 1.0]."
+
+#: ../Shader_gpu.rst:1907
+msgid ""
+"**val_** (*float*, optional, default=`1.0`): Saturation adjustment level "
+"in the range `[-1.0, 1.0]`. - `-1.0` → Completely desaturated "
+"(grayscale). - `0.0` → No change in saturation. - `1.0` → Fully "
+"saturated."
+msgstr ""
+"**val_** (*float*, optionnel, défaut=`1.0`): Niveau d'ajustement de la saturation "
+"dans la plage `[-1.0, 1.0]`. - `-1.0` → Complètement désaturé "
+"(niveau de gris). - `0.0` → Aucun changement de saturation. - `1.0` → Totalement "
+"saturé."
+
+#: ../Shader_gpu.rst:1914
+msgid ""
+"**pygame.Surface**: A 24-bit `pygame.Surface` with the adjusted "
+"saturation level."
+msgstr ""
+"**pygame.Surface** : Une `pygame.Surface` 24 bits avec le niveau de saturation "
+"ajusté."
+
+#: ../Shader_gpu.rst:1920
+msgid "**ValueError**: If `val_` is outside the range `[-1.0, 1.0]`."
+msgstr ""
+"**ValueError** : Si `val_` est hors de la plage `[-1.0, 1.0]`."
+
+#: ../Shader_gpu.rst:1925
+msgid ""
+"The `saturation_cupy` function performs GPU-accelerated saturation "
+"adjustment and returns the processed image."
+msgstr ""
+"La fonction `saturation_cupy` effectue un ajustement de saturation accéléré par GPU "
+"et renvoie l'image traitée."
+
+#: ../Shader_gpu.rst:1932
+msgid "Apply a bilateral filter to a 32-bit or 24-bit image using the GPU."
+msgstr ""
+"Appliquez un filtre bilatéral à une image 32 bits ou 24 bits en utilisant le GPU."
+
+#: ../Shader_gpu.rst:1934
+msgid ""
+"A bilateral filter is a non-linear, edge-preserving, and noise-reducing "
+"smoothing filter. It replaces the intensity of each pixel with a weighted"
+" average of nearby pixels, where the weights are determined by both "
+"spatial proximity and intensity differences, following a Gaussian "
+"distribution."
+msgstr ""
+"Un filtre bilatéral est un filtre non linéaire, préservant les bords et réduisant le bruit. "
+"Il remplace l'intensité de chaque pixel par une moyenne pondérée des pixels voisins, où les poids "
+"sont déterminés à la fois par la proximité spatiale et les différences d'intensité, suivant une "
+"distribution gaussienne."
+
+#: ../Shader_gpu.rst:1939
+msgid ""
+"The filter parameters (sigma_r & sigma_s) are pre-defined within the GPU "
+"kernel. This function is compatible with 32-bit and 24-bit images."
+msgstr ""
+"Les paramètres du filtre (sigma_r & sigma_s) sont prédéfinis dans le noyau GPU. "
+"Cette fonction est compatible avec les images 32 bits et 24 bits."
+
+#: ../Shader_gpu.rst:1945
+msgid ""
+"**kernel_size_** (*int*): The kernel size, determining the number of "
+"neighboring pixels included in the calculation."
+msgstr ""
+"**kernel_size_** (*int*): La taille du noyau, déterminant le nombre de "
+"pixels voisins inclus dans le calcul."
+
+#: ../Shader_gpu.rst:1949
+msgid ""
+"**pygame.Surface**: A new 24-bit `pygame.Surface` with the bilateral "
+"filtering effect applied."
+msgstr ""
+"**pygame.Surface** : Une nouvelle `pygame.Surface` 24 bits avec l'effet de "
+"filtrage bilatéral appliqué."
+
+#: ../Shader_gpu.rst:1953 ../Shader_gpu.rst:1987
+msgid "**TypeError**: If `surface_` is not an instance of `pygame.Surface`."
+msgstr ""
+"**TypeError** : Si `surface_` n'est pas une instance de `pygame.Surface`."
+
+#: ../Shader_gpu.rst:1954
+msgid ""
+"**ValueError**: If the surface dimensions are zero or if `kernel_size_` "
+"is negative."
+msgstr ""
+"**ValueError** : Si les dimensions de la surface sont nulles ou si `kernel_size_` "
+"est négatif."
+
+#: ../Shader_gpu.rst:1959
+msgid ""
+"The `bilateral_cupy` function performs GPU-accelerated bilateral "
+"filtering and returns the processed image."
+msgstr ""
+"La fonction `bilateral_cupy` effectue un filtrage bilatéral accéléré par GPU "
+"et renvoie l'image traitée."
+
+#: ../Shader_gpu.rst:1965
+msgid ""
+"Apply a brightness adjustment to an image using GPU acceleration."
+msgstr ""
+"Appliquez un ajustement de la luminosité à une image en utilisant l'accélération GPU."
+#: ../Shader_gpu.rst:1967
+msgid "The embossing kernel used:"
+msgstr "Le noyau d'embossage utilisé :"
+
+#: ../Shader_gpu.rst:1968
+msgid ""
+"[-2.0, -1.0,  0.0,  1.0,  2.0] [-1.0,  1.0,  2.0,  3.0,  4.0] [ 0.0,  "
+"2.0,  4.0,  6.0,  8.0] [-1.0,  1.0,  2.0,  3.0,  4.0] [-2.0, -1.0,  0.0,"
+"  1.0,  2.0]"
+msgstr ""
+"[-2.0, -1.0,  0.0,  1.0,  2.0] [-1.0,  1.0,  2.0,  3.0,  4.0] [ 0.0,  "
+"2.0,  4.0,  6.0,  8.0] [-1.0,  1.0,  2.0,  3.0,  4.0] [-2.0, -1.0,  0.0,"
+"  1.0,  2.0]"
+
+#: ../Shader_gpu.rst:1974
+msgid ""
+"Each RGB channel of the input image is processed independently using "
+"convolution. The input image must be in 32-bit or 24-bit format, and the "
+"output will be a 24-bit image."
+msgstr ""
+"Chaque canal RGB de l'image d'entrée est traité indépendamment à l'aide "
+"d'une convolution. L'image d'entrée doit être au format 32 bits ou 24 bits, "
+"et l'image de sortie sera en 24 bits."
+
+#: ../Shader_gpu.rst:1983
+msgid ""
+"**pygame.Surface**: A new 24-bit `pygame.Surface` with the emboss effect "
+"applied."
+msgstr ""
+"**pygame.Surface** : Un nouveau `pygame.Surface` en 24 bits avec l'effet "
+"d'embossage appliqué."
+
+#: ../Shader_gpu.rst:1988
+msgid ""
+"**ValueError**: If the surface's pixel data cannot be accessed or if its "
+"width/height is zero."
+msgstr ""
+"**ValueError** : Si les données de pixels de la surface ne peuvent pas être "
+"accessibles ou si sa largeur/hauteur est nulle."
+
+#: ../Shader_gpu.rst:1993
+msgid ""
+"The `emboss_cupy` function performs GPU-accelerated embossing and returns"
+" the processed image."
+msgstr ""
+"La fonction `emboss_cupy` applique un embossage accéléré par GPU et renvoie "
+"l'image traitée."
+
+#: ../Shader_gpu.rst:1999
+msgid ""
+"Applies a color overlay to a specified area in a 24-bit RGB image using "
+"GPU acceleration."
+msgstr ""
+"Applique une superposition de couleur à une zone spécifiée d'une image RGB "
+"24 bits en utilisant l'accélération GPU."
+
+#: ../Shader_gpu.rst:2001
+msgid ""
+"This function modifies the color of a region in the `rgb_array` at "
+"coordinates `(x, y)`, blending it with the given `color` based on the "
+"`mask_alpha` and `intensity` parameters. It utilizes CuPy for fast GPU-"
+"based computation."
+msgstr ""
+"Cette fonction modifie la couleur d'une région de `rgb_array` aux "
+"coordonnées `(x, y)`, en la mélangeant avec la `color` donnée en fonction "
+"des paramètres `mask_alpha` et `intensity`. Elle utilise CuPy pour un "
+"calcul rapide sur GPU."
+
+#: ../Shader_gpu.rst:2007
+msgid "**x** (*int*): X-coordinate of the target pixel in the image."
+msgstr "**x** (*int*) : Coordonnée X du pixel cible dans l'image."
+
+#: ../Shader_gpu.rst:2010
+msgid "**y** (*int*): Y-coordinate of the target pixel in the image."
+msgstr "**y** (*int*) : Coordonnée Y du pixel cible dans l'image."
+
+#: ../Shader_gpu.rst:2013
+msgid ""
+"**rgb_array** (*cupy.ndarray*): A 3D array representing the RGB image "
+"stored in GPU memory. Must have a shape of `(height, width, 3)`."
+msgstr ""
+"**rgb_array** (*cupy.ndarray*) : Un tableau 3D représentant l'image RGB "
+"stockée en mémoire GPU. Doit avoir une forme `(hauteur, largeur, 3)`."
+
+#: ../Shader_gpu.rst:2017
+msgid ""
+"**mask_alpha** (*cupy.ndarray*): Alpha mask determining the transparency "
+"effect applied to the color overlay. Must match the shape of `rgb_array`."
+msgstr ""
+"**mask_alpha** (*cupy.ndarray*) : Masque alpha déterminant l'effet de "
+"transparence appliqué à la superposition de couleur. Doit correspondre à la "
+"forme de `rgb_array`."
+
+#: ../Shader_gpu.rst:2021
+msgid ""
+"**intensity** (*float*, optional, default=`1.0`): Scaling factor for the "
+"overlay effect. Determines how strongly the `color` blends with the "
+"original image. Must be in the range `[0.0, 1.0]`."
+msgstr ""
+"**intensity** (*float*, optionnel, par défaut=`1.0`) : Facteur d'échelle de "
+"l'effet de superposition. Détermine à quel point la `color` se mélange avec "
+"l'image originale. Doit être dans l'intervalle `[0.0, 1.0]`."
+
+#: ../Shader_gpu.rst:2026
+msgid ""
+"**color** (*cupy.ndarray*, optional, default=`[128.0, 128.0, 128.0]`): A "
+"3-element array representing the RGB color to be blended."
+msgstr ""
+"**color** (*cupy.ndarray*, optionnel, par défaut=`[128.0, 128.0, 128.0]`) : "
+"Un tableau de 3 éléments représentant la couleur RGB à mélanger."
+
+#: ../Shader_gpu.rst:2031
+msgid "(*tuple*): The modified RGB values at `(x, y)` after applying the effect."
+msgstr ""
+"(*tuple*) : Les valeurs RGB modifiées à `(x, y)` après application de "
+"l'effet."
+
+#: ../Shader_gpu.rst:2036
+msgid "**ValueError**: If `x` or `y` is out of bounds."
+msgstr "**ValueError** : Si `x` ou `y` est hors limites."
+
+#: ../Shader_gpu.rst:2037
+msgid "**ValueError**: If `intensity` is not within `[0.0, 1.0]`."
+msgstr "**ValueError** : Si `intensity` n'est pas compris entre `[0.0, 1.0]`."
+
+#: ../Shader_gpu.rst:2038
+msgid "**ValueError**: If `rgb_array` or `mask_alpha` have incompatible shapes."
+msgstr ""
+"**ValueError** : Si `rgb_array` ou `mask_alpha` ont des formes incompatibles."
+
+#: ../Shader_gpu.rst:2042
+msgid ""
+"The function utilizes GPU acceleration with CuPy for fast image "
+"processing."
+msgstr "La fonction utilise l'accélération GPU avec CuPy pour un traitement rapide."
+
+#: ../Shader_gpu.rst:2043
+msgid ""
+"The color blending effect is based on the alpha mask and intensity, "
+"allowing for customizable transparency."
+msgstr ""
+"L'effet de mélange des couleurs est basé sur le masque alpha et "
+"l'intensité, permettant une transparence personnalisable."
+
+#: ../Shader_gpu.rst:2049
+msgid "Adjusts the brightness of a given image using GPU acceleration."
+msgstr "Ajuste la luminosité d'une image donnée en utilisant l'accélération GPU."
+
+#: ../Shader_gpu.rst:2051
+msgid ""
+"This function modifies the brightness of a `pygame.Surface` by applying a"
+" GPU-accelerated transformation. It efficiently processes 24-bit and "
+"32-bit images, leveraging CUDA for parallel computation."
+msgstr ""
+"Cette fonction modifie la luminosité d'un `pygame.Surface` en appliquant une "
+"transformation accélérée par GPU. Elle traite efficacement les images 24 bits "
+"et 32 bits, en exploitant CUDA pour le calcul parallèle."
+
+#: ../Shader_gpu.rst:2057
+msgid ""
+"**surface_** (*pygame.Surface*): The input image to be processed. Must be"
+" in 24-bit or 32-bit format."
+msgstr ""
+"**surface_** (*pygame.Surface*) : L'image d'entrée à traiter. Doit être au "
+"format 24 bits ou 32 bits."
+
+#: ../Shader_gpu.rst:2060
+msgid ""
+"**brightness_factor** (*float*): The brightness scaling factor. - Values "
+"greater than `1.0` increase brightness. - Values between `0.0` and `1.0` "
+"decrease brightness. - `1.0` keeps the original brightness."
+msgstr ""
+"**brightness_factor** (*float*) : Le facteur d'échelle de luminosité. - Les valeurs "
+"supérieures à `1.0` augmentent la luminosité. - Les valeurs entre `0.0` et `1.0` "
+"réduisent la luminosité. - `1.0` conserve la luminosité d'origine."
+
+#: ../Shader_gpu.rst:2066
+msgid ""
+"**grid_** (*tuple*): Grid dimensions `(grid_y, grid_x)`, e.g., `(25, "
+"25)`. Defines how the image is divided for parallel GPU execution. Must "
+"match the texture and array sizes."
+msgstr ""
+"**grid_** (*tuple*) : Dimensions de la grille `(grid_y, grid_x)`, par ex., `(25, "
+"25)`. Définit comment l'image est divisée pour l'exécution parallèle sur le GPU. "
+"Doit correspondre aux tailles de la texture et du tableau."
+
+#: ../Shader_gpu.rst:2071
+msgid ""
+"**block_** (*tuple*): Block dimensions `(block_y, block_x)`, e.g., `(32, "
+"32)`. Determines the number of threads per block for CUDA execution. The "
+"product `block_x * block_y` must not exceed `1024` (CUDA's max thread "
+"limit per block)."
+msgstr ""
+"**block_** (*tuple*) : Dimensions du bloc `(block_y, block_x)`, par ex., `(32, "
+"32)`. Détermine le nombre de threads par bloc pour l'exécution CUDA. Le "
+"produit `block_x * block_y` ne doit pas dépasser `1024` (la limite maximale "
+"de threads par bloc en CUDA)."
+
+#: ../Shader_gpu.rst:2078
+msgid ""
+"(*pygame.Surface*): A new surface with modified brightness in 24-bit "
+"format."
+msgstr ""
+"(*pygame.Surface*) : Une nouvelle surface avec une luminosité modifiée au format 24 bits."
+
+#: ../Shader_gpu.rst:2083 ../Shader_gpu.rst:2339
+msgid "**TypeError**: If `surface_` is not of type `pygame.Surface`."
+msgstr "**TypeError** : Si `surface_` n'est pas de type `pygame.Surface`."
+
+#: ../Shader_gpu.rst:2084
+msgid "**ValueError**: If `brightness_factor` is negative."
+msgstr "**ValueError** : Si `brightness_factor` est négatif."
+
+#: ../Shader_gpu.rst:2088
+msgid ""
+"The function leverages GPU acceleration to efficiently process the image,"
+" making it suitable for large images or real-time applications."
+msgstr ""
+"La fonction exploite l'accélération GPU pour traiter efficacement l'image, "
+"ce qui la rend adaptée aux grandes images ou aux applications en temps réel."
+
+#: ../Shader_gpu.rst:2095
+msgid ""
+"Applies HSL (Hue, Saturation, Lightness) rotation to an image using GPU "
+"acceleration."
+msgstr ""
+"Applique une rotation HSL (Teinte, Saturation, Luminosité) à une image en utilisant "
+"l'accélération GPU."
+
+#: ../Shader_gpu.rst:2097
+msgid ""
+"This function rotates the color of the pixels in an image or texture "
+"represented by a `pygame.Surface` by modifying the hue component of the "
+"HSL color model. It supports both 24-bit and 32-bit image formats."
+msgstr ""
+"Cette fonction modifie la couleur des pixels d'une image ou texture "
+"représentée par un `pygame.Surface` en ajustant la composante teinte du "
+"modèle de couleur HSL. Elle prend en charge les formats d'image 24 bits et 32 bits."
+
+#: ../Shader_gpu.rst:2105
+msgid ""
+"**val_** (*float*): A float representing the hue rotation value. The hue "
+"is adjusted by rotating its value in the HSL color space."
+msgstr ""
+"**val_** (*float*) : Une valeur flottante représentant la rotation de la teinte. "
+"La teinte est ajustée en modifiant sa valeur dans l'espace colorimétrique HSL."
+
+#: ../Shader_gpu.rst:2108
+msgid ""
+"**grid_** (*tuple*, optional): Grid dimensions `(grid_y, grid_x)`, e.g., "
+"`(25, 25)`. Defines how the image is divided for parallel GPU execution. "
+"The grid and block dimensions must match the texture and array sizes."
+msgstr ""
+"**grid_** (*tuple*, optionnel) : Dimensions de la grille `(grid_y, grid_x)`, par ex., "
+"`(25, 25)`. Définit comment l'image est divisée pour l'exécution parallèle sur le GPU. "
+"Les dimensions de la grille et du bloc doivent correspondre aux tailles de la texture "
+"et du tableau."
+
+#: ../Shader_gpu.rst:2112
+msgid ""
+"**block_** (*tuple*, optional): Block dimensions `(block_y, block_x)`, "
+"e.g., `(32, 32)`. Specifies the number of threads per block for CUDA "
+"execution. The maximum number of threads per block is 1024, so `block_x *"
+" block_y` should not exceed this limit."
+msgstr ""
+"**block_** (*tuple*, optionnel) : Dimensions du bloc `(block_y, block_x)`, "
+"par ex., `(32, 32)`. Spécifie le nombre de threads par bloc pour l'exécution CUDA. "
+"Le nombre maximal de threads par bloc est de 1024, donc `block_x * block_y` "
+"ne doit pas dépasser cette limite."
+
+#: ../Shader_gpu.rst:2118
+msgid ""
+"(*pygame.Surface*): A new `pygame.Surface` with the modified hue based on"
+" the given rotation value."
+msgstr ""
+"(*pygame.Surface*) : Un nouveau `pygame.Surface` avec la teinte modifiée en fonction "
+"de la valeur de rotation donnée."
+
+#: ../Shader_gpu.rst:2123
+msgid ""
+"This function applies a GPU-accelerated operation to rotate the hue "
+"component of the image, enabling efficient processing for large images or"
+" real-time applications."
+msgstr ""
+"Cette fonction applique une opération accélérée par GPU pour modifier la teinte "
+"d'une image, permettant un traitement efficace des grandes images ou des applications "
+"en temps réel."
+
+#: ../Shader_gpu.rst:2124
+msgid ""
+"The `grid_` and `block_` parameters are optional but must be provided for"
+" parallel processing to work optimally on the GPU."
+msgstr ""
+"Les paramètres `grid_` et `block_` sont optionnels mais doivent être fournis "
+"pour que le traitement parallèle fonctionne de manière optimale sur le GPU."
+
+#: ../Shader_gpu.rst:2130
+msgid "Applies a dithering effect to an image using GPU acceleration."
+msgstr ""
+"Applique un effet de dithering à une image en utilisant l'accélération GPU."
+
+#: ../Shader_gpu.rst:2132
+msgid ""
+"This function applies a dithering effect to an RGB image using a CUDA "
+"kernel. The operation is performed on the GPU for fast processing. The "
+"image is first normalized, processed using the dithering kernel, and then"
+" converted back to 8-bit format."
+msgstr ""
+"Cette fonction applique un effet de dithering à une image RGB en utilisant un "
+"noyau CUDA. L'opération est effectuée sur le GPU pour un traitement rapide. "
+"L'image est d'abord normalisée, traitée avec le noyau de dithering, puis "
+"convertie au format 8 bits."
+
+#: ../Shader_gpu.rst:2138
+msgid ""
+"**gpu_array_** (*cupy.ndarray*): A CuPy array of shape `(w, h, 3)` "
+"containing the image data in RGB format. Must be of dtype `cupy.uint8`."
+msgstr ""
+"**gpu_array_** (*cupy.ndarray*) : Un tableau CuPy de forme `(w, h, 3)` "
+"contenant les données d'image en format RGB. Doit être de type `cupy.uint8`."
+
+#: ../Shader_gpu.rst:2141
+msgid ""
+"**grid_** (*tuple*): CUDA grid dimensions `(grid_y, grid_x)`. Defines how"
+" the computation is distributed across the GPU."
+msgstr ""
+"**grid_** (*tuple*) : Dimensions de la grille CUDA `(grid_y, grid_x)`. Définit "
+"comment le calcul est distribué sur le GPU."
+
+#: ../Shader_gpu.rst:2144
+msgid ""
+"**block_** (*tuple*): CUDA block dimensions `(block_y, block_x)`. The "
+"number of threads per block should not exceed 1024."
+msgstr ""
+"**block_** (*tuple*) : Dimensions du bloc CUDA `(block_y, block_x)`. Le "
+"nombre de threads par bloc ne doit pas dépasser 1024."
+
+#: ../Shader_gpu.rst:2147
+msgid ""
+"**factor_** (*float*, optional, default=`1.0`): A factor controlling the "
+"dithering intensity. A higher value increases the dithering effect."
+msgstr ""
+"**factor_** (*float*, optionnel, par défaut=`1.0`) : Un facteur contrôlant "
+"l'intensité du dithering. Une valeur plus élevée accentue l'effet."
+
+#: ../Shader_gpu.rst:2152
+msgid ""
+"(*pygame.Surface*): A new `pygame.Surface` containing the processed image"
+" in RGB format."
+msgstr ""
+"(*pygame.Surface*) : Un nouveau `pygame.Surface` contenant l'image traitée "
+"en format RGB."
+
+#: ../Shader_gpu.rst:2157
+msgid "**TypeError**: If `gpu_array_` is not a CuPy ndarray."
+msgstr "**TypeError** : Si `gpu_array_` n'est pas un tableau CuPy."
+
+#: ../Shader_gpu.rst:2158
+msgid "**ValueError**: If `gpu_array_` is not of dtype `cupy.uint8`."
+msgstr "**ValueError** : Si `gpu_array_` n'est pas de type `cupy.uint8`."
+
+#: ../Shader_gpu.rst:2162
+msgid ""
+"The function uses a CUDA kernel (`dithering_kernel`) for high-performance"
+" processing."
+msgstr ""
+"La fonction utilise un noyau CUDA (`dithering_kernel`) pour un traitement "
+"haute performance."
+
+#: ../Shader_gpu.rst:2163
+msgid ""
+"The input image is normalized to [0, 1] before processing and then "
+"converted back to [0, 255]."
+msgstr ""
+"L'image d'entrée est normalisée entre [0, 1] avant traitement, puis "
+"convertie en [0, 255]."
+
+#: ../Shader_gpu.rst:2164
+msgid ""
+"The grid and block sizes must be chosen appropriately based on the image "
+"dimensions and GPU resources."
+msgstr ""
+"Les tailles de grille et de bloc doivent être choisies en fonction des "
+"dimensions de l'image et des ressources du GPU."
+
+#: ../Shader_gpu.rst:2170
+msgid "Applies a fisheye lens effect to a pygame.Surface using GPU acceleration."
+msgstr ""
+"Applique un effet de lentille fisheye à un `pygame.Surface` en utilisant "
+"l'accélération GPU."
+
+#: ../Shader_gpu.rst:2172
+msgid ""
+"This function applies a fisheye distortion effect to a given surface "
+"using CUDA-based processing. It is optimized for real-time rendering and "
+"can be used to display game scenes through a lens effect."
+msgstr ""
+"Cette fonction applique un effet de distorsion fisheye à une surface donnée "
+"en utilisant un traitement basé sur CUDA. Elle est optimisée pour le rendu "
+"en temps réel et peut être utilisée pour afficher des scènes de jeu avec "
+"un effet de lentille."
+
+#: ../Shader_gpu.rst:2177
+msgid ""
+"**surface_** (*pygame.Surface*): Input pygame surface in 24-bit or 32-bit"
+" format."
+msgstr ""
+"**surface_** (*pygame.Surface*) : Surface pygame en entrée au format 24 bits "
+"ou 32 bits."
+
+#: ../Shader_gpu.rst:2180
+msgid ""
+"**focal** (*float*): Focal length of the fisheye effect, controlling the "
+"strength of the distortion."
+msgstr ""
+"**focal** (*float*) : Longueur focale de l'effet fisheye, contrôlant "
+"l'intensité de la distorsion."
+
+#: ../Shader_gpu.rst:2183
+msgid ""
+"**focal_texture** (*float*): Texture focal length, further adjusting the "
+"fisheye intensity."
+msgstr ""
+"**focal_texture** (*float*) : Longueur focale de la texture, ajustant "
+"davantage l'intensité de l'effet fisheye."
+
+#: ../Shader_gpu.rst:2186
+msgid ""
+"**grid_** (*tuple*): CUDA grid dimensions `(grid_y, grid_x)`. Defines how"
+" computation is distributed across the GPU."
+msgstr ""
+"**grid_** (*tuple*) : Dimensions de la grille CUDA `(grid_y, grid_x)`. Définit "
+"comment le calcul est distribué sur le GPU."
+
+#: ../Shader_gpu.rst:2189
+msgid ""
+"**block_** (*tuple*): CUDA block dimensions `(block_y, block_x)`. The "
+"maximum number of threads per block should not exceed 1024."
+msgstr ""
+"**block_** (*tuple*) : Dimensions du bloc CUDA `(block_y, block_x)`. Le nombre "
+"maximum de threads par bloc ne doit pas dépasser 1024."
+
+#: ../Shader_gpu.rst:2194
+msgid ""
+"(*pygame.Surface*): A new `pygame.Surface` with the applied fisheye lens "
+"effect."
+msgstr ""
+"(*pygame.Surface*) : Un nouveau `pygame.Surface` avec l'effet de lentille "
+"fisheye appliqué."
+
+#: ../Shader_gpu.rst:2199
+msgid "**TypeError**: If `surface_` is not a `pygame.Surface` instance."
+msgstr "**TypeError** : Si `surface_` n'est pas une instance de `pygame.Surface`."
+
+#: ../Shader_gpu.rst:2200
+msgid ""
+"**ValueError**: If the function cannot access the pixel data of "
+"`surface_`."
+msgstr ""
+"**ValueError** : Si la fonction ne peut pas accéder aux données des pixels "
+"de `surface_`."
+
+#: ../Shader_gpu.rst:2204
+msgid "This function leverages CUDA for high-performance image processing."
+msgstr ""
+"Cette fonction exploite CUDA pour un traitement d'image haute performance."
+
+#: ../Shader_gpu.rst:2205
+msgid ""
+"The effect is applied directly to the input surface and returned as a "
+"transformed surface."
+msgstr ""
+"L'effet est appliqué directement à la surface en entrée et retourné sous "
+"forme de surface transformée."
+
+#: ../Shader_gpu.rst:2206
+msgid ""
+"Ensure that the grid and block values are chosen to match the texture and"
+" array sizes for optimal performance."
+msgstr ""
+"Assurez-vous que les valeurs de grille et de bloc sont choisies de manière "
+"à correspondre aux tailles de texture et de tableau pour des performances "
+"optimales."
+
+#: ../Shader_gpu.rst:2212
+msgid "Applies a swirl distortion effect to an image using GPU acceleration."
+msgstr ""
+"Applique un effet de distorsion en spirale à une image en utilisant "
+"l'accélération GPU."
+
+#: ../Shader_gpu.rst:2214
+msgid ""
+"This function creates a swirl effect on a given `pygame.Surface` by "
+"applying a CUDA-based transformation. The effect distorts pixels radially"
+" around a specified center point."
+msgstr ""
+"Cette fonction crée un effet de spirale sur un `pygame.Surface` donné en "
+"appliquant une transformation basée sur CUDA. L'effet déforme les pixels de "
+"manière radiale autour d'un point central spécifié."
+
+#: ../Shader_gpu.rst:2219
+msgid ""
+"**surface_** (*pygame.Surface*): Input surface, must be in 24-bit or "
+"32-bit format."
+msgstr ""
+"**surface_** (*pygame.Surface*) : Surface en entrée, doit être au format "
+"24 bits ou 32 bits."
+
+#: ../Shader_gpu.rst:2222
+msgid ""
+"**rad** (*float*): Rotation angle in radians, controlling the intensity "
+"of the swirl."
+msgstr ""
+"**rad** (*float*) : Angle de rotation en radians, contrôlant l'intensité "
+"de l'effet de spirale."
+
+#: ../Shader_gpu.rst:2225
+msgid ""
+"**grid_** (*tuple*): CUDA grid size, typically `(grid_y, grid_x)`. "
+"Defines how computation is distributed across the GPU."
+msgstr ""
+"**grid_** (*tuple*) : Taille de la grille CUDA, typiquement `(grid_y, grid_x)`. "
+"Définit comment le calcul est distribué sur le GPU."
+
+#: ../Shader_gpu.rst:2228
+msgid ""
+"**block_** (*tuple*): CUDA block size, typically `(block_y, block_x)`. "
+"The number of threads per block should not exceed 1024."
+msgstr ""
+"**block_** (*tuple*) : Taille du bloc CUDA, typiquement `(block_y, block_x)`. "
+"Le nombre de threads par bloc ne doit pas dépasser 1024."
+
+#: ../Shader_gpu.rst:2231
+msgid ""
+"**centre_x** (*int*): X-coordinate of the swirl center (must be greater "
+"than 0)."
+msgstr ""
+"**centre_x** (*int*) : Coordonnée X du centre de la spirale (doit être "
+"supérieure à 0)."
+
+#: ../Shader_gpu.rst:2234
+msgid ""
+"**centre_y** (*int*): Y-coordinate of the swirl center (must be greater "
+"than 0)."
+msgstr ""
+"**centre_y** (*int*) : Coordonnée Y du centre de la spirale (doit être "
+"supérieure à 0)."
+
+#: ../Shader_gpu.rst:2239
+msgid "(*pygame.Surface*): A new `pygame.Surface` with the applied swirl effect."
+msgstr ""
+"(*pygame.Surface*) : Un nouveau `pygame.Surface` avec l'effet de spirale "
+"appliqué."
+
+#: ../Shader_gpu.rst:2244
+msgid "**ValueError**: If the input surface cannot be referenced as a 3D array."
+msgstr ""
+"**ValueError** : Si la surface d'entrée ne peut pas être référencée comme "
+"un tableau 3D."
+
+#: ../Shader_gpu.rst:2249 ../Shader_gpu.rst:2292
+msgid "The function operates directly on the GPU using CuPy for high performance."
+msgstr ""
+"La fonction s'exécute directement sur le GPU en utilisant CuPy pour des "
+"performances élevées."
+
+#: ../Shader_gpu.rst:2250
+msgid ""
+"Ensure `grid_` and `block_` are correctly configured for optimal "
+"execution."
+msgstr ""
+"Assurez-vous que `grid_` et `block_` sont correctement configurés pour "
+"une exécution optimale."
+
+#: ../Shader_gpu.rst:2251
+msgid ""
+"The function calls `swirl_cupy`, which handles the actual GPU-based "
+"processing."
+msgstr ""
+"La fonction appelle `swirl_cupy`, qui prend en charge le traitement réel "
+"basé sur le GPU."
+
+#: ../Shader_gpu.rst:2257
+msgid "Creates a wave effect on an image using GPU acceleration."
+msgstr ""
+"Crée un effet de vague sur une image en utilisant l'accélération GPU."
+
+#: ../Shader_gpu.rst:2259
+msgid ""
+"This function applies a wave distortion effect to a given "
+"`pygame.Surface` by applying a CUDA-based transformation. The effect "
+"creates a realistic wave motion across the image based on the specified "
+"angle and block size."
+msgstr ""
+"Cette fonction applique un effet de distorsion en vague à un `pygame.Surface` "
+"en utilisant une transformation basée sur CUDA. L'effet crée un mouvement de "
+"vague réaliste sur l'image en fonction de l'angle et de la taille du bloc "
+"spécifiés."
+
+#: ../Shader_gpu.rst:2265
+msgid ""
+"**surface_** (*pygame.Surface*): The input image surface, which must be "
+"in 24-bit or 32-bit format."
+msgstr ""
+"**surface_** (*pygame.Surface*) : La surface d'image en entrée, qui doit être "
+"au format 24 bits ou 32 bits."
+
+#: ../Shader_gpu.rst:2268
+msgid ""
+"**rad_** (*float*): A variable angle in radians that controls the wave "
+"effect."
+msgstr ""
+"**rad_** (*float*): Un angle variable en radians qui contrôle l'effet de vague."
+
+#: ../Shader_gpu.rst:2271
+msgid ""
+"**size_** (*int*): The block size for the wave effect. For a realistic "
+"wave, it's recommended to keep the size below 15."
+msgstr ""
+"**size_** (*int*): La taille du bloc pour l'effet de vague. Pour un effet réaliste, il est recommandé de garder la taille inférieure à 15."
+
+#: ../Shader_gpu.rst:2274
+msgid ""
+"**grid_** (*tuple*): CUDA grid size, typically `(grid_y, grid_x)`, "
+"defines how computation is distributed across the GPU."
+msgstr ""
+"**grid_** (*tuple*): Taille de la grille CUDA, typiquement `(grid_y, grid_x)`, définissant comment le calcul est réparti sur le GPU."
+
+#: ../Shader_gpu.rst:2277
+msgid ""
+"**block_** (*tuple*): CUDA block size, typically `(block_y, block_x)`, "
+"the number of threads per block should not exceed 1024."
+msgstr ""
+"**block_** (*tuple*): Taille du bloc CUDA, typiquement `(block_y, block_x)`. Le nombre de threads par bloc ne doit pas dépasser 1024."
+
+#: ../Shader_gpu.rst:2282
+msgid ""
+"(*pygame.Surface*): A new `pygame.Surface` with the wave effect applied. "
+"It is recommended to rescale the image to hide any visible distortions "
+"around the left and bottom borders, especially if a texture wraparound "
+"effect is noticeable."
+msgstr ""
+"(*pygame.Surface*): Un nouveau `pygame.Surface` avec l'effet de vague appliqué. "
+"Il est recommandé de redimensionner l'image pour masquer toute distorsion visible "
+"sur les bords gauche et inférieur, en particulier si un effet de bouclage de texture est perceptible."
+
+#: ../Shader_gpu.rst:2288
+msgid ""
+"Example usage: `IMAGE = wave_gpu(IMAGE, 8 * math.pi/180.0 + FRAME/10, 8, "
+"grid, block)` `IMAGE = scale(IMAGE, (WIDTH + 16, HEIGHT + 16))` to hide "
+"the wraparound effect."
+msgstr ""
+"Exemple d'utilisation : `IMAGE = wave_gpu(IMAGE, 8 * math.pi/180.0 + FRAME/10, 8, "
+"grid, block)` `IMAGE = scale(IMAGE, (WIDTH + 16, HEIGHT + 16))` pour masquer l'effet de bouclage."
+
+#: ../Shader_gpu.rst:2293
+msgid ""
+"Ensure that the grid and block configurations are correctly selected for "
+"optimal performance."
+msgstr ""
+"Assurez-vous que les configurations de grille et de bloc sont correctement sélectionnées pour des performances optimales."
+
+#: ../Shader_gpu.rst:2299
+msgid ""
+"Applies a chromatic displacement effect to a given surface using GPU "
+"acceleration."
+msgstr ""
+"Applique un effet de déplacement chromatique à une surface donnée en utilisant l'accélération GPU."
+
+#: ../Shader_gpu.rst:2301
+msgid ""
+"This effect creates a color separation by shifting the RGB channels based"
+" on the specified horizontal and vertical displacement values. The "
+"function is optimized for 24-bit and 32-bit image formats."
+msgstr ""
+"Cet effet crée une séparation des couleurs en décalant les canaux RGB en fonction "
+"des valeurs de déplacement horizontal et vertical spécifiées. La fonction est optimisée "
+"pour les formats d'image 24 bits et 32 bits."
+
+#: ../Shader_gpu.rst:2306
+msgid ""
+"**surface_** (*pygame.Surface*): The input surface to be processed. Must "
+"be in 24-bit or 32-bit format."
+msgstr ""
+"**surface_** (*pygame.Surface*): La surface d'entrée à traiter. Doit être au format 24 bits ou 32 bits."
+
+#: ../Shader_gpu.rst:2309
+msgid ""
+"**delta_x** (*int*): Horizontal displacement for the chromatic shift. "
+"Affects the red and blue channels, creating a color separation effect. A "
+"value of zero results in no horizontal displacement (if `fx` is low)."
+msgstr ""
+"**delta_x** (*int*): Déplacement horizontal pour le décalage chromatique. "
+"Affecte les canaux rouge et bleu, créant un effet de séparation des couleurs. "
+"Une valeur de zéro entraîne l'absence de déplacement horizontal (si `fx` est faible)."
+
+#: ../Shader_gpu.rst:2313
+msgid ""
+"**delta_y** (*int*): Vertical displacement for the chromatic shift. "
+"Functions similarly to `delta_x`, but applies to vertical movement. A "
+"value of zero results in no vertical displacement (if `fx` is low)."
+msgstr ""
+"**delta_y** (*int*): Déplacement vertical pour le décalage chromatique. "
+"Fonctionne de manière similaire à `delta_x`, mais s'applique au mouvement vertical. "
+"Une valeur de zéro entraîne l'absence de déplacement vertical (si `fx` est faible)."
+
+#: ../Shader_gpu.rst:2317
+msgid ""
+"**grid_** (*tuple*): A tuple `(grid_y, grid_x)` representing grid "
+"dimensions, e.g., `(25, 25)`. Defines the division of the image for GPU "
+"processing, and must match the texture and array sizes."
+msgstr ""
+"**grid_** (*tuple*): Un tuple `(grid_y, grid_x)` représentant les dimensions de la grille, "
+"par exemple `(25, 25)`. Définit la division de l'image pour le traitement GPU et doit "
+"correspondre aux tailles de la texture et du tableau."
+
+#: ../Shader_gpu.rst:2321
+msgid ""
+"**block_** (*tuple*): A tuple `(block_y, block_x)` representing block "
+"dimensions, e.g., `(32, 32)`. Determines the number of threads per block "
+"in GPU processing. The product `block_x * block_y` must not exceed 1024 "
+"(the CUDA limit for threads per block)."
+msgstr ""
+"**block_** (*tuple*): Un tuple `(block_y, block_x)` représentant les dimensions du bloc, "
+"par exemple `(32, 32)`. Détermine le nombre de threads par bloc dans le traitement GPU. "
+"Le produit `block_x * block_y` ne doit pas dépasser 1024 (la limite CUDA pour les threads par bloc)."
+
+#: ../Shader_gpu.rst:2325
+msgid ""
+"**zoom** (*float*, optional, default=`0.999`): A zoom factor controlling "
+"the image scale after processing. Must be in the range `(0.0, 1.0)`. "
+"Default is `1.0` (no zoom)."
+msgstr ""
+"**zoom** (*float*, optionnel, défaut=`0.999`): Un facteur de zoom contrôlant "
+"l'échelle de l'image après traitement. Doit être dans la plage `(0.0, 1.0)`. "
+"La valeur par défaut est `1.0` (aucun zoom)."
+
+#: ../Shader_gpu.rst:2328
+msgid ""
+"**fx** (*float*, optional, default=`0.05`): Intensity of the chromatic "
+"effect, controlling the color separation strength. Must be within the "
+"range `[0.0, 0.2]`. Default is `0.05`."
+msgstr ""
+"**fx** (*float*, optionnel, défaut=`0.05`): Intensité de l'effet chromatique, "
+"contrôlant la force de séparation des couleurs. Doit être dans la plage `[0.0, 0.2]`. "
+"La valeur par défaut est `0.05`."
+#: ../Shader_gpu.rst:2333
+msgid ""
+"(*cupy.ndarray*): A CuPy array representing the processed image with the "
+"chromatic displacement effect applied. The output format is a 24-bit "
+"image."
+msgstr ""
+"(*cupy.ndarray*): Un tableau CuPy représentant l'image traitée avec l'effet "
+"de déplacement chromatique appliqué. Le format de sortie est une image 24 bits."
+
+#: ../Shader_gpu.rst:2340
+msgid "**ValueError**: If `surface_` has zero width or height."
+msgstr "**ValueError** : Si `surface_` a une largeur ou une hauteur de zéro."
+
+#: ../Shader_gpu.rst:2341
+msgid "**ValueError**: If `delta_x` or `delta_y` is negative."
+msgstr "**ValueError** : Si `delta_x` ou `delta_y` est négatif."
+
+#: ../Shader_gpu.rst:2345
+msgid ""
+"The function leverages GPU acceleration for efficient chromatic "
+"displacement."
+msgstr ""
+"La fonction exploite l'accélération GPU pour un déplacement chromatique efficace."
+
+#: ../Shader_gpu.rst:2346
+msgid ""
+"Ensure that the grid and block sizes are chosen appropriately for the "
+"image size and GPU capabilities."
+msgstr ""
+"Assurez-vous que les tailles de grille et de bloc sont choisies de manière appropriée "
+"en fonction de la taille de l'image et des capacités du GPU."
+
+#: ../Shader_gpu.rst:2347
+msgid ""
+"The `fx` parameter controls the strength of the chromatic separation "
+"effect, and `zoom` allows for resizing after the transformation."
+msgstr ""
+"Le paramètre `fx` contrôle l'intensité de l'effet de séparation chromatique, et "
+"`zoom` permet de redimensionner l'image après la transformation."
+
+#: ../Shader_gpu.rst:2354
+msgid "Apply an RGB split effect to an image using GPU acceleration."
+msgstr ""
+"Applique un effet de séparation des canaux RGB à une image en utilisant l'accélération GPU."
+
+#: ../Shader_gpu.rst:2356
+msgid ""
+"This function shifts the red, green, and blue channels of an image by "
+"`delta_x` and `delta_y` to create a chromatic aberration (glitch) effect."
+" The transformation is performed entirely on the GPU using CuPy."
+msgstr ""
+"Cette fonction décale les canaux rouge, vert et bleu d'une image selon `delta_x` et "
+"`delta_y` pour créer un effet d'aberration chromatique (glitch). "
+"La transformation est entièrement réalisée sur le GPU à l'aide de CuPy."
+
+#: ../Shader_gpu.rst:2362
+msgid ""
+"**surface_** (*pygame.Surface*): The input image in a 24-bit or 32-bit "
+"format."
+msgstr ""
+"**surface_** (*pygame.Surface*): L'image d'entrée au format 24 bits ou 32 bits."
+
+#: ../Shader_gpu.rst:2365
+msgid ""
+"**delta_x** (*float*): The horizontal shift applied to the RGB channels. "
+"A positive value shifts the channels to the right, and a negative value "
+"shifts them to the left."
+msgstr ""
+"**delta_x** (*float*): Le décalage horizontal appliqué aux canaux RGB. "
+"Une valeur positive déplace les canaux vers la droite, et une valeur négative "
+"les déplace vers la gauche."
+#: ../Shader_gpu.rst:2369
+msgid ""
+"**delta_y** (*float*): The vertical shift applied to the RGB channels. A "
+"positive value shifts the channels down, and a negative value shifts them"
+" up."
+msgstr ""
+"**delta_y** (*float*): Le décalage vertical appliqué aux canaux RGB. Une "
+"valeur positive déplace les canaux vers le bas, et une valeur négative les "
+"déplace vers le haut."
+
+#: ../Shader_gpu.rst:2373
+msgid ""
+"**grid_** (*tuple*): A tuple `(grid_y, grid_x)` representing the grid "
+"size for CUDA execution, defining the distribution of computation across "
+"the GPU."
+msgstr ""
+"**grid_** (*tuple*): Un tuple `(grid_y, grid_x)` représentant la taille de "
+"la grille pour l'exécution CUDA, définissant la distribution des calculs "
+"sur le GPU."
+
+#: ../Shader_gpu.rst:2376
+msgid ""
+"**block_** (*tuple*): A tuple `(block_y, block_x)` representing the block"
+" size, which determines the number of threads per block in GPU execution."
+msgstr ""
+"**block_** (*tuple*): Un tuple `(block_y, block_x)` représentant la taille "
+"du bloc, qui détermine le nombre de threads par bloc dans l'exécution sur "
+"GPU."
+
+#: ../Shader_gpu.rst:2381
+msgid "(*pygame.Surface*): A new surface with the RGB split effect applied."
+msgstr "(*pygame.Surface*): Une nouvelle surface avec l'effet de séparation RGB appliqué."
+
+#: ../Shader_gpu.rst:2387
+msgid ""
+"**ValueError**: If `delta_x` or `delta_y` are non-positive values or if "
+"the function cannot access the pixel data from `surface_`."
+msgstr ""
+"**ValueError** : Si `delta_x` ou `delta_y` sont des valeurs non positives ou "
+"si la fonction ne peut pas accéder aux données des pixels de `surface_`."
+
+#: ../Shader_gpu.rst:2391
+msgid ""
+"The RGB split effect creates a chromatic distortion, commonly used in "
+"glitch effects."
+msgstr ""
+"L'effet de séparation RGB crée une distorsion chromatique, couramment utilisé "
+"pour les effets de glitch."
+
+#: ../Shader_gpu.rst:2392
+msgid "`delta_x` and `delta_y` define how far the color channels are shifted."
+msgstr "`delta_x` et `delta_y` définissent de combien les canaux de couleur sont décalés."
+
+#: ../Shader_gpu.rst:2393
+msgid "Ensure `grid_` and `block_` values are optimized for GPU execution."
+msgstr "Assurez-vous que les valeurs `grid_` et `block_` sont optimisées pour l'exécution sur GPU."
+
+#: ../Shader_gpu.rst:2399
+msgid "Applies a zoom effect using GPU acceleration."
+msgstr "Applique un effet de zoom en utilisant l'accélération GPU."
+
+#: ../Shader_gpu.rst:2401
+msgid ""
+"This function processes a `pygame.Surface` by mapping its pixel data to "
+"GPU memory and applying a zoom transformation. It utilizes CUDA "
+"acceleration for high-performance image processing."
+msgstr ""
+"Cette fonction traite une `pygame.Surface` en mappant ses données de pixels "
+"vers la mémoire GPU et en appliquant une transformation de zoom. Elle utilise "
+"l'accélération CUDA pour un traitement d'image haute performance."
+
+#: ../Shader_gpu.rst:2406
+msgid ""
+"**surface_** (*pygame.Surface*): The input surface to be processed. Must "
+"be a 24-bit or 32-bit format image."
+msgstr ""
+"**surface_** (*pygame.Surface*): La surface d'entrée à traiter. Elle doit "
+"être une image au format 24 bits ou 32 bits."
+
+#: ../Shader_gpu.rst:2409
+msgid ""
+"**centre_x** (*unsigned int*): The x-coordinate of the zoom center. Must "
+"be greater than or equal to 0."
+msgstr ""
+"**centre_x** (*unsigned int*): La coordonnée x du centre du zoom. Doit "
+"être supérieure ou égale à 0."
+
+#: ../Shader_gpu.rst:2412
+msgid ""
+"**centre_y** (*unsigned int*): The y-coordinate of the zoom center. Must "
+"be greater than or equal to 0."
+msgstr ""
+"**centre_y** (*unsigned int*): La coordonnée y du centre du zoom. Doit "
+"être supérieure ou égale à 0."
+
+#: ../Shader_gpu.rst:2415
+msgid ""
+"**grid_** (*tuple*): A tuple `(grid_y, grid_x)` representing the grid "
+"dimensions. Defines the division of the image for parallel GPU "
+"processing. The values must match the texture and array sizes."
+msgstr ""
+"**grid_** (*tuple*): Un tuple `(grid_y, grid_x)` représentant les dimensions "
+"de la grille. Définit la division de l'image pour le traitement parallèle sur "
+"GPU. Les valeurs doivent correspondre aux tailles de texture et de tableau."
+
+#: ../Shader_gpu.rst:2419
+msgid ""
+"**block_** (*tuple*): A tuple `(block_y, block_x)` representing the block"
+" dimensions. Determines the number of threads per block in GPU execution."
+" The product `block_x * block_y` must not exceed `1024` (CUDA limit)."
+msgstr ""
+"**block_** (*tuple*): Un tuple `(block_y, block_x)` représentant les dimensions "
+"du bloc. Détermine le nombre de threads par bloc dans l'exécution sur GPU. "
+"Le produit `block_x * block_y` ne doit pas dépasser `1024` (limite CUDA)."
+
+#: ../Shader_gpu.rst:2423
+msgid ""
+"**zoom** (*float*, optional): A zoom factor controlling the scaling of "
+"the image. Must be within the range `(0.0, 1.0]`. Default is `1.0` (no "
+"scaling)."
+msgstr ""
+"**zoom** (*float*, optionnel) : Un facteur de zoom contrôlant l'échelle de "
+"l'image. Doit être dans la plage `(0.0, 1.0]`. Par défaut, `1.0` (pas de "
+"mise à l'échelle)."
+
+#: ../Shader_gpu.rst:2428
+msgid ""
+"(*CuPy ndarray*): A CuPy array containing the transformed image with zoom"
+" applied, in 24-bit format."
+msgstr ""
+"(*CuPy ndarray*): Un tableau CuPy contenant l'image transformée avec le zoom "
+"appliqué, en format 24 bits."
+
+#: ../Shader_gpu.rst:2434
+msgid ""
+"**ValueError**: - If the width or height of `surface_` is 0. - If `zoom` "
+"is not within the range `(0.0, 1.0]`. - If `centre_x` or `centre_y` is "
+"negative. - If `surface_` cannot be mapped to a 3D array."
+msgstr ""
+"**ValueError** : - Si la largeur ou la hauteur de `surface_` est 0. - Si `zoom` "
+"n'est pas dans la plage `(0.0, 1.0]`. - Si `centre_x` ou `centre_y` est négatif. "
+"- Si `surface_` ne peut pas être mappée vers un tableau 3D."
+
+#: ../Shader_gpu.rst:2442
+msgid ""
+"This function performs the zoom effect by mapping pixel data to GPU "
+"memory and using CUDA for high-performance processing."
+msgstr ""
+"Cette fonction effectue l'effet de zoom en mappant les données de pixels vers la "
+"mémoire GPU et en utilisant CUDA pour un traitement haute performance."
+
+#: ../Shader_gpu.rst:2443
+msgid ""
+"Ensure `grid_` and `block_` are optimized for your GPU's capabilities and"
+" the image size."
+msgstr ""
+"Assurez-vous que `grid_` et `block_` sont optimisés pour les capacités de "
+"votre GPU et la taille de l'image."
+
+#: ../Shader_gpu.rst:2449
+msgid ""
+"Apply a channel-specific color effect (redscale, greenscale, or "
+"bluescale) to an image."
+msgstr ""
+"Applique un effet de couleur spécifique au canal (redscale, greenscale ou "
+"bluescale) à une image."
+
+#: ../Shader_gpu.rst:2451
+msgid ""
+"This function applies a redscale, greenscale, or bluescale effect to a "
+"given `pygame.Surface` image. It isolates and emphasizes one of the color"
+" channels (Red, Green, or Blue) depending on the provided `layer_` "
+"parameter. The operation is performed using GPU acceleration for better "
+"performance."
+msgstr ""
+"Cette fonction applique un effet redscale, greenscale ou bluescale à une "
+"image `pygame.Surface` donnée. Elle isole et met en valeur l'un des canaux "
+"de couleur (Rouge, Vert ou Bleu) en fonction du paramètre `layer_` fourni. "
+"L'opération est effectuée à l'aide de l'accélération GPU pour de meilleures "
+"performances."
+
+#: ../Shader_gpu.rst:2457
+msgid ""
+"**surface_** (*pygame.Surface*): The input image to which the effect will"
+" be applied."
+msgstr ""
+"**surface_** (*pygame.Surface*): L'image d'entrée à laquelle l'effet sera "
+"appliqué."
+
+#: ../Shader_gpu.rst:2460
+msgid ""
+"**grid_** (*tuple*): A tuple `(grid_y, grid_x)` representing the grid "
+"configuration. The grid values should match the image and array sizes."
+msgstr ""
+"**grid_** (*tuple*): Un tuple `(grid_y, grid_x)` représentant la configuration "
+"de la grille. Les valeurs de la grille doivent correspondre aux tailles de l'image "
+"et du tableau."
+
+#: ../Shader_gpu.rst:2464
+msgid ""
+"**block_** (*tuple*): A tuple `(block_y, block_x)` representing the block"
+" configuration. The block values determine how many threads are launched "
+"per block."
+msgstr ""
+"**block_** (*tuple*): Un tuple `(block_y, block_x)` représentant la configuration "
+"du bloc. Les valeurs du bloc déterminent combien de threads sont lancés par bloc."
+
+#: ../Shader_gpu.rst:2468
+msgid ""
+"**layer_** (*unsigned short int*, optional): Specifies which color "
+"channel to isolate. The default is `0` (Red channel). The values are: - "
+"`0` for Red channel - `1` for Green channel - `2` for Blue channel"
+msgstr ""
+"**layer_** (*unsigned short int*, optionnel) : Spécifie quel canal de couleur "
+"isoler. La valeur par défaut est `0` (canal rouge). Les valeurs sont : - "
+"`0` pour le canal rouge - `1` pour le canal vert - `2` pour le canal bleu"
+
+#: ../Shader_gpu.rst:2476
+msgid ""
+"(*pygame.Surface*): The image with the selected channel effect (redscale,"
+" greenscale, or bluescale) applied."
+msgstr ""
+"(*pygame.Surface*): L'image avec l'effet de canal sélectionné (redscale, "
+"greenscale ou bluescale) appliqué."
+
+#: ../Shader_gpu.rst:2482
+msgid "**ValueError**: If the `layer_` value is not within the range of 0 to 2."
+msgstr "**ValueError** : Si la valeur `layer_` n'est pas dans la plage de 0 à 2."
+
+#: ../Shader_gpu.rst:2486
+msgid "This function uses GPU acceleration for high-performance image processing."
+msgstr "Cette fonction utilise l'accélération GPU pour un traitement d'image haute performance."
+
+#: ../Shader_gpu.rst:2487
+msgid "The `layer_` parameter determines which color channel is emphasized."
+msgstr "Le paramètre `layer_` détermine quel canal de couleur est mis en valeur."
+
+#: ../Shader_gpu.rst:2488
+msgid ""
+"The result is a new `pygame.Surface` with the selected color channel "
+"effect applied."
+msgstr ""
+"Le résultat est une nouvelle `pygame.Surface` avec l'effet du canal de couleur "
+"sélectionné appliqué."
+
+#: ../Shader_gpu.rst:2494
+msgid "Apply a heatmap effect to an image with optional inversion."
+msgstr "Applique un effet de carte thermique à une image avec inversion optionnelle."
+
+#: ../Shader_gpu.rst:2496
+msgid ""
+"This function applies a heatmap effect to an image using GPU "
+"acceleration. The heatmap effect is typically used to visualize intensity"
+" or magnitude across a 2D surface. The effect can be inverted based on "
+"the `invert_` parameter, changing the color representation."
+msgstr ""
+"Cette fonction applique un effet de carte thermique à une image en utilisant "
+"l'accélération GPU. L'effet de carte thermique est généralement utilisé pour "
+"visualiser l'intensité ou la magnitude sur une surface 2D. L'effet peut être "
+"inversé en fonction du paramètre `invert_`, modifiant ainsi la représentation "
+"des couleurs."
+
+#: ../Shader_gpu.rst:2502
+msgid ""
+"**surface_** (*pygame.Surface*): The input image to which the heatmap "
+"effect will be applied."
+msgstr ""
+"**surface_** (*pygame.Surface*): L'image d'entrée sur laquelle l'effet "
+"de carte thermique sera appliqué."
+
+#: ../Shader_gpu.rst:2505
+msgid ""
+"**grid_** (*tuple*): A tuple `(grid_y, grid_x)` representing the grid "
+"configuration. The grid values should match the texture and array sizes "
+"for parallel execution on the GPU."
+msgstr ""
+"**grid_** (*tuple*): Un tuple `(grid_y, grid_x)` représentant la "
+"configuration de la grille. Les valeurs de la grille doivent correspondre aux "
+"tailles de texture et de tableau pour l'exécution parallèle sur le GPU."
+
+#: ../Shader_gpu.rst:2509
+msgid ""
+"**block_** (*tuple*): A tuple `(block_y, block_x)` representing the block"
+" configuration. It defines the number of threads per block for GPU "
+"execution. The product `block_x * block_y` must not exceed `1024` (CUDA's"
+" maximum threads per block)."
+msgstr ""
+"**block_** (*tuple*): Un tuple `(block_y, block_x)` représentant la "
+"configuration du bloc. Il définit le nombre de threads par bloc pour l'exécution "
+"sur le GPU. Le produit `block_x * block_y` ne doit pas dépasser `1024` (limite "
+"des threads par bloc de CUDA)."
+
+#: ../Shader_gpu.rst:2513
+msgid ""
+"**invert_** (*boolean*, optional): If `True`, the color range of the "
+"heatmap is reversed (inverted). The default is `False`, meaning no "
+"inversion."
+msgstr ""
+"**invert_** (*booléen*, optionnel) : Si `True`, la gamme de couleurs de la "
+"carte thermique est inversée (inversée). La valeur par défaut est `False`, "
+"ce qui signifie qu'il n'y a pas d'inversion."
+
+#: ../Shader_gpu.rst:2518
+msgid "(*pygame.Surface*): The image with the heatmap effect applied."
+msgstr "(*pygame.Surface*): L'image avec l'effet de carte thermique appliqué."
+
+#: ../Shader_gpu.rst:2524 ../Shader_gpu.rst:2566
+msgid "**ValueError**: If `invert_` is not a boolean."
+msgstr "**ValueError** : Si `invert_` n'est pas un booléen."
+
+#: ../Shader_gpu.rst:2528 ../Shader_gpu.rst:2570
+msgid "The function uses GPU acceleration for high-performance image processing."
+msgstr "La fonction utilise l'accélération GPU pour un traitement d'image haute performance."
+
+#: ../Shader_gpu.rst:2529
+msgid "The inversion of the heatmap allows for a different color representation."
+msgstr "L'inversion de la carte thermique permet une représentation des couleurs différente."
+
+#: ../Shader_gpu.rst:2535
+msgid "Apply heatmap effect in place to a pygame.Surface."
+msgstr "Applique l'effet de carte thermique directement à une pygame.Surface."
+
+#: ../Shader_gpu.rst:2537
+msgid ""
+"This function applies a heatmap effect to the input surface in place, "
+"modifying the pixel data directly without returning a new surface. The "
+"heatmap visualization enhances the intensity of the image based on a "
+"color mapping, with the option to invert the color effect."
+msgstr ""
+"Cette fonction applique un effet de carte thermique à la surface d'entrée, "
+"modifiant directement les données des pixels sans retourner une nouvelle "
+"surface. La visualisation de la carte thermique améliore l'intensité de l'image "
+"en fonction d'un mappage des couleurs, avec l'option d'inverser l'effet de couleur."
+
+#: ../Shader_gpu.rst:2543
+msgid ""
+"**surface_** (*pygame.Surface*): The surface on which the heatmap effect "
+"will be applied. The surface must be a valid `pygame.Surface` containing "
+"pixel data in a 3D array (RGB channels)."
+msgstr ""
+"**surface_** (*pygame.Surface*): La surface sur laquelle l'effet de carte "
+"thermique sera appliqué. La surface doit être une `pygame.Surface` valide contenant "
+"des données de pixels dans un tableau 3D (canaux RGB)."
+
+#: ../Shader_gpu.rst:2547
+msgid ""
+"**grid_** (*tuple*): A tuple `(grid_y, grid_x)` representing the grid "
+"configuration for parallel GPU execution. The grid values must match the "
+"array and texture sizes."
+msgstr ""
+"**grid_** (*tuple*): Un tuple `(grid_y, grid_x)` représentant la configuration de "
+"la grille pour l'exécution parallèle sur le GPU. Les valeurs de la grille doivent "
+"correspondre aux tailles du tableau et de la texture."
+
+#: ../Shader_gpu.rst:2551
+msgid ""
+"**block_** (*tuple*): A tuple `(block_y, block_x)` representing the block"
+" configuration. It defines the number of threads per block for GPU "
+"computation. The product `block_x * block_y` must not exceed `1024` "
+"(CUDA's maximum threads per block)."
+msgstr ""
+"**block_** (*tuple*): Un tuple `(block_y, block_x)` représentant la configuration "
+"du bloc. Il définit le nombre de threads par bloc pour le calcul sur le GPU. Le produit "
+"`block_x * block_y` ne doit pas dépasser `1024` (le nombre maximal de threads par bloc de CUDA)."
+
+#: ../Shader_gpu.rst:2555
+msgid ""
+"**invert_** (*boolean*, optional): If `True`, the heatmap effect is "
+"inverted, reversing the color range. Default is `False` (no inversion)."
+msgstr ""
+"**invert_** (*booléen*, optionnel) : Si `True`, l'effet de carte thermique est "
+"inversé, inversant la gamme de couleurs. La valeur par défaut est `False` (pas d'inversion)."
+
+#: ../Shader_gpu.rst:2560
+msgid ""
+"(*void*): This function modifies the `surface_` directly and does not "
+"return a value."
+msgstr ""
+"(*void*): Cette fonction modifie directement la `surface_` et ne retourne "
+"pas de valeur."
+
+#: ../Shader_gpu.rst:2571
+msgid ""
+"The effect is applied in place, meaning the input `surface_` is modified "
+"directly."
+msgstr ""
+"L'effet est appliqué directement, ce qui signifie que la `surface_` d'entrée est "
+"modifiée directement."
+
+#: ../Shader_gpu.rst:2572
+msgid "The inversion of the heatmap allows for a reversed color representation."
+msgstr "L'inversion de la carte thermique permet une représentation des couleurs inversée."
+
+#: ../Shader_gpu.rst:2578
+msgid "Apply predator vision effect using GPU acceleration."
+msgstr "Applique un effet de vision de prédateur à l'aide de l'accélération GPU."
+
+#: ../Shader_gpu.rst:2580
+msgid ""
+"This function processes the input `pygame.Surface` to apply a predator "
+"vision effect using GPU acceleration. The effect simulates a vision "
+"filter with bloom and colormap adjustments, which can be customized based"
+" on the provided parameters."
+msgstr ""
+"Cette fonction traite la `pygame.Surface` d'entrée pour appliquer un effet de "
+"vision de prédateur en utilisant l'accélération GPU. L'effet simule un filtre de "
+"vision avec un effet de bloom et des ajustements de carte de couleurs, qui peuvent "
+"être personnalisés en fonction des paramètres fournis."
+
+#: ../Shader_gpu.rst:2586
+msgid "**surface_** (*pygame.Surface*): The input surface to process."
+msgstr "**surface_** (*pygame.Surface*): La surface d'entrée à traiter."
+
+#: ../Shader_gpu.rst:2589
+msgid ""
+"**grid_** (*tuple*): A tuple `(grid_y, grid_x)` representing the grid "
+"dimensions for CUDA kernel execution."
+msgstr ""
+"**grid_** (*tuple*): Un tuple `(grid_y, grid_x)` représentant les dimensions de "
+"la grille pour l'exécution du noyau CUDA."
+
+#: ../Shader_gpu.rst:2592
+msgid ""
+"**block_** (*tuple*): A tuple `(block_y, block_x)` representing the block"
+" dimensions for CUDA kernel execution."
+msgstr ""
+"**block_** (*tuple*): Un tuple `(block_y, block_x)` représentant les dimensions du "
+"bloc pour l'exécution du noyau CUDA."
+
+#: ../Shader_gpu.rst:2595
+msgid ""
+"**bloom_smooth** (*unsigned int*, optional): The smoothing factor for the"
+" bloom effect. Default is `50`."
+msgstr ""
+"**bloom_smooth** (*entier non signé*, optionnel) : Le facteur de lissage pour l'effet "
+"de bloom. La valeur par défaut est `50`."
+
+#: ../Shader_gpu.rst:2598
+msgid ""
+"**bloom_threshold** (*unsigned int*, optional): The intensity threshold "
+"for the bloom effect. Default is `50`."
+msgstr ""
+"**bloom_threshold** (*entier non signé*, optionnel) : Le seuil d'intensité "
+"pour l'effet de bloom. La valeur par défaut est `50`."
+
+#: ../Shader_gpu.rst:2601
+msgid ""
+"**inv_colormap** (*boolean*, optional): Whether to invert the colormap. "
+"Default is `False`."
+msgstr ""
+"**inv_colormap** (*booléen*, optionnel) : Si la carte de couleurs doit être "
+"inversée. La valeur par défaut est `False`."
+
+#: ../Shader_gpu.rst:2604
+msgid ""
+"**blend** (*int*, optional): The blending mode for final rendering. "
+"Default is `pygame.BLEND_RGB_ADD`."
+msgstr ""
+"**blend** (*int*, optionnel) : Le mode de fusion pour le rendu final. La "
+"valeur par défaut est `pygame.BLEND_RGB_ADD`."
+
+#: ../Shader_gpu.rst:2607
+msgid ""
+"**bloom_flag** (*boolean*, optional): Flag to enable the bloom effect. "
+"Default is `pygame.BLEND_RGB_ADD`."
+msgstr ""
+"**bloom_flag** (*booléen*, optionnel) : Indicateur pour activer l'effet de "
+"bloom. La valeur par défaut est `pygame.BLEND_RGB_ADD`."
+
+#: ../Shader_gpu.rst:2612
+msgid ""
+"(*pygame.Surface*): The processed surface with the applied predator "
+"vision effect."
+msgstr ""
+"(*pygame.Surface*): La surface traitée avec l'effet de vision de prédateur appliqué."
+
+#: ../Shader_gpu.rst:2618
+msgid ""
+"**ValueError**: If `bloom_smooth`, `bloom_threshold` are not positive "
+"integers or if `blend` is not a valid blend mode."
+msgstr ""
+"**ValueError** : Si `bloom_smooth`, `bloom_threshold` ne sont pas des "
+"entiers positifs ou si `blend` n'est pas un mode de fusion valide."
+
+#: ../Shader_gpu.rst:2622
+msgid ""
+"This function uses GPU acceleration to apply a fast predator vision "
+"effect."
+msgstr ""
+"Cette fonction utilise l'accélération GPU pour appliquer un effet de vision "
+"de prédateur rapide."
+
+#: ../Shader_gpu.rst:2623
+msgid ""
+"The bloom effect simulates glowing areas of high intensity, and the "
+"colormap can be inverted for different visual effects."
+msgstr ""
+"L'effet de bloom simule des zones brillantes à haute intensité, et la carte de "
+"couleurs peut être inversée pour des effets visuels différents."
+
+#: ../Shader_gpu.rst:2624
+msgid ""
+"The `blend` and `bloom_flag` parameters allow for customization of the "
+"final rendering effect."
+msgstr ""
+"Les paramètres `blend` et `bloom_flag` permettent de personnaliser l'effet "
+"final de rendu."
+
+#: ../Shader_gpu.rst:2630
+msgid "Downscale a pygame surface using CUDA on CuPy."
+msgstr "Réduire la taille d'une surface pygame en utilisant CUDA sur CuPy."
+
+#: ../Shader_gpu.rst:2632
+msgid ""
+"This function extracts pixel data from a `pygame.Surface`, transfers it "
+"to the GPU, applies a downscaling operation using a CUDA kernel, and "
+"returns the processed image in a byte buffer."
+msgstr ""
+"Cette fonction extrait les données des pixels d'une `pygame.Surface`, les "
+"transfère vers le GPU, applique une opération de réduction de taille en "
+"utilisant un noyau CUDA, puis retourne l'image traitée dans un tampon d'octets."
+
+#: ../Shader_gpu.rst:2637
+msgid "**surface_** (*pygame.Surface*): The input surface to be downscaled."
+msgstr "**surface_** (*pygame.Surface*): La surface d'entrée à réduire."
+
+#: ../Shader_gpu.rst:2640
+msgid "**grid_** (*tuple*): CUDA grid dimensions for kernel execution."
+msgstr "**grid_** (*tuple*): Dimensions de la grille CUDA pour l'exécution du noyau."
+
+#: ../Shader_gpu.rst:2643
+msgid "**block_** (*tuple*): CUDA block dimensions for kernel execution."
+msgstr "**block_** (*tuple*): Dimensions du bloc CUDA pour l'exécution du noyau."
+
+#: ../Shader_gpu.rst:2646
+msgid ""
+"**zoom** (*float*): The scaling factor for downscaling. Must be in the "
+"range `[0.0, 0.9999]`."
+msgstr ""
+"**zoom** (*flottant*): Le facteur de mise à l'échelle pour la réduction de taille. "
+"Il doit être dans la plage `[0.0, 0.9999]`."
+
+#: ../Shader_gpu.rst:2649
+msgid "**w2** (*int*): The target width of the downscaled image."
+msgstr "**w2** (*int*): La largeur cible de l'image réduite."
+
+#: ../Shader_gpu.rst:2652
+msgid "**h2** (*int*): The target height of the downscaled image."
+msgstr "**h2** (*int*): La hauteur cible de l'image réduite."
+
+#: ../Shader_gpu.rst:2657
+msgid "(*bytes*): The downscaled image in RGB format as a byte buffer."
+msgstr "(*bytes*): L'image réduite au format RGB sous forme de tampon d'octets."
+
+#: ../Shader_gpu.rst:2663
+msgid ""
+"**ValueError**: If `zoom` is not in the range `[0.0, 0.9999]`, or if `w2`"
+" or `h2` are non-positive values."
+msgstr ""
+"**ValueError** : Si `zoom` n'est pas dans la plage `[0.0, 0.9999]`, ou si `w2`"
+" ou `h2` sont des valeurs non positives."
+
+#: ../Shader_gpu.rst:2667
+msgid "This function uses GPU acceleration with CuPy for efficient downscaling."
+msgstr "Cette fonction utilise l'accélération GPU avec CuPy pour une réduction de taille efficace."
+
+#: ../Shader_gpu.rst:2668
+msgid "The downscaled image is returned as a byte buffer in RGB format."
+msgstr "L'image réduite est retournée sous forme de tampon d'octets au format RGB."
+
+#: ../Shader_gpu.rst:2669
+msgid "Ensure that the grid and block values are optimized for GPU performance."
+msgstr "Assurez-vous que les valeurs de la grille et du bloc sont optimisées pour les performances du GPU."
+

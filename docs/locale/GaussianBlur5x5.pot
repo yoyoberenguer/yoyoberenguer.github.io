@@ -1,0 +1,863 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yoann Berenguer
+# This file is distributed under the same license as the PygameShader package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PygameShader \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-10 13:20+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../GaussianBlur5x5.rst:2
+msgid "GaussianBlur5x5"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:4
+msgid ":mod:`GaussianBlur5x5.pyx`"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:13
+msgid "1. Summary of the Library"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:15
+msgid "This Python library provides fast and efficient **image processing** functions, focusing on **blurring**, **Gaussian filtering**, and **edge detection**. It is implemented in **Cython** for high performance, making it ideal for applications in **computer vision**, **graphics**, and **image preprocessing**."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:21
+msgid "2. Purpose"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:23
+msgid "The library is designed to perform fast blurring and edge detection, which are essential for:"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:25
+msgid "**Noise reduction** (smoothing images)."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:26
+msgid "**Edge detection** (for object recognition and feature extraction)."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:27
+msgid "**Graphics effects** (motion blur, bloom effects)."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:28
+msgid "**Preprocessing for computer vision tasks** (image segmentation, filtering)."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:31
+msgid "3. Main Features"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:33
+msgid "**Blurring Functions**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:35
+msgid "These functions apply various types of blurring to smooth images:"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:37
+msgid "**`blur(surface_, npass)`**:"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:39
+msgid "Blurs an image surface, where `npass` controls intensity."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:41
+msgid "**`blur3d(rgb_array, npass)`**:"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:43
+msgid "Blurs a 3D (RGB) image array."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:45
+msgid "**`blur1d(bgr_array, width, height, npass, format_32)`**:"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:47
+msgid "Optimized 1D blurring for efficiency."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:49
+msgid "**`blur1d_cp(bgr_array, width, height, npass, format_32)`**:"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:51
+msgid "Returns a new blurred array instead of modifying in-place."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:53
+msgid "**`blur4bloom_c(surface_, npass, tmp_array)`**:"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:55
+msgid "Likely used for bloom effects, enhancing bright areas."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:57
+msgid "Several internal **Cython-optimized** versions (`blur3d_c`, `blur1d_c`, etc.) run without the **Global Interpreter Lock (GIL)** for multi-threading support."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:59
+msgid "**Gaussian Filtering**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:61
+msgid "**`gauss_filter24(surface_)`**:"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:63
+msgid "Applies Gaussian blur to a 24-bit image."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:65
+msgid "**`gauss_filter32(surface_)`**:"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:67
+msgid "Applies Gaussian blur to a 32-bit image."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:69
+msgid "📌 **Why Gaussian Blur?**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:71
+msgid "It helps smooth images before edge detection, reducing false edges caused by noise."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:73
+msgid "**Edge Detection (Canny Algorithm)**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:75
+msgid "The **Canny algorithm** is widely used in computer vision to detect object boundaries."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:77
+msgid "**`canny3d(rgb_array, threshold, low, high)`**:"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:79
+msgid "Detects edges in an RGB image."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:81
+msgid "**`canny1d(bgr_array, width, height, format_32, threshold)`**:"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:83
+msgid "Detects edges in a linear 1D image representation for efficiency."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:85
+msgid "There are also **Cython-optimized** versions (`canny3d_c`, `canny1d_c`) that improve performance using multi-threading."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:87
+msgid "**Optimization Features**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:89
+msgid "**Cython-based** (`cdef`, `cpdef`, `nogil`) → Direct C-level performance."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:90
+msgid "**In-place operations** (`blur1d`, `blur3d`) → Saves memory."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:91
+msgid "**Multi-threading** (`nogil`) → Faster execution on multi-core processors."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:92
+msgid "**Optimized memory handling** (`[::1]` memory views) → Reduces Python overhead."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:95
+msgid "4. Use Cases"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:97
+msgid "**Computer Vision** → Object recognition, feature extraction."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:98
+msgid "**Graphics & Gaming** → Motion blur, bloom effects."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:99
+msgid "**Image Processing Pipelines** → Preprocessing before machine learning models."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:100
+msgid "**Medical Imaging** → Enhancing and detecting features in scans."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:103
+msgid "5. Conclusion"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:105
+msgid "This library is highly optimized for fast blurring, Gaussian filtering, and edge detection, making it a great choice for **computer vision**, **graphics**, and **machine learning applications** where speed is critical."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:111
+msgid "6. Cython list methods"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:119
+msgid "**Parameters**: - `surface_` (*pygame.Surface*): A Pygame surface object (24-bit or 32-bit). - `npass` (*int*, optional): The number of blur passes to apply (default is 1). Must be a positive integer."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:123
+#: ../GaussianBlur5x5.rst:231
+msgid "**Returns**: None"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:125
+msgid "**Description**: Apply an in-place Gaussian blur effect to a Pygame surface."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:128
+msgid "This function performs a **two-pass convolution** using a **5x5 Gaussian kernel** to blur the input surface. The first pass applies the blur horizontally, and the second pass applies the blur vertically. For pixels outside the image boundaries, the function assigns the nearest edge value to reduce visual artifacts."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:134
+msgid "\\text{Horizontal pass: }\n"
+"\\begin{bmatrix}\n"
+"\\frac{1}{16} & \\frac{4}{16} & \\frac{6}{16} & \\frac{4}{16} & \\frac{1}{16}\n"
+"\\end{bmatrix}"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:141
+msgid "\\text{Vertical pass: }\n"
+"\\begin{bmatrix}\n"
+"\\frac{1}{16} \\\\ \\frac{4}{16} \\\\ \\frac{6}{16} \\\\ \\frac{4}{16} \\\\ \\frac{1}{16}\n"
+"\\end{bmatrix}"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:149
+#: ../GaussianBlur5x5.rst:242
+msgid "**Features**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:151
+msgid "Supports **24-bit (RGB)** and **32-bit (RGBA)** Pygame surfaces."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:152
+msgid "Uses a **5x5 Gaussian kernel** for smoothing the image."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:153
+msgid "Allows **multiple passes** (`npass > 1`) for enhanced blur intensity."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:154
+msgid "Ignores the **alpha channel** during processing to avoid altering transparency."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:156
+#: ../GaussianBlur5x5.rst:250
+msgid "**Parameters**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:158
+msgid "**surface_** (*pygame.Surface*): A Pygame surface object to which the blur effect will be applied. It must be either **24-bit RGB** or **32-bit RGBA**. The function modifies the surface in-place."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:162
+msgid "**npass** (*int*, optional): The number of blur passes to apply. Default is **1**. Must be a **positive integer** (`npass > 0`). Multiple passes result in a stronger blur effect but may increase processing time."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:167
+#: ../GaussianBlur5x5.rst:260
+msgid "**Returns**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:169
+msgid "**None** – The function modifies `surface_` in place, with no return value."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:171
+msgid "**Raises**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:173
+msgid "**TypeError**: If `surface_` is not a valid `pygame.Surface` object."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:176
+msgid "**ValueError**: If the surface format is incompatible (e.g., non-24-bit or non-32-bit format) or cannot be processed."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:179
+msgid "**ValueError**: If `npass` is not a positive integer (`npass <= 0`)."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:182
+#: ../GaussianBlur5x5.rst:264
+msgid "**Implementation Details**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:184
+msgid "The function accesses the pixel buffer of the surface directly using `get_view('3')`, which allows it to process **only the RGB channels**, ignoring the alpha channel."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:186
+msgid "It calls an optimized Cython function, `blur3d_c()`, to perform the in-place blurring with minimal overhead."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:187
+msgid "If `npass > 1`, multiple blur passes are applied for a stronger effect, but this increases the processing time."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:189
+#: ../GaussianBlur5x5.rst:283
+msgid "**Memory Efficiency**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:191
+msgid "This function is **memory-efficient**, as it operates directly on the surface buffer without creating additional copies of the image data."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:192
+msgid "If the surface has an **alpha channel**, it is **ignored** during processing, meaning any transparency information will remain unchanged."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:194
+msgid "**Performance Considerations**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:196
+msgid "The function is optimized using Cython to minimize overhead and improve performance."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:197
+msgid "It supports **multi-threading** when using Cython's `nogil` feature for enhanced execution speed on multi-core systems."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:199
+#: ../GaussianBlur5x5.rst:289
+msgid "**Example Usage**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:216
+#: ../GaussianBlur5x5.rst:312
+msgid "**See Also**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:218
+msgid "`blur3d_c`: Optimized Cython function for 3D image blurring."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:219
+msgid "`gaussian_filter`: Applies a Gaussian blur with more control over the kernel size."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:227
+msgid "**Parameters**: - `rgb_array` (*numpy.ndarray* or *memoryview slice*): A 3D array of shape `(w, h, n)`, representing an image in RGB(A) format. - `npass` (*int*, optional): The number of blur passes to apply (**default is `1`**). More passes result in a stronger blur."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:233
+msgid "**Description**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:235
+msgid "Apply an in-place Gaussian blur to a **3D image array or memoryview slice**."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:237
+msgid "This function performs a **Gaussian blur** on an image represented as a 3D array with shape `(w, h, n)`, where `w` and `h` are the width and height, and `n` is the number of color channels (typically **3 for RGB** or **4 for RGBA**). It uses a **5x5 Gaussian kernel** for smoothing, applied through **two-pass convolution** (horizontal + vertical). The function modifies the input array in-place, avoiding unnecessary memory allocation."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:244
+msgid "Supports **RGB(A) image data** with any number of channels (`n = 3` for RGB, `n = 4` for RGBA)."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:245
+msgid "Performs **Gaussian blur** using a **5x5 convolution kernel**."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:246
+msgid "Uses **two-pass convolution** (horizontal and vertical) for an efficient blur."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:247
+msgid "Handles **edge pixels** by setting them to the nearest edge values."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:248
+msgid "Allows **multiple blur passes** (`npass > 1`) for increased smoothing."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:252
+msgid "**rgb_array** (*numpy.ndarray* or *memoryview slice*): A **3D array** of shape `(w, h, n)`, containing **uint8** values representing the image in **RGB(A) format**. The function modifies this array in-place."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:256
+msgid "**npass** (*int*, optional): The number of blur passes to apply. **Default is `1`**. Higher values will **increase blur strength** but require more processing time."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:262
+msgid "**None** – The function modifies `rgb_array` in place and does not return anything."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:266
+msgid "The function applies a **5x5 Gaussian blur** using the kernel:"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:268
+msgid "\\frac{1}{256}\n"
+"\\begin{bmatrix}\n"
+"1  &  4  &  6  &  4  &  1  \\\\\n"
+"4  & 16  & 24  & 16  &  4  \\\\\n"
+"6  & 24  & 36  & 24  &  6  \\\\\n"
+"4  & 16  & 24  & 16  &  4  \\\\\n"
+"1  &  4  &  6  &  4  &  1\n"
+"\\end{bmatrix}"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:279
+msgid "Uses **two-pass convolution** (horizontal and vertical) to apply the blur efficiently."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:280
+msgid "Handles **edge pixels** by assigning the **nearest edge values** to prevent artifacts."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:281
+msgid "Optimized for **image processing**, **real-time rendering**, and **graphics effects**."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:285
+msgid "Operates **directly on the image buffer**, avoiding extra memory allocations."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:286
+msgid "Can be used on large images without significant memory overhead."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:287
+msgid "Optimized using **Cython** for high performance."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:305
+msgid "**Use Cases**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:307
+msgid "**Computer Vision** → Preprocessing for image segmentation and object detection."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:308
+msgid "**Graphics & Gaming** → Motion blur, bloom effects, and real-time rendering."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:309
+msgid "**Image Processing Pipelines** → Reducing noise and enhancing visual quality."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:310
+msgid "**Medical Imaging** → Smoothing image data before feature extraction."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:314
+msgid "`blur` → Blurs a Pygame surface directly."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:315
+msgid "`gauss_filter24` → Applies Gaussian filtering to a 24-bit image."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:316
+msgid "`canny3d` → Performs edge detection on an RGB image."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:320
+msgid "**Apply an in-place Gaussian blur to a 1D array or memoryview slice representing pixel data.**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:322
+msgid "This function applies a **Gaussian blur** on a 1D array (or memoryview slice) with shape `(w,)`, where `w` is the number of pixels. The array can represent either **BGR** (24-bit) or **BGRA** (32-bit) pixel formats or any other format compatible with the `uint8` data type. The blur operation is performed **in-place** on the provided array."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:327
+msgid "The function performs **npass** passes of convolution using a **5x5 Gaussian kernel**. This can be useful for image processing tasks where you need to apply a blur effect, especially on pixel data represented as a 1D array (such as when the image data is flattened)."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:331
+#: ../GaussianBlur5x5.rst:419
+#: ../GaussianBlur5x5.rst:480
+#: ../GaussianBlur5x5.rst:525
+#: ../GaussianBlur5x5.rst:560
+#: ../GaussianBlur5x5.rst:594
+#: ../GaussianBlur5x5.rst:634
+msgid "**Parameters:**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:333
+msgid "**bgr_array** (*1D numpy.ndarray* or *memoryview slice*): A 1D array or memoryview slice with shape `(w,)` containing pixel data (e.g., in **BGR(A)** or any other pixel format). The array should be of type **uint8**."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:337
+msgid "**width** (*int*): The width (`w`) of the original image. Used for proper handling during the blur operation."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:340
+msgid "**height** (*int*): The height (`h`) of the original image. Required for correct image processing."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:343
+msgid "**npass** (*int*, optional): The number of blur passes to apply. **Default is 1 pass**. More passes result in a stronger blur."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:346
+msgid "**format_32** (*bool*): A flag indicating whether the pixel format is **BGR (24-bit)** or **BGRA (32-bit)**. `False` for **BGR (24-bit)** (3 channels) and `True` for **BGRA (32-bit)** (4 channels)."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:350
+#: ../GaussianBlur5x5.rst:437
+#: ../GaussianBlur5x5.rst:488
+#: ../GaussianBlur5x5.rst:531
+#: ../GaussianBlur5x5.rst:573
+#: ../GaussianBlur5x5.rst:613
+#: ../GaussianBlur5x5.rst:641
+msgid "**Returns:**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:352
+msgid "**None**: The function performs the blur in-place on `bgr_array` and does not return a value."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:355
+#: ../GaussianBlur5x5.rst:442
+#: ../GaussianBlur5x5.rst:494
+#: ../GaussianBlur5x5.rst:537
+#: ../GaussianBlur5x5.rst:577
+#: ../GaussianBlur5x5.rst:617
+#: ../GaussianBlur5x5.rst:647
+msgid "**Notes:**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:357
+msgid "The function uses **Gaussian convolution** with a 5x5 kernel used in two passes."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:359
+msgid "\\frac{1}{256} \\begin{bmatrix}\n"
+"1 & 4 & 6 & 4 & 1 \\\\\n"
+"4 & 16 & 24 & 16 & 4 \\\\\n"
+"6 & 24 & 36 & 24 & 6 \\\\\n"
+"4 & 16 & 24 & 16 & 4 \\\\\n"
+"1 & 4 & 6 & 4 & 1\n"
+"\\end{bmatrix}"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:369
+msgid "The image is processed in two passes (horizontal and vertical) for efficiency."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:370
+msgid "**Edge handling**: Pixels outside the image boundaries are replaced by adjacent edge values."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:371
+msgid "The function operates **in-place**, meaning the original `bgr_array` is modified directly."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:372
+msgid "This function is compatible with **BGR** and **BGRA** pixel formats (or other formats with the same shape and data type)."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:381
+msgid "Apply a blur effect to a 1D buffer (memoryview slice) and return a copy."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:383
+msgid "This function takes a **1D buffer or memoryview slice** containing pixel data in **BGR(A)** format (or any other compatible pixel format) and applies a **Gaussian blur**. The blurred result is returned as a new array, leaving the original buffer unmodified."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:387
+msgid "The function supports both **24-bit (BGR)** and **32-bit (BGRA)** pixel formats. The `format_32` flag must be set accordingly:"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:390
+msgid "**`format_32=False`** → for **BGR (24-bit)** format."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:391
+msgid "**`format_32=True`** → for **BGRA (32-bit)** format (includes an alpha channel)."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:393
+msgid "**Example Usage:**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:395
+msgid "**For a 24-bit image (BGR format):**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:407
+msgid "**For a 32-bit image (BGRA format):**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:421
+msgid "**bgr_array** (*C-buffer, numpy.ndarray, or memoryview slice*): A **1D array** with shape `(w,)` containing **BGR(A)** pixel data (or any compatible format)."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:424
+msgid "**width** (*int*): The width of the original image in pixels."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:427
+msgid "**height** (*int*): The height of the original image in pixels."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:430
+msgid "**npass** (*int*, optional): The number of blur passes to apply (**default is 1**). Increasing this value intensifies the blur effect."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:433
+msgid "**format_32** (*bool*): - `True` → **BGRA (32-bit)** format (includes an alpha channel). - `False` → **BGR (24-bit)** format."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:439
+msgid "**numpy.ndarray** or **memoryview slice** (`shape (w,)`, `dtype=uint8`): A **blurred copy** of the input array, maintaining the original pixel format."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:444
+msgid "This function does **not modify the input buffer**; it returns a **new** blurred array."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:446
+msgid "The blur operation uses **Gaussian convolution** in multiple passes."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:448
+msgid "The **pixel format of the output array is identical** to the input buffer."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:450
+msgid "Providing an appropriate `format_32` flag ensures correct handling of alpha transparency."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:459
+msgid "Apply a 5x5 Gaussian filter to smooth an image or surface. This function performs Gaussian blurring using a 5x5 convolution kernel, which helps reduce noise and detail in an image. It is particularly useful for preprocessing images before edge detection or other computer vision tasks."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:465
+msgid "**5x5 Gaussian Kernel:**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:467
+#: ../GaussianBlur5x5.rst:512
+msgid "\\begin{bmatrix}\n"
+"2 & 4 & 5 & 4 & 2 \\\\\n"
+"4 & 9 & 12 & 9 & 4 \\\\\n"
+"5 & 12 & 15 & 12 & 5 \\\\\n"
+"4 & 9 & 12 & 9 & 4 \\\\\n"
+"2 & 4 & 5 & 4 & 2\n"
+"\\end{bmatrix}"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:477
+#: ../GaussianBlur5x5.rst:522
+msgid "The kernel values are normalized internally to ensure proper smoothing."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:478
+msgid "The filtering process preserves edges better than a simple average blur."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:482
+msgid "**surface_ (pygame.Surface, 24-bit or 32-bit image):**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:484
+#: ../GaussianBlur5x5.rst:528
+msgid "The input image or surface to be blurred."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:485
+msgid "If a 32-bit surface (with an alpha channel) is provided, the alpha layer is ignored in the output, resulting in a 24-bit image."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:490
+msgid "**pygame.Surface (24-bit filtered image):** - A new blurred surface with reduced noise and smoothed pixel transitions. - The output image is always 24-bit, even if the input was 32-bit."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:496
+msgid "Gaussian blur is widely used in computer vision and graphics for reducing high-frequency noise."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:497
+msgid "This method is optimized for performance and maintains image integrity."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:507
+msgid "Apply a 5x5 Gaussian blur filter to an image or pygame surface. This function smooths an image by convolving it with a 5x5 Gaussian kernel, reducing noise and fine details while preserving essential structures. 5x5 Gaussian Kernel:"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:523
+msgid "This method helps remove high-frequency noise while retaining important image structures."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:527
+msgid "**surface_ (pygame.Surface, 32-bit or 24-bit image):**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:529
+msgid "Both 24-bit (RGB) and 32-bit (RGBA) surfaces are supported."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:533
+msgid "pygame.Surface (32-bit filtered image):"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:534
+msgid "A new blurred surface where pixel transitions are smoothed."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:535
+msgid "If the original surface includes per-pixel transparency (alpha channel), it is preserved in the output."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:539
+msgid "Gaussian blur is commonly used in image preprocessing, noise reduction, and artistic effects."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:540
+msgid "The filtering process is optimized for performance while maintaining high image fidelity."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:548
+msgid "Apply Canny edge detection to a 3D array or memoryview slice. The Canny edge detection algorithm is a multi-stage process that identifies edges in an image by detecting areas with significant intensity changes. It was developed by John F. Canny (1986) and remains widely used in computer vision."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:553
+msgid "**Steps of the Canny Algorithm:**"
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:555
+msgid "Gradient Computation – Detects intensity changes."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:556
+msgid "Non-Maximum Suppression – Removes non-edge pixels."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:557
+msgid "Double Thresholding – Filters weak edges."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:558
+msgid "Edge Tracking by Hysteresis – Retains strong edges."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:562
+msgid "**rgb_array** (numpy.ndarray or memoryviewslice, shape (w, h, n), dtype uint8): Input image as a 3D array with RGB(A), BGRA, or other pixel formats."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:564
+msgid "**threshold** (unsigned char, default = 50): Lower-bound threshold to suppress weak edges in gradient magnitude."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:566
+msgid "**low** (unsigned char, default = 0): Lower hysteresis threshold for edge tracking. Weak edges below this value are discarded."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:569
+msgid "**high** (unsigned char, default = 20): Upper hysteresis threshold for edge tracking. Strong edges above this value are retained."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:575
+msgid "pygame.Surface – A new surface/image with detected edges."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:579
+msgid "Higher `threshold` values produce fewer edges (less noise)."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:580
+msgid "Hysteresis (`low`, `high`) ensures only meaningful edges are kept."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:581
+msgid "This function supports multiple pixel formats and operates on 3D arrays directly."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:590
+msgid "Apply Canny edge detection to a 1D buffer, NumPy array, or memoryview slice. This function processes a flat (1D) image buffer representing a grayscale or color image and applies the Canny edge detection algorithm to highlight edges."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:596
+msgid "**bgr_array** (numpy.ndarray or memoryviewslice, shape (w,), dtype uint8): 1D buffer containing pixel data in BGR(A), BGR, or other formats."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:599
+msgid "**width** (int): Width of the original image in pixels."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:602
+msgid "**height** (int): Height of the original image in pixels."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:605
+msgid "**format_32** (bool): True for 32-bit buffers (BGRA, BGRA). False for 24-bit buffers (BGR, BGR)."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:609
+msgid "**threshold** (int, default = 70): Gradient magnitude threshold for edge detection. Higher values suppress weaker edges and reduce noise."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:615
+msgid "pygame.Surface – A new image with Canny edge detection applied."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:619
+msgid "This function supports various pixel formats (e.g., RGB, BGR, RGBA, BGRA)."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:620
+msgid "Thresholding affects edge strength—adjust for optimal results."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:621
+msgid "Operates directly on a 1D buffer, making it memory-efficient."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:630
+msgid "Apply a blur effect to a 3D numpy array or memoryviewslice (returns a copy). This function performs a blur operation on a 3D array, such as an image, and returns a blurred copy. It supports RGB(A) or other pixel formats, maintaining the original format in the returned array."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:636
+msgid "**rgb_array** (numpy.ndarray or memoryviewslice, shape (w, h, n), dtype uint8): 3D array containing pixel data in RGB(A) or any compatible pixel format (e.g., BGRA). The shape should be (width, height, channels) where channels typically represent color components (3 for RGB, 4 for RGBA, etc.)."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:643
+msgid "numpy.ndarray: A new array (blurred copy) with the same shape and pixel format as `rgb_array`. The returned array will have the same width, height, and pixel format as the input, but with the blur effect applied."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:649
+msgid "The function does not modify the input array in-place; it returns a new blurred array."
+msgstr ""
+
+#: ../GaussianBlur5x5.rst:650
+msgid "The output will preserve the same color channels (e.g., RGB or RGBA)."
+msgstr ""

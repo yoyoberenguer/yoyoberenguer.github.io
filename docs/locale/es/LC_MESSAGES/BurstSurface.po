@@ -1,0 +1,1257 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yoann Berenguer
+# This file is distributed under the same license as the PygameShader
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PygameShader \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-10 13:20+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../BurstSurface.rst:2
+msgid "BurstSurface"
+msgstr "BurstSurface"
+
+#: ../BurstSurface.rst:4
+msgid ":mod:`BurstSurface.pyx`"
+msgstr ":mod:`BurstSurface.pyx`"
+
+#: ../BurstSurface.rst:14
+msgid "1. Cython Burst Surface Library"
+msgstr "1. Biblioteca de Superficie de Explosión en Cython"
+
+#: ../BurstSurface.rst:17
+msgid "2. Key Features"
+msgstr "2. Características Clave"
+
+#: ../BurstSurface.rst:19
+msgid ""
+"This library provides advanced tools for image manipulation and rendering"
+" in graphical applications. Built on pygame and other low-level rendering"
+" techniques, it enables efficient handling of surfaces, sprites, and "
+"pixel-based effects. The key features include:"
+msgstr ""
+"Esta biblioteca proporciona herramientas avanzadas para la manipulación y renderizado de imágenes en aplicaciones gráficas. Construida sobre pygame y otras técnicas de renderizado de bajo nivel, permite un manejo eficiente de superficies, sprites y efectos basados en píxeles. Las características clave incluyen:"
+
+#: ../BurstSurface.rst:23
+msgid "Splitting images into smaller blocks for sprite sheets and tile maps."
+msgstr "Dividir imágenes en bloques más pequeños para hojas de sprites y mapas de mosaicos."
+
+#: ../BurstSurface.rst:24
+msgid "Applying dynamic effects like bursts and controlled rebuilding of images."
+msgstr "Aplicar efectos dinámicos como explosiones y reconstrucción controlada de imágenes."
+
+#: ../BurstSurface.rst:25
+msgid ""
+"Storing and manipulating graphical elements in memory for optimized "
+"rendering."
+msgstr "Almacenar y manipular elementos gráficos en memoria para un renderizado optimizado."
+
+#: ../BurstSurface.rst:26
+msgid ""
+"Enhancing performance in real-time applications through optimized "
+"functions."
+msgstr "Mejorar el rendimiento en aplicaciones en tiempo real mediante funciones optimizadas."
+
+#: ../BurstSurface.rst:27
+msgid ""
+"Supporting experimental features for advanced graphical effects and "
+"debugging."
+msgstr "Soporte para funciones experimentales para efectos gráficos avanzados y depuración."
+
+#: ../BurstSurface.rst:30
+msgid "3. Library Functional Overview"
+msgstr "3. Resumen Funcional de la Biblioteca"
+
+#: ../BurstSurface.rst:32
+msgid ""
+"The library consists of a set of functions that facilitate various "
+"graphical transformations and effects. It focuses on the efficient "
+"handling of pixel-based surfaces, allowing developers to create complex "
+"visual effects such as explosions, dynamic surface reconstruction, and "
+"optimized sprite manipulations."
+msgstr ""
+"La biblioteca consta de un conjunto de funciones que facilitan diversas transformaciones y efectos gráficos. Se centra en el manejo eficiente de superficies basadas en píxeles, permitiendo a los desarrolladores crear efectos visuales complejos como explosiones, reconstrucción dinámica de superficies y manipulaciones optimizadas de sprites."
+
+#: ../BurstSurface.rst:38
+msgid "4. Target Applications"
+msgstr "4. Aplicaciones Objetivo"
+
+#: ../BurstSurface.rst:40
+msgid "This library is particularly useful for:"
+msgstr "Esta biblioteca es particularmente útil para:"
+
+#: ../BurstSurface.rst:42
+msgid ""
+"Game development: Enabling real-time effects like explosions, animations,"
+" and sprite transformations."
+msgstr "Desarrollo de juegos: Habilitar efectos en tiempo real como explosiones, animaciones y transformaciones de sprites."
+
+#: ../BurstSurface.rst:43
+msgid ""
+"Graphics simulations: Creating dynamic visual effects that require image "
+"manipulation."
+msgstr "Simulaciones gráficas: Crear efectos visuales dinámicos que requieren manipulación de imágenes."
+
+#: ../BurstSurface.rst:44
+msgid ""
+"Image processing: Splitting, reconstructing, and modifying images for "
+"artistic or technical purposes."
+msgstr "Procesamiento de imágenes: Dividir, reconstruir y modificar imágenes con fines artísticos o técnicos."
+
+#: ../BurstSurface.rst:45
+msgid ""
+"Research and experimentation: Testing new graphical rendering techniques "
+"and optimization strategies."
+msgstr "Investigación y experimentación: Probar nuevas técnicas de renderizado gráfico y estrategias de optimización."
+
+#: ../BurstSurface.rst:48
+msgid "5. Cython Functions"
+msgstr "5. Funciones de Cython"
+
+#: ../BurstSurface.rst:151
+msgid "6. Summary"
+msgstr "6. Resumen"
+
+#: ../BurstSurface.rst:153
+msgid ""
+"This library is designed to enhance the capabilities of graphical "
+"applications, particularly in game development and advanced image "
+"manipulation. By offering optimized functions for handling surfaces, "
+"splitting images, applying burst effects, and rebuilding images, it "
+"provides a flexible and efficient toolset for developers. Experimental "
+"functions add further possibilities for exploring novel rendering "
+"techniques. The library is a valuable resource for those looking to "
+"implement complex graphical transformations efficiently."
+msgstr ""
+"Esta biblioteca está diseñada para mejorar las capacidades de las aplicaciones gráficas, particularmente en el desarrollo de juegos y la manipulación avanzada de imágenes. Al ofrecer funciones optimizadas para manejar superficies, dividir imágenes, aplicar efectos de explosión y reconstruir imágenes, proporciona un conjunto de herramientas flexible y eficiente para los desarrolladores. Las funciones experimentales añaden más posibilidades para explorar técnicas de renderizado novedosas. La biblioteca es un recurso valioso para aquellos que buscan implementar transformaciones gráficas complejas de manera eficiente."
+
+#: ../BurstSurface.rst:161
+msgid "7. Cython method list"
+msgstr "7. Lista de métodos de Cython"
+
+#: ../BurstSurface.rst:169
+msgid ""
+"**Extract a block of pixels from a larger 2D array representing an "
+"image.**"
+msgstr "**Extraer un bloque de píxeles de un arreglo 2D más grande que representa una imagen.**"
+
+#: ../BurstSurface.rst:171
+msgid ""
+"This function retrieves a rectangular block of pixels from a larger image"
+" (or sprite sheet) and stores it into a smaller block array. The function"
+" delegates the actual pixel extraction to the `pixel_block_rgb_c` helper "
+"function for performance optimization."
+msgstr ""
+"Esta función recupera un bloque rectangular de píxeles de una imagen más grande (o hoja de sprites) y lo almacena en un arreglo de bloques más pequeño. La función delega la extracción real de píxeles a la función auxiliar `pixel_block_rgb_c` para optimizar el rendimiento."
+
+#: ../BurstSurface.rst:176 ../BurstSurface.rst:217 ../BurstSurface.rst:251
+#: ../BurstSurface.rst:292 ../BurstSurface.rst:321 ../BurstSurface.rst:361
+#: ../BurstSurface.rst:400 ../BurstSurface.rst:433 ../BurstSurface.rst:490
+#: ../BurstSurface.rst:523 ../BurstSurface.rst:567 ../BurstSurface.rst:604
+#: ../BurstSurface.rst:638
+msgid "**Parameters**"
+msgstr "**Parámetros**"
+
+#: ../BurstSurface.rst:178
+msgid "**array_**"
+msgstr "**array_**"
+
+#: ../BurstSurface.rst:179
+msgid ""
+"unsigned char; A 3D array representing the full image (height x width x "
+"3). This is the source from which the pixel block will be extracted."
+msgstr ""
+"unsigned char; Un arreglo 3D que representa la imagen completa (altura x ancho x 3). Esta es la fuente de la cual se extraerá el bloque de píxeles."
+
+#: ../BurstSurface.rst:182
+msgid "**start_x**"
+msgstr "**start_x**"
+
+#: ../BurstSurface.rst:183
+msgid ""
+"int; The x-coordinate of the top-left corner of the block to extract. "
+"This defines where the block starts in the source image."
+msgstr ""
+"int; La coordenada x de la esquina superior izquierda del bloque a extraer. Esto define dónde comienza el bloque en la imagen de origen."
+
+#: ../BurstSurface.rst:186
+msgid "**start_y**"
+msgstr "**start_y**"
+
+#: ../BurstSurface.rst:187
+msgid ""
+"int; The y-coordinate of the top-left corner of the block to extract. "
+"This defines where the block starts in the source image."
+msgstr ""
+"int; La coordenada y de la esquina superior izquierda del bloque a extraer. Esto define dónde comienza el bloque en la imagen de origen."
+
+#: ../BurstSurface.rst:190
+msgid "**w**"
+msgstr "**w**"
+
+#: ../BurstSurface.rst:191
+msgid "int; The width of the block to extract. The block will be `w` pixels wide."
+msgstr "int; El ancho del bloque a extraer. El bloque tendrá `w` píxeles de ancho."
+
+#: ../BurstSurface.rst:193
+msgid "**h**"
+msgstr "**h**"
+
+#: ../BurstSurface.rst:194
+msgid ""
+"int; The height of the block to extract. The block will be `h` pixels "
+"tall."
+msgstr "int; La altura del bloque a extraer. El bloque tendrá `h` píxeles de alto."
+
+#: ../BurstSurface.rst:196
+msgid "**block**"
+msgstr "**block**"
+
+#: ../BurstSurface.rst:197
+msgid ""
+"unsigned char; A pre-allocated empty block of size `w x h x 3`. This "
+"array will be filled with the pixel data from the source image."
+msgstr ""
+"unsigned char; Un bloque vacío preasignado de tamaño `w x h x 3`. Este arreglo se llenará con los datos de píxeles de la imagen de origen."
+
+#: ../BurstSurface.rst:200 ../BurstSurface.rst:234
+msgid "**Returns**"
+msgstr "**Devuelve**"
+
+#: ../BurstSurface.rst:202
+msgid "**unsigned char[:, :, :]**"
+msgstr "**unsigned char[:, :, :]**"
+
+#: ../BurstSurface.rst:203
+msgid ""
+"A 3D array (height x width x 3) representing the extracted pixel block. "
+"The block is stored in the `block` parameter."
+msgstr ""
+"Un arreglo 3D (altura x ancho x 3) que representa el bloque de píxeles extraído. El bloque se almacena en el parámetro `block`."
+
+#: ../BurstSurface.rst:211
+msgid "**Split a pygame.Surface into smaller subsurfaces.**"
+msgstr "**Dividir una superficie de pygame en subsuperficies más pequeñas.**"
+
+#: ../BurstSurface.rst:213
+msgid ""
+"This function divides a larger surface into smaller subsurfaces (blocks) "
+"based on the specified size, number of rows, and columns. It delegates "
+"the actual splitting to the `surface_split_c` helper function for "
+"efficient processing."
+msgstr ""
+"Esta función divide una superficie más grande en subsuperficies más pequeñas (bloques) según el tamaño, número de filas y columnas especificados. Delega la división real a la función auxiliar `surface_split_c` para un procesamiento eficiente."
+
+#: ../BurstSurface.rst:219
+msgid "**surface_**"
+msgstr "**surface_**"
+
+#: ../BurstSurface.rst:220
+msgid "pygame.Surface; The surface to be split into smaller subsurfaces."
+msgstr "pygame.Surface; La superficie que se dividirá en subsuperficies más pequeñas."
+
+#: ../BurstSurface.rst:222
+msgid "**size_**"
+msgstr "**size_**"
+
+#: ../BurstSurface.rst:223
+msgid ""
+"int; The size (width and height) of each subsurface. The resulting "
+"subsurfaces will be square with dimensions `size_ x size_`."
+msgstr ""
+"int; El tamaño (ancho y alto) de cada subsuperficie. Las subsuperficies resultantes serán cuadradas con dimensiones `size_ x size_`."
+
+#: ../BurstSurface.rst:226 ../BurstSurface.rst:264
+msgid "**rows_**"
+msgstr "**rows_**"
+
+#: ../BurstSurface.rst:227
+msgid ""
+"int; The number of rows of subsurfaces to create. This determines how "
+"many horizontal blocks will be extracted from the original surface."
+msgstr ""
+"int; El número de filas de subsuperficies a crear. Esto determina cuántos bloques horizontales se extraerán de la superficie original."
+
+#: ../BurstSurface.rst:230 ../BurstSurface.rst:268
+msgid "**columns_**"
+msgstr "**columns_**"
+
+#: ../BurstSurface.rst:231
+msgid ""
+"int; The number of columns of subsurfaces to create. This determines how "
+"many vertical blocks will be extracted from the original surface."
+msgstr ""
+"int; El número de columnas de subsuperficies a crear. Esto determina cuántos bloques verticales se extraerán de la superficie original."
+
+#: ../BurstSurface.rst:236
+msgid "**list**"
+msgstr "**list**"
+
+#: ../BurstSurface.rst:237
+msgid ""
+"A list of pygame.Surface objects, each representing a smaller block of "
+"the original surface."
+msgstr ""
+"Una lista de objetos pygame.Surface, cada uno representando un bloque más pequeño de la superficie original."
+
+#: ../BurstSurface.rst:245
+msgid ""
+"**Simulate an explosion effect on a surface by splitting it into smaller "
+"subsurfaces or pixels.**"
+msgstr ""
+"**Simular un efecto de explosión en una superficie dividiéndola en subsuperficies o píxeles más pequeños.**"
+
+#: ../BurstSurface.rst:247
+msgid ""
+"This function breaks a given surface into multiple smaller blocks or "
+"pixels and applies an explosion effect, projecting them in random "
+"directions. The subsurfaces or pixels are placed at specified positions "
+"and can be projected at different angles."
+msgstr ""
+"Esta función divide una superficie dada en múltiples bloques o píxeles más pequeños y aplica un efecto de explosión, proyectándolos en direcciones aleatorias. Las subsuperficies o píxeles se colocan en posiciones especificadas y pueden proyectarse en diferentes ángulos."
+
+#: ../BurstSurface.rst:253
+msgid "**image_**"
+msgstr "**image_**"
+
+#: ../BurstSurface.rst:254
+msgid ""
+"pygame.Surface; The surface to be split into smaller subsurfaces or "
+"pixels."
+msgstr "pygame.Surface; La superficie que se dividirá en subsuperficies o píxeles más pequeños."
+
+#: ../BurstSurface.rst:256
+msgid "**vertex_array_**"
+msgstr "**vertex_array_**"
+
+#: ../BurstSurface.rst:257
+msgid ""
+"list; A list that will be populated with the created sprites, each "
+"representing a smaller subsurface or pixel. These sprites will have "
+"attributes like position, velocity (vector), and other states related to "
+"the explosion."
+msgstr ""
+"list; Una lista que se llenará con los sprites creados, cada uno representando una subsuperficie o píxel más pequeño. Estos sprites tendrán atributos como posición, velocidad (vector) y otros estados relacionados con la explosión."
+
+#: ../BurstSurface.rst:261
+msgid "**block_size_**"
+msgstr "**block_size_**"
+
+#: ../BurstSurface.rst:262
+msgid ""
+"int; The size of each block (subsurface). If set to 1, each block will be"
+" a single pixel."
+msgstr ""
+"int; El tamaño de cada bloque (subsuperficie). Si se establece en 1, cada bloque será un solo píxel."
+
+#: ../BurstSurface.rst:265
+msgid ""
+"int; The number of rows of subsurfaces or pixels to create. Determines "
+"how many horizontal blocks will be created."
+msgstr ""
+"int; El número de filas de subsuperficies o píxeles a crear. Determina cuántos bloques horizontales se crearán."
+
+#: ../BurstSurface.rst:269
+msgid ""
+"int; The number of columns of subsurfaces or pixels to create. Determines"
+" how many vertical blocks will be created."
+msgstr ""
+"int; El número de columnas de subsuperficies o píxeles a crear. Determina cuántos bloques verticales se crearán."
+
+#: ../BurstSurface.rst:272
+msgid "**x_**"
+msgstr "**x_**"
+
+#: ../BurstSurface.rst:273
+msgid ""
+"int; The x-coordinate of the top-left corner of the surface before the "
+"explosion effect."
+msgstr ""
+"int; La coordenada x de la esquina superior izquierda de la superficie antes del efecto de explosión."
+
+#: ../BurstSurface.rst:275
+msgid "**y_**"
+msgstr "**y_**"
+
+#: ../BurstSurface.rst:276
+msgid ""
+"int; The y-coordinate of the top-left corner of the surface before the "
+"explosion effect."
+msgstr ""
+"int; La coordenada y de la esquina superior izquierda de la superficie antes del efecto de explosión."
+#: ../BurstSurface.rst:278
+msgid "**max_angle_**"
+msgstr "**max_angle_**"
+
+#: ../BurstSurface.rst:279
+msgid ""
+"int, optional; The maximum angle (in degrees) at which each "
+"subsurface/pixel will be projected. If not provided, defaults to 0 (no "
+"angle applied)"
+msgstr ""
+"int, opcional; El ángulo máximo (en grados) en el que cada "
+"subsuperficie/píxel será proyectado. Si no se proporciona, el valor predeterminado es 0 (sin ángulo aplicado)."
+
+#: ../BurstSurface.rst:286
+msgid ""
+"Display an explosion effect on the screen by rendering the burst of "
+"sprites."
+msgstr ""
+"Mostrar un efecto de explosión en la pantalla renderizando la explosión de "
+"sprites."
+
+#: ../BurstSurface.rst:288
+msgid ""
+"This function iterates through the list of sprites (created by the burst "
+"effect), rendering each sprite onto the provided screen surface. The "
+"sprites are drawn with optional blending effects for smoother "
+"transitions, such as additive blending."
+msgstr ""
+"Esta función itera a través de la lista de sprites (creados por el efecto "
+"de explosión), renderizando cada sprite sobre la superficie de la pantalla "
+"proporcionada. Los sprites se dibujan con efectos de mezcla opcionales para "
+"transiciones más suaves, como la mezcla aditiva."
+
+#: ../BurstSurface.rst:294 ../BurstSurface.rst:323 ../BurstSurface.rst:402
+msgid "**screen_**:"
+msgstr "**pantalla_**:"
+
+#: ../BurstSurface.rst:295
+msgid ""
+"pygame.Surface; The screen (or rendering surface) where the explosion "
+"effect (burst of sprites) will be drawn."
+msgstr ""
+"pygame.Surface; La pantalla (o superficie de renderizado) donde el efecto "
+"de explosión (explosión de sprites) será dibujado."
+
+#: ../BurstSurface.rst:298 ../BurstSurface.rst:335 ../BurstSurface.rst:406
+msgid "**vertex_array_**:"
+msgstr "**array_de_vertices_**:"
+
+#: ../BurstSurface.rst:299
+msgid ""
+"list; A list of sprite objects that represent the subsurfaces or pixels "
+"created during the explosion effect. These sprites will be rendered on "
+"the screen."
+msgstr ""
+"lista; Una lista de objetos sprite que representan las subsuperficies o píxeles "
+"creados durante el efecto de explosión. Estos sprites serán renderizados en "
+"la pantalla."
+
+#: ../BurstSurface.rst:302 ../BurstSurface.rst:339 ../BurstSurface.rst:411
+#: ../BurstSurface.rst:504 ../BurstSurface.rst:546 ../BurstSurface.rst:582
+msgid "**blend_**:"
+msgstr "**mezcla_**:"
+
+#: ../BurstSurface.rst:303
+msgid ""
+"unsigned char, optional; The blending mode to apply when drawing the "
+"sprites. Default is 0 (no blending). A non-zero value may specify an "
+"additive or other blending mode depending on how it's defined."
+msgstr ""
+"unsigned char, opcional; El modo de mezcla a aplicar al dibujar los "
+"sprites. El valor predeterminado es 0 (sin mezcla). Un valor distinto de "
+"cero puede especificar un modo de mezcla aditiva u otro, dependiendo de cómo se "
+"defina."
+
+#: ../BurstSurface.rst:307
+msgid ""
+"**Returns** void; The function draws each sprite from `vertex_array_` to "
+"the `screen_` surface."
+msgstr ""
+"**Returns** void; La función dibuja cada sprite de `array_de_vertices_` a "
+"la superficie `pantalla_`."
+
+#: ../BurstSurface.rst:314
+msgid "Rebuild and render an explosion effect from a specific frame."
+msgstr ""
+"Reconstruir y renderizar un efecto de explosión desde un fotograma específico."
+
+#: ../BurstSurface.rst:316
+msgid ""
+"This function rebuilds and renders an explosion effect (created from "
+"sprites) on the screen starting from a specified frame number. The "
+"sprites are progressively re-rendered from their original positions and "
+"updated based on the `current_frame_`. The function also supports "
+"blending for smoother visual transitions during the effect."
+msgstr ""
+"Esta función reconstruye y renderiza un efecto de explosión (creado a partir de "
+"sprites) en la pantalla comenzando desde un número de fotograma especificado. Los "
+"sprites se vuelven a renderizar progresivamente desde sus posiciones originales y "
+"se actualizan en función de `current_frame_`. La función también admite "
+"mezcla para transiciones visuales más suaves durante el efecto."
+
+#: ../BurstSurface.rst:324
+msgid ""
+"pygame.Surface; The surface (or screen) where the rebuilt explosion "
+"effect will be drawn."
+msgstr ""
+"pygame.Surface; La superficie (o pantalla) donde se dibujará el efecto de "
+"explosión reconstruido."
+
+#: ../BurstSurface.rst:327 ../BurstSurface.rst:533
+msgid "**current_frame_**:"
+msgstr "**frame_actual_**:"
+
+#: ../BurstSurface.rst:328
+msgid ""
+"unsigned int; The current frame number, used to control the timing and "
+"progression of the explosion effect."
+msgstr ""
+"unsigned int; El número del fotograma actual, utilizado para controlar el tiempo y "
+"la progresión del efecto de explosión."
+
+#: ../BurstSurface.rst:331 ../BurstSurface.rst:537
+msgid "**start_frame**:"
+msgstr "**frame_inicial**:"
+
+#: ../BurstSurface.rst:332
+msgid ""
+"unsigned int; The frame number at which to start rebuilding the explosion"
+" effect. The process will only begin after the `current_frame_` exceeds "
+"this value."
+msgstr ""
+"unsigned int; El número de fotograma en el que comenzar a reconstruir el efecto de "
+"explosión. El proceso solo comenzará después de que `frame_actual_` supere "
+"este valor."
+
+#: ../BurstSurface.rst:336
+msgid ""
+"list; A list of sprite objects representing the subsurfaces or pixels of "
+"the explosion. These sprites will be rendered onto the screen."
+msgstr ""
+"lista; Una lista de objetos sprite que representan las subsuperficies o píxeles de "
+"la explosión. Estos sprites serán renderizados en la pantalla."
+
+#: ../BurstSurface.rst:340
+msgid ""
+"unsigned char, optional; The blending mode to use when rendering the "
+"sprites. The default is 0 (no blending). A non-zero value will apply the "
+"specified blend mode (e.g., additive blending)."
+msgstr ""
+"unsigned char, opcional; El modo de mezcla a usar al renderizar los "
+"sprites. El valor predeterminado es 0 (sin mezcla). Un valor distinto de "
+"cero aplicará el modo de mezcla especificado (por ejemplo, mezcla aditiva)."
+
+#: ../BurstSurface.rst:344
+msgid ""
+"**Returns** void; This function updates the screen by rendering the "
+"sprites based on the specified frame and blending settings."
+msgstr ""
+"**Returns** void; Esta función actualiza la pantalla renderizando los "
+"sprites según el fotograma y los ajustes de mezcla especificados."
+
+#: ../BurstSurface.rst:352
+msgid "Burst a sprite group into memory, creating an explosion effect."
+msgstr ""
+"Explosión de un grupo de sprites en memoria, creando un efecto de explosión."
+
+#: ../BurstSurface.rst:354
+msgid ""
+"This function processes a sprite group (`sg_`) and generates an explosion"
+" effect by bursting it into memory. The function creates a set of sprites"
+" or subsurfaces that are distributed across a specified region of the "
+"screen defined by `screenrect`. The number of sprites (`n_`) determines "
+"how many parts the sprite group will be divided into. It also supports "
+"warnings and automatic configuration for the number of elements to "
+"process."
+msgstr ""
+"Esta función procesa un grupo de sprites (`sg_`) y genera un efecto de "
+"explosión al descomponerlo en memoria. La función crea un conjunto de "
+"sprites o subsuperficies que se distribuyen a través de una región especificada "
+"de la pantalla definida por `screenrect`. El número de sprites (`n_`) "
+"determina cuántas partes se dividirá el grupo de sprites. También admite "
+"advertencias y configuración automática para el número de elementos a "
+"procesar."
+
+#: ../BurstSurface.rst:363
+msgid "**n_**:"
+msgstr "**n_**:"
+
+#: ../BurstSurface.rst:364
+msgid ""
+"unsigned int; The number of elements to burst into memory. This controls "
+"how many parts the sprite group will be split into for the explosion "
+"effect."
+msgstr ""
+"unsigned int; El número de elementos a descomponer en memoria. Esto controla "
+"cuántas partes se dividirá el grupo de sprites para el efecto de explosión."
+
+#: ../BurstSurface.rst:367
+msgid "**sg_**:"
+msgstr "**sg_**:"
+
+#: ../BurstSurface.rst:368
+msgid ""
+"object; A pygame.sprite.Group containing the sprites to be processed and "
+"exploded into memory."
+msgstr ""
+"objeto; Un pygame.sprite.Group que contiene los sprites que se procesarán y "
+"se descompondrán en memoria."
+
+#: ../BurstSurface.rst:371
+msgid "**screenrect**:"
+msgstr "**rectángulo_pantalla**:"
+
+#: ../BurstSurface.rst:372
+msgid ""
+"object; The pygame.Rect object that defines the area of the screen where "
+"the explosion effect will be displayed. This helps control the "
+"positioning of the sprites within the screen area."
+msgstr ""
+"objeto; El objeto pygame.Rect que define el área de la pantalla donde "
+"se mostrará el efecto de explosión. Esto ayuda a controlar el "
+"posicionamiento de los sprites dentro del área de la pantalla."
+
+#: ../BurstSurface.rst:376
+msgid "**warn_**:"
+msgstr "**advertencia_**:"
+
+#: ../BurstSurface.rst:377
+msgid ""
+"bint, optional; A flag to trigger warnings if certain conditions are met "
+"(e.g., if the sprite group is too large to process efficiently). Defaults"
+" to False."
+msgstr ""
+"bint, opcional; Una bandera para activar advertencias si se cumplen ciertas "
+"condiciones (por ejemplo, si el grupo de sprites es demasiado grande para "
+"procesarse de manera eficiente). El valor predeterminado es False."
+
+#: ../BurstSurface.rst:380
+msgid "**auto_n_**:"
+msgstr "**auto_n_**:"
+
+#: ../BurstSurface.rst:381
+msgid ""
+"bint, optional; A flag that, if set to True, automatically determines the"
+" number of elements to burst based on the sprite group’s size. Defaults "
+"to False."
+msgstr ""
+"bint, opcional; Una bandera que, si se establece en True, determina "
+"automáticamente el número de elementos a descomponer según el tamaño del "
+"grupo de sprites. El valor predeterminado es False."
+
+#: ../BurstSurface.rst:384
+msgid ""
+"**Returns** void; This function modifies the memory by creating and "
+"storing the explosion effect, which can then be displayed on the screen."
+msgstr ""
+"**Returns** void; Esta función modifica la memoria creando y "
+"almacenando el efecto de explosión, que luego puede ser mostrado en la pantalla."
+
+#: ../BurstSurface.rst:392
+msgid "Rebuild and render an image from stored memory data."
+msgstr ""
+"Reconstruir y renderizar una imagen a partir de los datos de memoria almacenados."
+
+#: ../BurstSurface.rst:394
+msgid ""
+"This function takes a list of vertex data (`vertex_array_`) and "
+"reconstructs an image or animation by rendering the stored memory "
+"information onto the provided screen. The image is rendered using the "
+"specified blending mode (`blend_`). This can be used for reconstructing "
+"exploded or fragmented visual effects from previously stored memory."
+msgstr ""
+"Esta función toma una lista de datos de vértices (`array_de_vertices_`) y "
+"reconstruye una imagen o animación al renderizar la información de memoria "
+"almacenada en la pantalla proporcionada. La imagen se renderiza utilizando el "
+"modo de mezcla especificado (`mezcla_`). Esto puede usarse para reconstruir "
+"efectos visuales explotados o fragmentados a partir de la memoria almacenada previamente."
+
+#: ../BurstSurface.rst:403
+msgid ""
+"object; The surface or screen where the rebuilt image will be rendered. "
+"Typically, this would be a pygame.Surface representing the display "
+"window."
+msgstr ""
+"objeto; La superficie o pantalla donde se renderizará la imagen reconstruida. "
+"Típicamente, esto sería un pygame.Surface que representa la ventana de visualización."
+
+#: ../BurstSurface.rst:407
+msgid ""
+"list; A list containing the vertex data (e.g., pixels, sprite blocks, or "
+"fragmented image parts) used to reconstruct the image. This data is used "
+"to render the final visual output on the screen."
+msgstr ""
+"lista; Una lista que contiene los datos de vértices (por ejemplo, píxeles, bloques de "
+"sprites o partes de imágenes fragmentadas) usados para reconstruir la imagen. "
+"Estos datos se utilizan para renderizar la salida visual final en la pantalla."
+
+#: ../BurstSurface.rst:412
+msgid ""
+"unsigned char, optional; The blend mode to be used when rendering the "
+"image. A blend mode of 0 typically represents no blending (normal mode), "
+"while other values may represent different additive or subtractive "
+"blending effects. Defaults to 0 (no blending)."
+msgstr ""
+"unsigned char, opcional; El modo de mezcla que se usará al renderizar la "
+"imagen. Un modo de mezcla de 0 normalmente representa sin mezcla (modo normal), "
+"mientras que otros valores pueden representar diferentes efectos de mezcla aditiva o "
+"sustractiva. El valor predeterminado es 0 (sin mezcla)."
+
+#: ../BurstSurface.rst:417
+msgid ""
+"**Returns** void; This function modifies the screen object by rendering "
+"the rebuilt image from the provided vertex data without returning a "
+"value."
+msgstr ""
+"**Returns** void; Esta función modifica el objeto de pantalla al renderizar "
+"la imagen reconstruida a partir de los datos de vértices proporcionados sin devolver un "
+"valor."
+
+#: ../BurstSurface.rst:425
+msgid ""
+"Explode a surface into multiple subsurfaces or pixels and apply random "
+"projections."
+msgstr ""
+"Explotar una superficie en múltiples subsuperficies o píxeles y aplicar "
+"proyecciones aleatorias."
+
+#: ../BurstSurface.rst:427
+msgid ""
+"This function takes a single surface (`image_`) and splits it into "
+"multiple blocks or individual pixels, based on the specified block size, "
+"number of rows, and columns. Each resulting block or pixel is assigned a "
+"random angle of projection, giving the effect of the surface being "
+"'exploded' into separate pieces. The pieces are added to the specified "
+"sprite group (`group_`) for further manipulation or rendering."
+msgstr ""
+"Esta función toma una única superficie (`imagen_`) y la divide en "
+"múltiples bloques o píxeles individuales, según el tamaño del bloque especificado, "
+"el número de filas y columnas. A cada bloque o píxel resultante se le asigna un "
+"ángulo aleatorio de proyección, dando el efecto de que la superficie se está "
+"'explotando' en piezas separadas. Las piezas se agregan al grupo de sprites "
+"especificado (`grupo_`) para su posterior manipulación o renderizado."
+
+#: ../BurstSurface.rst:435 ../BurstSurface.rst:495 ../BurstSurface.rst:525
+#: ../BurstSurface.rst:573
+msgid "**render_**:"
+msgstr "**renderizado_**:"
+
+#: ../BurstSurface.rst:436
+msgid ""
+"object; The 2D rendering context used for rendering the exploded pieces. "
+"Typically a pygame.Surface or similar rendering context."
+msgstr ""
+"objeto; El contexto de renderizado 2D utilizado para renderizar las piezas explotadas. "
+"Típicamente un pygame.Surface o un contexto de renderizado similar."
+
+#: ../BurstSurface.rst:439
+msgid "**image_**:"
+msgstr "**imagen_**:"
+
+#: ../BurstSurface.rst:440
+msgid ""
+"object; The pygame.Surface to be split into smaller blocks or pixels. "
+"This image will be 'exploded' into multiple parts based on the block "
+"size."
+msgstr ""
+"objeto; El pygame.Surface que se dividirá en bloques o píxeles más pequeños. "
+"Esta imagen será 'explotada' en múltiples partes según el tamaño del bloque."
+
+#: ../BurstSurface.rst:443 ../BurstSurface.rst:498 ../BurstSurface.rst:541
+#: ../BurstSurface.rst:577 ../BurstSurface.rst:610 ../BurstSurface.rst:644
+msgid "**group_**:"
+msgstr "**grupo_**:"
+
+#: ../BurstSurface.rst:444
+msgid ""
+"object; A pygame.sprite.Group that will contain the resulting pieces "
+"(subsurfaces or pixels) after the explosion. Each part of the exploded "
+"image will be added as a sprite to this group."
+msgstr ""
+"objeto; Un pygame.sprite.Group que contendrá las piezas resultantes "
+"(subsuperficies o píxeles) después de la explosión. Cada parte de la imagen explotada "
+"se agregará como un sprite a este grupo."
+
+#: ../BurstSurface.rst:448
+msgid "**block_size_**:"
+msgstr "**tamaño_bloque_**:"
+
+#: ../BurstSurface.rst:449
+msgid ""
+"int; The size of each block or pixel in the explosion. This defines the "
+"width and height of each subsurface or pixel entity. A block size of 1 "
+"will result in individual pixels being created."
+msgstr ""
+"int; El tamaño de cada bloque o píxel en la explosión. Esto define el "
+"ancho y alto de cada subsuperficie o entidad de píxel. Un tamaño de bloque de 1 "
+"resultará en la creación de píxeles individuales."
+
+#: ../BurstSurface.rst:454
+msgid ""
+"int; The number of rows into which the surface will be divided. This, "
+"combined with the block size, determines how many blocks are created "
+"along the vertical axis."
+msgstr ""
+"int; El número de filas en las que se dividirá la superficie. Esto, "
+"combinado con el tamaño del bloque, determina cuántos bloques se crean "
+"a lo largo del eje vertical."
+
+#: ../BurstSurface.rst:457
+msgid "**columns_**:"
+msgstr "**columnas_**:"
+
+#: ../BurstSurface.rst:458
+msgid ""
+"int; The number of columns into which the surface will be divided. This, "
+"combined with the block size, determines how many blocks are created "
+"along the horizontal axis."
+msgstr ""
+"int; El número de columnas en las que se dividirá la superficie. Esto, "
+"combinado con el tamaño del bloque, determina cuántos bloques se crean "
+"a lo largo del eje horizontal."
+
+#: ../BurstSurface.rst:461
+msgid "**x_**:"
+msgstr "**x_**:"
+
+#: ../BurstSurface.rst:462
+msgid ""
+"int; The starting x-coordinate of the surface, representing the top-left "
+"corner before the explosion."
+msgstr ""
+"int; La coordenada x inicial de la superficie, que representa la esquina "
+"superior izquierda antes de la explosión."
+
+#: ../BurstSurface.rst:465
+msgid "**y_**:"
+msgstr "**y_**:"
+
+#: ../BurstSurface.rst:466
+msgid ""
+"int; The starting y-coordinate of the surface, representing the top-left "
+"corner before the explosion."
+msgstr ""
+"int; La coordenada y inicial de la superficie, que representa la esquina "
+"superior izquierda antes de la explosión."
+
+#: ../BurstSurface.rst:469
+msgid "**max_angle_**:"
+msgstr "**max_angle_**:"
+
+#: ../BurstSurface.rst:470
+msgid ""
+"int, optional; The maximum angle (in degrees) for the projection of each "
+"exploded piece. Each piece will be projected at a random angle between 0 "
+"and `max_angle_`. Defaults to 359 degrees (full circle)."
+msgstr ""
+"int, opcional; El ángulo máximo (en grados) para la proyección de cada "
+"pieza explotada. Cada pieza será proyectada a un ángulo aleatorio entre 0 "
+"y `max_angle_`. El valor predeterminado es 359 grados (círculo completo)."
+
+#: ../BurstSurface.rst:474
+msgid ""
+"**Returns** void; This function modifies the `group_` object by adding "
+"the exploded pieces as sprites, but does not return any value."
+msgstr ""
+"**Returns** void; Esta función modifica el objeto `group_` añadiendo "
+"las piezas explotadas como sprites, pero no devuelve ningún valor."
+
+#: ../BurstSurface.rst:483
+msgid ""
+"Perform an experimental database effect with a sprite group and optional "
+"blending."
+msgstr ""
+"Realiza un efecto experimental de base de datos con un grupo de sprites y "
+"opcionalmente mezclando."
+
+#: ../BurstSurface.rst:485
+msgid ""
+"This function applies an experimental effect to a sprite group "
+"(`group_`), rendering it within a specified screen region "
+"(`screenrect_`). The effect is optionally blended based on the `blend_` "
+"value. The function can also optionally clean up the group (`clean_`), "
+"removing or resetting elements as necessary."
+msgstr ""
+"Esta función aplica un efecto experimental a un grupo de sprites "
+"(`group_`), representándolo dentro de una región de pantalla especificada "
+"(`screenrect_`). El efecto se mezcla opcionalmente según el valor de "
+"`blend_`. La función también puede limpiar el grupo (`clean_`), "
+"eliminando o restableciendo elementos según sea necesario."
+
+#: ../BurstSurface.rst:492 ../BurstSurface.rst:529 ../BurstSurface.rst:569
+msgid "**screenrect_**:"
+msgstr "**screenrect_**:"
+
+#: ../BurstSurface.rst:493
+msgid ""
+"object; A pygame.Rect that defines the region of the screen to render the"
+" effect."
+msgstr ""
+"objeto; Un pygame.Rect que define la región de la pantalla para renderizar "
+"el efecto."
+
+#: ../BurstSurface.rst:496
+msgid ""
+"object; The 2D rendering context (usually a pygame.Surface) where the "
+"effect will be rendered."
+msgstr ""
+"objeto; El contexto de renderizado 2D (normalmente un pygame.Surface) "
+"donde se renderizará el efecto."
+
+#: ../BurstSurface.rst:499
+msgid ""
+"object; A pygame.sprite.Group that contains the sprites to be affected by"
+" the experimental effect."
+msgstr ""
+"objeto; Un pygame.sprite.Group que contiene los sprites que serán afectados "
+"por el efecto experimental."
+
+#: ../BurstSurface.rst:501
+msgid "**clean_**:"
+msgstr "**clean_**:"
+
+#: ../BurstSurface.rst:502
+msgid ""
+"bint, optional; A flag that determines whether the group will be cleaned "
+"(reset or cleared) before rendering. Defaults to False."
+msgstr ""
+"bint, opcional; Una bandera que determina si el grupo será limpiado "
+"(restablecido o borrado) antes de renderizar. El valor predeterminado es "
+"False."
+
+#: ../BurstSurface.rst:505
+msgid ""
+"unsigned char, optional; The blending mode to be used when rendering the "
+"effect. A blend mode of 0 typically represents no blending (normal mode)."
+" Defaults to 0."
+msgstr ""
+"unsigned char, opcional; El modo de mezcla que se usará al renderizar el "
+"efecto. Un modo de mezcla de 0 típicamente representa sin mezcla (modo "
+"normal). El valor predeterminado es 0."
+
+#: ../BurstSurface.rst:507
+msgid ""
+"**Returns** void; This function modifies the `group_` object by rendering"
+" or cleaning the sprites, but does not return any value."
+msgstr ""
+"**Returns** void; Esta función modifica el objeto `group_` renderizando o "
+"limpiando los sprites, pero no devuelve ningún valor."
+
+#: ../BurstSurface.rst:514
+msgid "Rebuild an exploded image from a specific frame number."
+msgstr ""
+"Reconstruir una imagen explotada a partir de un número de fotograma específico."
+
+#: ../BurstSurface.rst:516
+msgid ""
+"This function starts rebuilding an exploded image from a given start "
+"frame number and continues to modify the image until it reaches the "
+"current frame. It delegates the core logic to the `rff_experimental_c` "
+"function for performance."
+msgstr ""
+"Esta función comienza a reconstruir una imagen explotada desde un número "
+"de fotograma inicial y continúa modificando la imagen hasta que llega al "
+"fotograma actual. Delegará la lógica principal a la función `rff_experimental_c` "
+"para mejorar el rendimiento."
+
+#: ../BurstSurface.rst:520
+msgid ""
+"The rebuild process involves inverting the direction of each pixel or "
+"pixel block's vector and drawing them to the render surface, while "
+"respecting the screen boundaries."
+msgstr ""
+"El proceso de reconstrucción consiste en invertir la dirección de cada "
+"vector de píxel o bloque de píxeles y dibujarlos en la superficie de renderizado, "
+"respetando los límites de la pantalla."
+
+#: ../BurstSurface.rst:526
+msgid ""
+"Pygame.Surface; The surface where the image will be rendered. This is "
+"usually the game screen or the target rendering surface."
+msgstr ""
+"Pygame.Surface; La superficie donde se renderizará la imagen. Normalmente "
+"es la pantalla del juego o la superficie de renderizado objetivo."
+
+#: ../BurstSurface.rst:530
+msgid ""
+"Pygame.Rect; The rectangle defining the screen's area. Used to determine "
+"if a sprite is within the visible area of the screen."
+msgstr ""
+"Pygame.Rect; El rectángulo que define el área de la pantalla. Se usa para "
+"determinar si un sprite está dentro del área visible de la pantalla."
+
+#: ../BurstSurface.rst:534
+msgid ""
+"unsigned int; The current frame number. The image will start rebuilding "
+"from the specified `start_frame` until the `current_frame` is reached."
+msgstr ""
+"unsigned int; El número del fotograma actual. La imagen comenzará a "
+"reconstruirse desde el `start_frame` especificado hasta que se alcance el "
+"`current_frame`."
+
+#: ../BurstSurface.rst:538
+msgid ""
+"unsigned int; The frame number at which the rebuild process starts. The "
+"image will not be modified before this frame."
+msgstr ""
+"unsigned int; El número de fotograma en el que comienza el proceso de "
+"reconstrucción. La imagen no se modificará antes de este fotograma."
+
+#: ../BurstSurface.rst:542
+msgid ""
+"Pygame.sprite.Group; A group of sprites representing the blocks or pixels"
+" of the image to be rebuilt. Each sprite is manipulated and rendered "
+"during the rebuild process."
+msgstr ""
+"Pygame.sprite.Group; Un grupo de sprites que representa los bloques o píxeles"
+" de la imagen que se reconstruirá. Cada sprite es manipulado y renderizado "
+"durante el proceso de reconstrucción."
+
+#: ../BurstSurface.rst:547
+msgid ""
+"unsigned char, optional; The blend mode to use when rendering the "
+"sprites. Blend modes control how the sprite colors are combined with the "
+"existing surface. Defaults to 0 (no blending)."
+msgstr ""
+"unsigned char, opcional; El modo de mezcla que se usará al renderizar los "
+"sprites. Los modos de mezcla controlan cómo se combinan los colores de los "
+"sprites con la superficie existente. El valor predeterminado es 0 (sin mezcla)."
+
+#: ../BurstSurface.rst:551
+msgid ""
+"**Returns** None; This function modifies the `group_` sprites and the "
+"surface directly. No value is returned."
+msgstr ""
+"**Returns** None; Esta función modifica directamente los sprites de `group_` y la "
+"superficie. No se devuelve ningún valor."
+
+#: ../BurstSurface.rst:559
+msgid ""
+"Rebuild an exploded image with pixels or pixel blocks outside the screen "
+"boundaries."
+msgstr ""
+"Reconstruir una imagen explotada con píxeles o bloques de píxeles fuera de "
+"los límites de la pantalla."
+
+#: ../BurstSurface.rst:561
+msgid ""
+"This function applies an experimental process to rebuild an image using "
+"pixels or pixel blocks that are outside the boundaries of the screen. It "
+"delegates the core logic to the `rfm_experimental_c` function for better "
+"performance. This process is often used for creating effects where the "
+"image \"explodes\" or pieces of it move outside the screen area."
+msgstr ""
+"Esta función aplica un proceso experimental para reconstruir una imagen "
+"usando píxeles o bloques de píxeles que están fuera de los límites de la "
+"pantalla. Delegada la lógica principal a la función `rfm_experimental_c` para "
+"mejorar el rendimiento. Este proceso se usa comúnmente para crear efectos "
+"donde la imagen \"explota\" o piezas de ella se mueven fuera del área de la "
+"pantalla."
+
+#: ../BurstSurface.rst:570
+msgid ""
+"Pygame.Rect; The rectangle representing the boundaries of the screen or "
+"the game display. Used to check if a sprite is within the screen's area."
+msgstr ""
+"Pygame.Rect; El rectángulo que representa los límites de la pantalla o la "
+"pantalla del juego. Se usa para verificar si un sprite está dentro del área de "
+"la pantalla."
+
+#: ../BurstSurface.rst:574
+msgid ""
+"Pygame.Surface; The surface where the rebuilt image will be rendered. "
+"This is typically the game display or render target."
+msgstr ""
+"Pygame.Surface; La superficie donde se renderizará la imagen reconstruida. "
+"Normalmente es la pantalla del juego o el objetivo de renderizado."
+
+#: ../BurstSurface.rst:578
+msgid ""
+"Pygame.sprite.Group; A group of sprites that represent the pixels or "
+"blocks being used to rebuild the image. Each sprite in the group will be "
+"processed and blitted onto the surface."
+msgstr ""
+"Pygame.sprite.Group; Un grupo de sprites que representan los píxeles o "
+"bloques utilizados para reconstruir la imagen. Cada sprite en el grupo será "
+"procesado y transferido a la superficie."
+
+#: ../BurstSurface.rst:583
+msgid ""
+"unsigned char, optional; A blend mode to be used when rendering the "
+"sprites. Blend modes control how the colors of the sprites are combined "
+"with the existing colors on the surface. Defaults to 0 (no blending)."
+msgstr ""
+"unsigned char, opcional; Un modo de fusión que se usará al renderizar los "
+"sprites. Los modos de fusión controlan cómo se combinan los colores de los "
+"sprites con los colores existentes en la superficie. El valor predeterminado es "
+"0 (sin fusión)."
+
+#: ../BurstSurface.rst:587
+msgid ""
+"**Returns** None; This function modifies the surface directly and does "
+"not return any value. It also modifies the group of sprites in place."
+msgstr ""
+"**Returns** Ninguno; Esta función modifica directamente la superficie y no "
+"devuelve ningún valor. También modifica el grupo de sprites en su lugar."
+
+#: ../BurstSurface.rst:595
+msgid "Rebuild a Pygame surface from a group of sprites (inplace)."
+msgstr ""
+"Reconstruir una superficie de Pygame a partir de un grupo de sprites (en su "
+"lugar)."
+
+#: ../BurstSurface.rst:597
+msgid ""
+"This function takes a group of sprites and blits their images onto the "
+"specified surface at their respective positions, updating the surface in "
+"place. The process modifies the surface directly without creating a new "
+"one."
+msgstr ""
+"Esta función toma un grupo de sprites y transfiere sus imágenes a la "
+"superficie especificada en sus respectivas posiciones, actualizando la "
+"superficie en su lugar. El proceso modifica directamente la superficie sin "
+"crear una nueva."
+
+#: ../BurstSurface.rst:601
+msgid ""
+"It delegates the task to the `build_surface_inplace_c` function, which is"
+" written in C for improved performance."
+msgstr ""
+"Delegada la tarea a la función `build_surface_inplace_c`, que está escrita "
+"en C para mejorar el rendimiento."
+
+#: ../BurstSurface.rst:606 ../BurstSurface.rst:640
+msgid "**surface_**:"
+msgstr ""
+"**surface_**:"
+
+#: ../BurstSurface.rst:607
+msgid ""
+"Pygame.Surface; The surface that will be updated by blitting the sprites "
+"onto it. The original surface is modified directly, and no new surface is"
+" created."
+msgstr ""
+"Pygame.Surface; La superficie que será actualizada al transferir los sprites "
+"a ella. La superficie original se modifica directamente, y no se crea una "
+"superficie nueva."
+
+#: ../BurstSurface.rst:611
+msgid ""
+"Pygame.sprite.Group; A group of sprites to be blitted onto the surface. "
+"Each sprite's position is determined by its `rect` attribute."
+msgstr ""
+"Pygame.sprite.Group; Un grupo de sprites que serán transferidos a la "
+"superficie. La posición de cada sprite está determinada por su atributo `rect`."
+
+#: ../BurstSurface.rst:614 ../BurstSurface.rst:648
+msgid "**block_width**:"
+msgstr ""
+"**block_width**:"
+
+#: ../BurstSurface.rst:615
+msgid ""
+"unsigned int; The width of the block used for the tiling or "
+"reconstruction process. It can influence how the surface is rebuilt."
+msgstr ""
+"unsigned int; El ancho del bloque utilizado para el proceso de mosaico o "
+"reconstrucción. Puede influir en cómo se reconstruye la superficie."
+
+#: ../BurstSurface.rst:618 ../BurstSurface.rst:653
+msgid "**block_height**:"
+msgstr ""
+"**block_height**:"
+
+#: ../BurstSurface.rst:619
+msgid ""
+"unsigned int; The height of the block used for the tiling or "
+"reconstruction process. It works in conjunction with `block_width` to "
+"determine the surface layout."
+msgstr ""
+"unsigned int; La altura del bloque utilizado para el proceso de mosaico o "
+"reconstrucción. Trabaja junto con `block_width` para determinar la disposición "
+"de la superficie."
+
+#: ../BurstSurface.rst:622
+msgid ""
+"**Returns** None; This function modifies the surface directly and does "
+"not return any value."
+msgstr ""
+"**Returns** Ninguno; Esta función modifica directamente la superficie y no "
+"devuelve ningún valor."
+
+#: ../BurstSurface.rst:629
+msgid "Efficiently rebuild a Pygame surface from a group of sprites (inplace)."
+msgstr ""
+"Reconstruir eficientemente una superficie de Pygame a partir de un grupo de "
+"sprites (en su lugar)."
+
+#: ../BurstSurface.rst:631
+msgid ""
+"This function rapidly constructs a surface by blitting individual sprite "
+"images onto the given surface at their respective positions. The process "
+"is performed in place, meaning the surface is directly updated without "
+"creating a new surface."
+msgstr ""
+"Esta función construye rápidamente una superficie al transferir las imágenes "
+"de los sprites individuales a la superficie dada en sus respectivas posiciones. "
+"El proceso se realiza en su lugar, lo que significa que la superficie se actualiza "
+"directamente sin crear una nueva superficie."
+
+#: ../BurstSurface.rst:635
+msgid ""
+"It delegates the actual work to the optimized "
+"`build_surface_inplace_fast_c` function for performance."
+msgstr ""
+"Delegada la tarea real a la función optimizada `build_surface_inplace_fast_c` "
+"para mejorar el rendimiento."
+
+#: ../BurstSurface.rst:641
+msgid ""
+"Pygame.Surface; The surface to which the sprites will be blitted. This "
+"surface is modified directly."
+msgstr ""
+"Pygame.Surface; La superficie a la que se transferirán los sprites. Esta "
+"superficie se modifica directamente."
+
+#: ../BurstSurface.rst:645
+msgid ""
+"Pygame.sprite.Group; The group of sprites whose images will be blitted "
+"onto the surface. Each sprite's position is taken from its `rect` "
+"attribute."
+msgstr ""
+"Pygame.sprite.Group; El grupo de sprites cuyas imágenes serán transferidas "
+"a la superficie. La posición de cada sprite se toma de su atributo `rect`."
+
+#: ../BurstSurface.rst:649
+msgid ""
+"unsigned int; The width of the blocks that will be used to build the "
+"surface. This is important for any tiling logic and might impact "
+"performance depending on the block size."
+msgstr ""
+"unsigned int; El ancho de los bloques que se utilizarán para construir la "
+"superficie. Esto es importante para cualquier lógica de mosaico y podría afectar "
+"el rendimiento dependiendo del tamaño del bloque."
+
+#: ../BurstSurface.rst:654
+msgid ""
+"unsigned int; The height of the blocks that will be used to build the "
+"surface. Similar to `block_width`, it affects how the surface is "
+"reconstructed."
+msgstr ""
+"unsigned int; La altura de los bloques que se utilizarán para construir la "
+"superficie. Similar a `block_width`, afecta cómo se reconstruye la superficie."
+
+#: ../BurstSurface.rst:657
+msgid ""
+"**Returns** None; The surface is modified directly, so there is no return"
+" value."
+msgstr ""
+"**Returns** Ninguno; La superficie se modifica directamente, por lo que no hay "
+"valor de retorno."
+
+

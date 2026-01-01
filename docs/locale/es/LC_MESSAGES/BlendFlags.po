@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yoann Berenguer
+# This file is distributed under the same license as the PygameShader
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PygameShader \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-10 13:20+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+#: ../BlendFlags.rst:2
+msgid "BlendFlags"
+msgstr "BlendFlags"
+
+#: ../BlendFlags.rst:4
+msgid ":mod:`BlendFlags.pyx`"
+msgstr ":mod:`BlendFlags.pyx`"
+
+#: ../BlendFlags.rst:14
+msgid ""
+"This library is focusing on **image blending operations**, particularly "
+"for **BGRA/BGR and alpha channel manipulations**. The functions are "
+"optimized for **fast, parallelized image processing** using **Cython** "
+"and **OpenMP**."
+msgstr ""
+"Esta biblioteca se centra en **operaciones de mezcla de imágenes**, en particular "
+"para **manipulaciones de canales BGRA/BGR y alfa**. Las funciones están "
+"optimizadas para **procesamiento de imágenes rápido y paralelizado** utilizando "
+"**Cython** y **OpenMP**."
+
+#: ../BlendFlags.rst:20
+msgid "1. Key Features & Purpose"
+msgstr "1. Características Clave y Propósito"
+
+#: ../BlendFlags.rst:22
+msgid "**Image Blitting (``blit_s``)**"
+msgstr "**Copia de Imagen (``blit_s``)**"
+
+#: ../BlendFlags.rst:24
+msgid ""
+"Handles copying an image (``image``) onto a destination surface "
+"(``destination``) at a specified position."
+msgstr ""
+"Maneja la copia de una imagen (``image``) en una superficie de destino "
+"(``destination``) en una posición especificada."
+
+#: ../BlendFlags.rst:27
+msgid "**Blending Operations**"
+msgstr "**Operaciones de Mezcla**"
+
+#: ../BlendFlags.rst:29
+msgid ""
+"Functions with names like ``blend_add_*``, ``blend_sub_*``, "
+"``blend_min_*``, and ``blend_max_*`` indicate support for **various "
+"blending modes**:"
+msgstr ""
+"Funciones con nombres como ``blend_add_*``, ``blend_sub_*``, "
+"``blend_min_*`` y ``blend_max_*`` indican soporte para **diversos modos de mezcla**:"
+
+#: ../BlendFlags.rst:32
+msgid "Additive blending → Increases pixel brightness."
+msgstr "Mezcla aditiva → Aumenta el brillo de los píxeles."
+
+#: ../BlendFlags.rst:33
+msgid "Subtractive blending → Decreases pixel brightness."
+msgstr "Mezcla sustractiva → Disminuye el brillo de los píxeles."
+
+#: ../BlendFlags.rst:34
+msgid "Minimum blending → Keeps the darkest pixels."
+msgstr "Mezcla mínima → Conserva los píxeles más oscuros."
+
+#: ../BlendFlags.rst:35
+msgid "Maximum blending → Keeps the brightest pixels."
+msgstr "Mezcla máxima → Conserva los píxeles más brillantes."
+
+#: ../BlendFlags.rst:37
+msgid "**Support for Different Data Representations**"
+msgstr "**Soporte para Diferentes Representaciones de Datos**"
+
+#: ../BlendFlags.rst:39
+msgid ""
+"**Surface-based functions (``blend_*_surface``)**: Operate on whole "
+"images (wrapper for SDL surfaces or similar structures)."
+msgstr ""
+"**Funciones basadas en superficies (``blend_*_surface``)**: Operan en imágenes "
+"completas (envoltorio para superficies SDL o estructuras similares)."
+
+#: ../BlendFlags.rst:41
+msgid ""
+"**Array-based functions (``blend_*_array``)**: Operate on NumPy-style 3D "
+"arrays (``[height, width, channels]``)."
+msgstr ""
+"**Funciones basadas en arreglos (``blend_*_array``)**: Operan en arreglos 3D al estilo "
+"NumPy (``[altura, ancho, canales]``)."
+
+#: ../BlendFlags.rst:43
+msgid ""
+"**In-place operations (``blend_*_bgra_inplace``)**: Modify a 1D BGRA/BGR "
+"array directly, avoiding extra memory allocation."
+msgstr ""
+"**Operaciones in situ (``blend_*_bgra_inplace``)**: Modifican un arreglo BGRA/BGR "
+"unidimensional directamente, evitando la asignación de memoria adicional."
+
+#: ../BlendFlags.rst:46
+msgid "**Alpha Channel Operations**"
+msgstr "**Operaciones con el Canal Alfa**"
+
+#: ../BlendFlags.rst:48
+msgid ""
+"Functions like ``blend_add_alpha``, ``blend_max_alpha``, and "
+"``blend_min_alpha`` specifically target **alpha blending**, which is "
+"crucial for transparency effects."
+msgstr ""
+"Funciones como ``blend_add_alpha``, ``blend_max_alpha`` y "
+"``blend_min_alpha`` se enfocan específicamente en **mezcla alfa**, que es "
+"crucial para efectos de transparencia."
+
+#: ../BlendFlags.rst:51
+msgid "**Parallelization & Optimization**"
+msgstr "**Paralelización y Optimización**"
+
+#: ../BlendFlags.rst:53
+msgid ""
+"Use of **Cython** (``cdef`` functions) and **parallelization** "
+"(``prange`` from OpenMP) suggests that the library is designed for "
+"**high-performance image processing**, likely intended for real-time "
+"applications."
+msgstr ""
+"El uso de **Cython** (funciones ``cdef``) y **paralelización** "
+"(``prange`` de OpenMP) sugiere que la biblioteca está diseñada para "
+"**procesamiento de imágenes de alto rendimiento**, probablemente destinada a "
+"aplicaciones en tiempo real."
+
+#: ../BlendFlags.rst:58
+msgid "2. Possible Use Cases"
+msgstr "2. Posibles Casos de Uso"
+
+#: ../BlendFlags.rst:60
+msgid "**Game development & rendering** (e.g., blending sprites, effects)"
+msgstr "**Desarrollo de juegos y renderizado** (por ejemplo, mezcla de sprites, efectos)"
+
+#: ../BlendFlags.rst:61
+msgid ""
+"**Image processing applications** (e.g., compositing, transparency "
+"adjustments)"
+msgstr ""
+"**Aplicaciones de procesamiento de imágenes** (por ejemplo, composición, ajustes de "
+"transparencia)"
+
+#: ../BlendFlags.rst:62
+msgid ""
+"**Graphics frameworks** needing fast pixel operations (e.g., custom "
+"shaders, filters)"
+msgstr ""
+"**Frameworks gráficos** que necesitan operaciones rápidas de píxeles (por ejemplo, "
+"shaders personalizados, filtros)"
+

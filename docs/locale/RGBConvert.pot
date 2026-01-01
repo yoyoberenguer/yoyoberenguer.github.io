@@ -1,0 +1,502 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yoann Berenguer
+# This file is distributed under the same license as the PygameShader package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PygameShader \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-10 13:20+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../RGBConvert.rst:2
+msgid "RGBConvert"
+msgstr ""
+
+#: ../RGBConvert.rst:4
+msgid ":mod:`RGBConvert.pyx`"
+msgstr ""
+
+#: ../RGBConvert.rst:12
+msgid "1. Color Space Conversion Library"
+msgstr ""
+
+#: ../RGBConvert.rst:14
+msgid "This Python library provides efficient color space conversion functions, primarily implemented using Cython for optimized performance. The library enables conversions between RGB and other color models like **YIQ**, **HSL**, and **HSV**, which are essential for various image processing and computer vision tasks."
+msgstr ""
+
+#: ../RGBConvert.rst:20
+msgid "2. Purpose of the Library"
+msgstr ""
+
+#: ../RGBConvert.rst:22
+msgid "The primary goal of this library is to offer fast and efficient color space conversions. These conversions are commonly used in applications such as image processing, computer vision, color correction, and visual effects. The library leverages Cython to speed up computations and minimize memory overhead."
+msgstr ""
+
+#: ../RGBConvert.rst:28
+msgid "3. Key Functions and Their Roles"
+msgstr ""
+
+#: ../RGBConvert.rst:30
+msgid "**YIQ ↔ RGB Conversions**"
+msgstr ""
+
+#: ../RGBConvert.rst:32
+msgid "The YIQ color model separates luma (brightness) from chroma (color), making it particularly useful for broadcast and image processing."
+msgstr ""
+
+#: ../RGBConvert.rst:35
+msgid "**`yiq_2_rgb(y, i, q)` → (r, g, b)**: Converts a pixel from YIQ (luma, in-phase, quadrature) to RGB color space."
+msgstr ""
+
+#: ../RGBConvert.rst:38
+msgid "**`rgb_2_yiq(r, g, b)` → (y, i, q)**: Converts a pixel from RGB to YIQ color space."
+msgstr ""
+
+#: ../RGBConvert.rst:41
+msgid "**`RGB_TO_YIQ_inplace(image_surface, include_y, include_i, include_q)`**: Converts an entire image from RGB to YIQ in-place, modifying the given image surface."
+msgstr ""
+
+#: ../RGBConvert.rst:44
+msgid "**`RGB_TO_YIQ_inplace_c(w, h, rgb_array, luma, in_phase, quadrature)`**: A Cython-optimized, low-level function for in-place RGB-to-YIQ conversion, minimizing Python overhead."
+msgstr ""
+
+#: ../RGBConvert.rst:47
+msgid "**✅ Why YIQ?**"
+msgstr ""
+
+#: ../RGBConvert.rst:49
+msgid "YIQ is widely used in **NTSC television broadcasting** and in image processing applications where the separation of luma (brightness) and chroma (color) enhances processing and compression."
+msgstr ""
+
+#: ../RGBConvert.rst:51
+msgid "**HSL ↔ RGB Conversions**"
+msgstr ""
+
+#: ../RGBConvert.rst:53
+msgid "HSL stands for **Hue**, **Saturation**, and **Lightness**. It's commonly used for color adjustments, such as adjusting brightness or saturation."
+msgstr ""
+
+#: ../RGBConvert.rst:55
+msgid "**`hsl_to_rgb_pixel(h, s, l)` → (r, g, b)**: Converts a pixel from HSL (Hue, Saturation, Lightness) to RGB color space."
+msgstr ""
+
+#: ../RGBConvert.rst:58
+msgid "**`rgb_pixel_to_hsl(r, g, b)` → (h, s, l)**: Converts a pixel from RGB to HSL color space."
+msgstr ""
+
+#: ../RGBConvert.rst:61
+msgid "**✅ Why HSL?**"
+msgstr ""
+
+#: ../RGBConvert.rst:63
+msgid "HSL is extremely useful for **color adjustment** in graphics applications. By working with the hue, saturation, and lightness, users can easily create effects like tints, shades, and saturation adjustments."
+msgstr ""
+
+#: ../RGBConvert.rst:65
+msgid "**HSV ↔ RGB Conversions**"
+msgstr ""
+
+#: ../RGBConvert.rst:67
+msgid "HSV stands for **Hue**, **Saturation**, and **Value**, and it is widely used in color selection tools and image segmentation."
+msgstr ""
+
+#: ../RGBConvert.rst:69
+msgid "**`hsv_to_rgb_pixel(h, s, v)` → (r, g, b)**: Converts a pixel from HSV (Hue, Saturation, Value) to RGB color space."
+msgstr ""
+
+#: ../RGBConvert.rst:72
+msgid "**`rgb_pixel_to_hsv(r, g, b)` → (h, s, v)**: Converts a pixel from RGB to HSV color space."
+msgstr ""
+
+#: ../RGBConvert.rst:75
+msgid "**✅ Why HSV?**"
+msgstr ""
+
+#: ../RGBConvert.rst:77
+msgid "HSV is frequently used in **color selection tools** and **image segmentation**, as it separates chromatic content from brightness, making it easier to manipulate colors based on their hue, saturation, or value."
+msgstr ""
+
+#: ../RGBConvert.rst:80
+msgid "4. Optimization Features"
+msgstr ""
+
+#: ../RGBConvert.rst:82
+msgid "This library is designed with performance in mind. Here are the key optimization features:"
+msgstr ""
+
+#: ../RGBConvert.rst:84
+msgid "**Cython-based optimization** (`cdef`, `cpdef`, `nogil`): Critical functions are compiled into C using Cython, significantly improving speed."
+msgstr ""
+
+#: ../RGBConvert.rst:87
+msgid "**In-place operations** (`RGB_TO_YIQ_inplace`): By modifying image arrays directly, the library reduces memory overhead and avoids unnecessary copies."
+msgstr ""
+
+#: ../RGBConvert.rst:90
+msgid "**No GIL** (`nogil`): The Cython implementation enables multi-threading, allowing for parallel execution and further performance improvements."
+msgstr ""
+
+#: ../RGBConvert.rst:94
+msgid "5. Use Cases"
+msgstr ""
+
+#: ../RGBConvert.rst:96
+msgid "This library is highly useful for various fields where color manipulation is essential. Some key use cases include:"
+msgstr ""
+
+#: ../RGBConvert.rst:98
+msgid "**Image Processing**: Transform images into different color spaces for tasks such as filtering, thresholding, or general analysis."
+msgstr ""
+
+#: ../RGBConvert.rst:101
+msgid "**Computer Vision**: Utilize HSV or YIQ for **color-based object detection**, image segmentation, or feature extraction."
+msgstr ""
+
+#: ../RGBConvert.rst:104
+msgid "**Graphics Applications**: Adjust color properties like hue, saturation, lightness, and brightness to create visual effects and improve contrast."
+msgstr ""
+
+#: ../RGBConvert.rst:107
+msgid "**Broadcasting & Video Processing**: Convert between RGB and YIQ color spaces for **NTSC signals** in television broadcasting or video processing applications."
+msgstr ""
+
+#: ../RGBConvert.rst:111
+msgid "6. Conclusion"
+msgstr ""
+
+#: ../RGBConvert.rst:113
+msgid "This library provides fast, efficient, and easy-to-use color space conversions, optimized for performance through Cython. Its versatility makes it invaluable for image processing, computer vision, graphics applications, and more."
+msgstr ""
+
+#: ../RGBConvert.rst:118
+msgid "7. Cython list methods"
+msgstr ""
+
+#: ../RGBConvert.rst:122
+msgid "Summary: Converts RGB color values into the YIQ color model. The YIQ model was historically used in NTSC television broadcasting and separates the brightness (Y) from the chrominance components (I and Q). This function performs the conversion using normalized floating-point calculations."
+msgstr ""
+
+#: ../RGBConvert.rst:125
+msgid "Example Usage:"
+msgstr ""
+
+#: ../RGBConvert.rst:132
+msgid "Parameters:"
+msgstr ""
+
+#: ../RGBConvert.rst:134
+msgid "**r** (unsigned char): An integer representing the red channel, in the range [0, 255]."
+msgstr ""
+
+#: ../RGBConvert.rst:137
+msgid "**g** (unsigned char): An integer representing the green channel, in the range [0, 255]."
+msgstr ""
+
+#: ../RGBConvert.rst:140
+msgid "**b** (unsigned char): An integer representing the blue channel, in the range [0, 255]."
+msgstr ""
+
+#: ../RGBConvert.rst:143
+msgid "Returns:"
+msgstr ""
+
+#: ../RGBConvert.rst:145
+#: ../RGBConvert.rst:189
+msgid "**tuple**:"
+msgstr ""
+
+#: ../RGBConvert.rst:147
+msgid "A tuple `(Y, I, Q)` where: - **Y** (float): The Luma component, representing brightness. - **I** (float): The In-phase chrominance, representing the orange-blue hue. - **Q** (float): The Quadrature chrominance, representing the purple-green hue."
+msgstr ""
+
+#: ../RGBConvert.rst:153
+msgid "Raises:"
+msgstr ""
+
+#: ../RGBConvert.rst:155
+msgid "**ValueError**: If any input value is outside the valid range [0, 255]."
+msgstr ""
+
+#: ../RGBConvert.rst:158
+msgid "Notes:"
+msgstr ""
+
+#: ../RGBConvert.rst:160
+msgid "The YIQ color model is used primarily in NTSC broadcasting and separates color information (chrominance) from brightness (luma)."
+msgstr ""
+
+#: ../RGBConvert.rst:161
+msgid "The conversion is done using normalized floating-point calculations for accurate representation in the YIQ color space."
+msgstr ""
+
+#: ../RGBConvert.rst:166
+msgid "**Summary**: Converts YIQ color model values into equivalent RGB values. The YIQ color model was historically used in NTSC television broadcasting and separates the brightness (Y) from the chrominance components (I and Q). This function converts the YIQ values back into RGB format, with the resulting values scaled to the [0, 255] range and rounded to the nearest integer."
+msgstr ""
+
+#: ../RGBConvert.rst:169
+#: ../RGBConvert.rst:215
+#: ../RGBConvert.rst:267
+#: ../RGBConvert.rst:304
+#: ../RGBConvert.rst:341
+#: ../RGBConvert.rst:381
+msgid "**Example Usage**:"
+msgstr ""
+
+#: ../RGBConvert.rst:176
+#: ../RGBConvert.rst:222
+#: ../RGBConvert.rst:274
+#: ../RGBConvert.rst:311
+#: ../RGBConvert.rst:348
+#: ../RGBConvert.rst:388
+msgid "**Parameters**:"
+msgstr ""
+
+#: ../RGBConvert.rst:178
+msgid "**y** (float): The Luma (brightness) component of the YIQ color model."
+msgstr ""
+
+#: ../RGBConvert.rst:181
+msgid "**i** (float): The In-phase chrominance, representing the orange-blue contrast."
+msgstr ""
+
+#: ../RGBConvert.rst:184
+msgid "**q** (float): The Quadrature chrominance, representing the purple-green contrast."
+msgstr ""
+
+#: ../RGBConvert.rst:187
+#: ../RGBConvert.rst:236
+msgid "**Returns**:"
+msgstr ""
+
+#: ../RGBConvert.rst:191
+msgid "A tuple `(R, G, B)` where:"
+msgstr ""
+
+#: ../RGBConvert.rst:192
+msgid "**R** (unsigned char): Red value in the range [0, 255]."
+msgstr ""
+
+#: ../RGBConvert.rst:193
+msgid "**G** (unsigned char): Green value in the range [0, 255]."
+msgstr ""
+
+#: ../RGBConvert.rst:194
+msgid "**B** (unsigned char): Blue value in the range [0, 255]."
+msgstr ""
+
+#: ../RGBConvert.rst:197
+#: ../RGBConvert.rst:241
+msgid "**Raises**:"
+msgstr ""
+
+#: ../RGBConvert.rst:199
+msgid "**ValueError**: If the input values for `y`, `i`, or `q` are outside the expected range for the YIQ model."
+msgstr ""
+
+#: ../RGBConvert.rst:202
+#: ../RGBConvert.rst:249
+msgid "**Notes**:"
+msgstr ""
+
+#: ../RGBConvert.rst:204
+msgid "The YIQ color model separates brightness (Y) from chrominance (I and Q), which allows black-and-white TVs to display just the Y component."
+msgstr ""
+
+#: ../RGBConvert.rst:205
+msgid "The function scales and rounds the RGB values to fit within the [0, 255] range, making them suitable for display or further processing."
+msgstr ""
+
+#: ../RGBConvert.rst:212
+msgid "**Summary**: Converts a 24-bit or 32-bit RGB image into the YIQ color model in-place. The YIQ model separates brightness (luma) from color information (chroma), where Y represents brightness (luma), and I and Q represent chrominance (orange-blue and purple-green contrasts). This function modifies the pixel data of the given `image_surface` directly without creating a new image."
+msgstr ""
+
+#: ../RGBConvert.rst:224
+msgid "**image_surface** (pygame.Surface): The input image surface (24-bit or 32-bit), which contains the RGB pixel data to be converted to YIQ."
+msgstr ""
+
+#: ../RGBConvert.rst:227
+msgid "**include_y** (bint, default=True): A flag indicating whether to include the Y (luma) component in the conversion. If `True`, the Y component will be included; otherwise, it will be omitted."
+msgstr ""
+
+#: ../RGBConvert.rst:230
+msgid "**include_i** (bint, default=False): A flag indicating whether to include the I (orange-blue contrast) component in the conversion. If `True`, the I component will be included."
+msgstr ""
+
+#: ../RGBConvert.rst:233
+msgid "**include_q** (bint, default=False): A flag indicating whether to include the Q (purple-green contrast) component in the conversion. If `True`, the Q component will be included."
+msgstr ""
+
+#: ../RGBConvert.rst:238
+msgid "**None**: This function modifies the `image_surface` in-place and does not return any value."
+msgstr ""
+
+#: ../RGBConvert.rst:243
+msgid "**TypeError**: If `image_surface` is not a valid `pygame.Surface` object."
+msgstr ""
+
+#: ../RGBConvert.rst:246
+msgid "**ValueError**: If the input image surface is not compatible with the conversion (e.g., if the surface does not support 24-bit or 32-bit color formats)."
+msgstr ""
+
+#: ../RGBConvert.rst:251
+msgid "The function processes the pixel data in-place, meaning the original image surface is directly modified."
+msgstr ""
+
+#: ../RGBConvert.rst:252
+msgid "You can choose to include any combination of the Y, I, and Q components based on the flags `include_y`, `include_i`, and `include_q`."
+msgstr ""
+
+#: ../RGBConvert.rst:253
+msgid "The conversion will be done to all pixels in the surface, and the color channels will be replaced by their respective YIQ values."
+msgstr ""
+
+#: ../RGBConvert.rst:257
+#: ../RGBConvert.rst:293
+#: ../RGBConvert.rst:331
+#: ../RGBConvert.rst:370
+msgid "**Function**:"
+msgstr ""
+
+#: ../RGBConvert.rst:261
+msgid "**Summary**: Converts RGB color components (uint8) to the HSL color model (float tuple). This function converts RGB values in the range [0, 255] to the equivalent HSL (Hue, Saturation, Lightness) model, rescaling the values as follows: - Hue (H) in the range [0, 360] degrees. - Saturation (S) in the range [0, 100]. - Lightness (L) in the range [0, 100]."
+msgstr ""
+
+#: ../RGBConvert.rst:276
+msgid "**r** (unsigned char):"
+msgstr ""
+
+#: ../RGBConvert.rst:277
+msgid "The red component of the pixel, an integer (uint8) in the range [0, 255]."
+msgstr ""
+
+#: ../RGBConvert.rst:279
+msgid "**g** (unsigned char):"
+msgstr ""
+
+#: ../RGBConvert.rst:280
+msgid "The green component of the pixel, an integer (uint8) in the range [0, 255]."
+msgstr ""
+
+#: ../RGBConvert.rst:282
+msgid "**b** (unsigned char):"
+msgstr ""
+
+#: ../RGBConvert.rst:283
+msgid "The blue component of the pixel, an integer (uint8) in the range [0, 255]."
+msgstr ""
+
+#: ../RGBConvert.rst:285
+msgid "**Returns**: A tuple of three float values representing the HSL components: - **h** (float): Hue, in the range [0, 360] degrees. - **s** (float): Saturation, in the range [0, 100]. - **l** (float): Lightness, in the range [0, 100]."
+msgstr ""
+
+#: ../RGBConvert.rst:297
+msgid "**Summary**: Converts HSL (Hue, Saturation, Lightness) values to RGB pixel components. The input HSL values should be normalized as follows: - Hue (h) should be in the range [0, 1] (i.e., h/360.0). - Saturation (s) and Lightness (l) should be in the range [0, 1] (i.e., s/100.0 and l/100.0)."
+msgstr ""
+
+#: ../RGBConvert.rst:302
+msgid "The function converts the normalized HSL values to RGB, rounding the output to the nearest integer and ensuring that the resulting RGB values fall within the range [0, 255]."
+msgstr ""
+
+#: ../RGBConvert.rst:313
+#: ../RGBConvert.rst:390
+msgid "**h** (float):"
+msgstr ""
+
+#: ../RGBConvert.rst:314
+#: ../RGBConvert.rst:391
+msgid "Normalized hue value in the range [0.0, 1.0], where 0.0 corresponds to 0° and 1.0 corresponds to 360°."
+msgstr ""
+
+#: ../RGBConvert.rst:316
+#: ../RGBConvert.rst:393
+msgid "**s** (float):"
+msgstr ""
+
+#: ../RGBConvert.rst:317
+#: ../RGBConvert.rst:394
+msgid "Normalized saturation value in the range [0.0, 1.0], where 0.0 represents no saturation and 1.0 represents full saturation."
+msgstr ""
+
+#: ../RGBConvert.rst:319
+msgid "**l** (float):"
+msgstr ""
+
+#: ../RGBConvert.rst:320
+msgid "Normalized lightness value in the range [0.0, 1.0], where 0.0 represents black, 1.0 represents white, and 0.5 represents the pure color."
+msgstr ""
+
+#: ../RGBConvert.rst:322
+msgid "**Returns**: A tuple of three unsigned char values (r, g, b) representing the RGB pixel color equivalent to the input HSL values. The RGB values are rounded and fall within the range [0, 255]."
+msgstr ""
+
+#: ../RGBConvert.rst:325
+msgid "**Raises**: - **ValueError**: If any of the input values (h, s, or l) are outside the valid normalized range [0.0, 1.0]."
+msgstr ""
+
+#: ../RGBConvert.rst:335
+msgid "**Summary**: Converts RGB pixel color components to the equivalent HSV model. The input RGB values are expected to be in the range [0, 255]. The function converts the RGB values into the HSV (Hue, Saturation, Value) model, and the output HSV values are rescaled as follows: - Hue (H) is scaled to [0, 360] degrees. - Saturation (S) is scaled to [0, 100]. - Value (V) is scaled to [0, 100]."
+msgstr ""
+
+#: ../RGBConvert.rst:350
+msgid "**r** (uint8):"
+msgstr ""
+
+#: ../RGBConvert.rst:351
+msgid "The red component of the pixel, in the range [0, 255]."
+msgstr ""
+
+#: ../RGBConvert.rst:353
+msgid "**g** (uint8):"
+msgstr ""
+
+#: ../RGBConvert.rst:354
+msgid "The green component of the pixel, in the range [0, 255]."
+msgstr ""
+
+#: ../RGBConvert.rst:356
+msgid "**b** (uint8):"
+msgstr ""
+
+#: ../RGBConvert.rst:357
+msgid "The blue component of the pixel, in the range [0, 255]."
+msgstr ""
+
+#: ../RGBConvert.rst:359
+msgid "**Returns**: A tuple of float values representing the HSV equivalent of the given RGB components: - **h** (Hue): in the range [0, 360]. - **s** (Saturation): in the range [0, 100]. - **v** (Value): in the range [0, 100]."
+msgstr ""
+
+#: ../RGBConvert.rst:365
+msgid "**Raises**: - **ValueError**: If any of the input values (r, g, or b) are outside the valid range [0, 255]."
+msgstr ""
+
+#: ../RGBConvert.rst:374
+msgid "**Summary**: Converts HSV (Hue, Saturation, Value) values to RGB pixel components (uint8). The input HSV values are expected to be normalized as follows: - Hue (h) should be in the range [0, 1] (i.e., h/360.0). - Saturation (s) and Value (v) should be in the range [0, 1] (i.e., s/100.0 and v/100.0)."
+msgstr ""
+
+#: ../RGBConvert.rst:379
+msgid "The function converts the normalized HSV values to RGB, rounding the output RGB values to the nearest integer, and the resulting RGB values are in the range [0, 255], which is typical for pixel color values."
+msgstr ""
+
+#: ../RGBConvert.rst:396
+msgid "**v** (float):"
+msgstr ""
+
+#: ../RGBConvert.rst:397
+msgid "Normalized value (brightness) in the range [0.0, 1.0], where 0.0 represents black and 1.0 represents full brightness."
+msgstr ""
+
+#: ../RGBConvert.rst:399
+msgid "**Returns**: A tuple of three unsigned char values (r, g, b) representing the equivalent RGB pixel color. The RGB values are rounded to the nearest integer and fall within the range [0, 255]."
+msgstr ""
+
+#: ../RGBConvert.rst:402
+msgid "**Raises**: - **ValueError**: If any of the input values (h, s, or v) are outside the valid normalized range [0.0, 1.0]."
+msgstr ""

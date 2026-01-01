@@ -1,0 +1,339 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yoann Berenguer
+# This file is distributed under the same license as the PygameShader
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PygameShader \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-10 13:20+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+#: ../Fire.rst:4
+msgid "Procedural Fire and Cloud Effects Library"
+msgstr "Procedural Fire and Cloud Effects Library"
+
+#: ../Fire.rst:6
+msgid ":mod:`Fire.pyx`"
+msgstr ":mod:`Fire.pyx`"
+
+#: ../Fire.rst:15
+msgid "1. Purpose of the Library"
+msgstr "1. Objectif de la bibliothèque"
+
+#: ../Fire.rst:17
+msgid ""
+"The library provides tools to generate dynamic fire and cloud effects "
+"that can be rendered in real-time. These effects are highly customizable,"
+" allowing developers to control aspects such as:"
+msgstr ""
+"La bibliothèque fournit des outils pour générer des effets dynamiques de feu et de nuages "
+"qui peuvent être rendus en temps réel. Ces effets sont hautement personnalisables, "
+"permettant aux développeurs de contrôler des aspects tels que :"
+
+#: ../Fire.rst:20
+msgid "**Size and shape** of the effect (e.g., width, height, intensity)."
+msgstr "**Taille et forme** de l'effet (par exemple, largeur, hauteur, intensité)."
+
+#: ../Fire.rst:21
+msgid "**Color palettes** for the fire or cloud."
+msgstr "**Palettes de couleurs** pour le feu ou le nuage."
+
+#: ../Fire.rst:22
+msgid ""
+"**Post-processing effects** like bloom, blur, brightness adjustment, and "
+"smoothing."
+msgstr ""
+"**Effets de post-traitement** tels que le bloom, le flou, l'ajustement de la luminosité, et "
+"le lissage."
+
+#: ../Fire.rst:23
+msgid ""
+"**Performance optimization** through texture resolution reduction and "
+"fast algorithms."
+msgstr ""
+"**Optimisation des performances** par la réduction de la résolution des textures et "
+"des algorithmes rapides."
+
+#: ../Fire.rst:25
+msgid ""
+"The library is optimized for performance, making it suitable for real-"
+"time applications like games. It uses **Cython** for speed and integrates"
+" with **Pygame** for rendering."
+msgstr ""
+"La bibliothèque est optimisée pour les performances, ce qui la rend adaptée aux applications en temps réel comme les jeux. "
+"Elle utilise **Cython** pour la rapidité et s'intègre avec **Pygame** pour le rendu."
+
+#: ../Fire.rst:29
+msgid "2. Key Functions"
+msgstr "2. Fonctions principales"
+
+#: ../Fire.rst:32
+msgid "Fire Effect Functions"
+msgstr "Fonctions d'effet de feu"
+
+#: ../Fire.rst:34
+msgid "These functions generate procedural fire effects."
+msgstr "Ces fonctions génèrent des effets de feu procéduraux."
+
+#: ../Fire.rst:38
+msgid "Generates a fire effect with an optional border."
+msgstr "Génère un effet de feu avec une bordure optionnelle."
+
+#: ../Fire.rst:42
+msgid ""
+"A helper function for generating fire effects. It processes the fire "
+"intensity array and applies the color palette."
+msgstr ""
+"Une fonction d'aide pour générer des effets de feu. Elle traite le tableau d'intensité du feu et applique la palette de couleurs."
+
+#: ../Fire.rst:46
+msgid ""
+"Similar to ``fire_surface24_c_border`` but without the border option. It "
+"generates a fire effect with customizable intensity and horizontal "
+"limits."
+msgstr ""
+"Semblable à ``fire_surface24_c_border`` mais sans l'option de bordure. Elle "
+"génère un effet de feu avec une intensité personnalisable et des limites horizontales."
+
+#: ../Fire.rst:51
+msgid "The main Python-callable function for generating fire effects."
+msgstr "La fonction principale appelable en Python pour générer des effets de feu."
+
+#: ../Fire.rst:53 ../Fire.rst:73
+msgid ""
+"Includes options for post-processing (bloom, blur, brightness adjustment)"
+" and performance optimization (``reduce_factor_``)."
+msgstr ""
+"Comprend des options pour le post-traitement (bloom, flou, ajustement de la luminosité) "
+"et l'optimisation des performances (``reduce_factor_``)."
+
+#: ../Fire.rst:58
+msgid ""
+"The Cython-optimized core function for generating fire effects. It is "
+"called internally by ``fire_effect``."
+msgstr ""
+"La fonction principale optimisée en Cython pour générer des effets de feu. Elle est "
+"appelée en interne par ``fire_effect``."
+
+#: ../Fire.rst:61
+msgid "Cloud Effect Functions"
+msgstr "Fonctions d'effet de nuage"
+
+#: ../Fire.rst:63
+msgid "These functions generate procedural cloud or smoke effects."
+msgstr "Ces fonctions génèrent des effets de nuage ou de fumée procéduraux."
+
+#: ../Fire.rst:67
+msgid "Generates a cloud effect as a 24-bit RGB pixel array."
+msgstr "Génère un effet de nuage sous forme de tableau de pixels RGB 24 bits."
+
+#: ../Fire.rst:71
+msgid "The main Python-callable function for generating cloud effects."
+msgstr "La fonction principale appelable en Python pour générer des effets de nuage."
+
+#: ../Fire.rst:78
+msgid ""
+"The Cython-optimized core function for generating cloud effects. It is "
+"called internally by ``cloud_effect``."
+msgstr ""
+"La fonction principale optimisée en Cython pour générer des effets de nuage. Elle est "
+"appelée en interne par ``cloud_effect``."
+
+#: ../Fire.rst:81
+msgid "3. Core Features"
+msgstr "3. Fonctionnalités principales"
+
+#: ../Fire.rst:84
+msgid "Customizable Effects"
+msgstr "Effets personnalisables"
+
+#: ../Fire.rst:86
+msgid ""
+"Control the size, intensity, and shape of fire and cloud effects using "
+"parameters like ``factor``, ``intensity``, ``low``, and ``high``."
+msgstr ""
+"Contrôlez la taille, l'intensité et la forme des effets de feu et de nuage à l'aide "
+"de paramètres comme ``factor``, ``intensity``, ``low`` et ``high``."
+
+#: ../Fire.rst:90
+msgid "Color Palettes"
+msgstr "Palettes de couleurs"
+
+#: ../Fire.rst:92
+msgid ""
+"Use custom color palettes (``palette_``) to define the colors of the fire"
+" or cloud."
+msgstr ""
+"Utilisez des palettes de couleurs personnalisées (``palette_``) pour définir les couleurs du feu"
+" ou du nuage."
+
+#: ../Fire.rst:95
+msgid "Post-Processing"
+msgstr "Post-traitement"
+
+#: ../Fire.rst:97
+msgid "**Bloom**: Adds a glowing effect to bright areas."
+msgstr "**Bloom** : Ajoute un effet lumineux aux zones claires."
+
+#: ../Fire.rst:98
+msgid "**Blur**: Softens the edges of the effect for a more realistic appearance."
+msgstr "**Flou** : Adoucit les bords de l'effet pour un aspect plus réaliste."
+
+#: ../Fire.rst:99
+msgid ""
+"**Brightness Adjustment**: Increases or decreases the brightness of the "
+"effect."
+msgstr ""
+"**Ajustement de la luminosité** : Augmente ou diminue la luminosité de "
+"l'effet."
+
+#: ../Fire.rst:100
+msgid "**Smoothing**: Applies bi-linear filtering for smoother textures."
+msgstr "**Lissage** : Applique un filtrage bi-linéaire pour des textures plus lisses."
+
+#: ../Fire.rst:103
+msgid "Performance Optimization"
+msgstr "Optimisation des performances"
+
+#: ../Fire.rst:105
+msgid ""
+"**Reduce Factor**: Reduces the resolution of the texture for faster "
+"processing."
+msgstr ""
+"**Facteur de réduction** : Réduit la résolution de la texture pour un traitement plus rapide."
+
+#: ../Fire.rst:106
+msgid ""
+"**Fast Algorithms**: Options like ``fast_bloom_`` provide a balance "
+"between performance and visual quality."
+msgstr ""
+"**Algorithmes rapides** : Des options comme ``fast_bloom_`` offrent un équilibre "
+"entre les performances et la qualité visuelle."
+
+#: ../Fire.rst:109
+msgid "Flexible Rendering"
+msgstr "Rendu flexible"
+
+#: ../Fire.rst:111
+msgid ""
+"Supports optional Pygame surfaces (``surface_``) for reusing textures and"
+" improving performance."
+msgstr ""
+"Prend en charge des surfaces Pygame optionnelles (``surface_``) pour réutiliser les textures et "
+"améliorer les performances."
+
+#: ../Fire.rst:112
+msgid "Allows transposing the effect (``transpose_``) to change its orientation."
+msgstr ""
+"Permet de transposer l'effet (``transpose_``) pour changer son orientation."
+
+#: ../Fire.rst:115
+msgid "Typical Workflow"
+msgstr "Flux de travail typique"
+
+#: ../Fire.rst:117
+msgid ""
+"**Initialize Parameters**: - Set the dimensions (``width_``, "
+"``height_``), intensity, and other parameters for the effect. - Define a "
+"color palette (``palette_``) and intensity array (``fire_`` or "
+"``cloud_``)."
+msgstr ""
+"**Initialiser les paramètres** : - Définissez les dimensions (``width_``, "
+"``height_``), l'intensité et les autres paramètres pour l'effet. - Définissez une "
+"palette de couleurs (``palette_``) et un tableau d'intensité (``fire_`` ou "
+"``cloud_``)."
+
+#: ../Fire.rst:121
+msgid ""
+"**Generate the Effect**: - Call the main functions (``fire_effect`` or "
+"``cloud_effect``) to generate the effect. - Use optional parameters to "
+"customize the appearance and performance."
+msgstr ""
+"**Générer l'effet** : - Appelez les fonctions principales (``fire_effect`` ou "
+"``cloud_effect``) pour générer l'effet. - Utilisez des paramètres optionnels pour "
+"personnaliser l'apparence et les performances."
+
+#: ../Fire.rst:125
+msgid ""
+"**Render the Effect**: - The function returns a Pygame surface that can "
+"be blitted directly to the game display."
+msgstr ""
+"**Rendre l'effet** : - La fonction retourne une surface Pygame qui peut "
+"être blittée directement sur l'affichage du jeu."
+
+#: ../Fire.rst:129
+msgid "4. Example Use Cases"
+msgstr "4. Cas d'utilisation exemples"
+
+#: ../Fire.rst:132
+msgid "Game Effects"
+msgstr "Effets de jeu"
+
+#: ../Fire.rst:134
+msgid "Create realistic fire effects for torches, explosions, or burning objects."
+msgstr "Créez des effets de feu réalistes pour des torches, des explosions ou des objets en feu."
+
+#: ../Fire.rst:135
+msgid ""
+"Generate dynamic cloud or smoke effects for weather, magic spells, or "
+"environmental ambiance."
+msgstr ""
+"Générez des effets dynamiques de nuages ou de fumée pour le temps, les sorts magiques ou "
+"l'ambiance environnementale."
+
+#: ../Fire.rst:138
+msgid "Simulations"
+msgstr "Simulations"
+
+#: ../Fire.rst:140
+msgid ""
+"Use the library to simulate fire and smoke in scientific or educational "
+"applications."
+msgstr ""
+"Utilisez la bibliothèque pour simuler le feu et la fumée dans des applications scientifiques ou éducatives."
+
+#: ../Fire.rst:143
+msgid "Art and Animation"
+msgstr "Art et Animation"
+
+#: ../Fire.rst:145
+msgid ""
+"Generate procedural fire and cloud textures for use in animations or "
+"digital art."
+msgstr ""
+"Générez des textures procédurales de feu et de nuage pour une utilisation dans des animations ou "
+"de l'art numérique."
+
+#: ../Fire.rst:148
+msgid "5. Summary"
+msgstr "5. Résumé"
+
+#: ../Fire.rst:150
+msgid ""
+"This library is a powerful tool for generating procedural fire and cloud "
+"effects in real-time applications. It combines flexibility, performance, "
+"and ease of use, making it suitable for game development, simulations, "
+"and artistic projects. The functions are highly customizable, allowing "
+"developers to fine-tune the appearance and behavior of the effects while "
+"maintaining optimal performance."
+msgstr ""
+"Cette bibliothèque est un outil puissant pour générer des effets procéduraux de feu et de nuage "
+"pour les applications en temps réel. Elle combine flexibilité, performance et facilité d'utilisation, "
+"la rendant adaptée au développement de jeux, aux simulations et aux projets artistiques. "
+"Les fonctions sont hautement personnalisables, permettant aux développeurs de peaufiner l'apparence "
+"et le comportement des effets tout en maintenant des performances optimales."
+
+#: ../Fire.rst:158
+msgid "6. Video samples"
+msgstr "6. Exemples vidéo"

@@ -1,0 +1,186 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yoann Berenguer
+# This file is distributed under the same license as the PygameShader
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PygameShader \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-10 13:20+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+#: ../Palette.rst:2
+msgid "Palette"
+msgstr "Palette"
+
+#: ../Palette.rst:4
+msgid ":mod:`Palette.pyx`"
+msgstr ":mod:`Palette.pyx`"
+
+#: ../Palette.rst:13
+msgid "1. Library Overview"
+msgstr "1. Aperçu de la bibliothèque"
+
+#: ../Palette.rst:15
+msgid ""
+"The functions in this library are designed for **image manipulation** and"
+" **palette management**, making it suitable for applications such as "
+"**graphical rendering**, **image processing**, and **creating custom "
+"color palettes**. The library is ideal for use in **graphics software** "
+"or **visual applications** where images need to be rendered with specific"
+" color palettes or where images must be dynamically modified based on "
+"palette data."
+msgstr ""
+"Les fonctions de cette bibliothèque sont conçues pour la **manipulation d'images** et "
+"la **gestion de palettes**, ce qui la rend adaptée à des applications telles que "
+"le **rendu graphique**, le **traitement d'images** et la **création de palettes de couleurs personnalisées**. "
+"La bibliothèque est idéale pour une utilisation dans des **logiciels graphiques** "
+"ou des **applications visuelles** où les images doivent être rendues avec des palettes de couleurs spécifiques "
+"ou où les images doivent être modifiées dynamiquement en fonction des données de la palette."
+
+#: ../Palette.rst:22
+msgid "2. Key Concepts"
+msgstr "2. Concepts clés"
+
+#: ../Palette.rst:24
+msgid ""
+"**Image Surface**: Represents an object corresponding to an image, where "
+"individual pixels can be accessed and manipulated. This object provides "
+"an abstraction for working with pixel data in various image processing "
+"tasks."
+msgstr ""
+"**Surface d'image** : Représente un objet correspondant à une image, où "
+"les pixels individuels peuvent être accessibles et manipulés. Cet objet fournit "
+"une abstraction pour travailler avec les données de pixels dans diverses tâches de traitement d'image."
+
+#: ../Palette.rst:27
+msgid ""
+"**Palette**: A collection of colors that can be applied to an image. "
+"Palettes are commonly used in **visual design**, **digital art**, and "
+"**simulations** to ensure consistency in color usage throughout an image "
+"or graphic."
+msgstr ""
+"**Palette** : Une collection de couleurs qui peut être appliquée à une image. "
+"Les palettes sont couramment utilisées dans le **design visuel**, l'**art numérique** et "
+"les **simulations** pour garantir la cohérence de l'utilisation des couleurs dans toute l'image "
+"ou le graphique."
+
+#: ../Palette.rst:30
+msgid ""
+"**Temporary Buffer**: A storage area used to hold intermediate results "
+"during computations. The temporary buffer helps reduce the need to "
+"perform expensive operations multiple times, improving performance when "
+"working with complex image manipulations."
+msgstr ""
+"**Tampon temporaire** : Une zone de stockage utilisée pour conserver les résultats intermédiaires "
+"pendant les calculs. Le tampon temporaire aide à réduire la nécessité de "
+"réaliser des opérations coûteuses plusieurs fois, améliorant ainsi les performances lors du travail "
+"avec des manipulations d'images complexes."
+
+#: ../Palette.rst:34
+msgid "3. Purpose of the Library"
+msgstr "3. Objectif de la bibliothèque"
+
+#: ../Palette.rst:36
+msgid ""
+"The primary purpose of this library is to provide efficient tools for "
+"manipulating images at the **color level**. It allows users to modify or "
+"generate custom **color palettes**, providing greater flexibility in "
+"image rendering and processing tasks. By optimizing image handling, the "
+"library supports a variety of graphical applications, including dynamic "
+"image modifications based on color palettes."
+msgstr ""
+"L'objectif principal de cette bibliothèque est de fournir des outils efficaces pour "
+"manipuler les images au **niveau des couleurs**. Elle permet aux utilisateurs de modifier ou "
+"générer des **palettes de couleurs personnalisées**, offrant ainsi une plus grande flexibilité dans "
+"les tâches de rendu et de traitement d'images. En optimisant la gestion des images, la "
+"bibliothèque prend en charge une variété d'applications graphiques, y compris les "
+"modifications dynamiques d'images basées sur des palettes de couleurs."
+
+#: ../Palette.rst:39
+msgid "4. Use Cases"
+msgstr "4. Cas d'utilisation"
+
+#: ../Palette.rst:41
+msgid ""
+"**Graphics Software**: The library can be used in applications that need "
+"to render images with specific palettes, such as image editors, animation"
+" tools, or graphic design applications."
+msgstr ""
+"**Logiciels graphiques** : La bibliothèque peut être utilisée dans des applications qui ont besoin "
+"de rendre des images avec des palettes spécifiques, telles que des éditeurs d'images, des outils d'animation "
+"ou des applications de design graphique."
+
+#: ../Palette.rst:44
+msgid ""
+"**Image Processing**: Modify or analyze images by dynamically adjusting "
+"their color palettes, which can be useful in tasks such as color "
+"correction or filtering."
+msgstr ""
+"**Traitement d'images** : Modifier ou analyser des images en ajustant dynamiquement "
+"leurs palettes de couleurs, ce qui peut être utile pour des tâches telles que la correction des couleurs "
+"ou le filtrage."
+
+#: ../Palette.rst:47
+msgid ""
+"**Digital Art**: Artists can use the library to create and manipulate "
+"custom palettes, allowing for unique, controlled color schemes in their "
+"digital artwork."
+msgstr ""
+"**Art numérique** : Les artistes peuvent utiliser la bibliothèque pour créer et manipuler "
+"des palettes personnalisées, permettant des schémas de couleurs uniques et contrôlés dans leurs "
+"œuvres d'art numériques."
+
+#: ../Palette.rst:50
+msgid ""
+"**Simulations**: In simulations, this library can be used to generate or "
+"modify color palettes for visual effects or data visualization purposes, "
+"ensuring that simulated environments maintain consistent and visually "
+"appealing color schemes."
+msgstr ""
+"**Simulations** : Dans les simulations, cette bibliothèque peut être utilisée pour générer ou "
+"modifier des palettes de couleurs pour des effets visuels ou des fins de visualisation de données, "
+"assurant que les environnements simulés conservent des schémas de couleurs cohérents et visuellement "
+"attrayants."
+
+#: ../Palette.rst:54
+msgid "5. Conclusion"
+msgstr "5. Conclusion"
+
+#: ../Palette.rst:56
+msgid ""
+"This library offers powerful tools for managing and manipulating images "
+"at the color level, making it invaluable for anyone working with custom "
+"color palettes in graphical and image processing applications."
+msgstr ""
+"Cette bibliothèque offre des outils puissants pour gérer et manipuler les images "
+"au niveau des couleurs, ce qui la rend indispensable pour toute personne travaillant avec des palettes "
+"de couleurs personnalisées dans des applications graphiques et de traitement d'images."
+
+#: ../Palette.rst:62
+msgid "6. Cython list methods"
+msgstr "6. Méthodes de liste Cython"
+
+#: ../Palette.rst:70
+msgid ""
+"**Summary:** Applies a color palette transformation to an image in-place."
+" The function modifies the colors of the input image (a Pygame surface) "
+"using the specified color palette. The transformation is performed "
+"directly on the surface without creating a new image, optimizing memory "
+"usage."
+msgstr ""
+"**Résumé** : Applique une transformation de palette de couleurs à une image sur place."
+"La fonction modifie les couleurs de l'image d'entrée (une surface Pygame) "
+"en utilisant la palette de couleurs spécifiée. La transformation est effectuée "
+"directement sur la surface sans créer une nouvelle image, optimisant l'utilisation de la mémoire."
+
